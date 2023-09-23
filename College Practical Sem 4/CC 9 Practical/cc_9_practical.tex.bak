@@ -1,0 +1,668 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top=1 in, bottom = 1 in, left = 1 in, right = 1 in ]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+
+\title{\textbf{QUESTIONS}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+
+\begin{center}
+
+
+\section*{A. TEST OF SIGNIFICANCE}
+
+
+\end{center}
+
+\begin{enumerate}
+
+\item The following are 12 determinations of the melting point of a compound (in degree Celsius) made by an analyst, the true melting point being 165$^\circ{}$ C. Would you conclude from these data that his determinations are free from bias ?
+
+\begin{center}
+164.4, 169.7, 163.9, 162.1, 160.9, 160.8, 161.4, 162.2, 168.5, 163.4, 162.9, 167.7
+\end{center}
+
+
+
+
+
+
+
+\item A manufacturer, producing foot scales has installed a new system in his factory in order to limit the variation in lengths of scales. The lengths (in inches) of 12 scales produced according to the new system are given as :
+
+	\begin{center}
+		12.19, 11.81, 12.10, 12.02, 12.25, 11.80, 12.06, 11.98, 11.90, 12.00, 11.85, 12.01
+	\end{center}
+
+The variance of lengths of scales produced by the previous system has been found to be 0.12 inch. Test whether the new system seems to be superior than the previous.
+
+
+
+
+
+
+
+
+
+
+\item Samples of wood were obtained from the core and periphery of a certain Byzantine Church. The date of the wood was giving the following data : \\
+
+Core :- 1294, 1279, 1274, 1264, 1263, 1254, 1251, 1251, 1240, 1232, 1220, 1218, 1210 \\
+
+Periphery :- 1284, 1272, 1256, 1254, 1242, 1274, 1264, 1256, 1250 \\
+
+Determine if the mean age of the core is same as the mean age of the periphery.
+
+
+
+
+
+
+
+\item Two independent samples from two different populations of infants were taken. For all sample infants, the ages (in months) at which they walked alone were recorded as below : \\
+
+Sample from Population 1 : 9.5, 10.5, 9.0, 9.75, 10.0, 13.0, 10.1, 13.5, 10.2, 9.51, 9.9, 9.78 \\
+
+Sample from Population 2 : 12.5, 9.45, 11.52, 11.75, 10.12, 9.85, 10.35, 9.55, 9.05, 11.49, 12.10, 9.10 \\
+
+Assuming two populations to be normally distributed with same location, test whether the populations are identical.
+
+
+
+
+\pagebreak
+
+
+
+\item The following table gives the additional hours of sleep gained by 10 patients in an experiment to test the efficiency of a certain soporific drug. Do the data give evidence that the drug produces additional sleep ?
+
+
+\begin{table}[h]
+\def\arraystertch{1.5}
+
+\begin{center}
+\begin{tabular}{|c|cccccccccc|}
+
+\hline
+
+Patient & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+
+\hline
+
+Hours gained & 0.7 & -1.1 & -0.2 & 1.2 & 0.1 & 3.4 & -3.7 & 0.8 & 1.8 & 2.0 \\
+
+\hline
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item The marks obtained by 10 students in College A and 12 students of College B in Statistics test are given below : \\
+
+College A : 44, 48, 52, 52, 54, 45, 56, 56, 58, 60 \\
+
+College B : 36, 40, 40, 48, 44, 48, 54, 48, 52, 50, 58, 64 \\
+
+Use an exact test to verify that the two sets are equally dispersed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+
+
+
+
+
+
+
+
+\begin{center}
+
+\section*{B. CONFIDENCE INTERVALS	}
+
+\end{center}
+
+
+\begin{enumerate}
+
+\item The following are 12 determinations of the melting point of a compound (in degree Celsius) made by an analyst, the true melting point being 165$^\circ{}$ C.
+
+\begin{center}
+164.4, 169.7, 163.9, 162.1, 160.9, 160.8, 161.4, 162.2, 168.5, 163.4, 162.9, 167.7
+\end{center}
+
+Find 90\% confidence interval for the average melting point.
+
+\item A manufacturer, producing foot scales has installed a new system in his factory in order to limit the variation in lengths of scales. The lengths (in inches) of 12 scales produced according to the new system are given as :
+
+	\begin{center}
+		12.19, 11.81, 12.10, 12.02, 12.25, 11.80, 12.06, 11.98, 11.90, 12.00, 11.85, 12.01
+	\end{center}
+
+The variance of lengths of scales produced by the previous system has been found to be 0.12 inch. Find a 95\% confidence interval for the variance.
+
+
+
+
+
+
+\item Samples of wood were obtained from the core and periphery of a certain Byzantine Church. The date of the wood was giving the following data : \\
+
+
+Core :- 1294, 1279, 1274, 1264, 1263, 1254, 1251, 1251, 1240, 1232, 1220, 1218, 1210 \\
+
+Periphery :- 1284, 1272, 1256, 1254, 1242, 1274, 1264, 1256, 1250 \\
+
+
+
+Find 90\% and 95\% confidence intervals for the difference of the mean age.
+
+
+
+
+
+
+
+
+
+
+
+
+\item Two independent samples from two different populations of infants were taken. For all sample infants, the ages (in months) at which they walked alone were recorded as below : \\
+
+Sample from Population 1 : 9.5, 10.5, 9.0, 9.75, 10.0, 13.0, 10.1, 13.5, 10.2, 9.51, 9.9, 9.78 \\
+
+Sample from Population 2 : 12.5, 9.45, 11.52, 11.75, 10.12, 9.85, 10.35, 9.55, 9.05, 11.49, 12.10, 9.10 \\
+
+Assuming two populations to be normally distributed with same location,
+	\begin{enumerate}[(i)]
+		\item Find the 90\% confidence interval for $\dfrac{\sigma_1}{\sigma_2}$.
+		
+		\item Find the 95\% confidence interval for $\dfrac{\sigma_1^2}{\sigma_2^2}$.
+	
+	\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item The following table gives the additional hours of sleep gained by 10 patients in an experiment to test the efficiency of a certain soporific drug. \\
+
+
+\begin{table}[h]
+\def\arraystertch{1.5}
+
+\begin{center}
+\begin{tabular}{|c|cccccccccc|}
+
+\hline
+
+Patient & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+
+\hline
+
+Hours gained & 0.7 & -1.1 & -0.2 & 1.2 & 0.1 & 3.4 & -3.7 & 0.8 & 1.8 & 2.0 \\
+
+\hline
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
+If the drug produces the additional sleep, find the 95\% confidence interval for average hours of additional sleep.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item The marks obtained by 10 students in College A and 12 students of College B in Statistics test are given below : \\
+
+College A : 44, 48, 52, 52, 54, 45, 56, 56, 58, 60 \\
+
+College B : 36, 40, 40, 48, 44, 48, 54, 48, 52, 50, 58, 64 \\
+
+Find 99\% confidence interval of the ratio of standard deviation.
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+
+
+
+
+
+
+
+
+\begin{center}
+
+\section*{C. TEST FOR BINOMIAL PROPORTION}
+
+\end{center}
+
+\begin{enumerate}
+
+\item The following is the result of an experiment to compare the effect of a newly discovered medicine on 
+a certain disease with that of prevailing treatment (labelled as Control). \\
+
+8 diseased individuals are recruited randomly at each group. Write down an appropriate hypothesis to test 
+the superiority of the new medicine at 5\% level of significance. Implement the test and report the p-value. 
+Indicate how to use the p-value to infer about drug superiority. 
+
+
+\begin{table}[h]
+\def\arraystretch{1.5}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+
+\hline
+
+Treatment & Cured & Not Cured \\
+
+\hline
+
+Control & 3 & 5 \\
+
+\hline
+
+New Medicine & 5 & 3 \\
+
+\hline
+
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item In order to study the effectiveness of a vaccine against a disease, the vaccine is applied to a sample of 18 rats selected randomly from a group of 30 rats. The remaining 12 rats are not given that vaccine. The observed number of rats survived from each group are recorded in the following table :
+
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|c|c|c|}
+	
+	\hline
+	
+	& Vaccinated & Not Vaccinated \\
+	
+	\hline
+	
+	Survived & 14 & 5 \\
+	
+	\hline
+	
+	Died & 4 & 7 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	Based on these data, examine whether the vaccine can enhance the survival power of rats.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+
+\begin{center}
+
+\section*{D. TEST FOR POISSON PARAMETER}
+
+\end{center}
+
+
+\begin{enumerate}
+
+\item The number of deaths due to road accidents in two consecutive months in a city are 8 and 3 respectively. 
+Do you think that reduction from first to second months is due to chance fluctuation? 
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+
+\begin{center}
+
+\section*{E. TEST FOR BIVARIATE NORMAL DISTRIBUTION}
+
+\end{center}
+
+
+\begin{enumerate}
+
+\item The following data give the percentage of marks in Math $(X)$ and Stat $(Y)$ for a group of 10 students who appeared in an examination :
+
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|c||cccccccccc|}
+	
+	\hline
+	
+	Serial No. & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+	
+	\hline
+	
+	$X$ & 44 & 48 & 52 & 52 & 54 & 54 & 56 & 56 & 58 & 58 \\
+	
+	\hline
+	
+	$Y$ & 36 & 40 & 48 & 44 & 48 & 54 & 48 & 42 & 50 & 52 \\
+	
+	\hline
+	
+	
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	Use an exact test procedure to verify that difference between standard deviation in marks in two subjects is statistically insignificant. 
+	
+	\setlength{\parindent}{45pt} Also evaluate 95\% confidence interval for the ratio of standard deviations.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\item The additional hours of sleep gained after using each of the two drugs by same group of 12 patients are given below :
+
+	\begin{table}[h]
+	\def\arraystretch{1.19}
+	
+	\begin{center}
+	\begin{tabular}{|c|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+	
+	\hline
+	
+	\multirow{2}{*}{Patient} & \multicolumn{2}{c|}{Additional Hours of Sleep} \\
+	
+	\hhline{~--}
+	
+	& Drug 1 & Drug 2 \\
+	
+	\hline
+	
+	1 & 2.1 & 3.6 \\
+	
+	\hline
+	
+	2 & 0.2 & 4.7 \\
+	
+	\hline
+	
+	3 & 0.9 & 1.8 \\
+	
+	\hline
+	
+	4 & 3.8 & 5.5 \\
+	
+	\hline
+	
+	5 & 3.5 & 4.6 \\
+	
+	\hline
+	
+	6 & -0.2 & -0.3 \\
+	
+	\hline
+	
+	7 & -1.3 & -0.9 \\
+	
+	\hline
+	
+	8 & -0.3 & 1.9 \\
+	
+	\hline
+	
+	9 & -1.7 & 2.0 \\
+	
+	\hline
+	
+	10 & 0.7 & 1.7 \\
+	
+	\hline
+	
+	11 & -0.8 & 2.1 \\
+	
+	\hline
+	
+	12 & 1.3 & 1.1 \\
+	
+	\hline
+	
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	\setlength{\parindent}{0pt}Test whether second drug gives on the average at least one hour more sleep than the first drug.
+	
+\end{enumerate}
+
+\end{document}

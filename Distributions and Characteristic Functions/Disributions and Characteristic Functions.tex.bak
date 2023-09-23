@@ -1,0 +1,51 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top=1 in, bottom = 1 in, left = 1 in, right = 1 in ]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+
+\title{\textbf{Distributions and Characteristic Functions}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+
+\def\arraystretch{1.5}
+\setlength{\tabcolsep}{12pt}
+	
+\begin{longtable}{|c|c|c|}
+
+\hline
+
+Distribution & PMF/PDF & Characteristic Function \\
+
+\hline
+
+\hline
+
+Binomial$(n, p)$ &   
+		\begin{equation*}
+	 	P(X = x) =
+			\begin{cases}
+		 	{\dbinom{n}{x}} p^x q^x, & x = 0, 1, 2, \ldots, n ;  \\
+		 	0, & x \leq 0.
+			\end{cases}
+		\end{equation*}
+	& $\varphi_{X} (t) = (q + pe^{it})^n $
+
+
+
+\end{longtable}
+\end{center}
+
+\end{document}

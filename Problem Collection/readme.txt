@@ -1,0 +1,1 @@
+From Copy No. 3, RMO questions are not included in Problem Collection.

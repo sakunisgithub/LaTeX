@@ -1,0 +1,109 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top=1 in, bottom = 1 in, left = 1 in, right = 1 in ]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+
+\title{B. Stat UGA 2010}
+\author{Ananda Biswas}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{enumerate}
+
+
+	\item[15.] For any real number $x$, let $ \tan^{-1} (x) $ denote the unique real number $ \theta $ in $ (-\pi / 2, \pi / 2) $ such that $ \tan \theta = x $. Then 
+\begin{center}
+$ \lim\limits_{n \to \infty } \displaystyle{\sum\limits_{m = 1}^n} \tan^{-1} \dfrac{1}{1+m+m^2}  $
+\end{center}
+
+	\begin{enumerate}[(A)]
+		\item is equal to $ \pi / 2 $;
+		\item is equal to $ \pi / 4 $;
+		\item does not exist;
+		\item none of the above.
+	
+	\end{enumerate}
+
+\begin{flushleft}{\textbf{Answer ::}}\end{flushleft}
+Now, 
+	\begin{align*}
+	\tan^{-1} \dfrac{1}{1+m+m^2} &= \tan^{-1} \dfrac{(m+1)-m}{1 + m(m+1)} \\
+	&= \tan^{-1} (m+1) - \tan^{-1} m
+	\end{align*}	
+	\begin{align*}
+	\therefore \displaystyle{\sum\limits_{m = 1}^n} \tan^{-1} \dfrac{1}{1+m+m^2} &= \displaystyle{\sum\limits_{m = 1}^n} \big[ \tan^{-1} (m+1) - \tan^{-1} m \big] \\
+	&= \tan^{-1} (n+1) - \tan^{-1} 1  
+	\end{align*}
+	\begin{align*}
+	\therefore \lim\limits_{n \to \infty } \displaystyle{\sum\limits_{m = 1}^n} \tan^{-1} \dfrac{1}{1+m+m^2} &= \lim\limits_{n \to \infty } \big[ \tan^{-1} (n+1) - \tan^{-1} 1 \big] \\
+	&= \tan^{-1} (\infty) - \tan^{-1}	\\
+	&= \dfrac{\pi}{2} - \dfrac{\pi}{4} \\
+	&= \dfrac{\pi}{4}
+	\end{align*}
+\begin{flushright}
+\textbf{(B) is equal to $ \dfrac{\pi}{4} $}
+\end{flushright}
+\pagebreak
+
+
+
+
+
+
+	\item[22.] Suppose that $ \alpha $ and $ \beta $ are two distinct numbers in the interval $ (0,\pi) $. If \begin{center}
+	$ \sin \alpha + \sin \beta = \sqrt{3} (\cos \alpha - \cos \beta) $
+	\end{center} then the value of $ \sin 3\alpha + \sin 3\beta $ is
+	\begin{enumerate}[(A)]
+		\item 0;
+		\item $ 2\sin \dfrac{3(\alpha + \beta)}{2} $;
+		\item $ 2\cos \dfrac{3(\alpha - \beta)}{2} $
+		\item $ \cos \dfrac{3(\alpha - \beta)}{2} $.
+	\end{enumerate}
+	
+\begin{flushleft}{\textbf{Answer ::}}\end{flushleft}
+Given that, 
+$\sin \alpha + \sin \beta = \sqrt{3} (\cos \alpha - \cos \beta)$ 
+
+\begin{align*}
+\therefore 2 \sin \dfrac{\alpha + \beta}{2} \cos \dfrac{\alpha - \beta}{2} &= \sqrt{3} \cdot 2 \sin \dfrac{\alpha + \beta}{2} \sin \dfrac{\beta - \alpha}{2}\\ \\
+or, \cos \dfrac{\beta - \alpha}{2} &= \sqrt{3} \cdot \sin \dfrac{\beta - \alpha}{2} \\ \\
+or, \tan \dfrac{\beta - \alpha}{2} &= \dfrac{1}{\sqrt{3}} \\ \\
+or, \tan \dfrac{\beta - \alpha}{2} &= \tan \dfrac{\pi}{6}\\ \\
+\therefore \dfrac{\beta - \alpha}{2} &= \dfrac{\pi}{6} \Rightarrow \beta - \alpha = \dfrac{\pi}{3}
+\end{align*}
+
+Now,
+\begin{align*}
+\sin 3\alpha + \sin 3\beta &= 2 \sin \dfrac{3(\alpha + \beta)}{2} \cdot \cos \dfrac{3(\alpha - \beta)}{2} \\
+&= \quad 2 \sin \dfrac{3(\alpha + \beta)}{2} \cdot \cos \left( \dfrac{3}{2}\cdot\dfrac{\pi}{3}\right) \big[\because \cos a = \cos -a\big] \\
+&= 2 \sin \dfrac{3(\alpha + \beta)}{2} \cdot \cos \dfrac{\pi}{2}\\
+&=0 \quad \Big[\because \cos \dfrac{\pi}{2}= 0 \Big]
+\end{align*}
+
+\begin{flushright}
+\textbf{(A) 0}
+\end{flushright}
+ 
+
+
+
+
+
+	
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+\end{document}

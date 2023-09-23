@@ -1,0 +1,50 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top=1 in, bottom = 1 in, left = 1 in, right = 1 in ]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+
+\title{B. Math UGA 2010}
+\author{Ananda Biswas}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+	\item[8.] The roots of the equation $ x^4 + x^2 = 1 $ are
+	\begin{enumerate}[(A)]
+		\item all real and positive;
+		\item never real;
+		\item 2 positive and 2 negative;
+		\item 1 positive, 1 negative and 2 non-real.
+	
+	\end{enumerate}
+\begin{flushleft}
+\textbf{Answer :}
+\end{flushleft}
+Clearly, for $ x \leq -1 $ and $ x \geq 1 $ the given equation will not have any solution. 
+
+The equation will have solutions only when $ -1 < x < 1 $.
+
+Let $ x^2 = t $ where $ t \in (0,1) $
+
+Then, $ t^2 + t - 1 = 0 $ $ \quad $ $ \therefore t = \dfrac{-1 \pm \sqrt{5}}{2} $
+
+When $ x^2 = \dfrac{-1 - \sqrt{5}}{2} < 0 $, we shall have 2 non-real roots of the given equation.
+
+Now, $ \sqrt{5} > 2 $.  So, $ -1 + \sqrt{5} > 0 $ $ \quad $ $ \therefore \dfrac{-1 + \sqrt{5}}{2} > 0  $
+
+When $ x^2 = \dfrac{-1 + \sqrt{5}}{2} $, we shall have $ x = \pm \sqrt{\dfrac{-1 + \sqrt{5}}{2}} $ 
+
+\begin{flushright}
+\textbf{(D) 1 positive, 1 negative and 2 non-real}
+\end{flushright}
+
+
+\end{enumerate}
+
+\end{document}
