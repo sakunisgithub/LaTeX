@@ -1045,6 +1045,38 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 %105
 	\item If $x^2 + y^2 + z^2 = xy + yz + zx$, prove that, $\dfrac{x^2}{yz} + \dfrac{y^2}{zx} + \dfrac{z^2}{xy} = 3$.
 	
+%106
+	\item If $2s = a+b+c$, prove that, $(s-a)^3 + (s-b)^3 + 3(s-a)(s-b)c = c^3$.
+	
+%107
+	\item If $2s = a+b+c$, prove that, $\dfrac{1}{s-a} + \dfrac{1}{s-b} + \dfrac{1}{s-c} - \dfrac{1}{s} = \dfrac{abc}{s(s-a)(s-b)(s-c)}$.
+	
+%108
+	\item If $(a+b)^\frac{1}{3} + (b+c)^\frac{1}{3} + (c+a)^\frac{1}{3} = 0$, show that, $(a+b+c)^3 = 9(a^3 + b^3 + c^3)$.
+	
+%109
+	\item If $\dfrac{1}{y} - \dfrac{1}{x} \propto \dfrac{1}{x-y}$, show that, $3x + y \propto \sqrt{xy}$.
+	
+%110
+	\item If $2x^2 + 3y^2 \propto xy$, prove that, $9x^4 + 4y^4 \propto x^2y^2$.
+	
+%111
+	\item If $2x + 3y \propto \sqrt{xy}$, prove that, $x \propto y$.
+	
+%112
+	\item If $\dfrac{1}{x} + \dfrac{1}{y} \propto \dfrac{1}{x+y}$, prove that, $(x^2 + y^2) \propto xy$.
+	
+%113
+	\item If $\dfrac{1}{x} - \dfrac{1}{y} \propto \dfrac{1}{x-y}$, prove that, $(x^2 + y^2) \propto xy$ and $x \propto y$.
+	
+%114
+	\item If $\left( x^3 - \dfrac{1}{y^3} \right) \propto \left( x^3 + \dfrac{1}{y^3} \right)$, prove that, $x \propto \dfrac{1}{y}$.
+	
+%115
+	\item $x \propto (y+z)$	, $y \propto (z+x)$, $z \propto (x+y)$ \textbengali{এবং} $a$, $b$, $c$ \textbengali{যথাক্রমে তিনটি ভেদের ধ্রুবক হলে দেখাও যে,} $ab+bc+ca+2abc = 1$.
+	
+%116
+	\item If $(a+b+c) \propto (a+b-c)$ and $$
 \end{enumerate}
 
 

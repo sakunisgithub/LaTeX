@@ -5,8 +5,8 @@
 \contentsline {section}{\numberline {4}Factorization}{18}{section.4}%
 \contentsline {section}{\numberline {5}Construction}{19}{section.5}%
 \contentsline {section}{\numberline {6}Indices}{20}{section.6}%
-\contentsline {section}{\numberline {7}Trigonometry}{20}{section.7}%
+\contentsline {section}{\numberline {7}Trigonometry}{21}{section.7}%
 \contentsline {section}{\numberline {8}Functional Equations}{23}{section.8}%
 \contentsline {section}{\numberline {9}System of Equations}{23}{section.9}%
 \contentsline {section}{\numberline {10}Coordinate Geometry}{23}{section.10}%
-\contentsline {section}{\numberline {11}Mensuration}{23}{section.11}%
+\contentsline {section}{\numberline {11}Mensuration}{24}{section.11}%
