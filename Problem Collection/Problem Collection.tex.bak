@@ -1076,7 +1076,17 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	\item $x \propto (y+z)$	, $y \propto (z+x)$, $z \propto (x+y)$ \textbengali{এবং} $a$, $b$, $c$ \textbengali{যথাক্রমে তিনটি ভেদের ধ্রুবক হলে দেখাও যে,} $ab+bc+ca+2abc = 1$.
 	
 %116
-	\item If $(a+b+c) \propto (a+b-c)$ and $$
+	\item If $(a+b+c) \propto (a+b-c)$ and $(a^2 + b^2 + c^2) \propto (a^2 + b^2 - c^2)$, prove that, $a \propto b$ and $b \propto c$.
+	
+%117
+	\item \textbengali{যদি} $r_1$, $r_2$, $r_3$ \textbengali{ব্যাসার্ধবিশিষ্ট বৃত্তগুলির কেন্দ্রে যথাক্রমে} $l_1$, $l_2$, $l_3$ \textbengali{দৈর্ঘ্যের বৃত্তচাপগুলির দ্বারা উৎপন্ন কোণগুলির বৃত্তীয় মানগুলি} $a_1$, $a_2$, $a_3$ \textbengali{হয়, তবে প্রমাণ কর যে,} $\dfrac{1}{n} \left( a_1 r_1 + a_2 r_2 + a_3 r_3 \right)$ \textbengali{ব্যাসার্ধবিশিষ্ট কোনো বৃত্তের কেন্দ্রে} $\left( l_1 + l_2 + l_3 \right)$ \textbengali{দৈর্ঘ্যবিশিষ্ট কোনো বৃত্তচাপ যে কোণ উৎপন্ন করে তার বৃত্তীয় পরিমাপ হবে} $n$ \textbengali{রেডিয়ান।} 
+	
+%118
+	\item \textbengali{যদি} $r_1$, $r_2$, $r_3$ \textbengali{ব্যাসার্ধবিশিষ্ট বৃত্তগুলির কেন্দ্রে যথাক্রমে} $l_1$, $l_2$, $l_3$ \textbengali{দৈর্ঘ্যের বৃত্তচাপগুলির দ্বারা উৎপন্ন কোণগুলির বৃত্তীয় মানগুলি} $\theta_1$, $\theta_2$, $\theta_3$ \textbengali{হয়, তবে প্রমাণ কর যে,} $\left( r_1 + r_2 + r_3 \right)$ \textbengali{ব্যাসার্ধবিশিষ্ট কোনো বৃত্তের কেন্দ্রে} $\left( l_1 + l_2 + l_3 \right)$ \textbengali{দৈর্ঘ্যবিশিষ্ট কোনো বৃত্তচাপ যে কোণ উৎপন্ন করে তার বৃত্তীয় পরিমাপ হবে} $\left( \dfrac{r_1 \theta_1 + r_2 \theta_2 + r_3 \theta_3}{r_1 + r_2 + r_3} \right)$ \textbengali{রেডিয়ান।} 
+	
+%119
+	\item \textbengali{কোনো দ্বিঘাত সমীকরণ} $ax^2 + bx + c = 0[a \neq 0]$ \textbengali{-এ} $b^2 = 9ac$ \textbengali{হলে সমীরণটির বীজ দ্বয়ের মধ্যে সম্পরক}
+	
 \end{enumerate}
 
 
@@ -1455,6 +1465,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %39
 	\item If $a \sin^2 \theta + b \cos^2 \theta = c$, $b \sin^2 \phi + a \cos^2 \phi = d$ and $a \tan \theta = b \tan \phi$, show that, $\dfrac{1}{a} + \dfrac{1}{b} = \dfrac{1}{c} + \dfrac{1}{d}$.
+	
+%40
+	\item If $a\sin \theta + b \cos \theta = a \, \mathrm{cosec}\, \theta + b \sec \theta$, show that, L.H.S. = R.H.S. = $\left( a^{\frac{2}{3}} - b^{\frac{2}{3}} \right) \sqrt{a^{\frac{2}{3}} + b^{\frac{2}{3}}}$.
 	
 \end{enumerate}
 
