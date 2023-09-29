@@ -1,12 +1,12 @@
 \selectlanguage *{english}
 \contentsline {section}{\numberline {1}Logarithm}{2}{section.1}%
 \contentsline {section}{\numberline {2}Geometry}{5}{section.2}%
-\contentsline {section}{\numberline {3}Miscellaneous}{11}{section.3}%
-\contentsline {section}{\numberline {4}Factorization}{18}{section.4}%
-\contentsline {section}{\numberline {5}Construction}{19}{section.5}%
-\contentsline {section}{\numberline {6}Indices}{20}{section.6}%
-\contentsline {section}{\numberline {7}Trigonometry}{21}{section.7}%
-\contentsline {section}{\numberline {8}Functional Equations}{23}{section.8}%
-\contentsline {section}{\numberline {9}System of Equations}{23}{section.9}%
+\contentsline {section}{\numberline {3}Miscellaneous}{12}{section.3}%
+\contentsline {section}{\numberline {4}Factorization}{19}{section.4}%
+\contentsline {section}{\numberline {5}Construction}{20}{section.5}%
+\contentsline {section}{\numberline {6}Indices}{21}{section.6}%
+\contentsline {section}{\numberline {7}Trigonometry}{22}{section.7}%
+\contentsline {section}{\numberline {8}Functional Equations}{24}{section.8}%
+\contentsline {section}{\numberline {9}System of Equations}{24}{section.9}%
 \contentsline {section}{\numberline {10}Coordinate Geometry}{24}{section.10}%
-\contentsline {section}{\numberline {11}Mensuration}{24}{section.11}%
+\contentsline {section}{\numberline {11}Mensuration}{25}{section.11}%

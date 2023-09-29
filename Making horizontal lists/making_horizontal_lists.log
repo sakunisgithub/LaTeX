@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  22 JUL 2023 12:57
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  27 SEP 2023 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -488,33 +488,144 @@ ons.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
 ))
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontaweso
+me5.sty
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontaweso
+me5-utex-helper.sty
+Package: fontawesome5-utex-helper 2022/05/02 v5.15.4 uTeX helper for fontawesom
+e5
+LaTeX Font Info:    Trying to load font information for TU+fontawesomefree on i
+nput line 69.
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\tufontawe
+somefree.fd)
+LaTeX Font Info:    Trying to load font information for TU+fontawesomebrands on
+ input line 70.
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\tufontawe
+somebrands.fd)))
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/utfsym\utfsym.sty
+Package: utfsym 2022/04/17 Use TikZ to support icons from Unicode blocks
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz
+.sty
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box73
+)
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen259
+\pgf@nodesepend=\dimen260
+)
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.s
+ty
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex))
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor
+.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex)
+\pgffor@iter=\dimen261
+\pgffor@skip=\dimen262
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+))
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count308
+\pgfplotmarksize=\dimen263
+)
+\tikz@lastx=\dimen264
+\tikz@lasty=\dimen265
+\tikz@lastxsaved=\dimen266
+\tikz@lastysaved=\dimen267
+\tikz@lastmovetox=\dimen268
+\tikz@lastmovetoy=\dimen269
+\tikzleveldistance=\dimen270
+\tikzsiblingdistance=\dimen271
+\tikz@figbox=\box74
+\tikz@figbox@bg=\box75
+\tikz@tempbox=\box76
+\tikz@tempbox@bg=\box77
+\tikztreelevel=\count309
+\tikznumberofchildren=\count310
+\tikznumberofcurrentchild=\count311
+\tikz@fig@count=\count312
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+ematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count313
+\pgfmatrixcurrentcolumn=\count314
+\pgf@matrix@numberofcolumns=\count315
+)
+\tikz@expandcount=\count316
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/newunicodechar\newunic
+odechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+))
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/listing\listing.sty
+Package: listing 1999/05/25
+
+Package `listing', V1.2, <1999/05/25>
+\c@listing=\count317
+)
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 5.
+h' as default language. on input line 8.
  (making_horizontal_lists.aux)
 \openout1 = `making_horizontal_lists.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
 .
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
 
 Package exsheets Info: Loading custom configurations file
 (exsheets)             `exsheets_configurations.cfg'.
@@ -530,26 +641,32 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 5.
+or `english'. on input line 8.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 15.
+Package tasks Warning: The width of `label-width' is too small on line 18.
 (tasks)                Please set it at least to 11.1pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 15.
+Package tasks Warning: The width of `label-width' is too small on line 18.
 (tasks)                Please set it at least to 11.1pt.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+
+ []
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/utfsym\usym261B.tikz)
 [1
 
 ] (making_horizontal_lists.aux) ) 
 Here is how much of TeX's memory you used:
- 12143 strings out of 411566
- 268536 string characters out of 2819980
- 1846973 words of memory out of 3000000
- 32107 multiletter control sequences out of 15000+600000
- 512401 words of font info for 34 fonts, out of 8000000 for 9000
+ 17007 strings out of 411566
+ 365940 string characters out of 2819980
+ 1847973 words of memory out of 3000000
+ 36897 multiletter control sequences out of 15000+600000
+ 512425 words of font info for 37 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 91i,5n,94p,500b,814s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 91i,5n,94p,490b,814s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 Output written on making_horizontal_lists.pdf (1 page).
