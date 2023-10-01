@@ -1,1 +1,1 @@
-From Copy No. 3, RMO questions are not included in Problem Collection.
+From Copy No. 3, PRMO, RMO questions are not included in Problem Collection.
