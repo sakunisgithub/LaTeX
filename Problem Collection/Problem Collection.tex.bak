@@ -686,6 +686,24 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 		
 			\item $2m_c^2 = a^2 + b^2 - \dfrac{c^2}{2}$
 		\end{enumerate}
+		
+%105
+	\item Prove that, $m_a ^2 + m_b^2 + m_c^2 = \dfrac{3}{4}\left( a^2 + b^2 + c^2 \right)$.
+	
+%106
+	\item Prove that, $GA^2 + GB^2 + GC^2 = \dfrac{1}{3} \left(a^2 + b^2 + c^2 \right)$ where $G$ is the centroid of any triangle $\bigtriangleup ABC$.
+	
+%107
+	\item If $P$ is any point in the plane of $\bigtriangleup ABC$, then $PA^2 + PB^2 + PC^2 = GA^2 + GB^2 + GC^2 + 3PG^2$, where $G$ is the centroid of $\bigtriangleup ABC$.
+	
+%108
+	\item If $G$ is the centroid, $R$ is the circumradius and $S$ is the circumcenter of $\bigtriangleup ABC$, show that, $$SG^2 = R^2 - \dfrac{1}{9} \left( a^2 + b^2 + c^2 \right).$$
+	
+%109
+	\item The incenter $I$ and the excenter $I_a$ opposite to $A$ divide the bisector $AU$ harmonically, where $U$ is the point of intersection of the internal bisector of $\angle A$ and $BC$.
+	
+%110
+	\item In a quadrilateral $ABCD$, the diagonals $AD$ and $BC$ meet at $O$. If it is given that $OA = OC$ and $OB = OD$, prove that, $BC = AD$ and that $\angle ACB = \angle CAD$.
 \end{enumerate}
 		     
 		  
