@@ -704,6 +704,12 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %110
 	\item In a quadrilateral $ABCD$, the diagonals $AD$ and $BC$ meet at $O$. If it is given that $OA = OC$ and $OB = OD$, prove that, $BC = AD$ and that $\angle ACB = \angle CAD$.
+	
+%111
+	\item In $\bigtriangleup ABC$, $\angle A = 60^{\circ}$, $AB > AC$, $O$ is the circumcenter and $H$ is the orthocenter. $M$, $N$ are points on the line segments $BH$ and $HF$ respectively such that $BM = CN$. Determine the value of $\dfrac{MH + NH}{OH}$.
+
+%112
+	\item In the acute angled triangle $ABC$, let $D$, $E$, $F$ be the feet of the altitudes through $A$, $B$, $C$ respectively and $H$ be the orthocenter of $\bigtriangleup ABC$. Prove that, $\dfrac{AH}{AD} + \dfrac{BH}{BE} + \dfrac{CH}{CF} = 2$.
 \end{enumerate}
 		     
 		  
@@ -1175,6 +1181,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 		\item \textbengali{সবচেয়ে কম কতগুলি বগি যোগ করলে চলতে অক্ষম হবে ?}
 	
 	\end{enumerate}
+	
+%134
+	\item If $(x+z) :(y+z) = \left(\dfrac{x}{y} +2 \right) : \left( \dfrac{y}{x} + 2 \right)$, show that, $(x-z) : (y - z) = x^2 : y^2$.
 \end{enumerate}
 
 
@@ -1562,6 +1571,12 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %42
 	\item If $\left( 1 + 4x^2 \right) \cos A = 4x$, show that, $\mathrm{cosec} \, A + \cot A = \dfrac{1+2x}{1-2x}$.
+	
+%43
+	\item If $2y \cos \theta = x \sin \theta$ and $2x \sec \theta - y \mathrm{cosec} \, \theta = 3$, show that, $x^2 + 4y^2 = 4$.
+	
+%44
+	\item Eliminate $\alpha$ and 
 	
 \end{enumerate}
 
