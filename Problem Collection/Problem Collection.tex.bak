@@ -1184,6 +1184,18 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %134
 	\item If $(x+z) :(y+z) = \left(\dfrac{x}{y} +2 \right) : \left( \dfrac{y}{x} + 2 \right)$, show that, $(x-z) : (y - z) = x^2 : y^2$.
+	
+%135
+	\item \textbengali{কোনো পূর্ণবর্গ সংখ্যার ভাগ প্রক্রিয়ায় বর্গমূল করার সময়} $2$ \textbengali{গুণ করতে হয় কেন ?}
+	
+%136
+	\item If $x^2 + y^2 + z^2 = 25$, $a^2 + b^2 + c^2 = 36$ and $ax + by + cz = 30$, find the value of $\dfrac{x+y+z}{a+b+c}$.
+	
+%137
+	\item If $x = cy + bz$, $y = cx + az$ and $z = bx + ay$, prove that, $a^2 + b^2 + c^2 + 2abc = 1$.
+	
+%138
+	\item If $x + y + xy = 5$, $y + z + yz = 7$ and $z + x + zx = 11$, prove that, $(1+x)^2(1+y)^2(1+z)^2 = 576$.
 \end{enumerate}
 
 
@@ -1576,7 +1588,15 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	\item If $2y \cos \theta = x \sin \theta$ and $2x \sec \theta - y \mathrm{cosec} \, \theta = 3$, show that, $x^2 + 4y^2 = 4$.
 	
 %44
-	\item Eliminate $\alpha$ and 
+	\item Eliminate $\alpha$ and $\beta$ from the following equations.
+	\begin{align*}
+	a \sin \alpha &= b \sin \beta \\
+	a \cos^2 \alpha + b \cos^2 \beta &= 1 \\
+	a \cot^2 \alpha + b \cot^2 \beta &= 1.	
+	\end{align*}
+
+%45
+	\item State TRUE or FALSE : $\dfrac{\sin \theta \tan \theta}{1 - \cos \theta} < 2$.
 	
 \end{enumerate}
 
