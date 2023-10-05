@@ -4,9 +4,9 @@
 \contentsline {section}{\numberline {3}Miscellaneous}{12}{section.3}%
 \contentsline {section}{\numberline {4}Factorization}{20}{section.4}%
 \contentsline {section}{\numberline {5}Construction}{21}{section.5}%
-\contentsline {section}{\numberline {6}Indices}{22}{section.6}%
+\contentsline {section}{\numberline {6}Indices}{23}{section.6}%
 \contentsline {section}{\numberline {7}Trigonometry}{23}{section.7}%
-\contentsline {section}{\numberline {8}Functional Equations}{25}{section.8}%
+\contentsline {section}{\numberline {8}Functional Equations}{26}{section.8}%
 \contentsline {section}{\numberline {9}System of Equations}{26}{section.9}%
 \contentsline {section}{\numberline {10}Coordinate Geometry}{26}{section.10}%
-\contentsline {section}{\numberline {11}Mensuration}{26}{section.11}%
+\contentsline {section}{\numberline {11}Mensuration}{27}{section.11}%

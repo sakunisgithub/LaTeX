@@ -1196,6 +1196,15 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %138
 	\item If $x + y + xy = 5$, $y + z + yz = 7$ and $z + x + zx = 11$, prove that, $(1+x)^2(1+y)^2(1+z)^2 = 576$.
+	
+%139
+	\item If $2x = a + \sqrt{\dfrac{4b^3 - a^3}{3a}}$ and $2y = a - \sqrt{\dfrac{4b^3 - a^3}{3a}}$, prove that, $x^3 + y^3 = b^3$.
+	
+%140
+	\item If $\dfrac{a^2 - bc}{a^2 + bc} + \dfrac{b^2 - ca}{b^2 ++ ca} + \dfrac{c^2 - ab}{c^2 + ab} = 1$, prove that, $\dfrac{a^2}{a^2 + bc} + \dfrac{b^2}{b^2 + ca} + \dfrac{c^2}{c^2 + ab} = 2$.
+	
+%141
+	\item \textbengali{সরল করঃ} $\dfrac{2 + \sqrt{3}}{\sqrt{2} + \sqrt{2 + \sqrt{3}}} + \dfrac{2 - \sqrt{3}}{\sqrt{2} - \sqrt{2 - \sqrt{3}}}$.
 \end{enumerate}
 
 
@@ -1640,6 +1649,12 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %07
 	\item Solve :- $\dfrac{\sqrt[9]{24+x}}{x} + \dfrac{\sqrt[9]{24+x}}{24} = \dfrac{128}{3} \sqrt[9]{x}$.
+	
+%08
+	\item Find the value of $a$ and $x$ in the following equation. $$a^x + x^a = 321.$$
+	
+%09
+	\item $x + y = 2$, $ \dfrac{1}{x} + \dfrac{1}{y} = 2$ \textbengali{সমীকরণ দুটিকে অপনয়ন পদ্ধতিতে সমাধান কর।}
 
 \end{enumerate}
 
