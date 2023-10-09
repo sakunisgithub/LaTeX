@@ -716,6 +716,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %114
 	\item \textbengali{একটি সমকোণী ত্রিভুজের একটি সূক্ষ্মকোণ} $15^{\circ}$ \textbengali{ও অতিভুজ} $x$. \textbengali{ত্রিভুজটির ক্ষেত্রফল কত ?}
+	
+%115
+	\item $P$ is a point on the minor arc $AB$ of the circumcircle of the square $ABC$. Prove that, $\dfrac{PA + PC}{PB+PD} = \dfrac{PD}{PC}$.
 \end{enumerate}
 		     
 		  
@@ -1238,6 +1241,15 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %150
 	\item If $\dfrac{a+b}{c} + \dfrac{b-c}{a} + \dfrac{c-a}{b} = 1$ and $(a+b-c) \neq 0$, prove that, $\dfrac{1}{a} + \dfrac{1}{c} = \dfrac{1}{b}$.
+	
+%151
+	\item If $\dfrac{x+y}{x-y} = \dfrac{u}{v}$, prove that, $\dfrac{x^2 + xy}{xy - y^2} = \dfrac{u^2 - uv}{uv - v^2}$.
+	
+%152
+	\item If $x+y+z = xyz$, prove that, $\dfrac{y+z}{1-yz} + \dfrac{z+x}{1-zx} + \dfrac{x+y}{1-xy} = \dfrac{y+z}{1-yz} \cdot \dfrac{z+x}{1-zx} \cdot \dfrac{x+y}{1-xy}$.
+	
+%153
+	\item If $ab+bc+ca = abc$, prove that, $\dfrac{b+c}{bc(a-1)} + \dfrac{c+a}{ca(b-1)} + \dfrac{a+b}{ab(c-1)} = 1$.
 \end{enumerate}
 
 
@@ -1647,7 +1659,10 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	\item If $\tan \alpha = \dfrac{\sin \beta - \cos \beta}{\sin \beta + \cos \beta}$, prove that, $\sin \beta + \cos \beta = \sqrt{2} \cos \alpha$.
 	
 %47
-	\item
+	\item If $\sin \theta + \tan \theta = a$ and $\cos \theta + \cot \theta = b$, prove that, $\dfrac{1}{(1+a)^2} + \dfrac{1}{(1+b)^2} = \dfrac{1}{(1-ab)^2}$.
+	
+%48
+	\item \textbengali{একটি স্তম্ভের গোড়া থেকে কিছু দূরে একটি বিন্দু থেকে ওই স্তম্ভের উন্নতি কোণ} $\theta$ \textbengali{যেখানে} $\tan \theta = \dfrac{3}{4}$. \textbengali{ওই বিন্দু থেকে} $192$m. \textbengali{পিছিয়ে যাওয়ায় উন্নতি কোণ} $\phi$ \textbengali{হল যেখানে} $\tan \theta = \dfrac{5}{12}$. \textbengali{স্তম্ভটির উচ্চতা নির্ণয় কর।}
 	
 	
 \end{enumerate}
