@@ -1450,6 +1450,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %25
 	\item \textbengali{কোনো ত্রিভুজের শীর্ষকোণ} $60^{\circ}$, \textbengali{শীর্ষকোণ সংলগ্ন বাহুদ্বয়ের অনুপাত} $3:2$ \textbengali{এবং ভূমির দৈর্ঘ্য} $5 c.m.$ \textbengali{হলে ত্রিভুজটি অঙ্কন কর।}
+	
+%26
+	\item Through a given point outside a given circle draw a secant so that the chord determined by it subtends an angle at the center equal to the acute angle between the secant and the diameter through the given point.
 
 \end{enumerate}
 
@@ -1662,7 +1665,7 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	\item If $\sin \theta + \tan \theta = a$ and $\cos \theta + \cot \theta = b$, prove that, $\dfrac{1}{(1+a)^2} + \dfrac{1}{(1+b)^2} = \dfrac{1}{(1-ab)^2}$.
 	
 %48
-	\item \textbengali{একটি স্তম্ভের গোড়া থেকে কিছু দূরে একটি বিন্দু থেকে ওই স্তম্ভের উন্নতি কোণ} $\theta$ \textbengali{যেখানে} $\tan \theta = \dfrac{3}{4}$. \textbengali{ওই বিন্দু থেকে} $192$m. \textbengali{পিছিয়ে যাওয়ায় উন্নতি কোণ} $\phi$ \textbengali{হল যেখানে} $\tan \theta = \dfrac{5}{12}$. \textbengali{স্তম্ভটির উচ্চতা নির্ণয় কর।}
+	\item \textbengali{একটি স্তম্ভের গোড়া থেকে কিছু দূরে একটি বিন্দু থেকে ওই স্তম্ভের উন্নতি কোণ} $\theta$ \textbengali{যেখানে} $\tan \theta = \dfrac{3}{4}$. \textbengali{ওই বিন্দু থেকে} $192$ m. \textbengali{পিছিয়ে যাওয়ায় উন্নতি কোণ} $\phi$ \textbengali{হল যেখানে} $\tan \theta = \dfrac{5}{12}$. \textbengali{স্তম্ভটির উচ্চতা নির্ণয় কর।}
 	
 	
 \end{enumerate}
@@ -1747,6 +1750,11 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 
 %01
 	\item \textbengali{একটি বর্গাকার কাগজকে অর একটি কৌণিক বিন্দু থেকে বিপরীত বাহু পর্যন্ত একটি রেখাংশ বরাবর দুটি ভাগে ভাগ করা হল। এই খন্ডদুটির ক্ষেত্রফলের অনুপাত} $3:1$ \textbengali{হলে ছোট খণ্ডটি এবং মূল কাগজটির পরিসীমার অনুপাত কী হবে?}
+	
+%02
+`	\item $3$ \textbengali{টি লম্ব বৃত্তাকার চোঙের প্রত্যেকটির উচ্চতা} $20\,c.m.$ \textbengali{এবং ব্যাস} $12\,c.m.$ \textbengali{যদি চোঙ তিনটি পরস্পরকে স্পর্শ করে থাকে তবে তাদের দ্বারা সীমাবদ্ধ অংশের আয়তন নির্ণয় কর।}
+
+
 \end{enumerate}
 
 

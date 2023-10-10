@@ -7,6 +7,6 @@
 \contentsline {section}{\numberline {6}Indices}{23}{section.6}%
 \contentsline {section}{\numberline {7}Trigonometry}{24}{section.7}%
 \contentsline {section}{\numberline {8}Functional Equations}{26}{section.8}%
-\contentsline {section}{\numberline {9}System of Equations}{26}{section.9}%
+\contentsline {section}{\numberline {9}System of Equations}{27}{section.9}%
 \contentsline {section}{\numberline {10}Coordinate Geometry}{27}{section.10}%
 \contentsline {section}{\numberline {11}Mensuration}{27}{section.11}%
