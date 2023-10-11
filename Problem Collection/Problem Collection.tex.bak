@@ -1250,6 +1250,12 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %153
 	\item If $ab+bc+ca = abc$, prove that, $\dfrac{b+c}{bc(a-1)} + \dfrac{c+a}{ca(b-1)} + \dfrac{a+b}{ab(c-1)} = 1$.
+
+%154
+	\item \textbengali{যদি} $ax^2 + bx + c = 0$ \textbengali{সমীকরণের একটি বীজ অপরটির বর্গ হয়, তবে প্রমাণ কর যে,} $b^3 + ac^2 + a^2 c = 3abc$.
+	
+%155
+	\item $ax^2 + bx + c = 0$ \textbengali{সমীকরণের বীজদ্বয়} $\alpha$ \textbengali{ও} $\beta$ \textbengali{হলে, প্রমাণ কর যে,} $a(x-\alpha) (x-\beta) = ax^2 + bx + c$.
 \end{enumerate}
 
 
@@ -1360,6 +1366,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %33
 	\item $ (x^2 - 3)(x + 1)^2 + x^2 $.
+	
+%34
+	\item $ x^4 - 7x - 12 $.
 
 
 
@@ -1667,6 +1676,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 %48
 	\item \textbengali{একটি স্তম্ভের গোড়া থেকে কিছু দূরে একটি বিন্দু থেকে ওই স্তম্ভের উন্নতি কোণ} $\theta$ \textbengali{যেখানে} $\tan \theta = \dfrac{3}{4}$. \textbengali{ওই বিন্দু থেকে} $192$ m. \textbengali{পিছিয়ে যাওয়ায় উন্নতি কোণ} $\phi$ \textbengali{হল যেখানে} $\tan \theta = \dfrac{5}{12}$. \textbengali{স্তম্ভটির উচ্চতা নির্ণয় কর।}
 	
+%49	
+	\item If $\tan \theta = \dfrac{2n}{n^2 - 1}$, prove that, $(n+2)\sin \theta + (2n - 1)\cos \theta = (2n+1)$.
+	
 	
 \end{enumerate}
 
@@ -1716,6 +1728,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %09
 	\item $x + y = 2$, $ \dfrac{1}{x} + \dfrac{1}{y} = 2$ \textbengali{সমীকরণ দুটিকে অপনয়ন পদ্ধতিতে সমাধান কর।}
+	
+%10
+	\item Solve for $x$ : $(x-2)(x-4) = \dfrac{45}{22^2}$.
 
 \end{enumerate}
 
@@ -1752,8 +1767,13 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	\item \textbengali{একটি বর্গাকার কাগজকে অর একটি কৌণিক বিন্দু থেকে বিপরীত বাহু পর্যন্ত একটি রেখাংশ বরাবর দুটি ভাগে ভাগ করা হল। এই খন্ডদুটির ক্ষেত্রফলের অনুপাত} $3:1$ \textbengali{হলে ছোট খণ্ডটি এবং মূল কাগজটির পরিসীমার অনুপাত কী হবে?}
 	
 %02
-`	\item $3$ \textbengali{টি লম্ব বৃত্তাকার চোঙের প্রত্যেকটির উচ্চতা} $20\,c.m.$ \textbengali{এবং ব্যাস} $12\,c.m.$ \textbengali{যদি চোঙ তিনটি পরস্পরকে স্পর্শ করে থাকে তবে তাদের দ্বারা সীমাবদ্ধ অংশের আয়তন নির্ণয় কর।}
+	\item $3$ \textbengali{টি লম্ব বৃত্তাকার চোঙের প্রত্যেকটির উচ্চতা} $20\,c.m.$ \textbengali{এবং ব্যাস} $12\,c.m.$ \textbengali{যদি চোঙ তিনটি পরস্পরকে স্পর্শ করে থাকে তবে তাদের দ্বারা সীমাবদ্ধ অংশের আয়তন নির্ণয় কর।}
 
+%03
+	\item $4\,c.m.$ \textbengali{ব্যাসার্ধবিশিষ্ট একটি চোঙাকৃতি জার অর্ধেক জলপূর্ণ ছিল। একটি} $3\,c.m.$ \textbengali{ব্যাসার্ধবিশিষ্ট গোলাকৃতি মার্বেল জারের মধ্যে ফেলা হল এবং দেখা গেল যে মার্বেলটি ঠিক সম্পূর্ণভাবে জলে নিমজ্জিত রয়েছে। জারের উচ্চতা নির্ণয় কর।}
+	
+%04
+	\item $5\,c.m.$ \textbengali{ব্যাসার্ধ ও} $12\,c.m.$ \textbengali{উচ্চতাবিশিষ্ট একটি শঙ্কু আকৃতির পাত্র দিয়ে একটি গোলককে ঠিক ঢেকে দেওয়া যায়। গোলকটির ব্যাসার্ধ নির্ণয় কর।}
 
 \end{enumerate}
 
