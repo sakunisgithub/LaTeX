@@ -1256,6 +1256,22 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %155
 	\item $ax^2 + bx + c = 0$ \textbengali{সমীকরণের বীজদ্বয়} $\alpha$ \textbengali{ও} $\beta$ \textbengali{হলে, প্রমাণ কর যে,} $a(x-\alpha) (x-\beta) = ax^2 + bx + c$.
+	
+%156
+	\item $x^2 - px + q = 0$ \textbengali{সমীকরণের বীজদ্বয়ের সমষ্টি তাদের অন্তরের তিনগুণ হলে দেখাও যে,} $2p^2 = 9q$.
+	
+%157
+	\item \textbengali{যদি} $x^2 - px + q = 0$ \textbengali{সমীকরণের বীজদ্বয়ের অন্তর} $1$ \textbengali{হয়, হবে দেখাও যে,} $p^2 + 4q^2 = (1+2q)^2$.
+		\begin{center}
+		\textbengali{অথবা}
+		\end{center}
+		\textbengali{যদি} $x^2 - px + q = 0$ \textbengali{সমীকরণের বীজদ্বয় দুটি ক্রমিক অখণ্ড সংখ্যা হয়,}  \textbengali{তবে দেখাও যে,} $p^2 + 4q^2 = (1+2q)^2$.
+		
+%158
+	\item $x^2 + px + q = 0$ \textbengali{সমীকরণের একটি বীজ অপরটির বর্গ। প্রমাণ কর যে,} $p^3 + q + q^2 = 3pq$.
+	
+%159
+	\item \textbengali{যদি} $ax^2 + bx + c = 0$ \textbengali{সমীকরণের বীজদ্বয়} $\alpha$ \textbengali{ও} $\beta$ \textbengali{হয়, তবে দেখাও যে,} $\dfrac{1}{a\alpha + b} + \dfrac{1}{a\beta + b} = \dfrac{b}{ac}$.
 \end{enumerate}
 
 
