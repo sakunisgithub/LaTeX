@@ -3,10 +3,10 @@
 \contentsline {section}{\numberline {2}Geometry}{5}{section.2}%
 \contentsline {section}{\numberline {3}Miscellaneous}{13}{section.3}%
 \contentsline {section}{\numberline {4}Factorization}{21}{section.4}%
-\contentsline {section}{\numberline {5}Construction}{22}{section.5}%
+\contentsline {section}{\numberline {5}Construction}{23}{section.5}%
 \contentsline {section}{\numberline {6}Indices}{24}{section.6}%
-\contentsline {section}{\numberline {7}Trigonometry}{24}{section.7}%
+\contentsline {section}{\numberline {7}Trigonometry}{25}{section.7}%
 \contentsline {section}{\numberline {8}Functional Equations}{27}{section.8}%
-\contentsline {section}{\numberline {9}System of Equations}{27}{section.9}%
+\contentsline {section}{\numberline {9}System of Equations}{28}{section.9}%
 \contentsline {section}{\numberline {10}Coordinate Geometry}{28}{section.10}%
 \contentsline {section}{\numberline {11}Mensuration}{28}{section.11}%
