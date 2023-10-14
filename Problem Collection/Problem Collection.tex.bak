@@ -1711,7 +1711,16 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	\item If $\tan \theta = \dfrac{2n}{n^2 - 1}$, prove that, $(n+2)\sin \theta + (2n - 1)\cos \theta = (2n+1)$.
 	
 %50
-	\item If $A + B = 45^{\circ}$, find the value of $n$ from the following relation $\prod_{i = 1^{\circ}}^{45^{\circ}} \left( 1 + \tan i \right) = 2^n$.
+	\item If $A + B = 45^{\circ}$, find the value of $n$ from the following relation $\displaystyle{\prod \limits_{i = 1^{\circ}}^{45^{\circ}} \left( 1 + \tan i \right) = 2^n}$.
+	
+%51
+	\item Find the minimum value of $2^{\sin^2 \theta} + 2^{\cos^2 \theta}$.
+	
+%52
+	\item Find the minimum value of $2^{\sin \theta} + 2^{\cos \theta}$.
+	
+%53
+	\item If $\dfrac{\cos 30^{\circ} - \sin 20^{\circ}}{\cos 40^{\circ} + \cos 20^{\circ}} = k \cos 40^{\circ} \cos 80^{\circ}$, find the value of $k$.
 	
 	
 \end{enumerate}
