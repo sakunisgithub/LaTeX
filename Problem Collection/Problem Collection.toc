@@ -8,6 +8,6 @@
 \contentsline {section}{\numberline {7}Trigonometry}{25}{section.7}%
 \contentsline {section}{\numberline {8}Functional Equations}{28}{section.8}%
 \contentsline {section}{\numberline {9}System of Equations}{28}{section.9}%
-\contentsline {section}{\numberline {10}Coordinate Geometry}{28}{section.10}%
+\contentsline {section}{\numberline {10}Coordinate Geometry}{29}{section.10}%
 \contentsline {section}{\numberline {11}Mensuration}{29}{section.11}%
 \contentsline {section}{\numberline {12}Inequality}{29}{section.12}%
