@@ -1844,7 +1844,7 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 \begin{enumerate}
 
 \item Prove that for any positive real number $a$, $b$, $c$; we have,
-$$\df$$
+$$\dfrac{1}{a+b} + \dfrac{1}{b+c} + \dfrac{1}{c+a} \geq \dfrac{9}{2(a+b+c)}$$.
 \end{enumerate}
 
 

@@ -12,6 +12,7 @@ def print_all_topics() :
     print("9. System of Equations")
     print("10. Coordinate Geometry")
     print("11. Mensuration")
+    print("12. Inequality")
 
 def add_inputs() :
     problem_no = int(input("Enter problem no = "))
@@ -109,6 +110,14 @@ def operate_csv(c1, topic, inputs) :
             print("\n\nDeatils added successfully !\n\n")
         elif c1 == 2 :
             print(mensuration.iloc[inputs-1])
+    elif topic == 12 :
+        inequality = pd.read_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\inequality.csv") 
+        if c1 == 1 :
+            inequality.loc[len(inequality)] = [inputs[0], inputs[1], inputs[2]]
+            inequality.to_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\inequality.csv", index=False) 
+            print("\n\nDeatils added successfully !\n\n")
+        elif c1 == 2 :
+            print(inequality.iloc[inputs-1])
     
 
 print("\n\n-----MENU-----\n\n")
