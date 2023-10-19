@@ -1898,7 +1898,15 @@ $$(a+2)(b+3)(c+6) \geq 48 \sqrt{abc}.$$
 	\item Prove that if $x + y + z = 1$, then $$8 \left( \dfrac{1}{2} - xy - yz - zx \right) \Bigg\{\dfrac{1}{(x+y)^2} + \dfrac{1}{(y+z)^2} + \dfrac{1}{(z+x)^2} \Bigg\} \geq 9.$$
 	
 %14
-	\item Let $a$
+	\item Let $a, b, c$ be positive real numbers. Prove that, $$\dfrac{(2a + b + c)^2}{2a^2 + (b+c)^2} + \dfrac{(2b + c + a)^2}{2b^2 + (c+a)^2} + \dfrac{(2c + a + b)^2}{2c^2 + (a+b)^2} \leq 8.$$
+	
+%15
+	\item Prove that, if $a_1, a_2, \ldots a_n$ are distinct positive real numbers and $a_1 + a_2 + \ldots + a_n = S$, then
+	$$\dfrac{S}{S - a_1} + \dfrac{S}{S - a_2} + \ldots + \dfrac{S}{S - a_n} > \dfrac{n^2}{n-1}.$$
+	
+%16
+	\item Find the minimum value of 
+	$$\dfrac{a_1}{1 + a_2 + a_3 + \ldots a_{2009}} + \dfrac{a_2}{1 + a_1 + a_3 + \ldots a_{2009}} + \dfrac{a_{2009}}{1 + a_1 + a_2 + \ldots a_{2009}}$$
 \end{enumerate}
 
 
