@@ -1843,8 +1843,42 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 
 \begin{enumerate}
 
-\item Prove that for any positive real number $a$, $b$, $c$; we have,
-$$\dfrac{1}{a+b} + \dfrac{1}{b+c} + \dfrac{1}{c+a} \geq \dfrac{9}{2(a+b+c)}$$.
+%01
+	\item Prove that for any positive real numbers $a$, $b$, $c$; we have,
+$$\dfrac{1}{a+b} + \dfrac{1}{b+c} + \dfrac{1}{c+a} \geq \dfrac{9}{2(a+b+c)}.$$
+
+%02
+	\item Prove that for any positive real numbers $a$, $b$, $c$; we have,
+$$(a+2)(b+3)(c+6) \geq 48 \sqrt{abc}.$$
+
+%03
+	\item If $a$, $b$, $c$ $>$ $0$, prove that, 
+	$$\dfrac{ab}{c^2} + \dfrac{bc}{a^2} + \dfrac{ca}{b^2} \geq 3.$$
+	
+%04
+	\item If $a$, $b$, $c$ $>$ $0$, prove that, 
+	$$\dfrac{ab}{c} + \dfrac{bc}{a} + \dfrac{ca}{b} \geq a+b+c. $$
+	
+%05
+	\item If $a$, $b$, $c$ $>$ $0$ and $a^2 + b^2 + c^2 = 3$, prove that, 
+	$$\dfrac{1}{1+ab} + \dfrac{1}{1+bc} + \dfrac{1}{1+ca} \geq \dfrac{3}{2}.$$
+	
+%06	
+	\item Prove that if $x$, $y$, $z$ are real numbers with $z > 0$, then $$\dfrac{x^2 + y^2 + 12z^2 + 1}{4z} \geq x + y + 1.$$
+
+%07	
+	\item Prove that the inequality $(3a + b + c)^2 \geq 12a(b+c)$ holds for any real numbers $a,b,c$.
+	
+%08
+	\item If $x, y, z > 0$, prove that, 
+	\begin{enumerate}[(i)]
+	\item $\dfrac{1}{\sqrt{xy}} + \dfrac{1}{\sqrt{yz}} + \dfrac{1}{\sqrt{zx}} \leq \dfrac{1}{x} + \dfrac{1}{y} + \dfrac{1}{z}$.
+	
+	\item $\dfrac{x^2}{y^2} + \dfrac{y^2}{z^2} + \dfrac{z^2}{x^2} \geq \dfrac{x}{z} + \dfrac{z}{y} + \dfrac{y}{x}$.
+	
+	\item $\dfrac{x^2}{y} + \dfrac{y^2}{z} + \dfrac{z^2}{x} \geq x$
+	
+	\end{enumerate}
 \end{enumerate}
 
 
