@@ -728,6 +728,21 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %118
 	\item Fifteen distinct points are designated on $\bigtriangleup ABC :$, the 3 vertices $A$, $B$, $C$; 3 other points on side $\overline{AB}$; 4 other points on side $\overline{BC}$; and 5 other points on side $\overline{CA}$. Find the number of triangles with positive area whose vertices are among these 15 points.
+	
+%119
+	\item Let $ABCD$ be a square and let $E$ and $F$ be points on $\overline{AB}$ and $\overline{BC}$ respectively. The line through $E$ parallel to $\overline{BC}$ and the line through $F$ parallel to $\overline{AB}$ divide $ABCD$ into two squares and two non-square rectangles. The sum of the areas of the two squares is $\dfrac{9}{10}$ of the area of square $ABCD$. Find $\dfrac{AE}{EB} + \dfrac{EB}{AE}$.
+
+%120
+	\item $H$ is the orthocenter of a triangle $ABC$. Prove that, reflection of $H$ w.r.t. $BC$ lies on the circumcenter of $\bigtriangleup ABC$.
+	
+%121
+	\item $H$ is the orthocenter of $\bigtriangleup ABC$. $A'$, $B'$, $C'$ are respectively the reflections of $H$ w.r.t. $BC$, $CA$ and $AB$. Prove that, $H$ is the incenter of $\bigtriangleup A'B'C'$.
+	
+%122
+	\item Prove that, $r_1 = \dfrac{\bigtriangleup}{S-a}$, $r_2 = \dfrac{\bigtriangleup}{S-b}$, $r_3 = \dfrac{\bigtriangleup}{S-c}$.
+	
+%123
+	\item Show that, $\dfrac{1}{r} = \dfrac{1}{r_}$
 \end{enumerate}
 		     
 		  
@@ -2009,6 +2024,9 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 
 %01
 	\item When each of $702, 787, 855$ is divided by the positive integer $m$, the remainder is always the positive integer $r$. When each of $412, 722, 815$ is divided by the positive integer $n$, the remainder is always the positive integer $s(\neq r)$. Find $(m+n+r+s)$.
+	
+%02
+	\item Find the number of rational numbers $r$, $0 < r < 1$ such that when $r$ is written as a fraction in lowest terms, the numerator and denominator have a sum of 1000.
 \end{enumerate}
 
 
