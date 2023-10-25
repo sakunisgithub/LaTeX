@@ -592,10 +592,10 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	\item Consider in the plane a circle $\Gamma$ with center $O$ and a line $l$ not intersecting circle $\Gamma$. Prove that there is a unique point $Q$ on the perpendicular drawn from $O$ to the line $l$, such that for any point $P$ on the line $l$, $PQ$ represents the length of the tangent from $P$ to the circle $\Gamma$. [RMO 2004]
 	
 %76
-	\item Euler's Theorem : \textbengali{কোনো ত্রিভুজের পরিব্যাসারধ} $R$, \textbengali{অন্তঃব্যাসার্ধ} $r$, \textbengali{পরিকেন্দ্র} $S$ \textbengali{ও অন্তঃকেন্দ্র} $I$ \textbengali{হলে প্রমাণ কর যে, } $SI^2 = R^2 - 2Rr$.
+	\item Euler's Theorem : \textbengali{কোনো ত্রিভুজের পরিব্যাসার্ধ} $R$, \textbengali{অন্তঃব্যাসার্ধ} $r$, \textbengali{পরিকেন্দ্র} $S$ \textbengali{ও অন্তঃকেন্দ্র} $I$ \textbengali{হলে প্রমাণ কর যে, } $SI^2 = R^2 - 2Rr$.
 	
 %77
-	\item Euler's Theorem : \textbengali{কোনো ত্রিভুজের পরিব্যাসারধ} $R$, \textbengali{বহিঃব্যাসার্ধ} $r_1$, \textbengali{পরিকেন্দ্র} $S$ \textbengali{ও বহিঃকেন্দ্র} $I_1$ \textbengali{হলে প্রমাণ কর যে, } $S{I_1}^2 = R^2 + 2Rr_1$.
+	\item Euler's Theorem : \textbengali{কোনো ত্রিভুজের পরিব্যাসার্ধ} $R$, \textbengali{বহিঃব্যাসার্ধ} $r_1$, \textbengali{পরিকেন্দ্র} $S$ \textbengali{ও বহিঃকেন্দ্র} $I_1$ \textbengali{হলে প্রমাণ কর যে, } $S{I_1}^2 = R^2 + 2Rr_1$.
 	
 %78
 	\item $\bigtriangleup ABC$ \textbengali{এর} $S$ \textbengali{পরিকেন্দ্র,} $I$ \textbengali{অন্তঃকেন্দ্র,} $O$ \textbengali{লম্ববিন্দু হলে প্রমাণ কর যে,} $\angle SAI = \angle IAO.$
@@ -742,7 +742,25 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	\item Prove that, $r_1 = \dfrac{\bigtriangleup}{S-a}$, $r_2 = \dfrac{\bigtriangleup}{S-b}$, $r_3 = \dfrac{\bigtriangleup}{S-c}$.
 	
 %123
-	\item Show that, $\dfrac{1}{r} = \dfrac{1}{r_}$
+	\item Show that, $\dfrac{1}{r} = \dfrac{1}{r_1} + \dfrac{1}{r_2} + \dfrac{1}{r_3}$.
+	
+%124
+	\item $AD$, $BE$, $CF$ are three cevians of $\bigtriangleup ABC$; $D$, $E$, $F$ being on $BC$, $AC$, $AB$ respectively. $DP$, $EQ$, $FR$ are three cevians of $\bigtriangleup DEF$; $P$, $Q$, $R$ being on $EF$, $DF$, $DE$ respectively. Prove that, $AP$, $BQ$, $CR$ are concurrent.
+	
+%125
+	\item $ABC$ is a right-angled triangle where $\angle B = 90^{\circ}$. $BD \perp AC$. $BE$ is the internal angle bisector of $\angle ABD$. A line is drawn through $C$ and parallel to $BE$. Extended $BD$ intersects this line at $F$. Extended $FE$ intersects $AB$ at $X$. Prove that, $AX = BX$.
+	
+%126 
+	\item $D$, $E$, $F$ are points on sides $BC$, $CA$, $AB$ respectively of $\bigtriangleup ABC$ such that $BD : DC = CE : EA = AF : FB = 1 : X$. $P$, $Q$, $R$ are points of itersections of $(AD, CF);(BE, AD);(BE,CF)$ respectively. Find $[\bigtriangleup PQR] : [\bigtriangleup ABC]$; where $[\bigtriangleup XYZ]$ denotes the area of $\bigtriangleup XYZ$.
+	
+%127
+	\item \textbf{[Desgrate's Theorem]} $ABCD$ is a quadrilateral. Diagonal $DB$ is extended and $O$ is a point taken on it. One among two lines from $O$ intersects $AB$, $AD$ at $P$, $Q$ and the other intersects $BC$, $CD$ at $R$, $S$. Extended $RP$ and extended $SQ$ intersect at $X$. Prove that, $X$, $A$, $C$ are collinear.
+	
+%128
+	\item Solve for the radius $r$ in terms of $a$, $b$, $c$ in the following figure.
+	\begin{center}
+	\includegraphics[scale=0.5]{•}
+	\end{center}
 \end{enumerate}
 		     
 		  
