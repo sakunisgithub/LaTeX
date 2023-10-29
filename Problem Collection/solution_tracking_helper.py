@@ -14,6 +14,7 @@ def print_all_topics() :
     print("11. Mensuration")
     print("12. Inequality")
     print("13. Number Theory")
+    print("14. Combinatorics")
 
 def add_inputs() :
     problem_no = int(input("Enter problem no = "))
@@ -127,6 +128,14 @@ def operate_csv(c1, topic, inputs) :
             print("\n\nDeatils added successfully !\n\n")
         elif c1 == 2 :
             print(number_theory.iloc[inputs-1])
+    elif topic == 14 :
+        combinatorics = pd.read_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\combinatorics.csv")
+        if c1 == 1 :
+            combinatorics.loc[len(combinatorics)] = [inputs[0], inputs[1], inputs[2]]
+            combinatorics.to_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\combinatorics.csv", index=False)
+            print("\n\nDeatils added successfully !\n\n")
+        elif c1 == 2 :
+            print(combinatorics.iloc[inputs-1])
     
 
 print("\n\n-----MENU-----\n\n")

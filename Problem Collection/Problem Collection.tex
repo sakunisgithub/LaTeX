@@ -16,6 +16,23 @@
 
 \usepackage{float}
 
+\usepackage{tasks}
+
+\usepackage{exsheets}
+
+\usepackage{fontawesome5}
+
+\usepackage{utfsym}
+
+\usepackage{listing}
+
+\usepackage{mathtools}
+
+\SetupExSheets[question]{type=exam}
+
+\newcommand\myperm[2][^n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\mycomb[2][^n]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
+
 
 \setdefaultlanguage{english}
 \setotherlanguage{bengali}
@@ -762,6 +779,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	\centering
 	\includegraphics[scale=0.1]{IMG_20231026_015712_749}
 	\end{figure}
+	
+%129
+	\item In a semi-circle of radius $r$ with $AD$ as diameter; $B$, $C$, $D$ are points on the semi-circle such that $AB = BC = \dfrac{r}{2}$ and $CD = x$. Find $x:r$.
 \end{enumerate}
 		     
 		  
@@ -1327,6 +1347,24 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %163
 	\item Find the minimum and maximum value of $|z|$ satisfying the equation $\left| z - \dfrac{4}{z} \right|= 2$.
+	
+%164
+	\item If $x = \dfrac{\sqrt{a^2 + b^2} + \sqrt{a^2 - b^2}}{\sqrt{a^2 + b^2} - \sqrt{a^2 - b^2}}$, show that $b^2x^2 - 2a^2x+b^2 = 0$.
+	
+%165
+	\item Simplify : $\dfrac{3\sqrt{2}}{\sqrt{3} + \sqrt{6}} - \dfrac{4\sqrt{3}}{\sqrt{6} + \sqrt{2}} + \dfrac{\sqrt{6}}{\sqrt{3} + \sqrt{2}}$.
+	
+%166
+	\item If $x = \dfrac{\sqrt[3]{a}}{\sqrt[3]{b}} + \dfrac{\sqrt[3]{b}}{\sqrt[3]{a}}$, show that, $a(bx^3 - 3bx -a) = b^2$.
+	
+%167
+	\item If $a = \dfrac{1}{2} \left[ x + \sqrt{\dfrac{4y^3 - x^3}{3x}} \right]$, $b = \dfrac{1}{2} \left[ x - \sqrt{\dfrac{4y^3 - x^3}{3x}} \right]$; show that $a^3 + b^3 = y^3$.
+	
+%168
+	\item Prove that, the simplified form of $\sqrt{2} \left[ 2x + \sqrt{x^2 - y^2} \right] \cdot \left[ \sqrt{x - \sqrt{x^2 - y^2}} \right]$ is $\left[ \sqrt{(x+y)^3} - \sqrt{(x-y)^3} \right]$.
+	
+%169
+	\item If $a$, $b$, $c$, $d$ are positive integers with a sum of $63$, what is the minimum value of \\ $(ab+bc+cd) ?$
 \end{enumerate}
 
 
@@ -1533,6 +1571,27 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %26
 	\item Through a given point outside a given circle draw a secant so that the chord determined by it subtends an angle at the center equal to the acute angle between the secant and the diameter through the given point.
+	
+%27
+	\item Draw two line segments $OA$ and $OB$ with $OA = 5$ $c.m.$, $OB = 8$ $c.m.$ and $\angle AOB = 60^{\circ}$. Then construct a circle such that it touches $OA$ at $A$ and $OB$ at any point [let $R$]. Find relatin between $OR$ and $OA$.
+	
+%28
+	\item Draw $\bigtriangleup ABC$ with $AB = 5$ $c.m.$, $BC = 7$ $c.m.$ and $CA = 3$ $c.m.$ Then construct a circle such that it touches $AB$ at $B$ and passes through the point $C$.
+	
+%29
+	\item Construct a right-angled triangle with hypotenuse $9$ $c.m.$ and difference between the other two sides as $5$ $c.m.$
+	
+%30
+	\item Construct a circle passing through a fixed point and at the same time touching two parallel straight lines.
+	
+%31
+	\item Divide a fixed straight line-segment into two parts such that the difference of the area of the two squares drawn on those two parts is always equal to the area of the fixed square.
+	
+%32
+	\item Draw the mid-proportional of an $8$ $c.m.$ line-segment and one-third of it.
+	
+%33
+	\item Construct a parallelogram of area twice as that of an equilateral triangle of sides $5\sqrt{2}$ $c.m.$
 
 \end{enumerate}
 
@@ -1848,6 +1907,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 %13
 	\item Solve for all real numbers $x$ :
 	$$(x^2 - 7x + 11)^{x^2 - 13x + 42} = 1.$$
+	
+%14
+	\item Solve over the integers : $615 + x^2 = 2^y$.
 \end{enumerate}
 
 
@@ -2050,5 +2112,57 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 
 
 
+
+
+
+
+
+\section{Combinatorics}
+
+\begin{enumerate}
+
+%01
+	\item \begin{enumerate}[(i)]
+		\item Prove that, $\mycomb[n]{r} =  \mycomb[n]{n-r}$.
+		
+		\item If $0 < r < s \leq n$ and $\myperm[n]{r} = \myperm[n]{s}$, then the value of $(r+s)$ is
+		\begin{tasks}(4)
+			\task 1
+			\task 2
+			\task $2n-1$
+			\task $2n-2$
+		\end{tasks}
+	
+	\end{enumerate}
+	
+%02
+	\item If $\mycomb[n]{10} = \mycomb[n]{15}$, find $\mycomb[27]{n}$.
+	
+%03
+	\item \begin{enumerate}[(a)]
+		\item If $\mycomb[n]{7} = \mycomb[n]{4}$, find $n$.
+		\item If the number of radical axes formed out of a given number of circles be same as the number of radical centers, then find the number of given  circles.
+	\end{enumerate}
+	
+%04
+	\item \begin{enumerate}[(a)]
+		\item If $\mycomb[15]{3r} = \mycomb[15]{r+3}$, find $r$.
+		\item If $p = \myperm[n+2]{n+2}$, $q = \myperm[n]{11}$, $r = \myperm[n-11]{n-11}$ and if $p = 182qr$, then show that the value of $n$ is $12$.	
+	\end{enumerate}
+	
+%05
+	\item \begin{enumerate}[(a)]
+		\item If $\binom{n}{12} = \binom{n}{8}$, find $\binom{n}{17}$ and $\binom{22}{n}$.
+		
+		\item If $\binom{k^2-k}{2} = \binom{k^2-k}{4}$, then $k = $
+		\begin{tasks}(4)
+			\task 2
+			\task 3
+			\task 4
+			\task none of these
+		\end{tasks}
+	
+	\end{enumerate}
+\end{enumerate}
 
 \end{document}
