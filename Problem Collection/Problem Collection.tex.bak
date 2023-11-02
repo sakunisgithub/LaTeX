@@ -782,6 +782,34 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %129
 	\item In a semi-circle of radius $r$ with $AD$ as diameter; $B$, $C$, $D$ are points on the semi-circle such that $AB = BC = \dfrac{r}{2}$ and $CD = x$. Find $x:r$.
+	
+%130
+	\item $H$ is the orthocenter of $\bigtriangleup ABC$. $A_1$, $B_1$, $C_1$ are the circumcenteres of $\bigtriangleup BCH$, $\bigtriangleup ACH$, $\bigtriangleup ABH$ respectively. $R_1$, $R_2$, $R_3$ are the circumradii of $\bigtriangleup BCH$, $\bigtriangleup ACH$, $\bigtriangleup ABH$ respectively. $R$ be the circumradius of $\bigtriangleup ABC$. Prove that, 
+	\begin{enumerate}[(i)]
+		\item $\bigtriangleup ABC \cong \bigtriangleup A_1B_1C_1$
+		\item $R = R_1 = R_2 = R_3$
+	
+	\end{enumerate}
+	We denote the circumcircles of $\bigtriangleup ABC$, $\bigtriangleup BCH$, $\bigtriangleup ACH$, $\bigtriangleup ABH$ as $\lambda$, $\lambda_1$, $\lambda_2$, $\lambda_3$ respectively. Then establish that $\lambda_1$, $\lambda_2$, $\lambda_3$ are reflections of $\lambda$ w.r.t. $BC$, $AC$, $AB$ respectively. And also show tha, the nine-point circle of $\bigtriangleup ABC$ is same as that of $\bigtriangleup A_1B_1C_1$.
+	
+%131
+	\item In a triangle $ABC$, $D$ and $E$ are points of $AB$ and $AC$ respectively such that $AD = AH$ and $AE = AO$. $H$ and $O$ are the orthocenter and circumcenter of $\bigtriangleup ABC$ respectively. Prove that, $\bigtriangleup ADE$ is isosceles.
+	
+%132
+	\item $E$, $F$ are two points on $AC$, $AB$ respectively such that $EF \parallel BC$. Suppose $BE$, $CF$ intersect at $P$. Show that, $AP$ is the median through the vertex $A$.
+	
+%133
+	\item In the following figure, $AE = 5$, $AD = 4$, $\angle B = 90^{\circ}$, radius of the drawn circle = 6. Find $BC$.
+	\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.15]{IMG_20231102_173356_826}
+	\end{figure}
+
+%134
+	\item $L$, $M$, $N$ are the midpoints of sides $BC$, $CA$, $AB$ respectively of $\bigtriangleup ABC$. Extended $LN$ touches the tangent to the circumcircle of $\bigtriangleup ABC$ at $Q$ and extended $LM$ touches the said tangent at $P$. Prove that, $BQ \parallel PC$.
+	
+%135
+	\item In $\bigtriangleup ABC$, $AB = 2$, $AC = \sqrt{5} + 1$, $\angle A = 54^{\circ}$. $AC$ is extended to $D$ such that $CD = \sqrt{5} - 1$. $M$ is the midpoint of $BD$. Find $\angle ACM$.
 \end{enumerate}
 		     
 		  
@@ -1365,6 +1393,15 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %169
 	\item If $a$, $b$, $c$, $d$ are positive integers with a sum of $63$, what is the minimum value of \\ $(ab+bc+cd) ?$
+	
+%170
+	\item $S = \{1, 2, \cdots , n\}$. Averages of the numbers of each of the subsets of $S$ are taken. Let $T_n$ be the no. of subsets having integer average. Prove that, $(T_n - n)$ is an even number.
+	
+%171
+	\item $S = \{1, 2, \cdots , n\}$. Consider all the $r$-elment subsets of $S$. Then take the minimum element of each subset. Prove that, the average of all these numbers $= \dfrac{n+1}{r+1}$.
+	
+%172
+	\item Suppose $(a, b, c)$ si an order-triplet such that $abc = 2310$. Find $\sum \limits_{\substack{abc = 2310 \\ a, b, c \in \mathbb{N}}} (a+b+c)$.
 \end{enumerate}
 
 
@@ -1592,7 +1629,21 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %33
 	\item Construct a parallelogram of area twice as that of an equilateral triangle of sides $5\sqrt{2}$ $c.m.$
+	
+%34
+	\item \begin{enumerate}[(a)]
+		\item In $\bigtriangleup ABC$, $AD$ is a median. You have an unmarked straight edge like
+		\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.15]{IMG_20231102_145518_873}
+		\end{figure}
+	\\ With the help of these two, draw a line parallel to $BC$.
+		\item Now you are given two intersecting circles of different radius. Draw two parallel chords in any one of the circles.
+		\item Find out the center of any one of the circles.
+	\end{enumerate}
 
+%35
+	\item You are given a vertex $A$, center of the nine-point circle $N$ and centroid $G$. Construct the triangle.
 \end{enumerate}
 
 
@@ -1910,6 +1961,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %14
 	\item Solve over the integers : $615 + x^2 = 2^y$.
+	
+%15
+	\item Find out all the natural number solution $(x, y)$ of $x^3 + y^3 = x^2 + 42xy + y^2$.
 \end{enumerate}
 
 
@@ -2093,6 +2147,13 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %37
 	\item For $a, b, c \in \mathbb{R^+}$, prove that, $$\dfrac{(a+2b+3c)^2}{a^2 + 2b^2 + 3c^2} \leq 6.$$
+	
+%38
+	\item If $a, b, c > 0$ and $\dfrac{1}{a} + \dfrac{1}{b} + \dfrac{1}{c} = 3$, show that, 
+	$$\dfrac{1}{\sqrt{a^3+b}} + \dfrac{1}{\sqrt{b^3+c}} + \dfrac{1}{\sqrt{c^3+a}} \leq \dfrac{3}{\sqrt{2}}$$.
+	
+%39
+	\item If $x, y, z$ are all positive real numbers, prove that, $x(1+y) + y(1+z) + z(1+x) \geq 6\sqrt{xyz}$.
 \end{enumerate}
 
 
@@ -2108,6 +2169,12 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %02
 	\item Find the number of rational numbers $r$, $0 < r < 1$ such that when $r$ is written as a fraction in lowest terms, the numerator and denominator have a sum of 1000.
+	
+%03
+	\item You are given two bags both having natural numbers. Total no. of numbers in two bags is a prime number. Sum of all the numbers of two bags is 2004. Now, the number 170 is shifted from Bag 1 to Bag 2. For this shifting, the average of the numbers in Bag 1 and that of Bag 2 both increase by 1. Find the total number of numbers.
+	
+%04
+	\item Prove that, $gcd(4m+3, 3m+2) = 1$.
 \end{enumerate}
 
 
@@ -2163,6 +2230,16 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 		\end{tasks}
 	
 	\end{enumerate}
+
+%06
+	\item There are 3 children with 3 corresponding mothers. In how many ways these 6 can enter a hall such that no mother enteres before her child ?
+	
+%07
+	\item $S = \{1, 2, \cdots, n \}$. $P = \{ p(1), p(2), \cdots p(n) \}$ is a permutation of $S$. Find the no. of permutations in which
+		\begin{enumerate}[(i)]
+		\item If $p(1) < i < j$, then $i$ appears before $j$ in $P$.
+		\item If $i < j < p(1)$, then $j$ appears before $i$ in $P$.		
+		\end{enumerate}
 \end{enumerate}
 
 \end{document}

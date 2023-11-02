@@ -2,14 +2,14 @@
 \contentsline {section}{\numberline {1}Logarithm}{2}{section.1}%
 \contentsline {section}{\numberline {2}Geometry}{5}{section.2}%
 \contentsline {section}{\numberline {3}Miscellaneous}{14}{section.3}%
-\contentsline {section}{\numberline {4}Factorization}{23}{section.4}%
-\contentsline {section}{\numberline {5}Construction}{24}{section.5}%
-\contentsline {section}{\numberline {6}Indices}{25}{section.6}%
-\contentsline {section}{\numberline {7}Trigonometry}{26}{section.7}%
-\contentsline {section}{\numberline {8}Functional Equations}{29}{section.8}%
-\contentsline {section}{\numberline {9}System of Equations}{29}{section.9}%
-\contentsline {section}{\numberline {10}Coordinate Geometry}{30}{section.10}%
-\contentsline {section}{\numberline {11}Mensuration}{30}{section.11}%
-\contentsline {section}{\numberline {12}Inequality}{31}{section.12}%
-\contentsline {section}{\numberline {13}Number Theory}{34}{section.13}%
-\contentsline {section}{\numberline {14}Combinatorics}{34}{section.14}%
+\contentsline {section}{\numberline {4}Factorization}{24}{section.4}%
+\contentsline {section}{\numberline {5}Construction}{25}{section.5}%
+\contentsline {section}{\numberline {6}Indices}{27}{section.6}%
+\contentsline {section}{\numberline {7}Trigonometry}{27}{section.7}%
+\contentsline {section}{\numberline {8}Functional Equations}{31}{section.8}%
+\contentsline {section}{\numberline {9}System of Equations}{31}{section.9}%
+\contentsline {section}{\numberline {10}Coordinate Geometry}{32}{section.10}%
+\contentsline {section}{\numberline {11}Mensuration}{32}{section.11}%
+\contentsline {section}{\numberline {12}Inequality}{32}{section.12}%
+\contentsline {section}{\numberline {13}Number Theory}{35}{section.13}%
+\contentsline {section}{\numberline {14}Combinatorics}{36}{section.14}%
