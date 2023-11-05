@@ -2154,6 +2154,18 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %39
 	\item If $x, y, z$ are all positive real numbers, prove that, $x(1+y) + y(1+z) + z(1+x) \geq 6\sqrt{xyz}$.
+	
+%40
+	\item If $a, b, c > 0$, prove that, $a^4 + b^4 + c^4 \geq a^2bc + ab^2c + abc^2$.
+	
+%41
+	\item Prove that, $\sum \limits_{k = 1}^{100} \dfrac{1}{\sqrt{k}} < 20$.
+	
+%42
+	\item If $a, b, c > 0$, prove that, $(a+b)(b+c)(c+a) \geq 8abc$.
+	
+%43
+	\item If $a+b+c = 1$ and $a, b, c > 0$, prove that, $$\left( 1 + \dfrac{1}{a} \right) \left( 1 + \dfrac{1}{b} \right) \left( 1 + \dfrac{1}{c} \right) \geq 64$$.
 \end{enumerate}
 
 
@@ -2175,6 +2187,39 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %04
 	\item Prove that, $gcd(4m+3, 3m+2) = 1$.
+	
+%05
+	\item Prove that, $gcd(a, b) = gcd(a, a-b) = gcd(b, a-b)$.
+	
+%06
+	\item Show that, 5 consecutive numbers have a coprime with respect to the other 4 numbers.
+	
+%07
+	\item If $a = bq + r$, show that, $gcd(a, b) = gcd(b, r)$.
+	
+%08
+	\item If $a|c$, $b|c$ and $gcd(a, b) = 1$, show that, $ab|c$.
+	
+%09
+	\item If $a|bc$, $gcd(a, b) = 1$, show that, $a|c$.
+	
+%10
+	\item If $\dfrac{1}{p} = \cdot \overline{a_1 a_2 a_3 \cdots a_r}$, show that, $10^r = k \cdot p + 1$.
+	
+%11
+	\item If $n-3|n^3-3$, find all possible values of $n$ where $n \in \mathbb{N}$.
+	
+%12
+	\item $p_1, p_2, p_3$ are three primes such that $p_1 p_2 + 4 = k_1^2$ and $p_1 p_3 + 4 = k_2^2$, $p_2 \neq p_3$. Find the three primes.
+	
+%13
+	\item Prove that, $gcd \left(\dfrac{a^p -1}{a - 1}, a-1\right) = p$ or 1 where $p$ is a prime number.
+	
+%14
+	\item Prove that, $80 | n^5 - n$, where $n$ is an odd natural number.
+	
+%15
+	\item If $x + j | y + j$  $\forall x, y, j \in \mathbb{N}$, prove that, $x = y$.
 \end{enumerate}
 
 
