@@ -1408,6 +1408,7 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %174
 	\item The points on a straight line is coloured either Red or Blue. Show that, three equidistant points should have the same colour.
+
 \end{enumerate}
 
 
@@ -2220,6 +2221,27 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 		\item $\dfrac{a_1}{1^2} + \dfrac{a_2}{2^2} + \ldots + \dfrac{a_n}{n^2} \geq \dfrac{1}{1} + \dfrac{1}{2} + \ldots + \dfrac{1}{n}$.
 	
 	\end{enumerate}
+	
+%57
+	\item Prove that, $m^3 + 1 > m^2 + m$ where $m \neq 1$ \& $m > -1$.
+	
+%58
+	\item If $x, y > 0$, prove that, $x^5 + y^5 > x^4y+xy^4$ where $x \neq y$.
+	
+%59
+	\item If $x, y, z$ are distinct real numbers, prove that, $$2016x^2 + 2016y^2 + 6z^2 > 2(2013xy + 3yz + 3zx).$$
+	
+%60
+	\item Find all real numbers $x$ and $y$ so that, $x^2 + 2y^2 + \dfrac{1}{2} \leq x(2y + 1)$.
+	
+%61
+	\item For $x, y \in \mathbb{R}$, prove that, $3(x + y + 1)^2 + 1 \geq 3xy$.
+	
+%62
+	\item For $x, y, z \in \mathbb{R}$ such that $xy + yz + zx = -1$, prove that, $x^2 + 5y^2 + 8z^2 \geq 4$.
+	
+%63
+	\item If $x, y, z \in \mathbb{R}$, prove that, $$\dfrac{x^2 + yz}{•}.$$
 \end{enumerate}
 
 
@@ -2404,6 +2426,9 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %23
 	\item Suppose you have 20 red, 17 blue, 17 green, 10 brown and 10 yellow coloured balls. At least how many balls you should pick up in order to be sure that you have 15 balls of some colour ?
+	
+%24
+	\item If $S_n = \sum \limits_{r = 0}^{n} \dfrac{1}{\mycomb[n]{r}}$ and $t_n = \sum \limits_{r = 0}^{n} \dfrac{r}{\mycomb[n]{r}}$, show that, $\dfrac{S_n}{t_n} = \dfrac{n}{2}$.
 \end{enumerate}
 
 \end{document}
