@@ -1408,6 +1408,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %174
 	\item The points on a straight line is coloured either Red or Blue. Show that, three equidistant points should have the same colour.
+	
+%175
+	\item Let $a_3, a_4, \ldots, a_{2005}$ be real numbers with $a_{2006} \neq 0$. Prove that, there are not more than $2004$ real numbers $x$ such that $1+x+x^2 + a_3x^3 + a_4x^4 + \ldots + a_{2006}x^{2006} = 0$.
 
 \end{enumerate}
 
@@ -2241,7 +2244,34 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	\item For $x, y, z \in \mathbb{R}$ such that $xy + yz + zx = -1$, prove that, $x^2 + 5y^2 + 8z^2 \geq 4$.
 	
 %63
-	\item If $x, y, z \in \mathbb{R}$, prove that, $$\dfrac{x^2 + yz}{•}.$$
+	\item If $x, y, z \in \mathbb{R}$, prove that, $$\dfrac{x^2 + yz}{y + z} + \dfrac{y^2 + zx}{z + x} + \dfrac{z^2 + xy}{x + y} \geq x+y+z.$$
+	
+%64
+	\item If $a, b, c$ are distinct real numbers, prove that, $$\left( \dfrac{a}{b-c} \right)^2 + \left( \dfrac{b}{c-a} \right)^2 + \left( \dfrac{c}{a-b} \right)^2 \geq 2 .$$
+	
+%65
+	\item If $x, y \in (0, 1)$, prove that, $$\dfrac{1}{1-x^2} + \dfrac{1}{1-y^2} \geq \dfrac{2}{1-xy}.$$
+	
+%66	
+	\item If $x, y \in \mathbb{R^+}$, prove that, $$\dfrac{1}{(1+x)^2} + \dfrac{1}{(1+y)^2} \geq \dfrac{1}{1+xy}.$$
+	
+%67
+	\item If $x, y, z \in \mathbb{R^+}$, show that, $x^4 + y^4 + z^2 \geq \sqrt{8}xyz$.
+	
+%68
+	\item If $a, b \in \mathbb{R^+}$, show that, $a^4 + b^4 + 8 \geq 8ab$.
+	
+%69
+	\item If $a, b \in \mathbb{R}$ and $a \neq 0$, show that, $a^2 + b^2 + \dfrac{1}{a^2} + \dfrac{1}{b^2} \geq \sqrt{3}$.
+	
+%70
+	\item If $x, y, z \in \mathbb{R^+}$ and $x+y+z = 1$, prove that, $$xy(x+y)^2 + yz(y+z)^2 + zx(z+x)^2 \geq 4xyz.$$
+	
+%71
+	\item If $a, b, c \in \mathbb{R^+}$ and $abc = 1$, prove that, $$\dfrac{1+ab}{1+a} + \dfrac{1+bc}{1+b} + \dfrac{1+ca}{1+c} \geq 3.$$
+	
+%72
+	\item If $a, b, c \in \mathbb{R^+}$, show that, $\dfrac{a^3}{b} + \dfrac{b^3}{c} + \dfrac{c^3}{a} \geq ab+bc+ca$.
 \end{enumerate}
 
 
