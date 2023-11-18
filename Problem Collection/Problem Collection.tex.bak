@@ -2272,6 +2272,21 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %72
 	\item If $a, b, c \in \mathbb{R^+}$, show that, $\dfrac{a^3}{b} + \dfrac{b^3}{c} + \dfrac{c^3}{a} \geq ab+bc+ca$.
+	
+%73
+	\item If $x, y, z \in \mathbb{R}$ and $x, y, z \geq 0$, show that, $\dfrac{(x+y+z)^2}{3} \geq x\sqrt{yz} + y\sqrt{zx} + z\sqrt{xy}$.
+	
+%74
+	\item Prove that, for $x > 0$, $2\sqrt{x} \geq 3 - \dfrac{1}{x}$.
+	
+%75
+	\item If $x, y, z \in \mathbb{R^+}$, prove that, $x(1+y) + y(1+z) + z(1+x) \geq 6\sqrt{xyz}$.
+	
+%76
+	\item If $a, b, c \in \mathbb{R^+}$, prove that, $(a+b)(a+c) \geq 2\sqrt{abc(a+b+c)}$.
+	
+%77
+	\item If $a, b > 0$, prove that, $\sqrt[3]{\dfrac{a}{b}} + \sqrt[3]{\dfrac{b}{a}} \leq \sqrt[3]{2(a+b)\left( \dfrac{1}{a} + \dfrac{1}{b} \right)}$.
 \end{enumerate}
 
 
