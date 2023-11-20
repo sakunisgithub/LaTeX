@@ -2287,6 +2287,21 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %77
 	\item If $a, b > 0$, prove that, $\sqrt[3]{\dfrac{a}{b}} + \sqrt[3]{\dfrac{b}{a}} \leq \sqrt[3]{2(a+b)\left( \dfrac{1}{a} + \dfrac{1}{b} \right)}$.
+	
+%78
+	\item If $a, b \in \mathbb{R^+}$ \& $a \neq b$, prove that, $\left( \dfrac{a+b}{2} \right)^{a+b} > a^b b^a$.
+	
+%79
+	\item If $a, b \in \mathbb{R^+}$, prove that, $\dfrac{a^3b}{(a+b)^4} \leq \dfrac{27}{256}$.
+	
+%80
+	\item Prove that, $\left( \dfrac{x^2 + y^2 + z^2}{x+y+z} \right) > x^x y^y z^z > \left( \dfrac{x+y+z}{3} \right)^{x+y+z}$.
+	
+%81
+	\item If $n \in \mathbb{Z^+}$, show that, $\{ (n+1)! \}^{\frac{1}{n+1}} < 1 + \dfrac{n}{n+1}(n!)^{\frac{1}{n}}$.
+	
+%82
+	\item If $x, y, z \in \mathbb{R}$, prove that, $\dfrac{x^2}{2} + \dfrac{y^2}{3} + \dfrac{z^2}{6} \geq \left( \dfrac{•}{•} \right)$
 \end{enumerate}
 
 
