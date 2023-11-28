@@ -2301,7 +2301,25 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	\item If $n \in \mathbb{Z^+}$, show that, $\{ (n+1)! \}^{\frac{1}{n+1}} < 1 + \dfrac{n}{n+1}(n!)^{\frac{1}{n}}$.
 	
 %82
-	\item If $x, y, z \in \mathbb{R}$, prove that, $\dfrac{x^2}{2} + \dfrac{y^2}{3} + \dfrac{z^2}{6} \geq \left( \dfrac{•}{•} \right)$
+	\item If $x, y, z \in \mathbb{R}$, prove that, $\dfrac{x^2}{2} + \dfrac{y^2}{3} + \dfrac{z^2}{6} \geq \left( \dfrac{x}{2} + \dfrac{y}{3} + \dfrac{z}{6} \right)^2$.
+	
+%83
+	\item If $a, b, c > 0$ and $a+b+c = 1$, show that, 
+	\begin{enumerate}[(i)]
+		\item $\sqrt{4a+1} + \sqrt{4b+1} + \sqrt{4c+1} < 5$.
+		\item $\sqrt{4a+1} + \sqrt{4b+1} + \sqrt{4c+1} < \sqrt{2}$.
+	\end{enumerate}
+		
+%84
+	\item If $a, b > 0$, prove that, $3(a^2 + b^2) \geq \sqrt{2}\left(\sqrt{a(a+b)^2} + b\sqrt{a^2 + b^2}\right)$.
+	
+%85
+	\item If $a, b, c, d > 0$ and $(a^2 + b^2)^3 = c^2 + d^2$, show that, $\dfrac{a^3}{c} + \dfrac{b^3}{d} \geq 1$.
+	
+%86
+	\item If $a, b, c \geq 0$, prove that, $$\dfrac{a^2 - bc}{2a^2 + b^2 + c^2} + \dfrac{b^2 - ca}{2b^2 + c^2 + a^2} + \dfrac{c^2 - ab}{2c^2 + a^2 + b^2} \geq 0.$$
+	
+	
 \end{enumerate}
 
 
@@ -2489,6 +2507,18 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %24
 	\item If $S_n = \sum \limits_{r = 0}^{n} \dfrac{1}{\mycomb[n]{r}}$ and $t_n = \sum \limits_{r = 0}^{n} \dfrac{r}{\mycomb[n]{r}}$, show that, $\dfrac{S_n}{t_n} = \dfrac{n}{2}$.
+\end{enumerate}
+
+
+
+
+
+\section{Real Analysis}
+
+\begin{enumerate}
+
+%01
+	\item Suppose $\{b_n\}$ is a sequence. A sequence $\{s_n\}$ is defined such that $s_n = \dfrac{b_1 + b_2 + \ldots + b_n}{n}$ $\forall n \in \mathbb{N}$. If $\{b_n\}$ is bounded, prove that, $\{s_n\}$ is also bounded.
 \end{enumerate}
 
 \end{document}
