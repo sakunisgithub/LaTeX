@@ -15,6 +15,7 @@ def print_all_topics() :
     print("12. Inequality")
     print("13. Number Theory")
     print("14. Combinatorics")
+    print("15. Real Analysis")
 
 def add_inputs() :
     problem_no = int(input("Enter problem no = "))
@@ -136,6 +137,14 @@ def operate_csv(c1, topic, inputs) :
             print("\n\nDeatils added successfully !\n\n")
         elif c1 == 2 :
             print(combinatorics.iloc[inputs-1])
+    elif topic == 15 :
+        real_analysis = pd.read_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\real_analysis.csv") 
+        if c1 == 1 :
+            real_analysis.loc[len(real_analysis)] = [inputs[0], inputs[1], inputs[2]]
+            real_analysis.to_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\real_analysis.csv", index=False) 
+            print("\n\nDeatils added successfully !\n\n")
+        elif c1 == 2 :
+            print(real_analysis.iloc[inputs-1])
     
 
 print("\n\n-----MENU-----\n\n")
