@@ -107,5 +107,27 @@ x_1 + 2x_2 + 3x_3 &\leq 5, \\
 2x_1 + x_2 + x_3 &\leq 6, \\
 x_1, x_2, x_3 &\geq 0.
 	\end{align*}
+	
+
+%09
+
+\item Solve the following $L.P.P.$ using \textit{simplex method}.
+	\begin{align*}
+\textit{Maximize \hspace{6pt}} z = 2x_1 + 3x_2 + x_3 \\
+\textit{subject to \hspace{25pt}} -3x_1 + 2x_2 + 3x_3 &= 8, \\
+-3x_1 + 4x_2 + 2x_3 &= 7, \\
+x_1, x_2, x_3 &\geq 0.
+	\end{align*}
+	
+
+%10
+
+\item Solve the following $L.P.P.$ using \textit{simplex method}.
+	\begin{align*}
+\textit{Maximize \hspace{6pt}} z = -2x_1 + x_2 + 3x_3 \\
+\textit{subject to \hspace{25pt}} x_1 - 2x_2 + 3x_3 &= 2, \\
+3x_1 + 2x_2 + 4x_3 &= 1, \\
+x_1, x_2, x_3 &\geq 0.
+	\end{align*}
 \end{enumerate}
 \end{document}
