@@ -122,7 +122,7 @@ x_1, x_2, x_3 &\geq 0.
 
 %10
 
-\item Solve the following $L.P.P.$ using \textit{simplex method}.
+\item Solve the following $L.P.P.$ using \textit{penalty method}.
 	\begin{align*}
 \textit{Maximize \hspace{6pt}} z = -2x_1 + x_2 + 3x_3 \\
 \textit{subject to \hspace{25pt}} x_1 - 2x_2 + 3x_3 &= 2, \\
