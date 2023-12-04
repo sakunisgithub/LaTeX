@@ -2519,6 +2519,18 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 
 %01
 	\item Suppose $\{b_n\}$ is a sequence. A sequence $\{s_n\}$ is defined such that $s_n = \dfrac{b_1 + b_2 + \ldots + b_n}{n}$ $\forall n \in \mathbb{N}$. If $\{b_n\}$ is bounded, prove that, $\{s_n\}$ is also bounded.
+	
+%02
+	\item $x_n = \dfrac{1}{1+\sqrt{2}} + \dfrac{1}{\sqrt{2} + \sqrt{3}} + \dfrac{1}{\sqrt{3} + \sqrt{4}} + \cdots + \dfrac{1}{\sqrt{n} + \sqrt{n+1}}$  $\forall n \in \mathbb{N}$. Is $\{x_n\}$ bounded ?
+	
+%03
+	\item $y_n = \sum \limits_{k = 1}^{n} \dfrac{1}{k^2} = 1 + \dfrac{1}{2^2} + \dfrac{1}{3^2} + \cdots + \dfrac{1}{n^2}$  $\forall n \in \mathbb{N}$. Is $\{y_n\}$ bounded ?
+	
+%04
+	\item $z_n = \dfrac{n}{\sin n}$   $\forall n \in \mathbb{N}$. Is $\{z_n\}$ bounded ?
+	
+%05
+	\item $a_n = \dfrac{1}{1\cdot 2\cdot 3} + \dfrac{1}{2\cdot 3\cdot 4} + \cdots + \dfrac{1}{n(n+1)(n+2)}$   $\forall n \in \mathbb{N}$. Is $\{a_n\}$ bounded ?
 \end{enumerate}
 
 \end{document}
