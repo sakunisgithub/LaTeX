@@ -2531,6 +2531,24 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %05
 	\item $a_n = \dfrac{1}{1\cdot 2\cdot 3} + \dfrac{1}{2\cdot 3\cdot 4} + \cdots + \dfrac{1}{n(n+1)(n+2)}$   $\forall n \in \mathbb{N}$. Is $\{a_n\}$ bounded ?
+	
+%06
+	\item $\lambda_n = \dfrac{(2022)^2}{n!}$  $\forall n \in \mathbb{N}$. Is $\{\lambda_n\}$ bounded ?
+	
+%07
+	\item $z_n = n^{\frac{1}{n}}$ $\forall n \in \mathbb{N}$. Is $\{z_n\}$ bounded ?
+	
+%08
+	\item Using $\epsilon-$ definiton of convergence, prove that, $\lim \limits_{n \rightarrow \infty} \dfrac{1}{n} = 0$.
+	
+%09
+	\item Using $\epsilon-$ definiton of convergence, prove that, $\lim \limits_{n \rightarrow \infty} \dfrac{(-1)^n}{n} = 0$.
+	
+%10
+	\item Using $\epsilon-$ definiton of convergence, prove that, $\lim \limits_{n \rightarrow \infty} \dfrac{3n+5}{7n+1} = \dfrac{3}{7}$.
+	
+%11
+	\item Prove that, $\lim \limits_{n \rightarrow \infty} n^{\frac{1}{n}} = 1$.
 \end{enumerate}
 
 \end{document}
