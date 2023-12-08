@@ -2549,6 +2549,22 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %11
 	\item Prove that, $\lim \limits_{n \rightarrow \infty} n^{\frac{1}{n}} = 1$.
+	
+%12
+	\item Evaluate $\lim \limits_{n \rightarrow \infty} \left( a^n + b^n \right)^{\frac{1}{n}}$, where $a, b \geq 0$.
+	
+%13
+	\item Evaluate $\lim \limits_{n \rightarrow \infty} \left( a_1^n + a_2^n + \cdots + a_n^n \right)^{\frac{1}{n}}$ where $a_1, a_2, \cdots, a_n > 0$.
+	
+%14
+	\item Suppose $\lim \limits_{n \rightarrow \infty} x_n = x$. Prove that,
+		\begin{enumerate}[(i)]
+			\item $\lim \limits_{n \rightarrow \infty} \sin (x_n) = \sin x$.
+			\item $\lim \limits_{n \rightarrow \infty} \cos (x_n) = \cos x$.
+			\item Using the result that $\sin x \leq x \leq \tan x$ $\forall x \in \left[, \dfrac{\pi}{2}\right)$, prove that, $\lim \limits_{n \rightarrow \infty} n \sin \dfrac{1}{n} = 1$.
+			\item Suppose for some sequence $\{z_n\}$, we have $\sin \left( \dfrac{1}{n+1} \right) < z_n < \sin \dfrac{1}{n}$ $\forall n \in \mathbb{N}$. Prove that, $\lim \limits_{n \rightarrow \infty} n z_n = 1$.
+		
+		\end{enumerate}
 \end{enumerate}
 
 \end{document}

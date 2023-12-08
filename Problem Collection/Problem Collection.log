@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  7 DEC 2023 17:28
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  8 DEC 2023 20:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3700,6 +3700,7 @@ LaTeX Info: Redefining \rmfamily on input line 2025.
 LaTeX Info: Redefining \sffamily on input line 2025.
 LaTeX Info: Redefining \ttfamily on input line 2025.
  [32] [33] [34] [35] [36] [37] [38] [39] [40]
+[41]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -3789,8 +3790,7 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {newzealand/options}  =>  {variant=newzealand}
 >  {bengali/target}  =>  {bengali}
 >  {bn/target}  =>  {bengali}.
-
-[41] (Problem Collection.aux
+ [42] (Problem Collection.aux
 LaTeX Info: Redefining \rmfamily on input line 23.
 LaTeX Info: Redefining \sffamily on input line 23.
 LaTeX Info: Redefining \ttfamily on input line 23.
@@ -3810,4 +3810,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  91i,13n,94p,642b,3033s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Problem Collection.pdf (41 pages).
+Output written on Problem Collection.pdf (42 pages).
