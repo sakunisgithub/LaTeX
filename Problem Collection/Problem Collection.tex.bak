@@ -2561,10 +2561,28 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 		\begin{enumerate}[(i)]
 			\item $\lim \limits_{n \rightarrow \infty} \sin (x_n) = \sin x$.
 			\item $\lim \limits_{n \rightarrow \infty} \cos (x_n) = \cos x$.
-			\item Using the result that $\sin x \leq x \leq \tan x$ $\forall x \in \left[, \dfrac{\pi}{2}\right)$, prove that, $\lim \limits_{n \rightarrow \infty} n \sin \dfrac{1}{n} = 1$.
+			\item Using the result that $\sin x \leq x \leq \tan x$ $\forall x \in \left[0, \dfrac{\pi}{2}\right)$, prove that, $\lim \limits_{n \rightarrow \infty} n \sin \dfrac{1}{n} = 1$.
 			\item Suppose for some sequence $\{z_n\}$, we have $\sin \left( \dfrac{1}{n+1} \right) < z_n < \sin \dfrac{1}{n}$ $\forall n \in \mathbb{N}$. Prove that, $\lim \limits_{n \rightarrow \infty} n z_n = 1$.
 		
 		\end{enumerate}
+		
+%15
+	\item Evaluate : $\lim \limits_{n \rightarrow \infty} \sum \limits_{k = 1}^{n} \dfrac{k}{n^2 + n + k}$.
+	
+%16
+	\item Evaluate : $\lim \limits_{n \rightarrow \infty} \dfrac{1}{n^2} \sum \limits_{k = 1}^{n} \left[ kx \right]$ where $x > 0$ and $\left[ \,\, \right]$ is the Greatest Integer Function.
+	
+%17
+	\item Can a sequence be both increasing and decreasing ?
+	
+%18
+	\item Show that, $\{a_n\}_{n \geq 1}$ is increasing if and only if $\{-a_n\}_{n \geq 1}$ is decreasing.
+	
+%19
+	\item Show that, $\{a_n\}_{n \geq 1}$ is bounded from above if and only if $\{-a_n\}_{n \geq 1}$ is bounded from below.
+	
+%20
+	\item Consider the sequences $\{\sin \dfrac{\pi}{2n}\}_{n \geq 1}$ and $\{\cos \dfrac{\pi}{2n}\}_{n \geq 1}$. Are they increasing or decreasing ?
 \end{enumerate}
 
 \end{document}
