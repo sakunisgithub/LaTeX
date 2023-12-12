@@ -69,5 +69,80 @@
 	\end{center}
 	
 	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%02
+
+	\item A machine is set to deliver the packets of a given weight. Ten samples of size five each were examined and the following results were obtained :
+	
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|c|cccccccccc|}
+	
+	\hline
+	
+	Sample no. & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+	
+	
+	Mean & 43 & 49 & 37 & 44 & 45 & 37 & 51 & 46 & 43 & 47 \\
+	
+	Range & 5 & 6 & 5 & 7 & 7 & 4 & 8 & 6 & 4 & 6 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	Calculate the values for the central line and the control limits for the mean chart and range chart. Comment on the state of control.
+	
+	
+	
+	
+\newpage
+
+
+
+
+
+%03
+	\item Construct a control chart for mean and the range for the following data on the basis of fuses, samples of 5 being taken every hour(each set of 5 has been arranged in ascending order of magnitude). Comment on whether the production seems to be under contorl, assuming that these are the first data :
+	
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|cccccccccccc|}
+	
+	\hline
+	
+	42 & 42 & 19 & 36 & 42 & 51 & 60 & 18 & 15 & 69 & 64 & 61 \\
+	
+	65 & 45 & 24 & 54 & 51 & 74 & 60 & 20 & 30 & 109 & 90 & 78 \\
+	
+	75 & 68 & 80 & 69 & 57 & 75 & 72 & 27 & 39 & 113 & 93 & 94 \\
+	
+	78 & 72 & 81 & 77 & 59 & 78 & 95 & 42 & 62 & 118 & 109 & 109 \\
+	
+	87 & 90 & 81 & 84 & 78 & 132 & 138 & 60 & 84 & 153 & 112 & 136 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
 \end{enumerate}
 \end{document}
