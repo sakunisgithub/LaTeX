@@ -144,5 +144,85 @@
 	\end{center}
 	
 	\end{table}
+	
+	
+	
+	
+	
+	
+%04
+	\item The fill volume of soft-drink beverage bottles is an important quality characteristic. The volume is measured (approximately) by placing a gauge over the crown and comparing the height of the liquid in the neck of the bottle against a coded scale. On this scale, a reading of zero corresponds to the correct fill height. Fifteen samples of size n = 10 have been analyzed, and the fill heights are shown in following table :
+	
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|c|cccccccccc|}
+	
+	\hline
+	
+	Sample Number & $x_1$ & $x_2$ & $x_3$ & $x_4$ & $x_5$ & $x_6$ & $x_7$ & $x_8$ & $x_9$ & $x_{10}$ \\
+	
+	\hline
+	
+	1 & 2.5 & 0.5 & 2.0 & -1.0 & 1.0 & -1.0 & 0.5 & 1.5 & 0.5 & -1.5 \\
+	
+	2 & 0.0 & 0.0 & 0.5 & 1.0 & 1.5 & 1.0 & -1.0 & 1.0 & 1.5 & -1.0 \\
+	
+	3 & 1.5 & 1.0 & 1.0 & -1.0 & 0.0 & -1.5 & -1.0 & -1.0 & 1.0 & -1.0 \\
+	
+	4 & 0.0 & 0.5 & -2.0 & 0.0 & -1.0 & 1.5 & -1.5 & 0.0 & -2.0 & -1.5 \\
+	
+	5 & 0.0 & 0.0 & 0.0 & -0.5 & 0.5 & 1.0 & -0.5 & -0.5 & 0.0 & 0.0 \\
+	
+	6 & 1.0 & -0.5 & 0.0 & 0.0 & 0.0 & 0.5 & -1.0 & 1.0 & -2.0 & 1.0 \\
+	
+	7 & 1.0 & -1.0 & -1.0 & -1.0 & 0.0 & 1.5 & 0.0 & 1.0 & 0.0 & 0.0 \\
+	
+	8 & 0.0 & -1.5 & -0.5 & 1.5 & 0.0 & 0.0 & 0.0 & -1.0 & 0.5 & -0.5 \\
+	
+	9 & -2.0 & -1.5 & 1.5 & 1.5 & 0.0 & 0.0 & 0.5 & 1.0 & 0.0 & 1.0 \\
+	
+	10 & -0.5 & 3.5 & 0.0 & -1.0 & -1.5 & -1.5 & -1.0 & -1.0 & 1.0 & 0.5 \\
+	
+	11 & 0.0 & 1.5 & 0.0 & 0.0 & 2.0 & -1.5 & 0.5 & -0.5 & 2.0 & -1.0 \\
+	
+	12 & 0.0 & -2.0 & -0.5 & 0.0 & -0.5 & 2.0 & 1.5 & 0.0 & 0.5 & -1.0 \\
+	
+	13 & -1.0 & -0.5 & -0.5 & -1.0 & 0.0 & 0.5 & 0.5 & -1.5 & -1.0 & -1.0 \\
+	
+	14 & 0.5 & 1.0 & -1.0 & -0.5 & -2.0 & -1.0 & -1.5 & 0.0 & 1.5 & 1.5 \\
+	
+	15 & 1.0 & 0.0 & 1.5 & 1.5 & 1.0 & -1.0 & 0.0 & 1.0 & -2.0 & -1.5 \\
+	
+	\hline
+	
+	
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	Set up $\overline{x}$, $s$ and $R$ control charts on this process and comment on the state of control.
+	
+	
+	
+	
+	
+	
+\newpage
+
+
+
+%05
+	\item Following are the figures for the number of defectives in 22 lots, each containing 2000 rubber belts :
+	
+	425, 430, 216, 341, 225, 322, 280, 306, 337, 305, 356, 402, 216, 264, 126, 409, 193, 326, 280, 389, 451, 420.
+	
+	Drawing the control chart for fraction defective, plot the points on it. Comment on the state of control of the process.
+	
+	
+	Also calculate the control limits of the control chart for percent defective.
 \end{enumerate}
 \end{document}
