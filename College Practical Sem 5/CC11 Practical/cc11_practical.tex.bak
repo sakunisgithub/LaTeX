@@ -1,0 +1,46 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top=1 in, bottom = 1 in, left = 1 in, right = 1 in ]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+
+\title{\textbf{QUESTIONS}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+%01
+
+	\item A random sample of size 9 is drawn from the distribution with pdf
+	\begin{align*}
+	f_{\theta}(x) &\propto \dfrac{x^2}{{\theta}^3}; \,  -3\theta < x < \theta; \, \theta > 0 \,\, \text{and} \\
+	f_{\theta}(x) &= 0; \, \text{otherwise}
+	\end{align*}
+	and the observations are found to be 10, –30, 14, –45, –34, 7, 12, 11, –13.
+
+Find the maximum likelihood estimate of $\theta$. Also find (with justification) the maximum likelihood estimate of the variance for the above distribution.
+
+
+
+
+
+%02
+	\item The time a client waits to be served by the mortgage specialist at a bank has probability density function 
+	\begin{align*}
+	f(x) &= \dfrac{1}{2{\theta}^3} x^2 e^{-x/\theta}; \, x > 0; \, \theta > 0.
+	\end{align*}
+	The waiting times of 15 clients are found to be 6, 12, 15, 14, 12, 10, 8, 9, 10, 9, 8, 7, 10, 7, and 3 minutes. 
+Calculate the values of the maximum likelihood estimate and the method of moments estimate of $\theta$. 
+\end{enumerate}
+\end{document}
