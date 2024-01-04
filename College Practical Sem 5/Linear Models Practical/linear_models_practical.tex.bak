@@ -61,7 +61,7 @@
 %02
 	\item 
 	\begin{enumerate}[(a)]
-		\item A manufacturing company has purchased three new machines of different makes and wishes to determine whether one of them is faster than the others in producing a certain outupt. Five-hourly production figures are observed at random from each machine and the results are as follows.
+		\item A manufacturing company has purchased three new machines of different makes and wishes to determine whether one of them is faster than the others in producing a certain output. Five-hourly production figures are observed at random from each machine and the results are as follows.
 		
 		\begin{table}[h]
 		\def\arraystretch{1.5}
@@ -175,7 +175,7 @@
 	
 	1 & 5.1, 5.0, 4.8 & 5.0, 5.1, 5.3 & 5.1, 5.1, 4.9 & 4.9, 4.9, 5.0 & 5.0, 5.0, 5.0 \\
 	
-	2 & 5.2, 5.2, 5.4 & 5.3, 5.3, 5.5 & 5.3, 5.2, 5.2 & 5.2, 5.0, 5.5 & 5.1, 5.3, 5.9 \\
+	2 & 5.2, 5.2, 5.4 & 5.3, 5.3, 5.5 & 5.3, 5.2, 5.2 & 5.2, 5.0, 5.5 & 5.1, 5.3, 5.0 \\
 	
 	3 & 5.8, 5.7, 5.9 & 6.0, 5.9, 6.2 & 5.8, 5.9, 5.9 & 5.8, 5.5, 5.5 & 5.9, 5.4, 5.5 \\
 	
@@ -199,7 +199,7 @@
 	
 	
 %05
-	\item A test was given to give students taken at random from the fith class of three schools of a town. The individual scores are :
+	\item A test was given to give students taken at random from the fifth class of three schools of a town. The individual scores are :
 	
 	\begin{table}[h]
 	\def\arraystretch{1.5}
@@ -234,7 +234,7 @@
 	
 	
 %06
-	\item An experiment was conducted to determine the effects of different dates of planting and different methods of planting on the yield of sugar-cane. The data below show the yields of suar-cane (in kg.) for four different dates and three methods of planting.
+	\item An experiment was conducted to determine the effects of different dates of planting and different methods of planting on the yield of sugar-cane. The data below show the yields of sugar-cane (in kg.) for four different dates and three methods of planting.
 	
 	\begin{table}[h]
 	\def\arraystretch{1.5}
@@ -265,6 +265,6 @@
 	
 	\end{table}
 	
-	Carry out and analysis of the above data.
+	Carry out an analysis of the above data.
 \end{enumerate}
 \end{document}
