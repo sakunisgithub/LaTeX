@@ -266,5 +266,70 @@
 	\end{table}
 	
 	Carry out an analysis of the above data.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%07
+	\item The following table provides marks obtained by 20 undergraduate students in Statistics Honours in a college test and in the subsequent University examination. Fit a simple linear regression model to the data.
+	
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{2cm}|>{\centering}m{5cm}|>{\centering\arraybackslash}m{5cm}|}
+	
+	\hline
+	
+	\multirow{2}{*}{Serial No.} & \multicolumn{2}{c|}{Marks Obtained} \\
+	
+	\hhline{~--}
+	
+	& in college test & in university examination \\
+	
+	\hline
+	
+	1 & 183 & 433 \\
+	
+	2 & 175 & 393 \\
+	
+	3 & 134 & 270 \\
+	
+	4 & 170 & 364 \\
+	
+	5 & 183 & 399 \\
+	
+	6 & 167 & 360 \\
+	
+	7 & 120 & 368 \\
+	
+	8 & 175 & 358 \\
+	
+	9 & 126 & 262 \\
+	
+	10 & 187 & 376 \\
+	
+	11 & 123 & 326 \\
+	
+	12 & 121 & 341 \\
+	
+	13 
+	
+	
+	
+	\end{tabular}
+	\end{center}		
+	\end{table}
+
+	
 \end{enumerate}
 \end{document}
