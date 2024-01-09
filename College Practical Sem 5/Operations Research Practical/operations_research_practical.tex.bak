@@ -137,8 +137,8 @@ x_1, x_2, x_3 &\geq 0.
 \item Use duality to find the optimal solution, if any, of the following $L.P.P.$
 	\begin{align*}
 \textit{Maximize \hspace{6pt}} z = 3x_1 + 2x_2 \\
-\textit{subject to \hspace{20pt}} 2x_1 + x_2 &\leq 2, \\
-x_1 + x_2 &\leq 1, \\
+\textit{subject to \hspace{20pt}} 2x_1 + x_2 &\leq 5, \\
+x_1 + x_2 &\leq 3, \\
 x_1, x_2 &\geq 0.
 	\end{align*}
 	
@@ -415,8 +415,8 @@ $F_4$ & 12 & 14 & 10 & 4 \\
 
 
 
-
 \newpage
+
 
 
 
@@ -442,17 +442,24 @@ $O_2$ & 3 & 3 & 2 & 1 & 50 \\
 
 \cline{2-5}
 
-$O_3$ & 4 & 8 & 70 & 20 & 18 \\
+$O_3$ & 4 & 2 & 5 & 9 & 20 \\
 
 \cline{2-5}
 
-\multicolumn{1}{c}{$b_j$} & \multicolumn{1}{c}{5} & \multicolumn{1}{c}{8} & \multicolumn{1}{c}{7} & \multicolumn{1}{c}{14} & \multicolumn{1}{c}{} \\
+\multicolumn{1}{c}{$b_j$} & \multicolumn{1}{c}{20} & \multicolumn{1}{c}{40} & \multicolumn{1}{c}{30} & \multicolumn{1}{c}{10} & \multicolumn{1}{c}{} \\
 
 
 \end{tabular}
 \end{center}
 
 \end{table}
+
+
+
+
+
+
+
 
 
 %20
@@ -473,11 +480,11 @@ $F_1$ & 19 & 30 & 50 & 10 & 7 \\
 
 \cline{2-5}
 
-$O_2$ & 70 & 30 & 40 & 60 & 9 \\
+$F_2$ & 70 & 30 & 40 & 60 & 9 \\
 
 \cline{2-5}
 
-$O_3$ & 40 & 8 & 70 & 20 & 18 \\
+$F_3$ & 40 & 8 & 70 & 20 & 18 \\
 
 \cline{2-5}
 
@@ -488,5 +495,133 @@ $O_3$ & 40 & 8 & 70 & 20 & 18 \\
 \end{center}
 
 \end{table}
+
+
+
+
+
+
+
+
+
+%21
+
+
+\item A steel company has three open hearth furnaces and five rolling mills. Transportation costs (rupees per quintal) for transporting steel from furnaces to rolling mills are shown in the following table :
+
+\begin{table}[h]
+\def\arraystretch{1.5}
+
+\begin{center}
+\begin{tabular}{c|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|c}
+
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{$M_1$} & \multicolumn{1}{c}{$M_2$} & \multicolumn{1}{c}{$M_3$} & \multicolumn{1}{c}{$M_4$} & \multicolumn{1}{c}{$M_5$} & \multicolumn{1}{c}{$a_i$} \\
+
+\cline{2-6}
+
+$F_1$ & 4 & 2 & 3 & 2 & 6 & 8 \\
+
+\cline{2-6}
+
+$F_2$ & 5 & 4 & 5 & 2 & 1 & 12 \\
+
+\cline{2-6}
+
+$F_3$ & 6 & 5 & 4 & 7 & 7 & 14 \\
+
+\cline{2-6}
+
+\multicolumn{1}{c}{$b_j$} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{6} & \multicolumn{1}{c}{8} & \multicolumn{1}{c}{8} & \multicolumn{1}{c}{} \\
+
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
+
+What is the optimal transportation schedule ?
+
+
+
+
+
+\newpage
+
+
+
+
+
+%22
+	\item Find the optimal assignment to obtain the minimum cost for the assignment problem with the following cost matrix.
+	
+
+\begin{table}[h]
+\def\arraystretch{1.5}
+
+\begin{center}
+\begin{tabular}{c|>{\centering}m{1cm}>{\centering}m{1cm}>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
+
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{$M_1$} & \multicolumn{1}{c}{$M_2$} & \multicolumn{1}{c}{$M_3$} & \multicolumn{1}{c}{$M_4$} \\
+
+\cline{2-5}
+
+$J_1$ & 10 & 24 & 30 & 15 \\
+
+$J_2$ & 16 & 22 & 28 & 12 \\
+
+$J_3$ & 12 & 20 & 32 & 10 \\
+
+$J_4$ & 9 & 26 & 34 & 16 \\
+
+\cline{2-5}
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+%23
+	\item Find the optimal assignment to obtain the minimum cost for the assignment problem with the following cost matrix.
+	
+\begin{table}[h]
+\def\arraystretch{1.5}
+
+\begin{center}
+\begin{tabular}{c|>{\centering}m{1cm}>{\centering}m{1cm}>{\centering}m{1cm}>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
+
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{a} & \multicolumn{1}{c}{b} & \multicolumn{1}{c}{c} & \multicolumn{1}{c}{d} & \multicolumn{1}{c}{e} \\
+
+\cline{2-6}
+
+1 & 2 & 9 & 2 & 7 & 1 \\
+
+2 & 6 & 8 & 7 & 6 & 1 \\
+
+3 & 4 & 6 & 5 & 3 & 1 \\
+
+4 & 4 & 2 & 7 & 3 & 1 \\
+
+5 & 5 & 3 & 9 & 5 & 1 \\
+
+\cline{2-6}
+
+
+\end{tabular}
+\end{center}
+
+\end{table}
+
 \end{enumerate}
 \end{document}
