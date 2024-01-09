@@ -199,41 +199,7 @@
 	
 	
 %05
-	\item A test was given to give students taken at random from the fifth class of three schools of a town. The individual scores are :
 	
-	\begin{table}[h]
-	\def\arraystretch{1.5}
-	
-	\begin{center}
-	\begin{tabular}{|>{\centering}m{2cm}|>{\centering}m{1cm}>{\centering}m{1cm}>{\centering}m{1cm}>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
-	
-	\hline
-	
-	School I : & 9 & 7 & 6 & 5 & 8 \\
-	
-	School II : & 7 & 4 & 5 & 4 & 5 \\
-	
-	School III : & 6 & 5 & 6 & 7 & 6 \\
-	
-	\hline
-	
-	\end{tabular}
-	\end{center}
-	
-	\end{table}
-	
-	Carry out the analysis of variance and state your conclusions.
-	
-	
-	
-	
-	
-	
-\newpage
-	
-	
-	
-%06
 	\item An experiment was conducted to determine the effects of different dates of planting and different methods of planting on the yield of sugar-cane. The data below show the yields of sugar-cane (in kg.) for four different dates and three methods of planting.
 	
 	\begin{table}[h]
@@ -272,14 +238,14 @@
 	
 	
 	
+\newpage
 	
 	
 	
 	
 	
 	
-	
-%07
+%06
 	\item The following table provides marks obtained by 20 undergraduate students in Statistics Honours in a college test and in the subsequent University examination. Fit a simple linear regression model to the data.
 	
 	\begin{table}[h]
@@ -322,7 +288,23 @@
 	
 	12 & 121 & 341 \\
 	
-	13 
+	13 & 175 & 403 \\
+	
+	14 & 133 & 326 \\
+	
+	15 & 144 & 346 \\
+	
+	16 & 109 & 255 \\
+	
+	17 & 165 & 362 \\
+	
+	18 & 114 & 361 \\
+	
+	19 & 164 & 382 \\
+	
+	20 & 125 & 319 \\
+	
+	\hline
 	
 	
 	
