@@ -22,7 +22,7 @@
 
 %01
 
-	\item A random sample of size 9 is drawn from the distribution with pdf
+	\item A random sample of size 9 is drawn from the distribution with PDF
 	\begin{align*}
 	f_{\theta}(x) &\propto \dfrac{x^2}{{\theta}^3}; \,  -3\theta < x < \theta; \, \theta > 0 \,\, \text{and} \\
 	f_{\theta}(x) &= 0; \, \text{otherwise}
@@ -67,16 +67,35 @@ Calculate the values of the maximum likelihood estimate and the method of moment
 	
 	
 %04
-	\item In order to test whether a coin is perfect or not a coin is tossed 6 times. The null hypothesis is rejected if and only if three heads are not obtained. What is the probability of type I error ? Find the power of the test when the corresponding probability of head is 0.4.
+	\item A random sample of size 20 is drawn from the distribution with PDF
+	\begin{equation*}
+	 f(x) =
+		\begin{cases}
+		 \theta e^{-\theta x}, & x > 0  \\
+		 0, & \text{otherwise}.
+		\end{cases}
+	\end{equation*}
 	
+and the observations are found to be 0.10, 0.34, 0.77, 0.57, 1.63, 0.06, 1.14, 0.40, 0.07, 1.17, 0.17, 0.17, 0.16, 0.01, 0.79, 0.06, 0.38, 0.28, 0.17, 1.30.
+
+Obtain method of moments estimate of $\theta$.
 	
 	
 	
 	
 	
 %05
-	\item The life (in hours) of an electrical component is exponentially distributed with mean $\theta$, where $\theta (> 0)$ is an unknown parameter. For testing the null hypothesis $H_0 : \theta = 6$ against the alternative $H_1 : \theta < 6$, four such components are drawn independently. Under a test rule which rejects the null hypothesis when three or more of these four survive for less than six hours, what is the probability of type I error? Also, find the probability of type II error when $\theta = 4.2$.
+	\item A random sample of size 20 is drawn from the distribution with PDF
+	\begin{equation*}
+	 f(x) =
+		\begin{cases}
+		 \dfrac{\alpha^{\beta}}{\Gamma(\beta)} e^{-\alpha x}x^{\beta - 1}, & x > 0  \\
+		 0, & \text{otherwise}.
+		\end{cases}
+	\end{equation*}
 	
-	Draw a sketch of the power curve of the above test and comment.
+and the observations are found to be 2.13, 3.30, 3.78, 1.99, 2.91, 1.68, 1.18, 2.97, 3.89, 4.71, 2.05, 1.56, 0.48, 2.26, 3.27, 2.16, 2.71, 4.46, 1.78, 4.47.
+
+Obtain method of moments estimates of $\alpha$ and $\beta$.
 \end{enumerate}
 \end{document}
