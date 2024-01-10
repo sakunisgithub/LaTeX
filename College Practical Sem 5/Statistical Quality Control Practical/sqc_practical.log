@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  13 DEC 2023 23:03
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  10 JAN 2024 19:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -251,14 +251,64 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-] [2] [3] (sqc_practical.aux) ) 
-Here is how much of TeX's memory you used:
- 2657 strings out of 411566
- 40027 string characters out of 2819980
- 1866973 words of memory out of 3000000
- 22794 multiletter control sequences out of 15000+600000
- 518512 words of font info for 60 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 55i,10n,62p,471b,339s stack positions out of 10000i,1000n,20000p,200000b,80000s
+] [2] [3]
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+ []|\TU/lmr/m/n/10.95 2000| 
+ []
 
-Output written on sqc_practical.pdf (3 pages).
+
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+ []|\TU/lmr/m/n/10.95 1500| 
+ []
+
+
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+ []|\TU/lmr/m/n/10.95 1400| 
+ []
+
+
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+ []|\TU/lmr/m/n/10.95 1350| 
+ []
+
+
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+ []|\TU/lmr/m/n/10.95 1250| 
+ []
+
+
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+ []|\TU/lmr/m/n/10.95 1760| 
+ []
+
+
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+ []|\TU/lmr/m/n/10.95 1875| 
+ []
+
+
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+ []|\TU/lmr/m/n/10.95 1955| 
+ []
+
+
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+ []|\TU/lmr/m/n/10.95 3125| 
+ []
+
+
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--387
+ []|\TU/lmr/m/n/10.95 1575| 
+ []
+
+[4] [5] [6] (sqc_practical.aux) ) 
+Here is how much of TeX's memory you used:
+ 2666 strings out of 411566
+ 40284 string characters out of 2819980
+ 1868973 words of memory out of 3000000
+ 22797 multiletter control sequences out of 15000+600000
+ 518536 words of font info for 63 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 55i,11n,62p,471b,345s stack positions out of 10000i,1000n,20000p,200000b,80000s
+
+Output written on sqc_practical.pdf (6 pages).
