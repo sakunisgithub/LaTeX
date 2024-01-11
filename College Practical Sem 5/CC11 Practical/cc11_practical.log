@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  11 JAN 2024 00:03
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  12 JAN 2024 01:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -131,78 +131,130 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )) (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks23
-) (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.st
-y
+) (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/tasks\tasks.sty
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-12-17 L3 programming layer (loader) 
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xe
+tex.def
+File: l3backend-xetex.def 2022-10-26 L3 backend support: XeTeX
+\g__graphics_track_int=\count270
+\l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count271
+\g__pdf_backend_annotation_int=\count272
+\g__pdf_backend_link_int=\count273
+))
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpar
+se.sty
+Package: xparse 2022-12-17 L3 Experimental document command parser
+)
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\x
+template.sty
+Package: xtemplate 2022-12-17 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen158
+\l__xtemplate_tmp_int=\count274
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip53
+)
+Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
+\g__tasks_total_items_int=\count275
+\l__tasks_columns_int=\count276
+\g__tasks_rows_int=\count277
+\g__tasks_current_col_num_int=\count278
+\g__tasks_current_row_num_int=\count279
+\l__tasks_item_columns_int=\count280
+\g__tasks_env_int=\count281
+\l__tasks_start_int=\count282
+\l__tasks_item_indent_dim=\dimen159
+\l__tasks_item_default_indent_dim=\dimen160
+\l__tasks_item_width_dim=\dimen161
+\l__tasks_label_width_dim=\dimen162
+\l__tasks_label_default_width_dim=\dimen163
+\l__tasks_label_offset_dim=\dimen164
+\l__tasks_label_default_offset_dim=\dimen165
+\l__tasks_column_sep_dim=\dimen166
+\l__tasks_correction_dim=\dimen167
+\l__tasks_full_width_dim=\dimen168
+\l__tasks_after_item_skip=\skip54
+\l__tasks_custom_after_item_skip=\skip55
+\l__tasks_before_list_skip=\skip56
+\l__tasks_after_list_skip=\skip57
+\l__tasks_item_coffin=\box54
+\l__tasks_label_coffin=\box55
+\c@task=\count283
+\l__tasks_tmpa_int=\count284
+\l__tasks_tmpb_int=\count285
+\l__tasks_tmpa_coffin=\box56
+\l__tasks_tmpa_box=\box57
+
+Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
+(xtemplate)             line 450.
+
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/tasks\tasks.cfg))
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip53
-\multirow@cntb=\count270
-\multirow@dima=\skip54
-\bigstrutjot=\dimen158
+\multirow@colwidth=\skip58
+\multirow@cntb=\count286
+\multirow@dima=\skip59
+\bigstrutjot=\dimen169
 ) (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/tools\hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 )
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen159
-\ar@mcellbox=\box53
-\extrarowheight=\dimen160
+\col@sep=\dimen170
+\ar@mcellbox=\box58
+\extrarowheight=\dimen171
 \NC@list=\toks24
-\extratabsurround=\skip55
-\backup@length=\skip56
-\ar@cellbox=\box54
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box59
 )
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip57
-\LTright=\skip58
-\LTpre=\skip59
-\LTpost=\skip60
-\LTchunksize=\count271
-\LTcapwidth=\dimen161
-\LT@head=\box55
-\LT@firsthead=\box56
-\LT@foot=\box57
-\LT@lastfoot=\box58
-\LT@gbox=\box59
-\LT@cols=\count272
-\LT@rows=\count273
-\c@LT@tables=\count274
-\c@LT@chunks=\count275
+\LTleft=\skip62
+\LTright=\skip63
+\LTpre=\skip64
+\LTpost=\skip65
+\LTchunksize=\count287
+\LTcapwidth=\dimen172
+\LT@head=\box60
+\LT@firsthead=\box61
+\LT@foot=\box62
+\LT@lastfoot=\box63
+\LT@gbox=\box64
+\LT@cols=\count288
+\LT@rows=\count289
+\c@LT@tables=\count290
+\c@LT@chunks=\count291
 \LT@p@ftn=\toks25
 )
-(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xe
-tex.def
-File: l3backend-xetex.def 2022-10-26 L3 backend support: XeTeX
-\g__graphics_track_int=\count276
-\l__pdf_internal_box=\box60
-\g__pdf_backend_object_int=\count277
-\g__pdf_backend_annotation_int=\count278
-\g__pdf_backend_link_int=\count279
-) (cc11_practical.aux)
+(cc11_practical.aux)
 \openout1 = `cc11_practical.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-7.
+8.
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -238,12 +290,12 @@ LaTeX Font Info:    ... okay on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
 
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -251,14 +303,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-] (cc11_practical.aux) ) 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
+
+ []
+
+[2] (cc11_practical.aux) ) 
 Here is how much of TeX's memory you used:
- 2663 strings out of 411566
- 40207 string characters out of 2819980
- 1854973 words of memory out of 3000000
- 22796 multiletter control sequences out of 15000+600000
+ 3254 strings out of 411566
+ 56598 string characters out of 2819980
+ 1855973 words of memory out of 3000000
+ 23374 multiletter control sequences out of 15000+600000
  518528 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 55i,10n,62p,322b,238s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 58i,10n,63p,428b,434s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on cc11_practical.pdf (1 page).
+Output written on cc11_practical.pdf (2 pages).
