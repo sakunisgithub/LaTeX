@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  9 JAN 2024 20:02
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  14 JAN 2024 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -170,39 +170,133 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count275
 \LT@p@ftn=\toks25
 )
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/skak\skak.sty
+Package: skak 2018/01/08 v1.5.3 Chess typesetting
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/chessfss\chessfss.sty
+Package: chessfss 2006/06/14 v1.2a chess font selection scheme
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks26
+\XKV@tempa@toks=\toks27
+)
+\XKV@depth=\count276
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/chessfss\lsbenc.def
+File: lsbenc.def 2006/06/09 v1.2 Standard LaTeX file
+)
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/chessfss\lsfenc.def
+File: lsfenc.def 2006/06/09 v1.2 Standard LaTeX file
+)
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/chessfss\lsienc.def
+File: lsienc.def 2006/06/09 v1.2 Standard LaTeX file
+)
+\len@cfss@squarewidth=\skip61
+\len@cfss@squaretotalheight=\skip62
+\len@cfss@squaredepth=\skip63
+)
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/generic/lambda-lists\lambda.
+sty) (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count277
+\calc@Bcount=\count278
+\calc@Adimen=\dimen162
+\calc@Bdimen=\dimen163
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count279
+\calc@Cskip=\skip66
+)
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+\c@fileFrom=\count280
+\c@rankFrom=\count281
+\c@fileTo=\count282
+\c@rankTo=\count283
+\c@ps@inverse=\count284
+\c@ps@knightangle=\count285
+\c@halfmove=\count286
+\c@move=\count287
+\c@helpgobble=\count288
+\c@helpnumber=\count289
+\c@helpnumberMove=\count290
+\squarelength=\skip67
+\square@multiplier=\count291
+\ranklift=\skip68
+LaTeX Font Info:    Trying to load font information for LSB+skaknew on input li
+ne 1774.
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/chessfss\lsbskaknew.fd
+File: lsbskaknew.fd 2006/03/31 v1.0 Chess font definitions
+)
+
+LaTeX Font Warning: Font shape `TU/lmss/m/up' undefined
+(Font)              using `TU/lmss/m/n' instead on input line 1774.
+
+\store@toks=\toks28
+)
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xe
 tex.def
 File: l3backend-xetex.def 2022-10-26 L3 backend support: XeTeX
-\g__graphics_track_int=\count276
+\g__graphics_track_int=\count292
 \l__pdf_internal_box=\box60
-\g__pdf_backend_object_int=\count277
-\g__pdf_backend_annotation_int=\count278
-\g__pdf_backend_link_int=\count279
+\g__pdf_backend_object_int=\count293
+\g__pdf_backend_annotation_int=\count294
+\g__pdf_backend_link_int=\count295
 ) (operations_research_practical.aux)
 \openout1 = `operations_research_practical.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-7.
+8.
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for LSB/skaknew/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for LSF/skaknew/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for LSF+skaknew on input li
+ne 18.
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/chessfss\lsfskaknew.fd
+File: lsfskaknew.fd 2006/03/31 v1.0 Chess font definitions
+)
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for LSI/skaknew/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for LSI+skaknew on input li
+ne 18.
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/chessfss\lsiskaknew.fd
+File: lsiskaknew.fd 2006/03/31 v1.0 Chess font definitions
+)
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -238,12 +332,12 @@ LaTeX Font Info:    ... okay on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
 
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -251,14 +345,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-] [2] [3] [4] [5] [6] (operations_research_practical.aux) ) 
-Here is how much of TeX's memory you used:
- 2672 strings out of 411566
- 40642 string characters out of 2819980
- 1860973 words of memory out of 3000000
- 22799 multiletter control sequences out of 15000+600000
- 518552 words of font info for 65 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 55i,10n,62p,358b,343s stack positions out of 10000i,1000n,20000p,200000b,80000s
+] [2] [3] [4] [5] [6] [7] (operations_research_practical.aux)
 
-Output written on operations_research_practical.pdf (6 pages).
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4932 strings out of 411566
+ 70999 string characters out of 2819980
+ 1866973 words of memory out of 3000000
+ 25013 multiletter control sequences out of 15000+600000
+ 518720 words of font info for 67 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 58i,11n,62p,358b,359s stack positions out of 10000i,1000n,20000p,200000b,80000s
+
+Output written on operations_research_practical.pdf (7 pages).

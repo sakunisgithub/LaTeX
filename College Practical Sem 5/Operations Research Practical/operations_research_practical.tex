@@ -8,6 +8,7 @@
 \usepackage{hhline}
 \usepackage{array}
 \usepackage{longtable}
+\usepackage{skak}
 
 \title{\textbf{QUESTIONS}}
 
@@ -323,7 +324,7 @@ $O_3$ & 32 & 27 & 18 & 41 & 19 \\
 
 
 
-\vspace{15pt}
+
 
 
 
@@ -366,7 +367,7 @@ $O_4$ & 1 & 6 & 2 & 14 \\
 
 
 
-\vspace{15pt}
+
 
 
 
@@ -415,7 +416,7 @@ $F_4$ & 12 & 14 & 10 & 4 \\
 
 
 
-\newpage
+
 
 
 
@@ -424,7 +425,7 @@ $F_4$ & 12 & 14 & 10 & 4 \\
 
 \item Obtain an optimal basic feasible solution of the following transportation problem :
 
-\begin{table}[h]
+\begin{table}[!htbp]
 \def\arraystretch{1.5}
 
 \begin{center}
@@ -457,7 +458,7 @@ $O_3$ & 4 & 2 & 5 & 9 & 20 \\
 
 
 
-\vspace{15pt}
+\newpage
 
 
 
@@ -499,7 +500,7 @@ $F_3$ & 40 & 8 & 70 & 20 & 18 \\
 
 
 
-\vspace{15pt}
+
 
 
 
@@ -546,7 +547,7 @@ What is the optimal transportation schedule ?
 
 
 
-\newpage
+
 
 
 
@@ -556,7 +557,7 @@ What is the optimal transportation schedule ?
 	\item Find the optimal assignment to obtain the minimum cost for the assignment problem with the following cost matrix.
 	
 
-\begin{table}[h]
+\begin{table}[!htbp]
 \def\arraystretch{1.5}
 
 \begin{center}
@@ -586,7 +587,7 @@ $J_4$ & 9 & 26 & 34 & 16 \\
 
 
 
-\vspace{15pt}
+
 
 
 
@@ -596,7 +597,7 @@ $J_4$ & 9 & 26 & 34 & 16 \\
 %23
 	\item Find the optimal assignment to obtain the minimum cost for the assignment problem with the following cost matrix.
 	
-\begin{table}[h]
+\begin{table}[!htbp]
 \def\arraystretch{1.5}
 
 \begin{center}
@@ -630,7 +631,45 @@ $J_4$ & 9 & 26 & 34 & 16 \\
 
 
 
-\vspace{15pt}
+\newpage
+
+
+
+
+
+
+%24
+	\item In a rectangular game the payoff matrix is given by
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}
+	
+	\hline
+	
+	10 & 5 & 5 & 20 & 4 \\
+	
+	\hline
+	
+	11 & 15 & 10 & 17 & 25 \\
+	
+	\hline
+	
+	7 & 12 & 8 & 9 & 8 \\
+	
+	\hline
+	
+	5 & 13 & 9 & 10 & 5 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+
+State, giving reasons, whether the players will use pure or mixed strategies. What is the value of the game ?
 
 
 
@@ -639,5 +678,227 @@ $J_4$ & 9 & 26 & 34 & 16 \\
 
 
 
+
+
+
+
+
+
+%25
+	\item Use dominance to reduce the following payoff matrix and solve the game.
+	
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{B} \\
+	
+	\cline{2-5}
+	
+	\multirow{3}{*}{A} & 8 & 15 & $-4$ & $-2$ \\
+	
+	\cline{2-5}
+		
+	& 19 & 15 & 17 & 16 \\
+	
+	\cline{2-5}
+		
+	& 0 & 20 & 15 & 5 \\
+
+	\cline{2-5}
+	
+	
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+
+
+
+
+
+
+
+
+
+
+%26
+	\item Use dominance to reduce the following payoff matrix and solve the game.
+	
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|} 
+	
+	\multicolumn{1}{c}{} & \multicolumn{3}{c}{B} \\
+	
+	\cline{2-4}
+	
+	\multirow{4}{*}{A} & 8 & 5 & 8 \\
+	
+	\cline{2-4}
+	
+	& 8 & 6 & 5 \\
+	
+	\cline{2-4}
+	
+	& 7 & 4 & 5 \\
+	
+	\cline{2-4}
+	
+	& 6 & 5 & 6 \\
+	
+	\cline{2-4}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%27
+	\item Reduce the following matrix game into a $2 \times 2$ matrix game.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
+	
+	\hline
+	
+	2 & 2 & 1 & $-2$ & $-3$ \\
+	
+	\hline
+	
+	4 & 3 & 4 & $-2$ & 0 \\
+	
+	\hline
+	
+	5 & 1 & 2 & 5 & 6 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+\newpage
+	
+
+%28
+	\item Reduce the following matrix game into a $2 \times 2$ matrix game.
+	
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
+	
+	\hline
+	
+	4 & 2 & 0 & 2 & 1 & 1 \\
+	
+	\hline
+	
+	4 & 3 & 1 & 3 & 2 & 2 \\
+	
+	\hline
+	
+	4 & 3 & 7 & $-5$ & 1 & 2 \\
+	
+	\hline
+	
+	4 & 3 & 4 & $-1$ & 2 & 2 \\
+	
+	\hline
+	
+	4 & 3 & 3 & $-2$ & 2 & 2 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%29
+	\item Solve graphically the game whose payoff matrix is given as follows :
+	
+	\begin{table}[h]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{1cm}>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
+	
+	& \multicolumn{1}{c}{} & \multicolumn{2}{c}{B} \\
+	
+	& \multicolumn{1}{c}{} & \multicolumn{1}{c}{$B_1$} & \multicolumn{1}{c}{$B_2$} \\
+	
+	\cline{3-4}
+	
+	\multirow{6}{*}{A} & $A_1$ & 1 & $-3$ \\
+	
+	\cline{3-4}
+	
+	& $A_2$ & 3 & 5 \\
+	
+	\cline{3-4}
+	
+	& $A_3$ & $-1$ & 6 \\
+	
+	\cline{3-4}
+	
+	& $A_4$ & 4 & 1 \\
+	
+	\cline{3-4}
+	
+	& $A_5$ & 2 & 2 \\
+	
+	\cline{3-4}
+	
+	& $A_6$ & $-5$ & 0 \\
+	
+	\cline{3-4}
+	
+	\end{tabular}
+	\end{center}
+	\end{table}
 \end{enumerate}
+
+\vspace{25pt}
+
+
+\begin{center}
+\BlackRookOnBlack \BlackKnightOnWhite \BlackBishopOnBlack \BlackKingOnWhite \BlackQueenOnBlack \BlackBishopOnWhite \BlackKnightOnBlack \BlackRookOnWhite
+\end{center}
+
+
+
+
+
 \end{document}
