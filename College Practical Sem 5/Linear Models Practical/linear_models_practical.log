@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  9 JAN 2024 18:20
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  17 JAN 2024 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -256,7 +256,7 @@ Overfull \hbox (3.54443pt too wide) in paragraph at lines 118--143
  [] 
  []
 
-[2] [3] (linear_models_practical.aux) ) 
+[2] [3] [4] [5] (linear_models_practical.aux) ) 
 Here is how much of TeX's memory you used:
  2657 strings out of 411566
  40147 string characters out of 2819980
@@ -264,6 +264,6 @@ Here is how much of TeX's memory you used:
  22794 multiletter control sequences out of 15000+600000
  518512 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 55i,12n,62p,351b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 55i,13n,62p,639b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on linear_models_practical.pdf (3 pages).
+Output written on linear_models_practical.pdf (5 pages).
