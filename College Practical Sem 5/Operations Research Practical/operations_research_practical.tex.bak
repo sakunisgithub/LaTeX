@@ -931,7 +931,7 @@ State, giving reasons, whether the players will use pure or mixed strategies. Wh
 	
 	
 %27
-	\item Reduce the following matrix game into a $2 \times 2$ matrix game.
+	\item Reduce the following matrix game into a $2 \times 2$ matrix game. \\
 	
 	\begin{table}[!htbp]
 	\def\arraystretch{1.5}
@@ -964,7 +964,7 @@ State, giving reasons, whether the players will use pure or mixed strategies. Wh
 	
 
 %28
-	\item Reduce the following matrix game into a $2 \times 2$ matrix game.
+	\item Reduce the following matrix game into a $2 \times 2$ matrix game. \\
 	
 	\begin{table}[h]
 	\def\arraystretch{1.5}
