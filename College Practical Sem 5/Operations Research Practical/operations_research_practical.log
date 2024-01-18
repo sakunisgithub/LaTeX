@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  14 JAN 2024 21:30
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  18 JAN 2024 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,12 +332,12 @@ LaTeX Font Info:    ... okay on input line 18.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
 
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -345,18 +345,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-] [2] [3] [4] [5] [6] [7] (operations_research_practical.aux)
+] [2] [3] [4] [5] [6] [7] [8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 934--935
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 967--968
+
+ []
+
+[10] (operations_research_practical.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4932 strings out of 411566
- 70999 string characters out of 2819980
+ 4921 strings out of 411566
+ 70813 string characters out of 2819980
  1866973 words of memory out of 3000000
- 25013 multiletter control sequences out of 15000+600000
- 518720 words of font info for 67 fonts, out of 8000000 for 9000
+ 25006 multiletter control sequences out of 15000+600000
+ 517167 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,11n,62p,358b,359s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 58i,11n,62p,358b,365s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on operations_research_practical.pdf (7 pages).
+Output written on operations_research_practical.pdf (10 pages).
