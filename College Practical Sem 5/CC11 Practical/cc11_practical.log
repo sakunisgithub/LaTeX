@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  12 JAN 2024 01:30
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  18 JAN 2024 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -308,14 +308,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
-[2] (cc11_practical.aux) ) 
+[2] [3] (cc11_practical.aux) ) 
 Here is how much of TeX's memory you used:
  3254 strings out of 411566
  56598 string characters out of 2819980
- 1855973 words of memory out of 3000000
+ 1861973 words of memory out of 3000000
  23374 multiletter control sequences out of 15000+600000
  518528 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,10n,63p,428b,434s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 58i,14n,63p,428b,434s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on cc11_practical.pdf (2 pages).
+Output written on cc11_practical.pdf (3 pages).
