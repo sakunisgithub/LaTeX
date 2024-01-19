@@ -470,5 +470,147 @@
 	
 	\end{table}
 	Based on this data, verify the students' claim.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+%11
+	\item The following table gives the birth weights of 8 litters of pigs, the litters being of different sizes. Analyse the data to find if the litter means are different and also determine whether the size of litter is an assignable cause of variation.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{2.5cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
+	
+	
+	\hline
+	
+	Litters & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\\hline\hline
+	
+	
+	\multirow{10}{*}{Birth weights} & 2.0 & 3.5 & 3.3 & 3.2 & 2.6 & 3.1 & 2.6 & 2.5 \\
+	
+	\cline{2-9}
+	
+	& 2.8 & 2.8 & 3.6 & 3.3 & 2.6 & 2.9 & 2.2 & 2.4 \\
+	
+	\cline{2-9}
+	
+	& 3.3 & 3.2 & 2.6 & 3.2 & 2.9 & 3.1 & 2.2 & 3.0 \\
+	
+	\cline{2-9}
+	
+	& 3.2 & 3.5 & 3.1 & 2.9 & 2.0 & 2.5 & 2.5 & 1.0 \\
+	
+	\cline{2-9}
+	
+	& 4.4 & 2.3 & 3.2 & 3.3 & 2.0 & & 1.2 & \\
+	
+	\cline{2-9}
+	
+	& 3.6 & 2.4 & 3.3 & 2.5 & 2.1 & & 1.2 & \\
+	
+	\cline{2-9}
+	
+	& 1.9 & 2.0 & 2.9 & 2.6 & & & & \\
+	
+	\cline{2-9}
+	
+	& 3.3 & 1.6 & 3.4 & 2.8 & & & & \\
+	
+	\cline{2-9}
+	
+	& 2.8 & & 3.2 & & & & & \\
+	
+	\cline{2-9}
+	
+	& 1.1 & & 3.2 & & & & & \\
+	
+	\hline
+	
+	
+	
+	
+
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\newpage
+
+
+
+
+	\item Consider the following data :
+
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{1cm}|>{\centering}m{1cm}|m{2.5cm}|}
+	
+	\hline
+	
+	$x_1$ & $x_2$ & $y$ \\\hline\hline
+	
+	17 & 42 & 90 \\
+	
+	\hline
+	
+	19 & 45 & 71, 76 \\
+	\hline
+	
+	20 & 29 & 63, 63, 80, 80 \\
+	
+	\hline
+	
+	21 & 93 & 80, 64, 82, 66 \\
+	
+	\hline
+	
+	25 & 34 & 75, 82 \\
+	
+	\hline
+	
+	27 & 98 & 99 \\
+	
+	\hline
+	
+	28 & 99 & 73 \\
+	
+	\hline
+	
+	30 & 73 & 67, 74 \\
+	
+	\hline
+	
+	
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	Fit the model $y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon$.
 \end{enumerate}
 \end{document}
