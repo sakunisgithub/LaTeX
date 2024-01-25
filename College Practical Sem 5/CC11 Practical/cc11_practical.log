@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  20 JAN 2024 21:51
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  25 JAN 2024 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,12 +290,12 @@ LaTeX Font Info:    ... okay on input line 18.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -304,18 +304,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
 
-[2] [3] (cc11_practical.aux) ) 
+[2] [3] [4] [5] [6] [7] [8] (cc11_practical.aux) ) 
 Here is how much of TeX's memory you used:
- 3254 strings out of 411566
- 56598 string characters out of 2819980
- 1861973 words of memory out of 3000000
- 23374 multiletter control sequences out of 15000+600000
- 518528 words of font info for 62 fonts, out of 8000000 for 9000
+ 3262 strings out of 411566
+ 56687 string characters out of 2819980
+ 1858973 words of memory out of 3000000
+ 23382 multiletter control sequences out of 15000+600000
+ 520482 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,14n,63p,428b,434s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on cc11_practical.pdf (3 pages).
+Output written on cc11_practical.pdf (8 pages).
