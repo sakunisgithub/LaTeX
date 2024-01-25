@@ -123,7 +123,7 @@ Obtain method of moments estimates of $\alpha$ and $\beta$.
 
 \begin{center}
 
-\textbf{\huge Type-I, Type II Errors \& Power Curves}
+\textbf{\huge Type-I, Type-II Errors \& Power Curve}
 
 \end{center}
 
@@ -364,7 +364,7 @@ Obtain method of moments estimates of $\alpha$ and $\beta$.
 
 \begin{center}
 
-\textbf{\huge Likelihood Ratio Tests}
+\textbf{\huge Likelihood Ratio Test}
 
 \end{center}
 
@@ -459,7 +459,7 @@ coefficient $\rho$.
 
 \begin{center}
 
-\textbf{\LARGE Large Sample Tests based on Pearsonian $\chi^2$}
+\textbf{\LARGE Large Sample Test based on Pearsonian $\chi^2$}
 
 \end{center}
 
@@ -506,7 +506,7 @@ coefficient $\rho$.
 	 
 	 
 %19
-	\item 1072 school boys are classified according to intelligence, and at the same time their economic conditions are recorded. The results are shown in the following table.
+	\item 1072 school boys are classified according to intelligence and at the same time their economic conditions are recorded. The results are shown in the following table.
 	
 	\begin{table}[!htbp]
 	\def\arraystretch{1.5}
@@ -549,7 +549,7 @@ coefficient $\rho$.
 	
 	
 %20
-	\item There are two sections in a class, having 120 and 100 pupils, respectively. The following table gives their results in the half-yearly and annual examinations.
+	\item There are two sections in a class having 120 and 100 pupils respectively. The following table gives their results in the half-yearly and annual examinations.
 	
 	\begin{table}[!htbp]
 	\def\arraystretch{1.5}
