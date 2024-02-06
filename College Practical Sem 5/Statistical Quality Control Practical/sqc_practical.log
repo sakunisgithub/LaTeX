@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  4 FEB 2024 00:39
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  7 FEB 2024 01:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -170,6 +170,27 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count275
 \LT@p@ftn=\toks25
 )
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xe
 tex.def
 File: l3backend-xetex.def 2022-10-26 L3 backend support: XeTeX
@@ -181,28 +202,28 @@ File: l3backend-xetex.def 2022-10-26 L3 backend support: XeTeX
 ) (sqc_practical.aux)
 \openout1 = `sqc_practical.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-7.
+8.
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -238,12 +259,12 @@ LaTeX Font Info:    ... okay on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
 
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -252,61 +273,64 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 ] [2] [3]
-Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 387--387
  []|\TU/lmr/m/n/10.95 2000| 
  []
 
 
-Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 387--387
  []|\TU/lmr/m/n/10.95 1500| 
  []
 
 
-Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 387--387
  []|\TU/lmr/m/n/10.95 1400| 
  []
 
 
-Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 387--387
  []|\TU/lmr/m/n/10.95 1350| 
  []
 
 
-Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 387--387
  []|\TU/lmr/m/n/10.95 1250| 
  []
 
 
-Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 387--387
  []|\TU/lmr/m/n/10.95 1760| 
  []
 
 
-Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 387--387
  []|\TU/lmr/m/n/10.95 1875| 
  []
 
 
-Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 387--387
  []|\TU/lmr/m/n/10.95 1955| 
  []
 
 
-Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--386
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 387--387
  []|\TU/lmr/m/n/10.95 3125| 
  []
 
 
-Overfull \hbox (1.98315pt too wide) in paragraph at lines 386--387
+Overfull \hbox (1.98315pt too wide) in paragraph at lines 387--388
  []|\TU/lmr/m/n/10.95 1575| 
  []
 
-[4] [5] [6] (sqc_practical.aux) ) 
+[4] [5]
+File: end.png Graphic file (type bmp)
+<end.png>
+ [6] (sqc_practical.aux) ) 
 Here is how much of TeX's memory you used:
- 2666 strings out of 411566
- 40284 string characters out of 2819980
+ 3093 strings out of 411566
+ 46355 string characters out of 2819980
  1868973 words of memory out of 3000000
- 22797 multiletter control sequences out of 15000+600000
+ 23205 multiletter control sequences out of 15000+600000
  518536 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  55i,11n,62p,471b,345s stack positions out of 10000i,1000n,20000p,200000b,80000s
