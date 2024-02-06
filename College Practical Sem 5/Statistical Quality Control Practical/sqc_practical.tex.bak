@@ -8,6 +8,7 @@
 \usepackage{hhline}
 \usepackage{array}
 \usepackage{longtable}
+\usepackage{graphicx}
 
 \title{\textbf{QUESTIONS}}
 
@@ -623,9 +624,12 @@ Construct the \textit{number of defectives} chart and establish quality standard
 	
 	
 	
+\vspace{50pt}
 	
-	
-	
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{end}
+\end{figure}	
 	
 	
 	
