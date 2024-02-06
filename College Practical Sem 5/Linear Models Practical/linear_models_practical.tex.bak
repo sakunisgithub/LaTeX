@@ -612,5 +612,96 @@
 	\end{table}
 	
 	Fit the model $y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon$.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%13
+	\item The following experiment was suggested to test whether subjecting seeds to high temperature and low temperature before planting has any effect on yield. Ten plots were taken and in each 6 seeds were sown at random. Two of the seeds were subjected to high temperatuer (h.t.), two to low temperature (l.t.) and two were subject to controls. The yield of individual plants in gms. are recorded in the following table. Test for the comparison of yields under the two treatmetns and control.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\hline
+	
+	\multirow{2}{*}{Plot No.} & \multicolumn{2}{c|}{h.t.} & \multicolumn{2}{c|}{l.t.} & \multicolumn{2}{c|}{Control} \\
+	
+	\hhline{~------}
+	
+	& Plant I & Plant II & Plant I & Plant II & Plant I & Plant II \\\hline\hline
+	
+	1 & 15 & 16 & 20 & 22 & 25 & 24 \\
+	
+	\hline
+	
+	2 & 20 & 15 & 30 & 29 & 40 & 35 \\
+	
+	\hline
+	
+	3 & 16 & 14 & 18 & 16 & 20 & 18 \\
+	
+	\hline
+	
+	4 & 18 & 15 & 20 & 22 & 22 & 26 \\
+	
+	\hline
+	
+	5 & 21 & 22 & 20 & 19 & 30 & 28 \\
+	
+	\hline
+	
+	6 & 10 & 8 & 16 & 14 & 16 & 15 \\
+	
+	\hline
+	
+	7 & 14 & 12 & 17 & 10 & 16 & 20 \\
+	
+	\hline
+	
+	8 & 15 & 11 & 20 & 18 & 19 & 17 \\
+	
+	\hline
+	
+	9 & 16 & 15 & 14 & 15 & 25 & 22 \\
+	
+	\hline
+	
+	10 & 17 & 14 & 15 & 14 & 14 & 18 \\
+	
+	\hline
+	
+	
+	
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
 \end{enumerate}
 \end{document}
