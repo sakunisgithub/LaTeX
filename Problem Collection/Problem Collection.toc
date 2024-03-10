@@ -9,9 +9,10 @@
 \contentsline {section}{\numberline {8}Functional Equations}{31}{section.8}%
 \contentsline {section}{\numberline {9}System of Equations}{31}{section.9}%
 \contentsline {section}{\numberline {10}Coordinate Geometry}{32}{section.10}%
-\contentsline {section}{\numberline {11}Mensuration}{32}{section.11}%
+\contentsline {section}{\numberline {11}Mensuration}{33}{section.11}%
 \contentsline {section}{\numberline {12}Inequality}{33}{section.12}%
-\contentsline {section}{\numberline {13}Number Theory}{38}{section.13}%
-\contentsline {section}{\numberline {14}Combinatorics}{39}{section.14}%
+\contentsline {section}{\numberline {13}Number Theory}{39}{section.13}%
+\contentsline {section}{\numberline {14}Combinatorics}{40}{section.14}%
 \contentsline {section}{\numberline {15}Real Analysis}{41}{section.15}%
-\contentsline {section}{\numberline {16}Linear Algebra}{42}{section.16}%
+\contentsline {section}{\numberline {16}Linear Algebra}{43}{section.16}%
+\contentsline {section}{\numberline {17}Theory of Equations}{43}{section.17}%

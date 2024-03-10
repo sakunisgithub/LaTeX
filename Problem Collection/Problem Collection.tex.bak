@@ -1421,6 +1421,13 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %177
 	\item $m$, $n$, $p$, $q$ are non-negative integers. Prove that, $$ \sum\limits_{m = 0}^{q} \left(n-m \right) \dfrac{\left(p+m\right)!}{m!} = \dfrac{\left(p+q+1\right)!}{q!} \left( \dfrac{n}{p+1} - \dfrac{q}{p+2}\right).$$
+	
+	
+%178
+	\item Let $n > 1$ be an integer. How many irrational numbers $a$ exists such that $\sqrt[n]{a + \sqrt{a^2 - 1}} + \sqrt[n]{a - \sqrt{a^2 - 1}}$ is rational ?
+	
+%179
+	\item Let $p = \sum \limits_{k = 1}^{\infty} \dfrac{1}{k^2}$, $q = \sum \limits_{k = 1}^{\infty} \dfrac{1}{k^3}$. Find $\sum \limits_{k = 1}^{\infty} \sum \limits_{j = 1}^{\infty} \dfrac{1}{(j+k)^3}$ in terms of $p$ and $q$.
 
 \end{enumerate}
 
@@ -2631,5 +2638,32 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 
 %01
 	\item Let $A = \left( a_{ij} \right)$ be the $ 2020 \times 2020 $ matrix with $ a_{ij} $ when $i \neq j$ and $a_{ii} = 0$. Find determinant of $A$.
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Theory of Equations}
+
+\begin{enumerate}
+
+%01
+	\item Find the number of positive roots of the equation $x^n - a_1 x^{n-1} - a_2 x^{n-2} - \ldots - a_{n-1}x - a_n = 0$ where $a_1, a_2, a_3, \ldots, a_n \geq 0$.
+	
+%02
+	\item The equation $ax^4 - bx^3 - cx^2 + dx + 1 = 0$ has a root $\cos \dfrac{2\pi}{15}$ for positive integer $a, b, c, d$. Find the value of $a+b+c+d$.
+	
+	
 \end{enumerate}
 \end{document}
