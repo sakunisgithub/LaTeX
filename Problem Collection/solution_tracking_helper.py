@@ -17,6 +17,7 @@ def print_all_topics() :
     print("14. Combinatorics")
     print("15. Real Analysis")
     print("16. Linear Algebra")
+    print("17. Theory of Equations")
 
 def add_inputs() :
     problem_no = int(input("Enter problem no = "))
@@ -154,6 +155,14 @@ def operate_csv(c1, topic, inputs) :
             print("\n\nDeatils added successfully !\n\n")
         elif c1 == 2 :
             print(linear_algebra.iloc[inputs-1])
+    elif topic == 17 :
+        theory_of_equations = pd.read_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\theory_of_equations.csv")
+        if c1 == 1 :
+            theory_of_equations.loc[len(theory_of_equations)] = [inputs[0], inputs[1], inputs[2]]
+            theory_of_equations.to_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\theory_of_equations.csv", index=False)
+            print("\n\nDeatils added successfully !\n\n")
+        elif c1 == 2 :
+            print(theory_of_equations.iloc[inputs-1])
     
 
 print("\n\n-----MENU-----\n\n")
