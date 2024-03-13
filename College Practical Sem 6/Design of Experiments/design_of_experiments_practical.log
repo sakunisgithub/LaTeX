@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  13 MAR 2024 13:06
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  13 MAR 2024 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -276,10 +276,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Here is how much of TeX's memory you used:
  3063 strings out of 411566
  46094 string characters out of 2819980
- 1849973 words of memory out of 3000000
+ 1862973 words of memory out of 3000000
  23186 multiletter control sequences out of 15000+600000
  518512 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 55i,11n,62p,317b,335s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 55i,11n,62p,317b,347s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 Output written on design_of_experiments_practical.pdf (1 page).
