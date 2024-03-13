@@ -1,0 +1,48 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top=1 in, bottom = 1 in, left = 1 in, right = 1 in ]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+
+\title{\textbf{QUESTIONS}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+%01
+
+	\item A set of data involving four "tropical feed stuffs A, B, C, D" tried on 20 chicks is given below. All the twenty chicks are treated alike in all respects except the feeding treatments and each feeding treatment is given to 5 chicks. Analyse the data.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|c|ccccc|c|}
+	
+	\hline
+	
+	Feed & Gain in Weight & Total $T_i$ \\
+	
+	\hline
+	
+	A & 55 & 49 & 42 & 21 & 52 & 219 \\
+	
+	
+	
+	\end{tabular}
+	\end{center}
+	\end{table}
+\end{enumerate}
+\end{document}
