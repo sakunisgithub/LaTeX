@@ -115,6 +115,84 @@
 	
 	\end{table}
 	
+	Test whether the treatments differ significantly. Also
+	\begin{enumerate}[(i)]
+	\item determine the critical difference between the means of any two treatments;
+	\item obtain the efficiency of this design relative to its layout as $C.R.D.$
 	
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+\newpage
+	
+	
+	
+	
+	
+	
+	
+
+%03
+	\item An experiment was carried out to determine the effect of claying the ground on the field of barley grains; amount of clay used were as follows : \\
+	$A$ : No clay \\
+	$B$ : Clay at 100 per acre \\
+	$C$ : Clay at 200 per acre \\
+	$D$ : Clay at 300 per acre. \\
+	The yields were in plots of 8 meters by 8 meters and are given in the following table.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{1cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{1}{c}{$I$} & \multicolumn{1}{c}{$II$} & \multicolumn{1}{c}{$III$} & \multicolumn{1}{c}{$IV$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{$I$} & $D$ & $B$ & $C$ & $A$ \\
+	
+	& 29.1 & 18.9 & 29.4 & 5.7 \\
+	
+	\cline{2-5}
+	
+	\multirow{2}{*}{$II$} & $C$ & $A$ & $D$ & $B$ \\
+	
+	& 16.4 & 10.2 & 21.2 & 19.1 \\
+	
+	\cline{2-5}
+	
+	\multirow{2}{*}{$III$} & $A$ & $D$ & $B$ & $C$ \\
+	
+	& 5.4 & 38.8 & 24.0 & 37.0 \\
+	
+	\cline{2-5}
+	
+	\multirow{2}{*}{$IV$} & $B$ & $C$ & $A$ & $D$ \\
+	
+	& 24.9 & 41.7 & 9.5 & 28.9 \\
+	
+	\cline{2-5}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	\begin{enumerate}[(i)]
+	\item Perform the ANOVA and calculate the critical difference for the treatment mean yields.
+	\item Calculate the efficiency of the above Latin Square Design over 
+		\begin{enumerate}[(a)]
+		\item $R.B.D.$ 
+		\item $C.R.D.$
+		\end{enumerate}		 
+	\item Yield under `A' in the first column was missing. Estimate the missig value and carry out the ANOVA.
+	
+	\end{enumerate}
 \end{enumerate}
 \end{document}
