@@ -280,41 +280,36 @@
 	
 	
 %05
-	\item The Martindale Wear Tester machine consists of four rectangular brass plates on each of which is fastened as abrading surface consisting of special quantity emery paper. Four weighted bushes into which test samples of fabric are fixed rest on emery surfaces and a mechanical device moves the bushes over the surface of the emery, thus abrading the test specimens. The los in weight after a given number of cycles is used as a criterion of resistance to abrasion. Five different rubber covered fabrics $A$, $B$, $C$, $D$ and $E$ were tested in five different runs of the machine according to the following scheme :
+	\item The following data were obtained from an experiment using the treatments : $0.32$ \% of Blitox, $0.16$ \% of Dithane z-78, $0.09$ \% of Brestan-60 and control. After sowing rhizomes of the matgrass \textit{Cyperus tagetum Roxb} in four plots in each of three villages, the above four treatments were applied at random to the plots in each village after 30 days of sowing. The yields in gm. of 30 sq. cm. cutting per plot after 120 days are given below. Analyse the data to find out if ther are any significant treatment effects.
 	
 	\begin{table}[!htbp]
 	\def\arraystretch{1.5}
 	
 	\begin{center}
-	\begin{tabular}{|>{\centering}m{1.5cm}|>{\centering}m{2cm}>{\centering}m{2cm}>{\centering}m{2cm}>{\centering\arraybackslash}m{2cm}|}
+	\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{3cm}>{\centering}m{3cm}>{\centering\arraybackslash}m{3cm}|}
 	
 	\hline
 	
-	\multirow{2}{*}{Run} & \multicolumn{4}{c|}{Position in machine (brass plate)} \\
+	\multirow{2}{*}{Treatment} & \multicolumn{3}{c|}{Village} \\
 	
-	\cline{2-5}
-	
-	& 1 & 2 & 3 & 4 \\
+	& I & II & III \\
 	
 	\hline
 	
-	1 & A & B & C & D \\
+	Blitox & 678.2 & 510.2 & 531.2 \\
 	
-	2 & E & A & B & C \\
+	Dithane z-78 & 703.2 & 689.5 & 611.2 \\
 	
-	3 & D & E & A & B \\
+	Brestan-60 & 736.8 & 574.2 & 573.7 \\
 	
-	4 & C & D & E & A \\
-	
-	5 & B & C & D & E \\
+	Control & 556.4 & 510.2 & 500.0 \\
 	
 	\hline
 	
-	\end{tabular}	
+	\end{tabular}
 	\end{center}
-	\end{table}
 	
-	Identify the type of design and carry out an appropriate analysis.
+	\end{table}
 	
 	
 	
