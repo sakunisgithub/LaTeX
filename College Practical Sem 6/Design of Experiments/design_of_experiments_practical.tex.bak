@@ -280,17 +280,19 @@
 	
 	
 %05
-	\item The following data were obtained from an experiment using the treatments : $0.32$ \% of Blitox, $0.16$ \% of Dithane z-78, $0.09$ \% of Brestan-60 and control. After sowing rhizomes of the matgrass \textit{Cyperus tagetum Roxb} in four plots in each of three villages, the above four treatments were applied at random to the plots in each village after 30 days of sowing. The yields in gm. of 30 sq. cm. cutting per plot after 120 days are given below. Analyse the data to find out if ther are any significant treatment effects.
+	\item The following data were obtained from an experiment using the treatments : $0.32$ \% of Blitox, $0.16$ \% of Dithane z-78, $0.09$ \% of Brestan-60 and control. After sowing rhizomes of the matgrass \textit{Cyperus tagetum Roxb} in four plots in each of three villages, the above four treatments were applied at random to the plots in each village after 30 days of sowing. The yields in gm. of 30 sq. cm. cutting per plot after 120 days are given below. Analyse the data to find out if there are any significant treatment effects.
 	
 	\begin{table}[!htbp]
 	\def\arraystretch{1.5}
 	
 	\begin{center}
-	\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{3cm}>{\centering}m{3cm}>{\centering\arraybackslash}m{3cm}|}
+	\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{3cm}|>{\centering}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
 	
 	\hline
 	
 	\multirow{2}{*}{Treatment} & \multicolumn{3}{c|}{Village} \\
+	
+	\hhline{~---}
 	
 	& I & II & III \\
 	
@@ -314,6 +316,132 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%06
+	\item Analyse the following randomised block design after estimating the missing value. Also compare the treatments $T_1$ and $T_2$.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+	
+	\hline
+	
+	\multirow{2}{*}{Treatment} & \multicolumn{4}{c|}{Blocks} \\
+	
+	\hhline{~----}
+	
+	& I & II & III & IV \\
+	
+	\hline
+	
+	$T_1$ & 19.1 & $-$ & 22.5 & 25.5 \\
+	
+	\hline
+	
+	$T_2$ & 26.0 & 28.0 & 27.0 & 33.0 \\
+	
+	\hline
+	
+	$T_3$ & 20.5 & 28.5 & 21.5 & 25.5 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%07
+	\item The following table gives the yield of wheat (kgs./plot) as observed in an experiment carried out in a 5 $\times$ 5 Latin Square. The five manurial treatments are indicated by $A$, $B$, $C$, $D$ and $E$. Obtain an estimate of the missing value and analyse the design.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.44}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{3} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{5} \\
+	
+	\hhline{~-----}
+	
+	\multirow{2}{*}{1} & B & C & A & D & E \\
+	
+	& 57.8 & 48.6 & 33.4 & 53.5 & 41.8 \\
+	
+	\hhline{~-----}
+	
+	\multirow{2}{*}{2} & D & E & C & B & A \\
+	
+	& 50.5 & 45.5 & 51.8 & 52.6 & 31.9 \\
+	
+	\hhline{~-----}
+	
+	\multirow{2}{*}{3} & A & D & B & E & C \\
+	
+	& 46.1 & 47.9 & 55.6 & $-$ & 53.3 \\
+	
+	\hhline{~-----}
+	
+	\multirow{2}{*}{4} & C & B & E & A & D \\
+	
+	& 58.2 & 55.1 & 43.2 & 38.8 & 53.3 \\
+	
+	\hhline{~-----}
+	
+	\multirow{2}{*}{5} & E & A & D & C & B \\
+	
+	& 53.0 & 41.0 & 48.7 & 54.6 & 55.7 \\
+	
+	\hhline{~-----}
+	
+	
+	
+	\end{tabular}
+	\end{center}
+	\end{table}		
 	
 	
 	
