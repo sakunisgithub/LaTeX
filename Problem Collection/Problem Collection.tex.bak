@@ -1918,7 +1918,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 	\end{enumerate}
 	
-	
+
+%57
+	\item Find the value of $\prod \limits_{k = 1}^{n} \left( 1 + 2 \cos \dfrac{2 \pi 3^k}{3^n + 1} \right)$.
 \end{enumerate}
 
 \section{Functional Equations}
@@ -1995,6 +1997,13 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %15
 	\item Find out all the natural number solution $(x, y)$ of $x^3 + y^3 = x^2 + 42xy + y^2$.
+	
+%16
+	\item Find the number of integral solutions $(x, y, z)$ to the system of equations :
+	\begin{align*}
+	x + 2y + 4z = 9 \\
+	4yz + 2xz
+	\end{align*}
 \end{enumerate}
 
 
@@ -2712,6 +2721,12 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	\item Show that, the equation $\dfrac{a_1}{x - a_1} + \dfrac{a_2}{x- a_2} + \dfrac{a_3}{x - a_3} + \ldots + \dfrac{a_{2022}}{x - a_{2022}} = 2022$ has all real roots where $a_1 > a_2 > a_3 > \ldots > a_{2022} > 0$.
 	
 %08	
-	\item $P$ is a polynomial of degree 10. $P(k) = \dfrac{k}{k+1}$ $\forall
+	\item $P$ is a polynomial of degree 10. $P(k) = \dfrac{k}{k+1}$ $\forall$ $k = 0, \ldots , 10$. Find $P(12)$.
+	
+%09	
+	\item Show that, $x^8 - x^7 + x^4 - x^3 + x^2 - x + 7 = 0$ has no real root.
+	
+%10
+	\item If a non-zero polynomial satisfies the condition $f(2x) = f'(x) f''(x)$, then find the value of $f(3)$.
 \end{enumerate}
 \end{document}
