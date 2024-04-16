@@ -18,6 +18,8 @@ def print_all_topics() :
     print("15. Real Analysis")
     print("16. Linear Algebra")
     print("17. Theory of Equations")
+    print("18. Univariate Calculus")
+    print("19. Differential Equation")
 
 def add_inputs() :
     problem_no = int(input("Enter problem no = "))
@@ -163,6 +165,22 @@ def operate_csv(c1, topic, inputs) :
             print("\n\nDeatils added successfully !\n\n")
         elif c1 == 2 :
             print(theory_of_equations.iloc[inputs-1])
+    elif topic == 18 :
+        univariate_calculus = pd.read_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\univariate_calculus.csv")
+        if c1 == 1 :
+            univariate_calculus.loc[len(univariate_calculus)] = [inputs[0], inputs[1], inputs[2]]
+            univariate_calculus.to_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\univariate_calculus.csv", index=False)
+            print("\n\nDeatils added successfully !\n\n")
+        elif c1 == 2 :
+            print(univariate_calculus.iloc[inputs-1])
+    elif topic == 19 :
+        differential_equation = pd.read_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\differential_equation.csv")
+        if c1 == 1 :
+            differential_equation.loc[len(differential_equation)] = [inputs[0], inputs[1], inputs[2]]
+            differential_equation.to_csv("C:\\Users\\Ananda\\OneDrive\\Documents\\solution_tracker_for_problem_collection\\differential_equation.csv", index=False)
+            print("\n\nDeatils added successfully !\n\n")
+        elif c1 == 2 :
+            print(differential_equation.iloc[inputs-1])
     
 
 print("\n\n-----MENU-----\n\n")
