@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  24 JAN 2024 20:17
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  17 APR 2024 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,109 +598,34 @@ Package: listing 1999/05/25
 
 Package `listing', V1.2, <1999/05/25>
 \c@listing=\count317
-) (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.sty
-Package: fvextra 2023/11/28 v1.6.1 fvextra - extensions and patches for fancyvr
-b
-
-(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
-Package: fancyvrb 2022/06/06 4.5 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count318
-\FV@InFile=\read3
-\FV@TabBox=\box78
-\c@FancyVerbLine=\count319
-\FV@StepNumber=\count320
-\FV@OutFile=\write4
-) (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
-tim
-
-(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-))
-(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
-Package: lineno 2023/05/20 line numbers on paragraphs v5.3
-Invalid UTF-8 byte or sequence at line 292 replaced by U+FFFD.
-
-(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
-y
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-
-(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.st
-y
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
-\linenopenalty=\count321
-\output=\toks33
-\linenoprevgraf=\count322
-\linenumbersep=\dimen272
-\linenumberwidth=\dimen273
-\c@linenumber=\count323
-\c@pagewiselinenumber=\count324
-\c@LN@truepage=\count325
-\c@internallinenumber=\count326
-\c@internallinenumbers=\count327
-\quotelinenumbersep=\dimen274
-\bframerule=\dimen275
-\bframesep=\dimen276
-\bframebox=\box79
-LaTeX Info: Redefining \\ on input line 3180.
-)
-\c@FancyVerbWriteLine=\count328
-\c@FancyVerbBufferIndex=\count329
-\c@FancyVerbBufferLength=\count330
-\c@FancyVerbBufferLine=\count331
-\c@FV@oldbufferlength=\count332
-\c@FV@TrueTabGroupLevel=\count333
-\c@FV@TrueTabCounter=\count334
-\FV@TabBox@Group=\box80
-\FV@TmpLength=\skip59
-\c@FV@HighlightLinesStart=\count335
-\c@FV@HighlightLinesStop=\count336
-\FV@LoopCount=\count337
-\FV@NCharsBox=\box81
-\FV@BreakIndent=\dimen277
-\FV@BreakIndentNChars=\count338
-\FV@BreakSymbolSepLeft=\dimen278
-\FV@BreakSymbolSepLeftNChars=\count339
-\FV@BreakSymbolSepRight=\dimen279
-\FV@BreakSymbolSepRightNChars=\count340
-\FV@BreakSymbolIndentLeft=\dimen280
-\FV@BreakSymbolIndentLeftNChars=\count341
-\FV@BreakSymbolIndentRight=\dimen281
-\FV@BreakSymbolIndentRightNChars=\count342
-\c@FancyVerbLineBreakLast=\count343
-\FV@LineBox=\box82
-\FV@LineIndentBox=\box83
-\c@FV@BreakBufferDepth=\count344
-\FV@LineWidth=\dimen282
 )
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 10.
-
-No file making_horizontal_lists.aux.
+h' as default language. on input line 8.
+ (making_horizontal_lists.aux)
 \openout1 = `making_horizontal_lists.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-0.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
+.
+
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
 
 Package exsheets Info: Loading custom configurations file
 (exsheets)             `exsheets_configurations.cfg'.
@@ -716,18 +641,18 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 10.
+or `english'. on input line 8.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 20.
+Package tasks Warning: The width of `label-width' is too small on line 18.
 (tasks)                Please set it at least to 11.1pt.
 
 
-Package tasks Warning: The width of `label-width' is too small on line 20.
+Package tasks Warning: The width of `label-width' is too small on line 18.
 (tasks)                Please set it at least to 11.1pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
 
@@ -736,10 +661,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
 ] (making_horizontal_lists.aux) ) 
 Here is how much of TeX's memory you used:
- 18547 strings out of 411566
- 395507 string characters out of 2819980
+ 17007 strings out of 411566
+ 365940 string characters out of 2819980
  1847973 words of memory out of 3000000
- 38418 multiletter control sequences out of 15000+600000
+ 36897 multiletter control sequences out of 15000+600000
  512425 words of font info for 37 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  91i,5n,94p,490b,814s stack positions out of 10000i,1000n,20000p,200000b,80000s

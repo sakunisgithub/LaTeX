@@ -840,7 +840,7 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 		  
 		     
 
-\section{Miscellaneous}
+\section{\textcolor{red}{Miscellaneous}}
 
 \begin{enumerate}
 
@@ -1435,6 +1435,9 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %181
 	\item If $x^2 + x + 1 = 0$, find the value of $x^{2017} + x^{2019} + x^{2021}$.
+	
+%182
+	\item The sequence given by $x_0 = a$, $x_1 = b$ and $x_{n+1} = \dfrac{1}{2}\left( x_{n-1} + \dfrac{1}{x_n} \right)$ is periodic. Find the value of $ab$.
 
 \end{enumerate}
 
@@ -1442,7 +1445,7 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 
 
 
-\section{Factorization}
+\section{\textcolor{red}{Factorization}}
 
 \begin{enumerate}
 
@@ -2682,12 +2685,35 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 
 
 
-\section{Linear Algebra}
+\section{\textcolor{red}{Linear Algebra}}
 
 \begin{enumerate}
 
 %01
 	\item Let $A = \left( a_{ij} \right)$ be the $ 2020 \times 2020 $ matrix with $ a_{ij} $ when $i \neq j$ and $a_{ii} = 0$. Find determinant of $A$.
+	
+%02
+	\item 
+	\begin{gather*}	
+	\begin{vmatrix} 
+	\displaystyle{\binom{2000}{0}} & \displaystyle{\binom{2000}{1}} & \ldots & \displaystyle{\binom{2000}{21}} \\[0.5cm]
+	\displaystyle{\binom{2001}{0}} & \displaystyle{\binom{2001}{1}} & \ldots & \displaystyle{\binom{2001}{21}} \\[0.5cm]
+	\vdots & \vdots & \ddots & \vdots \\[0.5cm]
+	\displaystyle{\binom{2021}{0}} & \displaystyle{\binom{2021}{1}} & \ldots & \displaystyle{\binom{2021}{21}} \\ 
+	\end{vmatrix}
+	\end{gather*}
+	
+	The value of the 22 $\times$ 22 determinant above, where $\displaystyle{\binom{n}{k}}$ denotes the binomial coefficient is
+\settasks{
+	label=(\Alph*),
+	label-width=4ex
+}
+	\begin{tasks}(4)
+		\task 0
+		\task 1
+		\task 2
+		\task 3
+	\end{tasks}
 \end{enumerate}
 
 
@@ -2704,7 +2730,7 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 
 
 
-\section{Theory of Equations}
+\section{\textcolor{red}{Theory of Equations}}
 
 \begin{enumerate}
 
@@ -2769,6 +2795,15 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %02
 	\item Find $\displaystyle{\int \limits_{0}^{1} \ln x} \, dx $ with Feynman's Trick. No substitution or integration by parts is allowed.
+	
+%03
+	\item $f : \mathbb{R} \rightarrow \mathbb{R}$. Suppose, $\forall$ $x, y \in \mathbb{R}$ $| f(x) - f(y) | \leq (x-y)^2$. Prove that, $f$ is a constant function.
+	
+%04
+	\item Find all functions $f : \mathbb{R} \rightarrow \mathbb{R}$ which satisfy $\forall$ $x, y \in \mathbb{R}$ $| f(x) - f(y) | = |x-y|$.
+	
+%05
+	\item Let $f(x) = x^3 f(1) + x^2 f'(2) + xf''(3) + f'''(4)$. Find $\sum \limits_{x = 1}^{2020} f(x)$.
 \end{enumerate}
 
 
