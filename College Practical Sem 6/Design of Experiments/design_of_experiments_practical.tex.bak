@@ -407,31 +407,31 @@
 	
 	\hhline{~-----}
 	
-	\multirow{2}{*}{1} & B & C & A & D & E \\
+	\multirow{2}{*}{1} & $B$ & $C$ & $A$ & $D$ & $E$ \\
 	
 	& 57.8 & 48.6 & 33.4 & 53.5 & 41.8 \\
 	
 	\hhline{~-----}
 	
-	\multirow{2}{*}{2} & D & E & C & B & A \\
+	\multirow{2}{*}{2} & $D$ & $E$ & $C$ & $B$ & $A$ \\
 	
 	& 50.5 & 45.5 & 51.8 & 52.6 & 31.9 \\
 	
 	\hhline{~-----}
 	
-	\multirow{2}{*}{3} & A & D & B & E & C \\
+	\multirow{2}{*}{3} & $A$ & $D$ & $B$ & $E$ & $C$ \\
 	
 	& 46.1 & 47.9 & 55.6 & $-$ & 53.3 \\
 	
 	\hhline{~-----}
 	
-	\multirow{2}{*}{4} & C & B & E & A & D \\
+	\multirow{2}{*}{4} & $C$ & $B$ & $E$ & $A$ & $D$ \\
 	
 	& 58.2 & 55.1 & 43.2 & 38.8 & 53.3 \\
 	
 	\hhline{~-----}
 	
-	\multirow{2}{*}{5} & E & A & D & C & B \\
+	\multirow{2}{*}{5} & $E$ & $A$ & $D$ & $C$ & $B$ \\
 	
 	& 53.0 & 41.0 & 48.7 & 54.6 & 55.7 \\
 	
@@ -444,7 +444,53 @@
 	\end{table}		
 	
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%08
+	\item Consider the following $2^2$ experiment involving 2 factors N and S each at two levels 0 and 1.
 	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{1cm}||>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
+
+	\hline
+	
+	\multirow{2}{*}{Block} & \multicolumn{4}{c|}{Treatment Combination} \\
+	
+	\hhline{~----}
+	
+	& $(1)$ & $n$ & $s$ & $ns$ \\
+	
+	\hline	
+	
+	$I$ & 117 & 124 & 106 & 125 \\
+	
+	\hline
+	
+	$II$ & 120 & 
+	\end{tabular}
+	\end{center}
+	\end{table}
 	
 	
 	
