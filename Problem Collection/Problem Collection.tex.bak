@@ -840,7 +840,7 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 		  
 		     
 
-\section{Miscellaneous}
+\section{\textcolor{red}{Miscellaneous}}
 
 \begin{enumerate}
 
@@ -1435,6 +1435,12 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %181
 	\item If $x^2 + x + 1 = 0$, find the value of $x^{2017} + x^{2019} + x^{2021}$.
+	
+%182
+	\item The sequence given by $x_0 = a$, $x_1 = b$ and $x_{n+1} = \dfrac{1}{2}\left( x_{n-1} + \dfrac{1}{x_n} \right)$ is periodic. Find the value of $ab$.
+	
+%183
+	\item Define a function $f : \mathbb{N} \righarrow \mathbb{Z}^{+}\cup \{0\}$ such that $f(1) = 0$, $f(p) = 1$ for prime $p$ and $f(mn) = mf(n) + nf(m)$. Find the sum of all $n < 1000$ such that $f(n) =
 
 \end{enumerate}
 
@@ -1442,7 +1448,7 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 
 
 
-\section{Factorization}
+\section{\textcolor{red}{Factorization}}
 
 \begin{enumerate}
 
@@ -2766,6 +2772,9 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %12
 	\item Let $P(x)$ be a polynomial of degree 2017. If $P(x) = \dfrac{1}{x}$ for $x = 1, 2, \ldots, 2018$, find $P(2019)$.
+	
+%13
+	\item Find the sum of the fifth powers of the roots of the equation $x^4 - 7x^2 + 4x - 3 = 0$.
 \end{enumerate}
 
 
@@ -2798,6 +2807,15 @@ $$a^2 + b^2 + c^2 \geq \dfrac{(a+b+c)^2}{3} \geq ab + bc + ca$$ holds for any $a
 	
 %04
 	\item Find all functions $f : \mathbb{R} \rightarrow \mathbb{R}$ which satisfy $\forall$ $x, y \in \mathbb{R}$ $| f(x) - f(y) | = |x-y|$.
+	
+%05
+	\item Let $f(x) = x^3 f(1) + x^2 f'(2) + xf''(3) + f'''(4)$. Find $\sum \limits_{x = 1}^{2020} f(x)$.
+	
+%06
+	\item Evaluate :- $\sum \limits_{n = 1}^{\infty} 4^n \sin^4 \left( \dfrac{\pi}{2^n} \right)$.
+	
+%07
+	
 \end{enumerate}
 
 
