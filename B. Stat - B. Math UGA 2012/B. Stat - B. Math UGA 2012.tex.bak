@@ -8,6 +8,8 @@
 %\usepackage{pgfplots}
 \usepackage{graphicx}
 
+\usepackage[dvipsnames]{xcolor}  
+
 
 \title{B. Stat - B. Math UGA 2012}
 \author{Ananda Biswas}
