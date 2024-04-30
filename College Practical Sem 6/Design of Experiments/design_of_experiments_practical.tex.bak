@@ -534,7 +534,7 @@
 	\item Analyse the following $2^3$ factorial experiment in blocks of 4 plots, involving three fertilisers $N$, $P$ and $K$ each at two levels.
 	
 	\begin{table}[!htbp]
-	\def\arraystretch{1.3}
+	\def\arraystretch{1.35}
 	
 	\begin{center}
 	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
@@ -565,7 +565,7 @@
 	
 	
 	\begin{table}[!htbp]
-	\def\arraystretch{1.3}
+	\def\arraystretch{1.35}
 	
 	\begin{center}
 	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
@@ -597,7 +597,7 @@
 	
 	
 	\begin{table}[!htbp]
-	\def\arraystretch{1.4}
+	\def\arraystretch{1.35}
 	
 	\begin{center}
 	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
@@ -622,6 +622,127 @@
 	\end{center}
 	
 	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%10
+	\item An experiment was performed by Gretchen Krueger at Arizona State University to determine how the pan material, the brand of brownie mix and the stirring method affect the scrumptiousness of brownies. \\
+	
+	The factor levels were:
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{5cm}||>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+	
+	\hline
+	
+	Factor & Low $(-)$ & High $(+)$ \\
+	
+	\hline
+	\hline
+	
+	A = pan material & Glass & Aluminium \\
+	
+	\hline
+	
+	B = stirring method & Spoon & Mixer \\
+	
+	\hline
+	
+	C = brand of mix & Expensive & Cheap \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+
+	
+	The response variable was scrumptiousness, a subjective measure derived from a questionnaire given to the subjects who tasted each batch of brownies. The test panel results for eight persons corresponding to each batch are given below.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{2.5cm}||>{\centering}m{1.2cm}|>{\centering}m{1.2cm}|>{\centering}m{1.2cm}||>{\centering}m{0.52cm}|>{\centering}m{0.52cm}|>{\centering}m{0.52cm}|>{\centering}m{0.52cm}|>{\centering}m{0.52cm}|>{\centering}m{0.52cm}|>{\centering}m{0.52cm}|>{\centering\arraybackslash}m{0.52cm}|}
+	
+	\hline
+	
+	\multirow{2}{*}{Brownie Batch} & \multicolumn{3}{c||}{Treatment Combination} & \multicolumn{8}{c|}{Test Panel Result} \\
+	
+	\cline{2-12}
+	
+	& A & B & C & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} \\
+	
+	\hline
+	
+	1 & $-$ & $-$ & $-$ & 11 & 9 & 10 & 10 & 11 & 10 & 8 & 9 \\
+	
+	\hline
+	
+	2 & $+$ & $-$ & $-$ & 15 & 10 & 16 & 14 & 12 & 9 & 6 & 15 \\
+	
+	\hline
+	
+	3 & $-$ & $+$ & $-$ & 9 & 12 & 11 & 11 & 11 & 11 & 11 & 12	\\
+	
+	\hline
+	
+	4 & $+$ & $+$ & $-$ & 16 & 17 & 15 & 12 & 13 & 13 & 11 & 11 \\
+	
+	\hline
+	
+	5 & $-$ & $-$ & $+$ & 10 & 11 & 15 & 8 & 6 & 8 & 9 & 14 \\
+	
+	\hline
+	
+	6 & $+$ & $-$ & $+$ & 12 & 13 & 14 & 13 & 9 & 13 & 14 & 9 \\
+	
+	\hline
+	
+	7 & $-$ & $+$ & $+$ & 10 & 12 & 13 & 10 & 7 & 7 & 17 & 13 \\
+	
+	\hline
+	
+	8 & $+$ & $+$ & $+$ & 15 & 12 & 15 & 13 & 12 & 12 & 9 & 14 \\
+	
+	\hline
+
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
 	
 \end{enumerate}
 \end{document}
