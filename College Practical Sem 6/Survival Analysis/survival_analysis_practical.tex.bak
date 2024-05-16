@@ -28,24 +28,39 @@
 	\begin{table}[!htbp]
 	\def\arraystretch{1.5}
 	
-	\begin{tabular}{|{\centering}m{4cm}|{\centering}m{4cm}|{\centering\arraybackslash}m{4cm}|}
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{4cm}|>{\centering}m{5cm}|>{\centering\arraybackslash}m{4cm}|}
 	
 	\hline
 	
-	Year of Follow-up & Number Alive at the Beginning of the Interval & Number Dying int he_interval \\
-	0-1 & 1100 & 240 \\
-	1-2 & 860 & 180 \\
-	2-3 & 680 & 184 \\
-	3-4 & 496 & 138 \\
-	4-5 & 358 & 118 \\
-	5-6 & 240 & 60 \\
-	6-7 & 180 & 52 \\
-	7-8 & 128 & 44 \\
-	8-9 & 84 & 32 \\
-	>= 9 & 52 & 28 \\
+	Year of Follow-up & Number Alive at Beginning of the Interval & Number Dying in the interval \\
+	
+	\hline
+	
+	$0-1$ & 1100 & 240 \\
+	
+	$1-2$ & 860 & 180 \\
+	
+	$2-3$ & 680 & 184 \\
+	
+	$3-4$ & 496 & 138 \\
+	
+	$4-5$ & 358 & 118 \\
+	
+	$5-6$ & 240 & 60 \\
+	
+	$6-7$ & 180 & 52 \\
+	
+	$7-8$ & 128 & 44 \\
+	
+	$8-9$ & 84 & 32 \\
+	
+	$\geq$ 9 & 52 & 28 \\
+	
+	\hline
 	
 	\end{tabular}
-	
+	\end{center}
 	\end{table}
 	
 	
