@@ -993,8 +993,148 @@
 	
 	
 	\begin{center}
-	($N$ = Nitrogen; $P$ = Phosphate; $K$ = Potash)	
+	($N$ = Nitrogen; $K$ = Potash; $P$ = Phosphate)	
 	\end{center}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%13
+	\item For a Factorial Experiment with $3$ factors $N$, $P$, $K$ each at two levels, the design and yield per plot are given below. Analyse the data.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $I$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 1} & $(1)$ & $pk$ & $nk$ & $np$ \\
+	
+	& 25 & 24 & 32 & 30 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 2} & $n$ & $k$ & $npk$ & $p$ \\
+	
+	& 30 & 32 & 36 & 27 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $II$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 3} & $p$ & $npk$ & $n$ & $k$ \\
+	
+	& 32 & 42 & 46 & 39 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 4} & $nk$ & $(1)$ & $np$ & $pk$ \\
+	
+	& 34 & 44 & 30 & 36 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $III$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 5} & $(1)$ & $nk$ & $np$ & $kp$ \\
+	
+	& 87 & 334 & 324 & 423 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 6} & $npk$ & $k$ & $n$ & $p$ \\
+	
+	& & 128 & 279 & 323 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $IV$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 7} & $(1)$ & $nk$ & $np$ & $kp$ \\
+	
+	& 131 & 272 & 361 & 445 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 8} & $nkp$ & $n$ & $k$ & $p$ \\
+	
+	& 437 & 103 & 302 & 324 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
 \end{enumerate}
 \end{document}
