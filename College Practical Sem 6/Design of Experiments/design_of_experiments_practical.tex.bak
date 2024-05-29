@@ -1087,15 +1087,157 @@
 	
 	\hhline{~----}
 	
-	\multirow{2}{*}{Block 5} & $(1)$ & $nk$ & $np$ & $kp$ \\
+	\multirow{2}{*}{Block 5} & $npk$ & $k$ & $n$ & $p$ \\
 	
-	& 87 & 334 & 324 & 423 \\
+	& 30 & 32 & 28 & 26 \\
 	
 	\hhline{~----}
 	
-	\multirow{2}{*}{Block 6} & $npk$ & $k$ & $n$ & $p$ \\
+	\multirow{2}{*}{Block 6} & $(1)$ & $pk$ & $nk$ & $np$ \\
 	
-	& & 128 & 279 & 323 \\
+	& 24 & 20 & 28 & 36 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $IV$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 7} & $np$ & $(1)$ & $pk$ & $nk$ \\
+	
+	& 32 & 34 & 39 & 41 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 8} & $npk$ & $n$ & $p$ & $k$ \\
+	
+	& 45 & 41 & 29 & 35 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%14
+	\item For a Factorial Experiment with $3$ factors $N$, $K$, $P$ each at two levels, the design and yield per plot are given below. Analyse the data.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $I$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 1} & $(1)$ & $nk$ & $np$ & $kp$ \\
+	
+	& 99 & 201 & 312 & 376 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 2} & $nkp$ & $n$ & $k$ & $p$ \\
+	
+	& 408 & 98 & 260 & 306 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $II$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 3} & $(1)$ & $nk$ & $np$ & $kp$ \\
+	
+	& 100 & 308 & 352 & 412 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 4} & $nkp$ & $n$ & $k$ & $p$ \\
+	
+	& 452 & 87 & 257 & 378 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $III$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 5} & $(1)$ & $nk$ & $np$ & $kp$ \\
+	
+	& 84 & 378 & 324 & 435 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 6} & $nkp$ & $n$ & $k$ & $p$ \\
+	
+	& 456 & 135 & 272 & 378 \\
 	
 	\hhline{~----}
 	
@@ -1120,13 +1262,13 @@
 	
 	\multirow{2}{*}{Block 7} & $(1)$ & $nk$ & $np$ & $kp$ \\
 	
-	& 131 & 272 & 361 & 445 \\
+	& 152 & 296 & 372 & 278 \\
 	
 	\hhline{~----}
 	
 	\multirow{2}{*}{Block 8} & $nkp$ & $n$ & $k$ & $p$ \\
 	
-	& 437 & 103 & 302 & 324 \\
+	& 478 & 178 & 319 & 372 \\
 	
 	\hhline{~----}
 	
@@ -1134,6 +1276,8 @@
 	\end{center}
 	
 	\end{table}
+	
+	
 	
 	
 \end{enumerate}
