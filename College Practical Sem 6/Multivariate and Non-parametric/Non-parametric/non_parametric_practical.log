@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  2 JUN 2024 01:30
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  7 JUN 2024 01:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -286,14 +286,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
 [1
 
-] (non_parametric_practical.aux) ) 
-Here is how much of TeX's memory you used:
- 3063 strings out of 411566
- 46010 string characters out of 2819980
- 1853973 words of memory out of 3000000
- 23186 multiletter control sequences out of 15000+600000
- 518512 words of font info for 60 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 55i,10n,62p,390b,337s stack positions out of 10000i,1000n,20000p,200000b,80000s
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
-Output written on non_parametric_practical.pdf (1 page).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
+[3] (non_parametric_practical.aux) ) 
+Here is how much of TeX's memory you used:
+ 3078 strings out of 411566
+ 46421 string characters out of 2819980
+ 1857973 words of memory out of 3000000
+ 23191 multiletter control sequences out of 15000+600000
+ 518552 words of font info for 65 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 55i,11n,62p,390b,353s stack positions out of 10000i,1000n,20000p,200000b,80000s
+
+Output written on non_parametric_practical.pdf (3 pages).
