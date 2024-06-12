@@ -25,8 +25,10 @@
 
 	\item Consider the survival data given in the following table. Compute and plot the estimated survivorship function, the probability density function, and the hazard function.
 	
+	\vspace{1cm}
+	
 	\begin{table}[!htbp]
-	\def\arraystretch{1.5}
+	\def\arraystretch{3}
 	
 	\begin{center}
 	\begin{tabular}{|>{\centering}m{4cm}|>{\centering}m{5cm}|>{\centering\arraybackslash}m{4cm}|}
@@ -61,6 +63,80 @@
 	
 	\end{tabular}
 	\end{center}
+	\end{table}
+	
+	
+	
+	
+	
+\newpage
+
+
+
+
+
+
+%02
+	\item The following is a life table for the total population (of 100000 live births) in the United States, 1959$-$1961. Compute and plot the estimated survivorship function, the probability density function, and the hazard
+function.
+
+\vspace{1cm}
+
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{5cm}|>{\centering\arraybackslash}m{4cm}|}
+	
+	\hline
+	
+	Age Interval & Number living at beginning of age interval & Number dying in age interval \\
+	
+	\hline
+	
+	$0-1$ & 100000 & 2593 \\
+	
+	$1-5$ & 97407 & 409 \\
+	
+	$5-10$ & 96998 & 233 \\
+	
+	$10-15$ & 96765 & 214 \\
+	
+	$15-20$ & 96551 & 440 \\
+	
+	$20-25$ & 96111 & 594 \\
+	
+	$25-30$ & 95517 & 612 \\
+	
+	$30-35$ & 94905 & 761 \\
+	
+	$35-40$ & 94144 & 1080 \\
+	
+	$40-45$ & 93064 & 1686 \\
+	
+	$45-50$ & 91378 & 2622 \\
+	
+	$50-55$ & 88756 & 4045 \\
+	
+	$55-60$ & 84711 & 5644 \\
+	
+	$60-65$ & 79067 & 7920 \\
+	
+	$65-70$ & 71147 & 10290 \\
+	
+	$70-75$ & 60857 & 12687 \\
+	
+	$75-80$ & 48170 & 14594 \\
+	
+	$80-85$ & 33576 & 15034 \\
+	
+	$85$ and over & 18542 & 18542 \\
+	
+	\hline
+		
+	\end{tabular}
+	\end{center}
+	
 	\end{table}
 	
 	

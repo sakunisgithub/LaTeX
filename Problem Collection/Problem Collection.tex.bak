@@ -1450,7 +1450,7 @@ $ x = \dfrac{\sqrt{ab(a+b+c)(a+b-c)}}{a+b} $.
 	
 %186
 	\item Five real numbers $a$, $b$, $c$, $d$, $e$ satisfy the equation
-	$$ \sqrt{a-1} + 2\sqrt{b-4} + 3\sqrt{c-9} + 4\sqrt{d-16} + 5\sqrt{e-25} = \dfrac{a+b+c+d+e}{2}.$$
+	$$ \sqrt{a-1} + 2\sqrt{b-4} + 3\sqrt{c-9} + 4\sqrt{d-16} + 5\sqrt{e-25} = \dfrac{a+b+c+d+e}{2}.$$ Find the value of $(a+b+c+d+e)$.
 	
 \end{enumerate}
 
