@@ -9,6 +9,7 @@
 \usepackage{array}
 \usepackage{longtable}
 \usepackage{graphicx}
+\usepackage{tabularray}
 
 \title{\textbf{QUESTIONS}}
 
@@ -1276,6 +1277,162 @@
 	\end{center}
 	
 	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+%15
+	\item A variety-manurial experiment was conducted by alloting the three varieties $V_1$, $V_2$ and $V_3$ at random to the plots of four randomised blocks and then, splitting each plot into four sub-plots, the four manures $M_1$, $M_2$, $M_3$, $M_4$ where applied at random within each plot. The plan and yields are shown below. Analyse the data to find out if there are any effects due to manure or variety or interaction between variety and manure.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.8}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
+	
+	 \multicolumn{1}{c}{} & \multicolumn{2}{c}{$V_1$} & \multicolumn{2}{c}{$V_2$} & \multicolumn{2}{c}{$V_3$} \\
+	
+	\cline{2-7}
+	
+	\multirow{4}{*}{Block $I$} & $M_1$ & 94 & $M_4$ & 440 & $M_2$ & 250 \\
+	
+	\cline{2-7}
+
+	& $M_3$ & 220 & $M_2$ & 297 & $M_1$ & 147 \\	
+	
+	\cline{2-7}
+	
+	& $M_2$ & 185 & $M_3$ & 218 & $M_3$ & 248 \\
+	
+	\cline{2-7}
+	
+	& $M_4$ & 110 & $M_1$ & 112 & $M_4$ & 275 \\
+	
+	\cline{2-7}	
+	
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.8}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{2}{c}{$V_2$} & \multicolumn{2}{c}{$V_1$} & \multicolumn{2}{c}{$V_3$} \\
+	
+	\cline{2-7}
+	
+	\multirow{4}{*}{Block $II$} & $M_1$ & 135 & $M_2$ & 160 & $M_4$ & 370 \\
+	
+	\cline{2-7}
+	
+	& $M_4$ & 290 & $M_4$ & 95 & $M_1$ & 140 \\
+	
+	\cline{2-7}
+	
+	& $M_2$ & 180 & $M_3$ & 124 & $M_3$ & 340 \\
+	
+	\cline{2-7}
+	
+	& $M_3$ & 265 & $M_1$ & 71 & $M_2$ & 222 \\
+	
+	\cline{2-7}	
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.8}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{2}{c}{$V_1$} & \multicolumn{2}{c}{$V_2$} & \multicolumn{2}{c}{$V_3$} \\
+	
+	\cline{2-7}
+	
+	\multirow{4}{*}{Block $III$} & $M_1$ & 78 & $M_3$ & 196 & $M_2$ & 235 \\
+	
+	\cline{2-7}
+	
+	& $M_3$ & 135 & $M_4$ & 262 & $M_3$ & 260 \\
+	
+	\cline{2-7}
+	
+	& $M_4$ & 130 & $M_1$ & 155 & $M_1$ & 115 \\
+	
+	\cline{2-7}
+	
+	& $M_2$ & 145 & $M_2$ & 220 & $M_4$ & 483 \\
+	
+	\cline{2-7}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}		
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.8}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{2}{c}{$V_1$} & \multicolumn{2}{c}{$V_3$} & \multicolumn{2}{c}{$V_2$} \\
+	
+	\cline{2-7}
+	
+	\multirow{4}{*}{Block $IV$} & $M_1$ & 81 & $M_2$ & 246 & $M_3$ & 296 \\
+	
+	\cline{2-7}
+	
+	& $M_2$ & 175 & $M_3$ & 191 & $M_2$ & 250 \\
+	
+	\cline{2-7}
+	
+	& $M_4$ & 175 & $M_1$ & 145 & $M_1$ & 122 \\
+	
+	\cline{2-7}
+	
+	& $M_3$ & 114 & $M_4$ & 323 & $M_4$ & 450 \\
+	
+	\cline{2-7}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
 	
 	
 	

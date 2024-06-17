@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  29 MAY 2024 12:53
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  18 JUN 2024 01:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -191,6 +191,10 @@ File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 \Gin@req@height=\dimen162
 \Gin@req@width=\dimen163
 )
+(C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/tabularray\tabularray.
+sty (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-12-17 L3 programming layer (loader) 
+
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xe
 tex.def
 File: l3backend-xetex.def 2022-10-26 L3 backend support: XeTeX
@@ -199,31 +203,122 @@ File: l3backend-xetex.def 2022-10-26 L3 backend support: XeTeX
 \g__pdf_backend_object_int=\count277
 \g__pdf_backend_annotation_int=\count278
 \g__pdf_backend_link_int=\count279
+))
+Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count280
+\l__tblr_c_int=\count281
+\l__tblr_r_int=\count282
+\l__tblr_d_dim=\dimen164
+\l__tblr_h_dim=\dimen165
+\l__tblr_o_dim=\dimen166
+\l__tblr_p_dim=\dimen167
+\l__tblr_q_dim=\dimen168
+\l__tblr_r_dim=\dimen169
+\l__tblr_s_dim=\dimen170
+\l__tblr_t_dim=\dimen171
+\l__tblr_v_dim=\dimen172
+\l__tblr_w_dim=\dimen173
+\l__tblr_a_box=\box61
+\l__tblr_b_box=\box62
+\l__tblr_c_box=\box63
+\l__tblr_d_box=\box64
+\g__tblr_table_count_int=\count283
+\c@rownum=\count284
+\c@colnum=\count285
+\c@rowcount=\count286
+\c@colcount=\count287
+\abovesep=\dimen174
+\belowsep=\dimen175
+\leftsep=\dimen176
+\rightsep=\dimen177
+\g_tblr_level_int=\count288
+\g__tblr_data_row_key_count_int=\count289
+\g__tblr_data_column_key_count_int=\count290
+\g__tblr_data_cell_key_count_int=\count291
+\g__tblr_array_int=\count292
+\l__tblr_key_count_int=\count293
+\l__tblr_key_quotient_int=\count294
+\l__tblr_key_quotient_two_int=\count295
+\l__tblr_key_remainder_int=\count296
+\g__tblr_data_str_value_count_int=\count297
+\rulewidth=\dimen178
+\l__tblr_strut_dp_dim=\dimen179
+\l__tblr_strut_ht_dim=\dimen180
+\g__tblr_cell_wd_dim=\dimen181
+\g__tblr_cell_ht_dim=\dimen182
+\g__tblr_cell_head_dim=\dimen183
+\g__tblr_cell_foot_dim=\dimen184
+\l__column_target_dim=\dimen185
+\l__tblr_caption_box=\box65
+\l__tblr_caption_left_box=\box66
+\l__tblr_row_head_box=\box67
+\l__tblr_row_foot_box=\box68
+\l__tblr_row_head_foot_dim=\dimen186
+\tablewidth=\dimen187
+\l__tblr_table_firsthead_box=\box69
+\l__tblr_table_middlehead_box=\box70
+\l__tblr_table_lasthead_box=\box71
+\l__tblr_table_firstfoot_box=\box72
+\l__tblr_table_middlefoot_box=\box73
+\l__tblr_table_lastfoot_box=\box74
+\l__tblr_remain_height_dim=\dimen188
+\l__tblr_long_from_int=\count298
+\l__tblr_long_to_int=\count299
+\l__tblr_curr_i_int=\count300
+\l__tblr_prev_i_int=\count301
+\l__tblr_table_page_int=\count302
+\l__tblr_table_head_box=\box75
+\l__tblr_table_foot_box=\box76
+\l__tblr_table_head_foot_dim=\dimen189
+\l__tblr_table_head_body_foot_dim=\dimen190
+\l__tblr_table_box=\box77
+\l__tblr_table_hlines_box=\box78
+\l__tblr_hline_box=\box79
+\l__tblr_row_box=\box80
+\l__tblr_col_o_wd_dim=\dimen191
+\l__tblr_col_b_wd_dim=\dimen192
+\l__tblr_hline_leftskip_dim=\dimen193
+\l__tblr_hline_rightskip_dim=\dimen194
+\l__tblr_row_ht_dim=\dimen195
+\l__tblr_row_dp_dim=\dimen196
+\l__tblr_row_abovesep_dim=\dimen197
+\l__tblr_row_belowsep_dim=\dimen198
+\l__tblr_row_vlines_box=\box81
+\l__tblr_vline_box=\box82
+\l__tblr_cell_box=\box83
+\l__row_upper_dim=\dimen199
+\l__row_lower_dim=\dimen256
+\l__row_vpace_dim=\dimen257
+\l__tblr_vline_aboveskip_dim=\dimen258
+\l__tblr_vline_belowskip_dim=\dimen259
+\l__tblr_cell_wd_dim=\dimen260
+\l__tblr_cell_ht_dim=\dimen261
+\l__tblr_diag_box=\box84
 ) (design_of_experiments_practical.aux)
 \openout1 = `design_of_experiments_practical.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-8.
+9.
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -259,12 +354,12 @@ LaTeX Font Info:    ... okay on input line 18.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 
 
 (C:\Users\Ananda\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -273,23 +368,23 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 ] [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 649--650
+Underfull \hbox (badness 10000) in paragraph at lines 650--651
 
  []
 
 [4]
-Overfull \hbox (22.54643pt too wide) in paragraph at lines 690--737
+Overfull \hbox (22.54643pt too wide) in paragraph at lines 691--738
  [] 
  []
 
-[5] [6] [7] [8] [9] (design_of_experiments_practical.aux) ) 
+[5] [6] [7] [8] [9] [10] (design_of_experiments_practical.aux) ) 
 Here is how much of TeX's memory you used:
- 3069 strings out of 411566
- 46268 string characters out of 2819980
- 1870973 words of memory out of 3000000
- 23188 multiletter control sequences out of 15000+600000
+ 4928 strings out of 411566
+ 93621 string characters out of 2819980
+ 1872973 words of memory out of 3000000
+ 25042 multiletter control sequences out of 15000+600000
  518528 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 55i,12n,62p,595b,407s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 58i,12n,63p,595b,407s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on design_of_experiments_practical.pdf (9 pages).
+Output written on design_of_experiments_practical.pdf (10 pages).
