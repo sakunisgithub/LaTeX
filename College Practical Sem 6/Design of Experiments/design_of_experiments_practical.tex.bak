@@ -1437,5 +1437,156 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\newpage
+
+
+%16
+	\item The field plan and yield of a strip-plot experiment with 3 dates of planting $(d_1, d_2, d_3)$ and 3 methods of ploughing $(m_1, m_2, m_3)$ in 4 replicates are given below. Analyse the data to find out if there are any effects due to dates or methods or interaction between date and method.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.9}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
+
+	\multicolumn{4}{c}{Replicate $I$}	\\
+	
+	\hline
+	
+	& $m_2$ & $m_1$ & $m_3$ \\
+	
+	\hline
+	
+	$d_1$ & 290 & 71 & 220 \\
+	
+	$d_3$ & 370 & 140 & 218 \\
+	
+	$d_2$ & 95 & 135 & 248 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.9}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
+	
+	\multicolumn{4}{c}{Replicate $II$} \\
+
+	\hline
+	
+	& $m_1$ & $m_3$ & $m_2$ \\
+	
+	\hline
+	
+	$d_3$ & 185 & 297 & 248 \\
+	
+	$d_1$ & 222 & 124 & 135 \\
+	
+	$d_2$ & 180 & 160 & 140 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.9}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
+	
+	\multicolumn{4}{c}{Replicate $III$} \\
+
+	\hline
+	
+	& $m_2$ & $m_3$ & $m_1$ \\
+	
+	\hline
+	
+	$d_3$ & 175 & 246 & 296 \\
+	
+	$d_2$ & 145 & 175 & 112 \\
+	
+	$d_1$ & 81 & 191 & 250 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.9}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{1cm}|>{\centering}m{1cm}>{\centering}m{1cm}>{\centering\arraybackslash}m{1cm}|}
+	
+	\multicolumn{4}{c}{Replicate $IV$} \\
+
+	\hline
+	
+	& $m_2$ & $m_1$ & $m_3$ \\
+	
+	\hline
+	
+	$d_2$ & 135 & 78 & 235 \\
+	
+	$d_1$ & 196 & 155 & 220 \\
+	
+	$d_3$ & 260 & 115 & 145 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
 \end{enumerate}
 \end{document}
