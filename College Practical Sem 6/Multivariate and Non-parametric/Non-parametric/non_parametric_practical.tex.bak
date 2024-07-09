@@ -128,7 +128,7 @@
 
 
 %04
-	\item Given below are the marks obtained by a group of 20 students in a subject in a college test and in the subsequent public examination. Test at 1\% level whether the group has improved its mean performance from the college test to the public examination, by using
+	\item Given below are the marks obtained by a group of 20 students in a subject in a college test and in the subsequent public examination. Test at 1\% level whether the group has improved its average performance from the college test to the public examination, by using
 	\begin{enumerate}[(i)]
 	\item the sign test
 	\item the Wilcoxon signed-rank test	
@@ -266,9 +266,313 @@
 	
 	
 	
+
+
+
+
+
+%07
+	\item Ten points are taken in an interval of length one meter. The distance of each point from the start of the interval is (in meters) as follows :
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	
+	\begin{tabular}{ccccc}
+	0.414 & 0.523 & 0.229 & 0.942 & 0.097 \\
+	
+	0.394 & 0.572 & 0.486 & 0.273 & 0.358 
+	\end{tabular}
+	\end{center}
+	\end{table}
+	
+	Test whether the sample can be considered as a sample from $U(0, 1)$ distribution.
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%08
+	\item The following is a random sample of size 20. Test whether the sample can be considered as a sample from $N(0, 1)$ distribution.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{ccccc}
+	
+	2.240 & $-0.400$ & $-1.152$ & 0.980 & 0.361 \\
+	
+	$-0.123$ & $-0.625$ & 0.682 & 2.323 & $-1.053$ \\
+	
+	$-0.870$ & $-0.164$ & $-0.340$ & $-0.041$ & 1.405 \\
+	
+	1.187 & 0.323 & 0.270 & $-0.128$ & 0.101
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+%09	
+	\item Thirty observations as given below are obtained : 
+	
+	\begin{center}
+	
+	24, 35, 12, 50, 60, 70, 68, 49, 80, 25, 69, 28, 28, 11, 83, \\ 31, 37, 34, 54, 75, 45, 95, 75, 26, 43, 57, 94, 48, 63, 45 
+	\end{center}
+	
+	Test their randomness by considering the sequence of positive and negative signs.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\newpage
+
+
+
+
+
+
+
+
+%10
+	\item Fifteen 3-year-old boys and fifteen 3-year-old girls were observed during two sessions of recess in a nursery school. Each child’s play was scored for incidence and degree of aggression as follows:
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}ccccccccccccccc}
+	
+	Boys: & 96 & 65 & 74 & 78 & 82 & 121 & 68 & 79 & 111 & 48 & 53 & 92 & 81 & 31 & 40 \\
+	
+	Girls: & 12 & 47 & 32 & 59 & 83 & 14 & 32 & 15 & 17 & 82 & 21 & 34 & 9 & 15 & 51 \\
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	Is there evidence to suggest that there are sex differences in the incidence and amount of aggression? Use both Mann–Whitney and run tests.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%11
+	\item Some depressed people were found, and it was checked that initially they were all equivalently depressed. Then each person was allocated randomly to one of three groups: no exercise; 20 minutes of jogging per day; or 60 minutes of jogging per day. At the end of a month, each participant was asked to rate how depressed they now feel on a Likert scale that runs from 1 (totally miserable) through to 100 (ecstatically happy). \\
+	
+	\textbf{Rating on depression scale:} \\
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{3.5cm}|>{\centering}m{3.5cm}|>{\centering}m{3.5cm}|>{\centering\arraybackslash}m{3.5cm}|}
+	
+	\cline{2-4}
+	
+	& \textbf{No Exercise} & \textbf{Jogging for 20 minutes} & \textbf{Jogging for 60 minutes} \\
+
+	\cline{2-4}
+		
+	& 23 & 22 & 59 \\
+	
+	\cline{2-4}
+		
+	& 26 & 27 & 66 \\
+	
+	\cline{2-4}
+	
+	& 51 & 39 & 38 \\
+	
+	\cline{2-4}
+	
+	& 49 & 29 & 49 \\
+	
+	\cline{2-4}
+
+	& 58 & 46 & 56 \\
+	
+	\cline{2-4}
+
+	& 37 & 48 & 60 \\
+	
+	\cline{2-4}
+
+	& 29 & 49 & 56 \\
+	
+	\cline{2-4}
+
+	& 44 & 65 & 62 \\
+	
+	\cline{2-4}
+	
+	\textbf{Mean} $\rightarrow$ & 39.63 & 40.63 & 55.75 \\
+	
+	\textbf{SD} $\rightarrow$ & 12.85 & 14.23 & 8.73 \\
+	
+	\cline{2-4}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	\begin{enumerate}[(a)]
+		\item Does physical exercise alleviate depression?
+		
+		\item Is there a difference in the ratings of the participants allocated to no exercise group as compared to those allocated to 20 minutes of jogging group? 
+	
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+%12
+	\item A medical researcher wishes to determine if a pill has the undesireable side effect of reducing the blood pressure of the user. The study involves recording the blood pressures of 15 women. After they use the pill regularly for six months, their blood pressures are again recorded. The observations are given in the following table.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+	
+	\hline
+	
+	\textbf{Subject} & \textbf{Before} & \textbf{After} \\
+	
+	\hline	
+	\hline
+	
+	1 & 70 & 68 \\
+	
+	\hline
+	
+	2 & 80 & 72 \\
+	
+	\hline
+	
+	3 & 72 & 62 \\
+	
+	\hline
+	
+	4 & 76 & 70 \\
+	
+	\hline
+	
+	5 & 76 & 58 \\
+	
+	\hline
+	
+	6 & 76 & 66 \\
+	
+	\hline
+	
+	7 & 72 & 68 \\
+	
+	\hline
+	
+	8 & 78 & 52 \\
+	
+	\hline
+	
+	9 & 82 & 64 \\
+	
+	\hline
+	
+	10 & 64 & 72 \\
+	
+	\hline
+	
+	11 & 74 & 74 \\
+	
+	\hline
+	
+	12 & 92 & 60 \\
+	
+	\hline
+	
+	13 & 74 & 74 \\
+	
+	\hline
+	
+	14 & 68 & 72 \\
+	
+	\hline
+	
+	15 & 84 & 74 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	Carry out a suitable non-parametric test to determine if blood pressure has decreased after taking the pill.
 	
 	
 \end{enumerate}
