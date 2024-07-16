@@ -1,6 +1,6 @@
 \documentclass[11pt, a4paper]{article}
 
-\usepackage[top=1 in, bottom = 1 in, left = 1 in, right = 1 in ]{geometry}
+\usepackage[top = 0.8 in, bottom = 0.8 in, left = 0.8 in, right = 0.8 in ]{geometry}
 
 \usepackage{amsmath, amssymb, amsfonts}
 \usepackage{enumerate}
@@ -11,20 +11,29 @@
 \usepackage{graphicx}
 \usepackage{tabularray}
 
-\title{\textbf{QUESTIONS}}
+
 
 \author{}
 \date{}
 
 \begin{document}
 
-\maketitle
+\vspace*{2cm}
+
+\begin{center}
+
+\textbf{\huge Analysis of CRD}
+
+\end{center}
+
+
+\vspace{3cm}
 
 \begin{enumerate}
 
 %01
 
-	\item A set of data involving four ``tropical feed stuffs A, B, C, D" tried on 20 chicks is given below. All the twenty chicks are treated alike in all respects except the feeding treatments and each feeding treatment is given to 5 chicks. Analyse the data.
+	\item A set of data involving four ``tropical feed stuffs A, B, C, D" tried on 20 chicks is given below. All the twenty chicks are treated alike in all respects except the feeding treatments and each feeding treatment is given to 5 chicks. 
 	
 	\begin{table}[!htbp]
 	\def\arraystretch{1.5}
@@ -58,19 +67,24 @@
 	
 	
 	
+	Analyse the data.
 	
 	
 	
 	
 	
 	
+\newpage
 	
 	
+\begin{center}
+
+\textbf{\huge Analysis of RBD}
+
+\end{center}	
 	
-	
-	
-	
-	
+
+\vspace{1cm}	
 	
 	
 %02
@@ -125,7 +139,61 @@
 	
 	
 	
+
+
+
+
+
+
+\vspace{2cm}
+
+
+
+
+
+%03
+	\item A varietal trial was conducted at a Research Station. The design adopted for the same was five randomised blocks of 6 plots each. The yields in lb. per plot (of $\frac{1}{20}$th of an acre) obtained from the experiment are given in the following table.
 	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}>{\centering}m{1.5cm}>{\centering}m{1.5cm}>{\centering}m{1.5cm}>{\centering}m{1.5cm}>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\hline
+	
+	\multirow{2}{*}{Blocks} & \multicolumn{6}{c|}{Varieties} \\
+	
+	\cline{2-7}
+	
+	& $V_1$ & $V_2$ & $V_3$ & $V_4$ & $V_5$ & $V_6$ \\
+	
+	\hline
+	
+	$I$ & 30 & 23 & 34 & 25 & 20 & 13 \\
+	
+	$II$ & 39 & 22 & 28 & 25 & 28 & 32 \\
+	
+	$III$ & 56 & 43 & 43 & 31 & 49 & 17 \\
+	
+	$IV$ & 38 & 45 & 36 & 35 & 32 & 20 \\
+	
+	$V$ & 44 & 51 & 23 & 58 & 40 & 30 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	Analyse the design and comment on your findings.
+	
+	
+	
+	
+	
+		
 	
 	
 	
@@ -138,12 +206,148 @@
 	
 	
 
-%03
+
+	
+	
+	
+	
+\vspace*{2cm}
+	
+
+
+
+
+
+
+
+
+
+%04
+	\item The following data were obtained from an experiment using the treatments : $0.32$ \% of Blitox, $0.16$ \% of Dithane z-78, $0.09$ \% of Brestan-60 and control. After sowing rhizomes of the matgrass \textit{Cyperus tagetum Roxb} in four plots in each of three villages, the above four treatments were applied at random to the plots in each village after 30 days of sowing. The yields in gm. of 30 sq. cm. cutting per plot after 120 days are given below. Analyse the data to find out if there are any significant treatment effects.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{3cm}|>{\centering}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
+	
+	\hline
+	
+	\multirow{2}{*}{Treatment} & \multicolumn{3}{c|}{Village} \\
+	
+	\hhline{~---}
+	
+	& I & II & III \\
+	
+	\hline
+	
+	Blitox & 678.2 & 510.2 & 531.2 \\
+	
+	Dithane z-78 & 703.2 & 689.5 & 611.2 \\
+	
+	Brestan-60 & 736.8 & 574.2 & 573.7 \\
+	
+	Control & 556.4 & 510.2 & 500.0 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\vspace{3cm}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+%05
+	\item Analyse the following randomised block design after estimating the missing value. Also compare the treatments $T_1$ and $T_2$.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{1.5}
+	
+	\begin{center}
+	\begin{tabular}{|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+	
+	\hline
+	
+	\multirow{2}{*}{Treatment} & \multicolumn{4}{c|}{Blocks} \\
+	
+	\hhline{~----}
+	
+	& I & II & III & IV \\
+	
+	\hline
+	
+	$T_1$ & 19.1 & $-$ & 22.5 & 25.5 \\
+	
+	\hline
+	
+	$T_2$ & 26.0 & 28.0 & 27.0 & 33.0 \\
+	
+	\hline
+	
+	$T_3$ & 20.5 & 28.5 & 21.5 & 25.5 \\
+	
+	\hline
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\newpage
+	
+
+\begin{center}
+
+\textbf{\huge Analysis of LSD}
+
+\end{center}	
+	
+	
+
+%06
 	\item An experiment was carried out to determine the effect of claying the ground on the field of barley grains; amount of clay used were as follows : \\
-	$A$ : No clay \\
-	$B$ : Clay at 100 per acre \\
-	$C$ : Clay at 200 per acre \\
-	$D$ : Clay at 300 per acre. \\
+	$A$ : No clay \hspace{5cm} $B$ : Clay at 100 per acre \\
+	$C$ : Clay at 200 per acre \hspace{2.8cm} $D$ : Clay at 300 per acre \\
 	The yields were in plots of 8 meters by 8 meters and are given in the following table.
 	
 	\begin{table}[!htbp]
@@ -194,7 +398,21 @@
 		\end{enumerate}		 
 	\item Yield under `A' in the first column was missing. Estimate the missing value and carry out the ANOVA.
 	
-	\end{enumerate}
+	\end{enumerate}	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -203,189 +421,6 @@
 	
 	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%04
-	\item A varietal trial was conducted at a Research Station. The design adopted for the same was five randomised blocks of 6 plots each. The yields in lb. per plot (of $\frac{1}{20}$th of an acre) obtained from the experiment are given in the following table.
-	
-	\begin{table}[!htbp]
-	\def\arraystretch{1.5}
-	
-	\begin{center}
-	\begin{tabular}{|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}>{\centering}m{1.5cm}>{\centering}m{1.5cm}>{\centering}m{1.5cm}>{\centering}m{1.5cm}>{\centering\arraybackslash}m{1.5cm}|}
-	
-	\hline
-	
-	\multirow{2}{*}{Blocks} & \multicolumn{6}{c|}{Varieties} \\
-	
-	\cline{2-7}
-	
-	& $V_1$ & $V_2$ & $V_3$ & $V_4$ & $V_5$ & $V_6$ \\
-	
-	\hline
-	
-	$I$ & 30 & 23 & 34 & 25 & 20 & 13 \\
-	
-	$II$ & 39 & 22 & 28 & 25 & 28 & 32 \\
-	
-	$III$ & 56 & 43 & 43 & 31 & 49 & 17 \\
-	
-	$IV$ & 38 & 45 & 36 & 35 & 32 & 20 \\
-	
-	$V$ & 44 & 51 & 23 & 58 & 40 & 30 \\
-	
-	\hline
-	
-	\end{tabular}
-	\end{center}
-	
-	\end{table}
-	
-	Analyse the design and comment on your findings.
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-\newpage
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-%05
-	\item The following data were obtained from an experiment using the treatments : $0.32$ \% of Blitox, $0.16$ \% of Dithane z-78, $0.09$ \% of Brestan-60 and control. After sowing rhizomes of the matgrass \textit{Cyperus tagetum Roxb} in four plots in each of three villages, the above four treatments were applied at random to the plots in each village after 30 days of sowing. The yields in gm. of 30 sq. cm. cutting per plot after 120 days are given below. Analyse the data to find out if there are any significant treatment effects.
-	
-	\begin{table}[!htbp]
-	\def\arraystretch{1.5}
-	
-	\begin{center}
-	\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{3cm}|>{\centering}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
-	
-	\hline
-	
-	\multirow{2}{*}{Treatment} & \multicolumn{3}{c|}{Village} \\
-	
-	\hhline{~---}
-	
-	& I & II & III \\
-	
-	\hline
-	
-	Blitox & 678.2 & 510.2 & 531.2 \\
-	
-	Dithane z-78 & 703.2 & 689.5 & 611.2 \\
-	
-	Brestan-60 & 736.8 & 574.2 & 573.7 \\
-	
-	Control & 556.4 & 510.2 & 500.0 \\
-	
-	\hline
-	
-	\end{tabular}
-	\end{center}
-	
-	\end{table}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-%06
-	\item Analyse the following randomised block design after estimating the missing value. Also compare the treatments $T_1$ and $T_2$.
-	
-	\begin{table}[!htbp]
-	\def\arraystretch{1.5}
-	
-	\begin{center}
-	\begin{tabular}{|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
-	
-	\hline
-	
-	\multirow{2}{*}{Treatment} & \multicolumn{4}{c|}{Blocks} \\
-	
-	\hhline{~----}
-	
-	& I & II & III & IV \\
-	
-	\hline
-	
-	$T_1$ & 19.1 & $-$ & 22.5 & 25.5 \\
-	
-	\hline
-	
-	$T_2$ & 26.0 & 28.0 & 27.0 & 33.0 \\
-	
-	\hline
-	
-	$T_3$ & 20.5 & 28.5 & 21.5 & 25.5 \\
-	
-	\hline
-	
-	\end{tabular}
-	\end{center}
-	
-	\end{table}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -454,14 +489,19 @@
 
 
 
+\newpage
 
 
+\vspace*{1cm}
+
+\begin{center}
+
+\textbf{\huge Analysis of Factorial Design}
+
+\end{center}
 
 
-
-
-
-
+\vspace{3cm}
 
 
 
@@ -522,7 +562,7 @@
 	
 	
 	
-	
+\newpage
 	
 	
 	
@@ -532,121 +572,7 @@
 	
 	
 %09
-	\item Analyse the following $2^3$ factorial experiment in blocks of 4 plots, involving three fertilisers $N$, $P$ and $K$ each at two levels.
 	
-	\begin{table}[!htbp]
-	\def\arraystretch{1.35}
-	
-	\begin{center}
-	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
-	
-	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $I$} \\
-	
-	\hhline{~----}
-	
-	\multirow{2}{*}{Block 1} & $np$ & $npk$ & $(1)$ & $k$ \\
-	
-	& 101 & 111 & 75 & 55 \\
-	
-	\hhline{~----}
-	
-	\multirow{2}{*}{Block 2} & $p$ & $n$ & $pk$ & $nk$ \\
-	
-	& 88 & 90 & 115 & 75 \\
-	
-	\hhline{~----}
-	
-	\end{tabular}
-	\end{center}
-	
-	\end{table}
-
-
-	
-	
-	
-	\begin{table}[!htbp]
-	\def\arraystretch{1.35}
-	
-	\begin{center}
-	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
-	
-	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $II$} \\
-	
-	\hhline{~----}
-	
-	\multirow{2}{*}{Block 3} & $(1)$ & $npk$ & $nk$ & $p$ \\
-	
-	& 125 & 95 & 80 & 100 \\
-	
-	\hhline{~----}
-	
-	\multirow{2}{*}{Block 4} & $np$ & $k$ & $pk$ & $n$ \\
-	
-	& 115 & 95 & 90 & 80 \\
-	
-	\hhline{~----}
-	
-	\end{tabular}
-	\end{center}
-	
-	\end{table}
-	
-	
-	
-	
-	
-	
-	\begin{table}[!htbp]
-	\def\arraystretch{1.35}
-	
-	\begin{center}
-	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
-	
-	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $III$} \\
-	
-	\hhline{~----}
-	
-	\multirow{2}{*}{Block 5} & $pk$ & $nk$ & $(1)$ & $np$ \\
-	
-	& 75 & 100 & 55 & 92 \\
-	
-	\hhline{~----}
-	
-	\multirow{2}{*}{Block 6} & $n$ & $npk$ & $p$ & $k$ \\
-	
-	& 53 & 76 & 65 & 82 \\
-	
-	\hhline{~----}
-	
-	\end{tabular}
-	\end{center}
-	
-	\end{table}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-%10
 	\item An experiment was performed by Gretchen Krueger at Arizona State University to determine how the pan material, the brand of brownie mix and the stirring method affect the scrumptiousness of brownies. \\
 	
 	The factor levels were:
@@ -741,115 +667,29 @@
 	
 	Analyse the data and comment on the results.
 	
-
-
-
-
-
-
-
-
-\newpage
-
-
-
-
-
-
-%11
-	\item The yield data (in kg. per plant) obtained in a factorial experiment to compare the effect of three fertilizers $N$, $P$ and $K$ each at two levels applied on a variety are given below.
 	
-	\begin{table}[!htbp]
-	\def\arraystretch{2}
 	
-	\begin{center}
-	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
 	
-	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $I$} \\
 	
-	\hhline{~----}
 	
-	\multirow{2}{*}{Block 1} & $npk$ & $k$ & $p$ & $n$ \\
 	
-	& 12.0 & 17.7 & 14.6 & 12.7 \\
 	
-	\hhline{~----}
 	
-	\multirow{2}{*}{Block 2} & $nk$ & $np$ & $pk$ & $(1)$ \\
 	
-	& 11.7 & 12.8 & 13.8 & 10.9 \\
-	
-	\hhline{~----}
-	
-	\end{tabular}
-	\end{center}
-	
-	\end{table}
-
 
 	
 	
 	
-	\begin{table}[!htbp]
-	\def\arraystretch{2}
-	
-	\begin{center}
-	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
-	
-	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $II$} \\
-	
-	\hhline{~----}
-	
-	\multirow{2}{*}{Block 3} & $npk$ & $p$ & $k$ & $n$ \\
-	
-	& 10.3 & 8.9 & 9.3 & 10.8 \\
-	
-	\hhline{~----}
-	
-	\multirow{2}{*}{Block 4} & $np$ & $nk$ & $pk$ & $(1)$ \\
-	
-	& 9.3 & 9.8 & 10.0 & 12.7 \\
-	
-	\hhline{~----}
-	
-	\end{tabular}
-	\end{center}
-	
-	\end{table}
 	
 	
 	
 	
 	
 	
-	\begin{table}[!htbp]
-	\def\arraystretch{2}
 	
-	\begin{center}
-	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
 	
-	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $III$} \\
 	
-	\hhline{~----}
-	
-	\multirow{2}{*}{Block 5} & $nk$ & $np$ & $p$ & $k$ \\
-	
-	& 12.3 & 10.3 & 15.2 & 14.3 \\
-	
-	\hhline{~----}
-	
-	\multirow{2}{*}{Block 6} & $n$ & $pk$ & $(1)$ & $npk$ \\
-	
-	& 11.3 & 13.0 & 10.7 & 11.5 \\
-	
-	\hhline{~----}
-	
-	\end{tabular}
-	\end{center}
-	
-	\end{table}
-	
-	Each replicate consists of two blocks of 4 plots each. Find the confounded effects, analyse the data and draw conclusion.
+
 
 	
 	
@@ -865,11 +705,15 @@
 \newpage
 	
 	
+\begin{center}
+
+\textbf{\LARGE Analysis of Completely Confounded Factorial Design}
+
+\end{center}
 
 
 
-
-%12
+%10
 	\item Analyse the following $2^3$ completely confounded factorial design.
 	
 	\begin{table}[!htbp]
@@ -1004,6 +848,7 @@
 
 
 
+\newpage
 
 
 
@@ -1012,8 +857,7 @@
 
 
 
-
-%13
+%11
 	\item For a Factorial Experiment with $3$ factors $N$, $P$, $K$ each at two levels, the design and yield per plot are given below. Analyse the data.
 	
 	\begin{table}[!htbp]
@@ -1147,6 +991,7 @@
 
 
 
+\newpage
 
 
 
@@ -1154,8 +999,7 @@
 
 
 
-
-%14
+%12
 	\item For a Factorial Experiment with $3$ factors $N$, $K$, $P$ each at two levels, the design and yield per plot are given below. Analyse the data.
 	
 	\begin{table}[!htbp]
@@ -1285,6 +1129,242 @@
 	
 	
 	
+	
+	
+	
+\newpage
+
+
+\begin{center}
+
+\textbf{\LARGE Analysis of Partially Confounded Factorial Design}
+
+\end{center}
+
+%13
+	
+	
+
+
+	\item Analyse the following $2^3$ factorial experiment in blocks of 4 plots, involving three fertilisers $N$, $P$ and $K$ each at two levels.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $I$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 1} & $np$ & $npk$ & $(1)$ & $k$ \\
+	
+	& 101 & 111 & 75 & 55 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 2} & $p$ & $n$ & $pk$ & $nk$ \\
+	
+	& 88 & 90 & 115 & 75 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+
+
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $II$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 3} & $(1)$ & $npk$ & $nk$ & $p$ \\
+	
+	& 125 & 95 & 80 & 100 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 4} & $np$ & $k$ & $pk$ & $n$ \\
+	
+	& 115 & 95 & 90 & 80 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering}m{1cm}|>{\centering\arraybackslash}m{1cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $III$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 5} & $pk$ & $nk$ & $(1)$ & $np$ \\
+	
+	& 75 & 100 & 55 & 92 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 6} & $n$ & $npk$ & $p$ & $k$ \\
+	
+	& 53 & 76 & 65 & 82 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+
+
+
+
+
+\newpage
+
+
+
+
+
+
+%14
+	\item The yield data (in kg. per plant) obtained in a factorial experiment to compare the effect of three fertilizers $N$, $P$ and $K$ each at two levels applied on a variety are given below.
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $I$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 1} & $npk$ & $k$ & $p$ & $n$ \\
+	
+	& 12.0 & 17.7 & 14.6 & 12.7 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 2} & $nk$ & $np$ & $pk$ & $(1)$ \\
+	
+	& 11.7 & 12.8 & 13.8 & 10.9 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+
+
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $II$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 3} & $npk$ & $p$ & $k$ & $n$ \\
+	
+	& 10.3 & 8.9 & 9.3 & 10.8 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 4} & $np$ & $nk$ & $pk$ & $(1)$ \\
+	
+	& 9.3 & 9.8 & 10.0 & 12.7 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	
+	
+	
+	
+	
+	\begin{table}[!htbp]
+	\def\arraystretch{2}
+	
+	\begin{center}
+	\begin{tabular}{>{\centering}m{2cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+	
+	\multicolumn{1}{c}{} & \multicolumn{4}{c}{Replicate $III$} \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 5} & $nk$ & $np$ & $p$ & $k$ \\
+	
+	& 12.3 & 10.3 & 15.2 & 14.3 \\
+	
+	\hhline{~----}
+	
+	\multirow{2}{*}{Block 6} & $n$ & $pk$ & $(1)$ & $npk$ \\
+	
+	& 11.3 & 13.0 & 10.7 & 11.5 \\
+	
+	\hhline{~----}
+	
+	\end{tabular}
+	\end{center}
+	
+	\end{table}
+	
+	Each replicate consists of two blocks of 4 plots each. Find the confounded effects, analyse the data and draw conclusion.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\newpage
+
+
+
+
+\begin{center}
+
+\textbf{\LARGE Analysis of Split Plot Design}
+
+\end{center}	
 	
 	
 	
@@ -1454,6 +1534,13 @@
 	
 	
 \newpage
+
+
+\begin{center}
+
+\textbf{\LARGE Analysis of Strip Plot Design}
+
+\end{center}	
 
 
 %16
