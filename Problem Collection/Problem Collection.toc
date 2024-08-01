@@ -6,15 +6,15 @@
 \contentsline {section}{\numberline {5}Construction}{26}{section.5}%
 \contentsline {section}{\numberline {6}Indices}{28}{section.6}%
 \contentsline {section}{\numberline {7}Trigonometry}{28}{section.7}%
-\contentsline {section}{\numberline {8}Functional Equations}{31}{section.8}%
+\contentsline {section}{\numberline {8}Functional Equations}{32}{section.8}%
 \contentsline {section}{\numberline {9}System of Equations}{32}{section.9}%
 \contentsline {section}{\numberline {10}\textcolor {red}{Coordinate Geometry}}{33}{section.10}%
 \contentsline {section}{\numberline {11}\textcolor {red}{Mensuration}}{33}{section.11}%
-\contentsline {section}{\numberline {12}\textcolor {red}{Inequality}}{33}{section.12}%
-\contentsline {section}{\numberline {13}Number Theory}{39}{section.13}%
+\contentsline {section}{\numberline {12}\textcolor {red}{Inequality}}{34}{section.12}%
+\contentsline {section}{\numberline {13}Number Theory}{40}{section.13}%
 \contentsline {section}{\numberline {14}Combinatorics}{40}{section.14}%
 \contentsline {section}{\numberline {15}\textcolor {red}{Real Analysis}}{42}{section.15}%
-\contentsline {section}{\numberline {16}\textcolor {red}{Linear Algebra}}{44}{section.16}%
+\contentsline {section}{\numberline {16}\textcolor {red}{Linear Algebra}}{45}{section.16}%
 \contentsline {section}{\numberline {17}\textcolor {red}{Theory of Equations}}{45}{section.17}%
 \contentsline {section}{\numberline {18}\textcolor {red}{Univariate Calculus}}{46}{section.18}%
-\contentsline {section}{\numberline {19}\textcolor {red}{Differential Equation}}{46}{section.19}%
+\contentsline {section}{\numberline {19}\textcolor {red}{Differential Equation}}{47}{section.19}%
