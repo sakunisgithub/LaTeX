@@ -2735,6 +2735,8 @@ Find out the set of all points where $f$ is continuous.
 %36
 	\item $a$, $b$ $\in$ $\mathbb{R}$ such that $b \leq a \leq b + \epsilon$ $\forall$ $\epsilon > 0$. What will be the relation between $a$ and $b$ ?
 	
+%37
+	\item Does there exist a continuous function $f$ such that $f(x)$ is rational whenever $x$ is irrational and $f(x)$ is irrational whenever $x$ is rational ?
 \end{enumerate}
 
 
@@ -2908,6 +2910,24 @@ Find out the set of all points where $f$ is continuous.
 	
 %14
 	\item Let $f : [a, b] \rightarrow \mathbb{R}$, $f$ is differentiable in $(a, b)$ and $f(x)$ is not 0 everywhere $(f \neq 0)$. Prove that, $\exists \,\, c\in (a, b)$ such that, $\dfrac{f'(c)}{f(c)} = \dfrac{1}{a-c} + \dfrac{1}{b-c}$.
+	
+%15
+	\item Let $f : [a, b] \rightarrow \mathbb{R}$, $f$ is differentiable in $(a, b)$. Prove that, $\exists \,\, c_1, c_2 \in (a, b)$ such that $\dfrac{f'(c_1)}{2c_1} = \dfrac{f'(c_2)}{a+b}$.
+	
+%16
+	\item If $\alpha_0, \alpha_1, \alpha_2, \alpha_3, \ldots, \alpha_n$ are real numbers such that $$\dfrac{\alpha_0}{n+1} + \dfrac{\alpha_1}{n} + \dfrac{\alpha_2}{n-1} + \cdots + \dfrac{\alpha_{n-1}}{2} + \dfrac{\alpha_n}{1} = 0,$$ then show that there exists at least one $x \in (0, 1)$ such that $$\alpha_0 x^n + \alpha_1 x^{n-1} + \alpha_2 x^{n-2} + \ldots + \alpha_{n-1}x + \alpha_n = 0.$$
+	
+%17
+	\item Prove that, $(1+x) \leq e^x \leq (1+xe^x)$ where $x \geq 0$.
+	
+%18
+	\item Let $f$ be a continuous and non-negative function on $[a, b]$. If $\displaystyle{\int \limits_a^b f(x) \,\, dx = 0}$, then prove that $f(x) = 0 \,\, \forall x \in [a, b]$.
+	
+%19
+	\item Given that $f$ is a continuous function and $\displaystyle{\int \limits_0^1 f(x) (1-f(x)) \,\, dx = \dfrac{1}{4}}$. Find $f$.
+	
+%20
+	\item Let $p$ and $q$ be two $n$-degree polynomials. Given that $\displaystyle{\int \limits_0^1 x^k p(x) \,\, dx = \int \limits_0^1 x^k q(x) \,\, dx}$ $\forall k = 0, 1, 2, \ldots, n$. Prove that, $p(x)$
 	
 \end{enumerate}
 
