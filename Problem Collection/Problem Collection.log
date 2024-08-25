@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  2 AUG 2024 19:05
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7) (preloaded format=xelatex 2022.12.29)  25 AUG 2024 23:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3707,6 +3707,24 @@ cmm/m/it/10.95 f$\TU/lmr/m/n/10.95 , $[]$
  []
 
 [46]
+Overfull \hbox (44.18503pt too wide) in paragraph at lines 2937--2938
+[]\TU/lmr/m/n/10.95 Given that $\OML/cmm/m/it/10.95 f$ \TU/lmr/m/n/10.95 and $\
+OML/cmm/m/it/10.95 g$ \TU/lmr/m/n/10.95 are two continuous positive functions d
+efined over $\OT1/cmr/m/n/10.95 [0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1]$\
+TU/lmr/m/n/10.95 . $[]$. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2937--2938
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2939--2940
+
+ []
+
+[47]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -3796,7 +3814,7 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {newzealand/options}  =>  {variant=newzealand}
 >  {bengali/target}  =>  {bengali}
 >  {bn/target}  =>  {bengali}.
- [47] (Problem Collection.aux
+ [48] (Problem Collection.aux
 LaTeX Info: Redefining \rmfamily on input line 23.
 LaTeX Info: Redefining \sffamily on input line 23.
 LaTeX Info: Redefining \ttfamily on input line 23.
@@ -3816,4 +3834,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  91i,21n,94p,642b,3033s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Problem Collection.pdf (47 pages).
+Output written on Problem Collection.pdf (48 pages).

@@ -17,4 +17,4 @@
 \contentsline {section}{\numberline {16}\textcolor {red}{Linear Algebra}}{45}{section.16}%
 \contentsline {section}{\numberline {17}\textcolor {red}{Theory of Equations}}{45}{section.17}%
 \contentsline {section}{\numberline {18}\textcolor {red}{Univariate Calculus}}{46}{section.18}%
-\contentsline {section}{\numberline {19}\textcolor {red}{Differential Equation}}{47}{section.19}%
+\contentsline {section}{\numberline {19}\textcolor {red}{Differential Equation}}{48}{section.19}%
