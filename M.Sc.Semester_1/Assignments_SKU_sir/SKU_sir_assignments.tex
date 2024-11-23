@@ -1,0 +1,79 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 1 in, right = 1 in ]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+
+
+\title{MSMS 101 \\ Statistical Inference : Point Estimation \\ \vspace{0.3cm} \textbf{Assignments}}
+\author{}
+\date{}
+
+
+\begin{document}
+
+\maketitle
+
+
+\begin{enumerate}
+
+\item Show that the sample mean is a consistent estimator of $\theta$ in $N(\theta, 1)$ population.
+
+\item Suppose we have a statistic $T_n$ whose mean differs from $\theta$ by an order of $\dfrac{1}{n}$ and whose variance is of order $\dfrac{1}{n}$ and it tends to normality as $n \rightarrow \infty$. Then $\dfrac{T_n - \theta}{\sqrt{n}} \xrightarrow{P} 0$ and $T_n$ is a consistent estimator of $\theta$.
+
+\item Show that the sample mean is not a consistent estimator of $\theta$ in Cauchy population, although the sample median is.
+
+\item Show that the sample variance is a consistent estimator of $\sigma^2$ in $N(\mu, \sigma^2)$ population.
+
+\item Consider a random samle of size $n$ from $N(\mu, \sigma^2)$ population where $\sigma^2$ is known. Obtain the MVBUE of $\mu$.
+
+\item Suppose $X_1, X_2, \ldots X_n$ is a random sample from $N(\mu, \sigma^2)$ where $\mu$ is known. Obtain the MVBUE of $\sigma^2$.
+
+\item Consider a random sample of size $n$ from Binomial$(k, p)$ population where $k$ is known. Obtain the MVBUE of $p$.
+
+\item Suppose $X_1, X_2, \ldots X_n$ is a random sample from Poisson$(\lambda)$ population. Obtain the MVBUE of $\lambda$.
+
+\item Suppose $X_1, X_2, \ldots X_n$ is a random sample from Cauchy$(\mu, \lambda)$ population where $\lambda$ is known. Obtain the MVBUE of $\mu$.
+
+\item Suppose $X_1, X_2$ be a random sample of size 2 from Poisson$(\lambda)$. Show that $X_1 + X_2$ is a sufficient for $\lambda$ but $X_1 + 2X_2$ is not.
+
+\item Consider a random sample of size $n$ from an Exponential distribution with mean $\theta$. Obtain the UMVUE of $e^{-\dfrac{t}{\theta}}, \,\,\, t \in \mathbb{R^+}$.
+
+\item Suppose $f(x; \theta_1, \theta_2) = \dfrac{1}{\sqrt{2 \pi \theta_2}} \cdot \text{exp}\left\{ -\dfrac{1}{2} \cdot \dfrac{(x - \theta_1)^2}{\theta_2}\right\}, \,\,\, x \in \mathbb{R}$. \\
+
+\vspace{0.2cm}
+
+Consider a random sample of size $n$ from $f(\cdot)$. Obtain the CRLBs for unbiased estimators of $\theta_1$ and $\theta_2$.
+
+\item Suppose $X$ be a random sample of size 1 from a population with PMF $$P(X = x) = p(1-p)^x; \,\,\, x = 0, 1, 2, 3, \ldots.$$ Obtain lower bounds to the variance of an unbiased estimator of $p$.
+
+\item Suppose $X_1, X_2, \ldots X_n$ is a random sample from $N(\mu, \sigma^2)$ where $\sigma^2$ is known. Show that the statistic $T(\utilde{X}) = \overline{X}$ is complete.
+
+\item Suppose $X_1, X_2, \ldots X_n$ is a random sample from $N(\mu, \sigma^2)$ where $\mu$ is known. Show that the statistic $T(\utilde{X}) = \sum \limits_{i = 1}^{n} (X_i - \mu)^2$ is complete.
+
+\item Consider a random sample of size $n$ from Binomial$(k, p)$ population where $k$ is known. Obtain the MLE of $p$.
+
+\item Suppose $X_1, X_2, \ldots X_n$ is a random sample from Poisson$(\lambda)$ population. Obtain the MLE of $\lambda$.
+
+\item Consider a random samle of size $n$ from $N(\mu, \sigma^2)$ population where $\sigma^2$ is known. Obtain the MLE of $\mu$.
+
+\item Suppose $X_1, X_2, \ldots X_n$ is a random sample from $N(\mu, \sigma^2)$ where $\mu$ is known. Obtain the MLE of $\sigma^2$.
+
+\item Suppose $X_1, X_2, \ldots X_n$ is a random sample from $N(\mu, \sigma^2)$ where both mean and variance are unknown. Obtain the MLE of the parameters $\mu$ and $\sigma^2$.
+
+\item Let $f(x; \theta) = \dfrac{1}{\theta} e^{-\dfrac{x}{\theta}} I_{(0, \infty)}(x)$. \\
+
+$X_1, X_2, \ldots X_n$ be a random sample from $f(\cdot)$. Obtain the MLE of $\theta$.
+
+\end{enumerate}
+
+
+\end{document}

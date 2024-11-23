@@ -93,7 +93,7 @@
 		
 		\end{table}
 		
-		Use analysis of variance technique and determine whether the machines are signifacntly different in their mean speeds. Use $\alpha = 5 \%$.
+		Use analysis of variance technique and determine whether the machines are significantly different in their mean speeds. Use $\alpha = 5 \%$.
 		
 		\item Analyse the above data after shifting the origin to 30. How are the results in Part (a) affected ? Explain.
 	
@@ -639,7 +639,7 @@
 	
 	
 %13
-	\item The following experiment was suggested to test whether subjecting seeds to high temperature and low temperature before planting has any effect on yield. Ten plots were taken and in each 6 seeds were sown at random. Two of the seeds were subjected to high temperatuer (h.t.), two to low temperature (l.t.) and two were subject to controls. The yield of individual plants in gms. are recorded in the following table. Test for the comparison of yields under the two treatmetns and control.
+	\item The following experiment was suggested to test whether subjecting seeds to high temperature and low temperature before planting has any effect on yield. Ten plots were taken and in each 6 seeds were sown at random. Two of the seeds were subjected to high temperatuer (h.t.), two to low temperature (l.t.) and two were subject to controls. The yield of individual plants in gms. are recorded in the following table. Test for the comparison of yields under the two treatments and control.
 	
 	\begin{table}[!htbp]
 	\def\arraystretch{1.5}
@@ -843,7 +843,7 @@
 
 
 %15
-	\item In an experiment on cotton with 5 manurial treatments, it was observed that the number of plants per plot is varying from plot to plot. The yields of cotten (Kapas) along with the number of plants per plot are given in the following table. Analyse the yield data removing the effect of the variation in plant population on the yield by analysis of covariance technique and draw your conclusions. The design adopted was a $R.B.D$ with 4 replications. 
+	\item In an experiment on cotton with 5 manurial treatments, it was observed that the number of plants per plot is varying from plot to plot. The yields of cotton (Kapas) along with the number of plants per plot are given in the following table. Analyse the yield data removing the effect of the variation in plant population on the yield by analysis of covariance technique and draw your conclusions. The design adopted was a $R.B.D$ with 4 replications. 
 	\\
 	\hspace*{20pt} \textbf{Treatments} : 5 levels of Nitrogen : \\
 	\hspace*{95pt} $N_0 = 0$, $N_1 = 20$, $N_2 = 40$, $N_3 = 60$ and $N_4 = 80$ kg/ha.
@@ -907,7 +907,7 @@
 	
 %16
 	\item In the following table are initial weights $X$ (pounds), average daily gains $Y$ (pounds per day) of four lots of swine fed with different rations. \\
-	\hspace*{30pt} Assuming that the data on initial weights are not available, examine whether the four rations differ in inducing gain in weight.
+	\hspace*{30pt} Assuming that the data on initial weights are not available, examine whether the ten rations differ in inducing gain in weight.
 	
 	\begin{table}[!htbp]
 	\def\arraystretch{1.5}

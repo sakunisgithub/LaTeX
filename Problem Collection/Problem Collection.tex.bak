@@ -2944,7 +2944,10 @@ Find out the set of all points where $f$ is continuous.
 	\item Let $f : \mathbb{R} \rightarrow (0, \infty)$ such that $f(x) + \dfrac{e^{x + x^2}}{f(x)} \leq e^x + e^{x^2} \,\, \forall  x > 0.$ Find $\lim \limits_{x \rightarrow 1} f(x).$
 	
 %24
-	\item Let $f$
+	\item Let $f : [0, 1] \rightarrow \mathbb{R}$ be a twice differentiable function and $f\left(\dfrac{1}{n}\right) = 0 \,\, \forall n \in \mathbb{N}$. Prove that, $f(0) = f'(0) = f''(0) = 0$.
+	
+%24
+	\item Prove that, $\displaystyle{\int \limits_0^1 \sqrt{1 + x^3} \,\, dx \leq \dfrac{\sqrt{5}}{2}}$.
 \end{enumerate}
 
 
