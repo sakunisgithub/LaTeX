@@ -2976,6 +2976,25 @@ Find out the set of all points where $f$ is continuous.
 %29
 	\item \textbf{Complex Conjugate Root Theorem} : Suppose $P$ is a polynomial of degree $n$ with real coefficients in one variable. If $z$ is a complex root of $P$, then $\bar{z}$ $i.e.$ complex conjugate of $z$ is also a root of $P$.
 	
+%30
+	\item $f:[0, 1] \rightarrow \mathbb{R}$ is continuous. Given that $\displaystyle{\int \limits_{0}^{1} f(x) \,\, dx = \int \limits_{0}^{1} x \cdot f(x) \,\, dx}$. Show that, $\exists \,\, c \in (0, 1)$ such that $\displaystyle{f(c) = \int \limits_{0}^{c} f(x) \,\, dx}$.
+	
+%31
+	\item If $f$ is continuous on $\left[ a, b \right]$ and differentiable over $(a, b)$, prove that there is at least one $c \in (a, b)$ such that $$\dfrac{f'(c)}{3c^2} = \dfrac{f(b) - f(a)}{b^3 - a^3}.$$
+	
+%32
+	\item If $f(x)$ and $g(x)$ are differentiable functions over $0 \leq x \leq 1$ such that $f(0) = 2$, $g(0) = 0$, $f(1) = 6$, $g(1) = 2$, then show that there exists $c$ satisfying $0 < c < 1$ and $f'(c) = 2 g'(c)$.
+	
+%33
+	\item If $f(x)$ and $g(x)$ are continuous functions in $\left[ a, b \right]$ and differentiable in $(a, b)$, then prove that,
+
+\begin{gather*}
+	\begin{vmatrix} f(a) & f(b) \\ g(a) & g(b) \end{vmatrix}
+	= (b-a)
+	\begin{vmatrix} f(a) & f'(c) \\ g(a) & g'(c) \end{vmatrix}
+	\text{ where } a < c < b.
+\end{gather*}
+	
 \end{enumerate}
 
 
