@@ -1,0 +1,97 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 1 in, right = 1 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+
+\title{MSMS 201 : CLUSTERING}
+\author{Ananda Biswas}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+$\bullet$ \textbf{Clustering :} Partition data $\chi$ into $k$-groups such that observations in each group are similar and observations in between different groups are far away.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{image1.png}
+\end{figure}
+
+$\bullet$ \textbf{Partitional Clustering :} It is simply a division of data objects into non-overlapping subsets such that each object is in only one set. \\
+
+Two well-known partitional clustering techniques are -
+
+\begin{enumerate}[(i)]
+\item $k$-means
+\item $k$-medoids
+\end{enumerate}
+
+In partitional clustering algorithm, our objective is to partition $\chi$ in $k$-clusters such that cost function is minimum. \\
+
+\leftpointright \hspace{0.2cm} \textbf{\textcolor{blue}{$k$-means clustering :-}} defines a prototype in terms of centroid which is usually the mean of a group of points. It is applied when the objects are in continuous $n$-dimensional space. Centroid may not be an actual data-point. \\
+
+\faArrowAltCircleRight[regular] \hspace{0.2cm} \textbf{Algorithm for $k$-means clustering :-} \\
+
+The $k-$means clustering algorithm is as follows :
+
+\begin{enumerate}[(1)]
+\item select $k$ points as initial centroids
+\item calculate the distance of each data-point from each of the centroids
+\item assign each of the data-points to its closest centroid
+\item relocate the centroids to the average location of the data-points of similar group
+\end{enumerate}
+
+And we repeat this procedure until the assignments don't change after the centroid locations were recomputed. \\
+
+For some type of combinations of proximity measure and types of centroids, $k$-mean always converges to a solution. \\
+
+\scalebox{2.0}{\twemoji{bullseye}} \hspace{0.5cm} \href{https://github.com/sakunisgithub/R-programming/blob/master/msc_sem_2_practicals/rakesh_sir_practicals/practical_01/practical_01.pdf}{an example : $k$-means clustering on a 1D data} \\
+
+\scalebox{2.0}{\twemoji{bullseye}} \hspace{0.5cm} \href{https://github.com/sakunisgithub/R-programming/blob/master/msc_sem_2_practicals/rakesh_sir_practicals/practical_02/practical_02.pdf}{an example : $k$-means clustering on $iris$ dataset} \\
+
+\leftpointright \hspace{0.2cm} \textbf{\textcolor{blue}{$k$-medoids clustering :-}} It defines a prototype in terms of medoids which are the most representative points of a group of points and can be applied to a wide range of data. It requires only a proximity measure for a pair of objects. Medoid must be an actual data-point while centroids mostly never correspond to any actual data-point. \\
+
+\faArrowAltCircleRight[regular] \hspace{0.2cm} \textbf{Algorithm for $k$-medoids clustering :-} \\
+
+The $k-$medoids clustering algorithm is as follows :
+
+\begin{enumerate}[(1)]
+\item randomly select $k$ data-points as initial medoids belonging to $k$ clusters
+\item calculate the distance of each data-point from each of the medoids using \underline{Manhattan Distance} $M$ given by
+
+$$M((X_1, Y_1), (X_2, Y_2)) = |X_1 - X_2|+|Y_1 - Y_2|$$
+
+\item assign each of the data-points to the cluster from whose medoid the distance $M$ is minimum
+\item calculate the total cost $S$ given by
+
+$$S = \sum\limits_{i = 1}^{k} \sum\limits_{j} M(C_i, X_{ij})$$
+
+where $C_i$ is the medoid of $i$-th cluster and $X_{ij}$ is the $j$th data-point in $i$th cluster.
+
+\end{enumerate}
+
+And we repeat this procedure and obtain a new total cost. \\
+
+Let $G = \text{new total cost} - \text{old total cost}$. We stop if $G > 0$.
+
+\end{document}
