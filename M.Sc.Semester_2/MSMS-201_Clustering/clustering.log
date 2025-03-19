@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.29)  20 MAR 2025 03:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.29)  20 MAR 2025 04:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1049,19 +1049,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
 [2 <C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemoj
-is.pdf>] (clustering.aux)
+is.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+[3] (clustering.aux)
 Package rerunfilecheck Info: File `clustering.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35808 strings out of 476407
- 771192 string characters out of 2789109
- 1859787 words of memory out of 3000000
- 55732 multiletter control sequences out of 15000+600000
- 519422 words of font info for 60 fonts, out of 8000000 for 9000
+ 35813 strings out of 476407
+ 771236 string characters out of 2789109
+ 1861787 words of memory out of 3000000
+ 55733 multiletter control sequences out of 15000+600000
+ 519768 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,7n,103p,444b,435s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,14n,103p,471b,435s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/f
 a5free0.enc} <C:\Users\Ananda\AppData\Local\MiKTeX\fonts/pk/ljfour/public/dingb
 at/dpi657\ark10.pk><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -1070,15 +1085,19 @@ Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Ananda/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/A
 nanda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
 C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ananda/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on clustering.pdf (2 pages, 182611 bytes).
+mi6.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ananda/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ananda/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ananda/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
+s/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pf
+b>
+Output written on clustering.pdf (3 pages, 222571 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
