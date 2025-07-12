@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.29)  15 MAY 2025 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2025.7.12)  12 JUL 2025 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1061,12 +1061,12 @@ Package rerunfilecheck Info: File `PCA.out' has not changed.
 (rerunfilecheck)             Checksum: 1F74F88A64E25AACDF5BF9835EDB112B;1517.
  ) 
 Here is how much of TeX's memory you used:
- 35909 strings out of 476407
- 772075 string characters out of 2789109
+ 35909 strings out of 478322
+ 772031 string characters out of 2840045
  1877787 words of memory out of 3000000
- 55802 multiletter control sequences out of 15000+600000
+ 55562 multiletter control sequences out of 15000+600000
  522337 words of font info for 70 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  99i,20n,103p,515b,450s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Ananda\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1095.pk> <C:\Users\Ananda\AppData\Local\MiKTeX\fonts/pk/ljfour/public/dingbat/
