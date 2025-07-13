@@ -365,10 +365,10 @@ u_1 & u_2 & \cdots & u_n \\
 \end{bmatrix}
 \]
 
-Each entry of the matrix, $Q_{ij}$ is given by $\utilde{u_i}^T \utilde{u_i}$
+Each entry of the matrix, $Q_{ij}$ is given by $\utilde{u_i}^T \utilde{u_j}$
 
 \[
-Q_{ij} = \utilde{u_i}^T \utilde{u_i} =
+Q_{ij} = \utilde{u_i}^T \utilde{u_j} =
 \begin{cases}
 0 & \text{if } i \neq j \\
 1 & \text{if } i = j
@@ -606,7 +606,7 @@ In practice, we select only the top-$k$ dimensions along which the variance is h
 
 \subsection{Interpretation 2}
 
-Given $n$ orthogonal linearly independent vectors $\utilde{p_1}, \utilde{p_2}, \ldots, \utilde{p_n}$, we can represent $\utilde{x_i}$ \underline{exactly} (exactly only when we use all $\utilde{p_i}$'s, it will be approximate when we discard some of $\utilde{p_i}$'s) as a linear combination of these vectors as follows.
+Given $n$ orthonormal linearly independent vectors $\utilde{p_1}, \utilde{p_2}, \ldots, \utilde{p_n}$, we can represent $\utilde{x_i}$ \underline{exactly} (exactly only when we use all $\utilde{p_i}$'s, it will be approximate when we discard some of $\utilde{p_i}$'s) as a linear combination of these vectors as follows.
 \[
 \utilde{x_i} = \sum_{j=1}^{n} \alpha_{ij} \utilde{p_j} \hspace{1cm}  \text{[we know how to estimate $\alpha_{ij}$'s but we will come back to that later]}
 \]
