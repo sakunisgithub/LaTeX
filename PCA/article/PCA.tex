@@ -557,7 +557,7 @@ Let $\Sigma$ be the covariance matrix of $X$. Let $\mu_i, \mu_j$ denote the mean
 \sigma_{ij} &= \dfrac{1}{m} \sum\limits_{k=1}^{m} (X_{ki} - \mu_i)(X_{kj} - \mu_j) \\[0.5em]
 &= \dfrac{1}{m} \sum\limits_{k=1}^{m} X_{ki} X_{kj} \hspace{1cm} [\because \mu_i = \mu_j = 0] \\[0.5em]
 &= \dfrac{1}{m} X_i^T X_j \\[0.5em]
-&= \dfrac{1}{m} \left( X^T X \right)_{ij}
+&= \left( \dfrac{1}{m} X^T X \right)_{ij}
 \end{align*}
 
 $\bullet$ We have $\hat{X} = X P$. Using the previous theorems \& result, we get $\dfrac{1}{m} \hat{X}^T \hat{X}$ is the covariance matrix of the transformed data. We can write:
@@ -616,7 +616,7 @@ But we are interested only in the top-$k$ dimensions (we want to get rid of nois
 \utilde{\hat{x}_i} = \sum_{j=1}^{k} \alpha_{ij} \utilde{p_j}
 \]
 
-So we want to select $p_i$'s such that we minimise the \underline{reconstructed error} :
+So we want to select $p_i$'s such that we minimise the \underline{reconstruction error} :
 \[
 e = \sum_{i=1}^{m} (\utilde{x_i} - \utilde{\hat{x}_i})^T (\utilde{x_i} - \utilde{\hat{x}_i})
 \]
