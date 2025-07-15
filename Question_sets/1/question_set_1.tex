@@ -1,0 +1,132 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 1 in, right = 1 in]{geometry}
+
+\usepackage{amsmath}
+\allowdisplaybreaks[1]
+\usepackage{amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+
+\title{Question Set}
+\author{Brij, Kirti, Abhishek, Nitesh, Ananda}
+\date{}
+
+
+\newcommand{\colvec}[2]{\begin{bmatrix} #1 \\ #2 \end{bmatrix}}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}[1.]
+
+\item \textit{MSQ} We can remove the missing values from a dataset if
+
+	\begin{enumerate}[(A)]
+		\item MCAR
+		\item MAR
+		\item MNAR
+		\item less than 5\% data are missing
+	\end{enumerate}
+
+\item \textit{MSQ} Imputing the missing values by the mean of the data
+	\begin{enumerate}[(A)]
+		\item increases variance
+		\item decreases variance
+		\item increases peakedness in the density curve of the data
+		\item decreases peakedness in the density curve of the data
+	\end{enumerate}
+	
+
+\item \textit{MCQ} $X_1$ and $X_2$ are two normally distributed random variates with Pearson's correlation coefficient (a measure of linear relationship between two continuous variables) 0. Choose the most appropriate statement.
+	\begin{enumerate}[(A)]
+		\item $X_1$ and $X_2$ are only linearly independent but non-linear or functional dependence might be there.
+		\item Even though Pearson's correlation coefficient is a measure of linear relationship, here $X_1$ and $X_2$ are completely independent.
+		\item Value of the correlation coefficient is too little information to conclude anything about independence.
+		\item The joint distribution of $X_1$ and $X_2$ can never be bivariate normal.	
+	\end{enumerate}
+	
+
+\item \textit{MSQ} In PCA, we desire the principal components to have
+	\begin{enumerate}[(A)]
+		\item low variance
+		\item high variance
+		\item low covariance
+		\item high covariance	
+	\end{enumerate}
+	
+
+\item \textit{MCQ} An illegal site's servers were seized in a recent operation. Which of the following queries will submit all users' details sorted by access times in descending order ?
+	\begin{enumerate}[(A)]
+		\item SELECT * FROM users;
+		\item SELECT * FROM users ORDER BY AccessTime;
+		\item SELECT * FROM users GROUP BY AccessTime;
+		\item SELECT * FROM users ORDER BY AccessTime DESC;	
+	\end{enumerate}
+	
+	
+\item \textit{MCQ} \textit{Movie} table has 3 columns : \textit{Movie\_name} (primary key), \textit{release\_year}, \textit{genre}. Select the query to find the oldest released movie of each genre.
+	\begin{enumerate}[(A)]
+		\item SELECT genre, MIN(release\_year) FROM movie ORDER BY genre;
+		\item SELECT genre, MIN(release\_year) FROM movie GROUP BY genre;
+		\item SELECT genre, MIN(release\_year) FROM movie;
+		\item SELECT genre, MIN(release\_year) FROM movie COUNT BY genre;	
+	\end{enumerate}
+	
+	
+\item \textit{MCQ} \textit{Employees} table has 2 columns : \textit{id} (primary key) and \textit{name}. Each row of this table contains the id and the name of an employee in a company. \textit{EmployeeUNI} table also has two columns \textit{id} and \textit{unique\_id}; (\textit{id}, \textit{unique\_id}) is the primary key (combination of columns with unique values) for this table. Each row of this table contains the id and the corresponding unique id of an employee in the company. Select the correct query to show the unique ID of each user, if a user does not have a unique ID replace just show 'null'.
+	\begin{enumerate}[(A)]
+		\item SELECT unique\_id, name FROM Employees AS a INNER JOIN EmployeeUNI AS b ON a.id = b.id;
+		\item SELECT unique\_id, name FROM Employees AS a LEFT JOIN EmployeeUNI AS b ON a.id = b.id;
+		\item SELECT unique\_id, name FROM Employees AS a RIGHT JOIN EmployeeUNI AS b ON a.id = b.id;
+		\item SELECT id, name FROM Employees AS a LEFT JOIN EmployeeUNI AS b ON a.id = b.id;	
+	\end{enumerate}
+	
+	
+\item \textit{MCQ} Why is feature selection important?
+	\begin{enumerate}[(A)]
+		\item to increase training time
+		\item to make models more complex
+		\item to reduce overfitting and improve accuracy
+		\item to increase the number of predictors
+	\end{enumerate}
+	
+
+\item \textit{MCQ} Which of the following techniques is used for encoding categorical variables?
+	\begin{enumerate}[(A)]
+		\item PCA	
+		\item Min-Max Scaling
+		\item One-hot Encoding
+		\item Dropout
+	\end{enumerate}
+	
+
+\item \textit{MCQ} Suppose you plotted a scatter plot between the residuals and predicted values in linear regression and found a relationship between them. Which of the following conclusions do you make about this situation?
+	\begin{enumerate}[(A)]
+		\item Since there is a relationship means our model is not good
+		\item Since there is a relationship means our model is good
+		\item can’t say
+		\item None of these
+	\end{enumerate}
+	
+\end{enumerate}
+
+
+\end{document}
