@@ -339,7 +339,7 @@ u_{1n} & u_{2n} & \cdots & u_{nn}
 \end{bmatrix}
 \end{align*}
 
-We can now find the $\alpha_i$'s using Gaussian Elimination (Time Complexity: $O(n^3))$.
+We can now find the $\alpha_i$'s using Gaussian Elimination (Time Complexity: $O(N^3))$.
 \end{frame}
 
 
@@ -370,13 +370,13 @@ We can now find the $\alpha_i$'s using Gaussian Elimination (Time Complexity: $O
 
 \begin{align*}
 \utilde{z} &= \alpha_1 \utilde{u_1} + \alpha_2 \utilde{u_2} + \cdots + \alpha_n \utilde{u_n} \\ 
-\Rightarrow \utilde{u_1}^T \utilde{z} &= \alpha_1 \utilde{u_1}^T \utilde{u_1} + \cdots + \alpha_n \utilde{u_1}^T \utilde{u_n} \\ &= \alpha_1
+\onslide<2->{\Rightarrow \utilde{u_1}^T \utilde{z} &= \alpha_1 \utilde{u_1}^T \utilde{u_1} + \cdots + \alpha_n \utilde{u_1}^T \utilde{u_n}}\\ \onslide<3->{&= \alpha_1}
 \end{align*}
 
-\item<2-> We can directly find each \( \alpha_i \) using a dot product between \( z \) and \( \utilde{u_i} \)
+\item<4-> We can directly find each \( \alpha_i \) using a dot product between \( z \) and \( \utilde{u_i} \)
 (time complexity \( O(N) \)). \\[0.3cm]
 
-\item<3-> The total complexity will be $O(N^2)$.
+\item<5-> The total complexity will be $O(N^2)$.
 \end{itemize}
 \end{frame}
 
@@ -637,7 +637,7 @@ But that's not all.
     % Left Column: Image
     \begin{column}{0.5\textwidth}
       \centering
-      \only<1->{\includegraphics[width=0.9\textwidth]{image_11.png}}
+      \only<1->{\includegraphics[scale=0.5]{image_11.png}}
     \end{column}
       
 

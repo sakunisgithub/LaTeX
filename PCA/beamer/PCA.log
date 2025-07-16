@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  15 JUL 2025 21:49
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  16 JUL 2025 15:48
  restricted system commands enabled.
 **PCA.tex
 (./PCA.tex
@@ -1598,48 +1598,48 @@ Package luatex.def Info: image_1.png  used on input line 95.
  [4
 
 <./image_1.png>]
-<image_2.png, id=204, 451.6875pt x 335.45325pt>
+<image_2.png, id=204, 451.6875pt x 331.2375pt>
 File: image_2.png Graphic file (type png)
 <use image_2.png>
 Package luatex.def Info: image_2.png  used on input line 95.
-(luatex.def)             Requested size: 179.25114pt x 133.12448pt.
+(luatex.def)             Requested size: 179.25114pt x 131.45146pt.
  [5
 
 <./image_2.png>]
 File: image_2.png Graphic file (type png)
 <use image_2.png>
 Package luatex.def Info: image_2.png  used on input line 95.
-(luatex.def)             Requested size: 179.25114pt x 133.12448pt.
+(luatex.def)             Requested size: 179.25114pt x 131.45146pt.
  [6
 
 ]
-<image_3.png, id=259, 438.438pt x 336.0555pt>
+<image_3.png, id=259, 438.438pt x 332.442pt>
 File: image_3.png Graphic file (type png)
 <use image_3.png>
 Package luatex.def Info: image_3.png  used on input line 121.
-(luatex.def)             Requested size: 179.25114pt x 137.39392pt.
+(luatex.def)             Requested size: 179.25114pt x 135.91656pt.
  [7
 
 <./image_3.png>]
-<image_4.png, id=290, 431.211pt x 333.04425pt>
+<image_4.png, id=290, 431.211pt x 328.8285pt>
 File: image_4.png Graphic file (type png)
 <use image_4.png>
 Package luatex.def Info: image_4.png  used on input line 121.
-(luatex.def)             Requested size: 179.25114pt x 138.44455pt.
+(luatex.def)             Requested size: 179.25114pt x 136.69208pt.
  [8
 
 <./image_4.png>]
 File: image_4.png Graphic file (type png)
 <use image_4.png>
 Package luatex.def Info: image_4.png  used on input line 121.
-(luatex.def)             Requested size: 179.25114pt x 138.44455pt.
+(luatex.def)             Requested size: 179.25114pt x 136.69208pt.
  [9
 
 ]
 File: image_4.png Graphic file (type png)
 <use image_4.png>
 Package luatex.def Info: image_4.png  used on input line 121.
-(luatex.def)             Requested size: 179.25114pt x 138.44455pt.
+(luatex.def)             Requested size: 179.25114pt x 136.69208pt.
  [10
 
 ] [11
@@ -1816,29 +1816,19 @@ Package luatex.def Info: image_7.png  used on input line 364.
 
 ] [71
 
-]
-<image_8.png, id=2255, 406.51875pt x 272.217pt>
-File: image_8.png Graphic file (type png)
-<use image_8.png>
-Package luatex.def Info: image_8.png  used on input line 574.
-(luatex.def)             Requested size: 179.25114pt x 120.0292pt.
- [72
+] [72
 
-<./image_8.png>]
-File: image_8.png Graphic file (type png)
-<use image_8.png>
-Package luatex.def Info: image_8.png  used on input line 574.
-(luatex.def)             Requested size: 179.25114pt x 120.0292pt.
- [73
+] [73
 
 ]
+<image_8.png, id=2309, 406.51875pt x 272.217pt>
 File: image_8.png Graphic file (type png)
 <use image_8.png>
 Package luatex.def Info: image_8.png  used on input line 574.
 (luatex.def)             Requested size: 179.25114pt x 120.0292pt.
  [74
 
-]
+<./image_8.png>]
 File: image_8.png Graphic file (type png)
 <use image_8.png>
 Package luatex.def Info: image_8.png  used on input line 574.
@@ -1846,149 +1836,118 @@ Package luatex.def Info: image_8.png  used on input line 574.
  [75
 
 ]
-<image_9.png, id=2366, 407.72325pt x 274.626pt>
+File: image_8.png Graphic file (type png)
+<use image_8.png>
+Package luatex.def Info: image_8.png  used on input line 574.
+(luatex.def)             Requested size: 179.25114pt x 120.0292pt.
+ [76
+
+]
+File: image_8.png Graphic file (type png)
+<use image_8.png>
+Package luatex.def Info: image_8.png  used on input line 574.
+(luatex.def)             Requested size: 179.25114pt x 120.0292pt.
+ [77
+
+]
+<image_9.png, id=2420, 407.72325pt x 271.0125pt>
 File: image_9.png Graphic file (type png)
 <use image_9.png>
 Package luatex.def Info: image_9.png  used on input line 599.
-(luatex.def)             Requested size: 179.25114pt x 120.73523pt.
- [76
+(luatex.def)             Requested size: 179.25114pt x 119.1466pt.
+ [78
 
 <./image_9.png>]
 File: image_9.png Graphic file (type png)
 <use image_9.png>
 Package luatex.def Info: image_9.png  used on input line 599.
-(luatex.def)             Requested size: 179.25114pt x 120.73523pt.
- [77
-
-]
-File: image_9.png Graphic file (type png)
-<use image_9.png>
-Package luatex.def Info: image_9.png  used on input line 599.
-(luatex.def)             Requested size: 179.25114pt x 120.73523pt.
- [78
-
-]
-File: image_9.png Graphic file (type png)
-<use image_9.png>
-Package luatex.def Info: image_9.png  used on input line 623.
-(luatex.def)             Requested size: 179.25114pt x 120.73523pt.
+(luatex.def)             Requested size: 179.25114pt x 119.1466pt.
 
 [79
 
 ]
 File: image_9.png Graphic file (type png)
 <use image_9.png>
-Package luatex.def Info: image_9.png  used on input line 623.
-(luatex.def)             Requested size: 179.25114pt x 120.73523pt.
+Package luatex.def Info: image_9.png  used on input line 599.
+(luatex.def)             Requested size: 179.25114pt x 119.1466pt.
  [80
 
 ]
-<image_10.png, id=2505, 404.712pt x 278.2395pt>
+File: image_9.png Graphic file (type png)
+<use image_9.png>
+Package luatex.def Info: image_9.png  used on input line 623.
+(luatex.def)             Requested size: 179.25114pt x 119.1466pt.
+ [81
+
+]
+File: image_9.png Graphic file (type png)
+<use image_9.png>
+Package luatex.def Info: image_9.png  used on input line 623.
+(luatex.def)             Requested size: 179.25114pt x 119.1466pt.
+ [82
+
+]
+<image_10.png, id=2560, 384.2355pt x 263.7855pt>
 File: image_10.png Graphic file (type png)
 <use image_10.png>
 Package luatex.def Info: image_10.png  used on input line 623.
-(luatex.def)             Requested size: 179.25114pt x 123.23666pt.
- [81
+(luatex.def)             Requested size: 179.25114pt x 123.05746pt.
+ [83
 
-<./image_10.png>] [82
+<./image_10.png>] [84
 
 ]
-<image_11.png, id=2575, 209.583pt x 289.08pt>
+<image_11.png, id=2629, 209.583pt x 289.08pt>
 File: image_11.png Graphic file (type png)
 <use image_11.png>
 Package luatex.def Info: image_11.png  used on input line 655.
-(luatex.def)             Requested size: 179.25114pt x 247.24536pt.
-
-Overfull \vbox (4.4631pt too high) detected at line 655
- []
-
-[83
+(luatex.def)             Requested size: 104.79123pt x 144.53964pt.
+ [85
 
 <./image_11.png>]
 File: image_11.png Graphic file (type png)
 <use image_11.png>
 Package luatex.def Info: image_11.png  used on input line 655.
-(luatex.def)             Requested size: 179.25114pt x 247.24536pt.
-
-Overfull \vbox (4.4631pt too high) detected at line 655
- []
-
-[84
+(luatex.def)             Requested size: 104.79123pt x 144.53964pt.
+ [86
 
 ]
 File: image_11.png Graphic file (type png)
 <use image_11.png>
 Package luatex.def Info: image_11.png  used on input line 655.
-(luatex.def)             Requested size: 179.25114pt x 247.24536pt.
+(luatex.def)             Requested size: 104.79123pt x 144.53964pt.
 
-Overfull \vbox (4.4631pt too high) detected at line 655
- []
-
-[85
+[87
 
 ]
 File: image_11.png Graphic file (type png)
 <use image_11.png>
 Package luatex.def Info: image_11.png  used on input line 655.
-(luatex.def)             Requested size: 179.25114pt x 247.24536pt.
-
-Overfull \vbox (4.4631pt too high) detected at line 655
- []
-
-[86
-
-]
-<all-twemojis.pdf, id=2686, page=490, 27.10126pt x 27.10126pt>
-File: all-twemojis.pdf Graphic file (type pdf)
-<use all-twemojis.pdf, page 490>
-Package luatex.def Info: all-twemojis.pdf , page490 used on input line 671.
-(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
-<all-twemojis.pdf, id=2687, page=3647, 27.10126pt x 27.10126pt>
-File: all-twemojis.pdf Graphic file (type pdf)
-<use all-twemojis.pdf, page 3647>
-Package luatex.def Info: all-twemojis.pdf , page3647 used on input line 671.
-(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
-<all-twemojis.pdf, id=2688, page=3609, 27.10126pt x 27.10126pt>
-File: all-twemojis.pdf Graphic file (type pdf)
-<use all-twemojis.pdf, page 3609>
-Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
-(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
- [87
-
-<C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemojis.p
-df><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemoji
-s.pdf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twem
-ojis.pdf>]
-File: all-twemojis.pdf Graphic file (type pdf)
-<use all-twemojis.pdf, page 490>
-Package luatex.def Info: all-twemojis.pdf , page490 used on input line 671.
-(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
-File: all-twemojis.pdf Graphic file (type pdf)
-<use all-twemojis.pdf, page 3647>
-Package luatex.def Info: all-twemojis.pdf , page3647 used on input line 671.
-(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
-File: all-twemojis.pdf Graphic file (type pdf)
-<use all-twemojis.pdf, page 3609>
-Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
-(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
+(luatex.def)             Requested size: 104.79123pt x 144.53964pt.
  [88
 
 ]
+<all-twemojis.pdf, id=2740, page=490, 27.10126pt x 27.10126pt>
 File: all-twemojis.pdf Graphic file (type pdf)
 <use all-twemojis.pdf, page 490>
 Package luatex.def Info: all-twemojis.pdf , page490 used on input line 671.
 (luatex.def)             Requested size: 7.22148pt x 7.22168pt.
+<all-twemojis.pdf, id=2741, page=3647, 27.10126pt x 27.10126pt>
 File: all-twemojis.pdf Graphic file (type pdf)
 <use all-twemojis.pdf, page 3647>
 Package luatex.def Info: all-twemojis.pdf , page3647 used on input line 671.
 (luatex.def)             Requested size: 7.22148pt x 7.22168pt.
+<all-twemojis.pdf, id=2742, page=3609, 27.10126pt x 27.10126pt>
 File: all-twemojis.pdf Graphic file (type pdf)
 <use all-twemojis.pdf, page 3609>
 Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 (luatex.def)             Requested size: 7.22148pt x 7.22168pt.
  [89
 
-]
+<C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemojis.p
+df><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemoji
+s.pdf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twem
+ojis.pdf>]
 File: all-twemojis.pdf Graphic file (type pdf)
 <use all-twemojis.pdf, page 490>
 Package luatex.def Info: all-twemojis.pdf , page490 used on input line 671.
@@ -2018,9 +1977,35 @@ Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 (luatex.def)             Requested size: 7.22148pt x 7.22168pt.
  [91
 
-] [92
+]
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 490>
+Package luatex.def Info: all-twemojis.pdf , page490 used on input line 671.
+(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 3647>
+Package luatex.def Info: all-twemojis.pdf , page3647 used on input line 671.
+(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 3609>
+Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
+(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
+ [92
 
-] [93
+]
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 490>
+Package luatex.def Info: all-twemojis.pdf , page490 used on input line 671.
+(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 3647>
+Package luatex.def Info: all-twemojis.pdf , page3647 used on input line 671.
+(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 3609>
+Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
+(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
+ [93
 
 ] [94
 
@@ -2030,10 +2015,10 @@ Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 
 ] [97
 
-]
-[98
+] [98
 
-] [99
+]
+[99
 
 ] [100
 
@@ -2057,10 +2042,10 @@ Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 
 ] [110
 
-]
-[111
+] [111
 
-] [112
+]
+[112
 
 ] [113
 
@@ -2082,10 +2067,10 @@ Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 
 ] [122
 
-]
-[123
+] [123
 
-] [124
+]
+[124
 
 ] [125
 
@@ -2107,10 +2092,10 @@ Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 
 ] [134
 
-]
-[135
+] [135
 
-] [136
+]
+[136
 
 ] [137
 
@@ -2132,10 +2117,10 @@ Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 
 ] [146
 
-]
-[147
+] [147
 
-] [148
+]
+[148
 
 ] [149
 
@@ -2157,10 +2142,10 @@ Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 
 ] [158
 
-]
-[159
+] [159
 
-] [160
+]
+[160
 
 ] [161
 
@@ -2182,10 +2167,10 @@ Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 
 ] [170
 
-]
-[171
+] [171
 
-] [172
+]
+[172
 
 ] [173
 
@@ -2201,6 +2186,10 @@ Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 
 ] [179
 
+] [180
+
+] [181
+
 ]
 \tf@nav=\write6
 
@@ -2213,11 +2202,11 @@ Package luatex.def Info: all-twemojis.pdf , page3609 used on input line 671.
 \openout8 = PCA.snm
  (./PCA.aux)
 Package rerunfilecheck Info: File `PCA.out' has not changed.
-(rerunfilecheck)             Checksum: EE09755C6B5E41B83590E9C1B40E0D97;1478.
+(rerunfilecheck)             Checksum: F38BF313993C85E717A8A73E140D5F28;1478.
 )
 
 Here is how much of LuaTeX's memory you used:
- 48713 strings out of 478389
+ 48717 strings out of 478389
  100000,1977958 words of node,token memory allocated
  36499 words of node memory still in use:
    1174 hlist, 43 vlist, 179 rule, 2 local_par, 70 math, 926 glue, 32 kern, 16 p
@@ -2225,16 +2214,16 @@ enalty, 301 glyph, 2472 attribute, 72 glue_spec, 2472 attribute_list, 4 write, 1
 338 pdf_literal, 74 pdf_colorstack nodes
    avail lists: 2:683,3:415,4:222,5:341,6:67,7:2823,8:103,9:961,10:20,11:3
  66691 multiletter control sequences out of 65536+600000
- 60 fonts using 13862743 bytes
+ 60 fonts using 13862875 bytes
  128i,19n,115p,406b,1088s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm-math/lat
 inmodern-math.otf><C:/Windows/Fonts/schlbki.ttf><C:/Windows/Fonts/schlbkb.ttf><C
 :/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm-math/latin
 modern-math.otf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/opentype/pu
 blic/lm-math/latinmodern-math.otf><C:/Windows/Fonts/censcbk.ttf>
-Output written on PCA.pdf (179 pages, 1499093 bytes).
+Output written on PCA.pdf (181 pages, 1511865 bytes).
 
-PDF statistics: 5540 PDF objects out of 6186 (max. 8388607)
- 367 named destinations out of 1000 (max. 131072)
+PDF statistics: 5595 PDF objects out of 6186 (max. 8388607)
+ 371 named destinations out of 1000 (max. 131072)
  2730 words of extra memory for PDF output out of 10000 (max. 100000000)
 
