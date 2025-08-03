@@ -1,0 +1,231 @@
+\documentclass[12pt, a4paper, onecolumn, answers]{exam}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 0.8 in, right = 0.8 in]{geometry}
+
+\usepackage{amsmath}
+\allowdisplaybreaks[1]
+\usepackage{amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+
+\begin{document}
+
+\begingroup  
+    \centering
+    \LARGE MSMS-306 : Lifetime Data Analysis\\
+    \LARGE Assignment: 02\\[0.5em]
+    \large \today\\[0.5em]
+    \large Ananda Biswas \par
+    \large Exam Roll Number : 24419STC053 \par
+    \large M.Sc. Statistics \& Computing (Semester - III)\par
+\endgroup
+\rule{\textwidth}{0.4pt}
+\pointsdroppedatright   %Self-explanatory
+\printanswers
+\unframedsolutions
+\renewcommand{\solutiontitle}{\noindent\textbf{Ans:}\enspace}   %Replace "Ans:" with starting keyword in solution box
+
+\begin{questions}    
+	\question \textcolor{blue}{Question : }Derive the estimators of the model parameters under the right censoring scheme when lifetimes are assumed to be coming from a Pareto distribution.
+    
+\begin{solution}
+The probability density function of a lifetime $T$ having pareto distribution with shape $\alpha > 0$ and minimum value $t_m > 0$ is given by
+\[
+f(t) = 
+\begin{cases}
+\dfrac{\alpha t_\mathrm{m}^\alpha}{t^{\alpha + 1}}, & t \geq t_\mathrm{m} \\
+0, & t < t_\mathrm{m}
+\end{cases}
+\]
+
+The corresponding Cumulative Distribution Function and the Survival Function are
+\begin{align*}
+F(t) = P(T \leq t) &= \int \limits_{t_\mathrm{m}}^t f(x) \, dx = \int \limits_{t_\mathrm{m}}^t \dfrac{\alpha t_\mathrm{m}^\alpha}{x^{\alpha + 1}} \, dx \\[0.25em]
+     &= \alpha t_\mathrm{m}^\alpha \int \limits_{t_\mathrm{m}}^t x^{-(\alpha + 1)} \, dx \\[0.25em]
+     &= \alpha t_\mathrm{m}^\alpha \left[ \dfrac{x^{-\alpha}}{-\alpha} \right]_{t_\mathrm{m}}^t \\[0.25em]
+     &= -t_\mathrm{m}^\alpha \left( t^{-\alpha} - t_\mathrm{m}^{-\alpha} \right) \\[0.25em]
+     &= 1 - \left( \dfrac{t_\mathrm{m}}{t} \right)^{\alpha}, \quad t \geq t_\mathrm{m} \\[2em]
+S(t) &= \left( \dfrac{t_\mathrm{m}}{t} \right)^{\alpha}, \quad t \geq t_\mathrm{m}
+\end{align*}
+
+\leftpointright \hspace{0.1cm} \underline{Type I Censoring } : Let the observations are censored after time $C$.
+
+\begin{align*}
+\text{Define } \forall i, \delta_i = \begin{cases} 1, \,\, i-\text{th observation is not censored} \\ 0, \,\, i-\text{th observation is censored} \end{cases}
+\end{align*}
+
+Then the likelihood function is given by
+\begin{align*}
+L(\alpha, t_\mathrm{m}) &= \prod_{i=1}^{n} f(t_i)^{\delta_i} \cdot S(C)^{1 - \delta_i} \\[0.25em]
+&= \prod_{i \in A} f(t_i) \cdot \prod_{i \in A^c} S(C) \,\,\,\, \text{where } A = \{i | \delta_i = 1\} \\[0.25em]
+&= \left[ \left( \dfrac{t_{\mathrm{m}}}{C} \right)^{\alpha} \right]^{n - r} \cdot \prod_{i \in A} \dfrac{\alpha t_{\mathrm{m}}^\alpha}{t_i^{\alpha + 1}},\,\,\,\, \text{on assuming the number of uncensored patients to be } r \\[0.25em]
+&= \alpha^r t_{\mathrm{m}}^{\alpha n} \cdot \left( \prod_{i \in A} \dfrac{1}{t_i^{\alpha + 1}} \right) \cdot \dfrac{1}{C^{\alpha(n - r)}}
+\end{align*}
+
+The log-likelihood function is given by
+$$\ell(\alpha, t_\mathrm{m}) = \log L(\alpha, t_\mathrm{m}) = r \log \alpha + \alpha n \log t_{\mathrm{m}} - (\alpha + 1) \sum_{i \in A} \log t_i - \alpha(n - r) \log C$$
+
+The partial derivative of $\ell(\alpha, t_\mathrm{m})$ w.r.t. $\alpha$ is as follows.
+
+\begin{align*}
+\dfrac{\partial \ell}{\partial \alpha} 
+&= \dfrac{\partial}{\partial \alpha} \left( r \log \alpha \right)
+ + \dfrac{\partial}{\partial \alpha} \left( \alpha n \log t_{\mathrm{m}} \right)
+ - \dfrac{\partial}{\partial \alpha} \left( (\alpha + 1) \sum_{i \in A} \log t_i \right)
+ - \dfrac{\partial}{\partial \alpha} \left( \alpha(n - r) \log C \right) \\
+\\
+&= \dfrac{r}{\alpha} + n \log t_{\mathrm{m}} 
+   - \sum_{i \in A} \log t_i 
+   - (n - r) \log C
+\end{align*}
+
+We set the partial derivative to 0 and solve for $\alpha$.
+
+\begin{align*}
+&\dfrac{r}{\alpha} + n \log t_{\mathrm{m}} 
+   - \sum_{i \in A} \log t_i 
+   - (n - r) \log C = 0 \\
+\\
+&\Rightarrow \dfrac{r}{\alpha} 
+   = \sum_{i \in A} \log t_i + (n - r) \log C - n \log t_{\mathrm{m}} \\
+\\
+&\therefore \hat{\alpha}_{MLE}
+   = \dfrac{r}{\sum\limits_{i \in A} \log t_i + (n - r) \log C - n \log \hat{t}_{\mathrm{m}}}\\
+\\ &\text{and } \hat{t}_{\mathrm{m}} = t_{(1)} \,\,\,\, \text{as } \hat{t}_{\mathrm{m}} \leq t_i \,\, \forall i
+\end{align*}
+
+\newpage
+
+\leftpointright \hspace{0.1cm} \underline{Type II Censoring } : Let \( t_{(1)}, t_{(2)}, \dots, t_{(r)} \) be the ordered observed lifetimes, and suppose the remaining \( n - r \) units are right-censored at \( t_{(r)} \). Then the likelihood function for the Pareto distribution is:
+\begin{align*}
+L(\alpha, t_{\mathrm{m}}) &= 
+\left[ \prod_{i=1}^{r} f(t_i) \right] 
+\cdot 
+\left[ S(t_{(r)}) \right]^{n - r} \\
+\\
+&= \left[ \prod_{i=1}^{r} \dfrac{\alpha t_{\mathrm{m}}^{\alpha}}{t_{(i)}^{\alpha + 1}} \right]
+\cdot 
+\left[ \left( \dfrac{t_{\mathrm{m}}}{t_{(r)}} \right)^{\alpha} \right]^{n - r} \\
+\\
+&= \alpha^r t_{\mathrm{m}}^{\alpha r} 
+\cdot 
+\left( \prod_{i=1}^{r} \dfrac{1}{t_{(i)}^{\alpha + 1}} \right) 
+\cdot 
+\left( \dfrac{t_{\mathrm{m}}}{t_{(r)}} \right)^{\alpha(n - r)} \\
+\\
+&= 
+\alpha^r t_{\mathrm{m}}^{\alpha n} 
+\cdot 
+\left( \prod_{i=1}^{r} \dfrac{1}{t_{(i)}^{\alpha + 1}} \right) 
+\cdot 
+\dfrac{1}{t_{(r)}^{\alpha(n - r)}}
+\end{align*}
+
+The log-likelihood function is given by
+
+$$\ell(\alpha, t_{\mathrm{m}}) = log L(\alpha, t_{\mathrm{m}}) = r \log \alpha + \alpha n \log t_{\mathrm{m}} - (\alpha + 1) \sum_{i=1}^{r} \log t_{(i)} - \alpha(n - r) \log t_{(r)}$$
+
+The partial derivative of $\ell(\alpha, t_\mathrm{m})$ w.r.t. $\alpha$ is as follows.
+
+\begin{align*}
+\dfrac{\partial \ell}{\partial \alpha} 
+&= \dfrac{\partial}{\partial \alpha} \left( r \log \alpha \right)
+ + \dfrac{\partial}{\partial \alpha} \left( \alpha n \log t_{\mathrm{m}} \right)
+ - \dfrac{\partial}{\partial \alpha} \left( (\alpha + 1) \sum_{i=1}^{r} \log t_{(i)} \right)
+ - \dfrac{\partial}{\partial \alpha} \left( \alpha(n - r) \log t_{(r)} \right) \\
+\\
+&= \dfrac{r}{\alpha} + n \log t_{\mathrm{m}} 
+   - \sum_{i=1}^{r} \log t_{(i)}
+   - (n - r) \log t_{(r)}
+\end{align*}
+
+We set the partial derivative to 0 and solve for $\alpha$.
+
+\begin{align*}
+&\dfrac{r}{\alpha} + n \log t_{\mathrm{m}} 
+   - \sum_{i=1}^{r} \log t_{(i)} 
+   - (n - r) \log t_{(r)} = 0 \\
+\\
+&\Rightarrow \dfrac{r}{\alpha} 
+   = \sum_{i=1}^{r} \log t_{(i)} + (n - r) \log t_{(r)} - n \log t_{\mathrm{m}} \\
+\\
+&\therefore \hat{\alpha}_{MLE}
+   = \dfrac{r}{\sum\limits_{i=1}^{r} \log t_{(i)} + (n - r) \log t_{(r)} - n \log \hat{t}_{\mathrm{m}}} \,\,\,\, \text{and } \hat{t}_{\mathrm{m}} = t_{(1)} \,\,\,\, \text{as } t_{\mathrm{m}} \leq t_i \,\, \forall i
+\end{align*}
+
+\newpage
+
+\leftpointright \hspace{0.1cm} \underline{Random Censoring } : The likelihood function under random censoring is:
+\begin{align*}
+L(\alpha, t_{\mathrm{m}}) &= \prod_{i=1}^n \left[ f(t_i)^{\delta_i} \cdot S(t_i)^{1 - \delta_i} \right] \\
+\\
+&= \prod_{i=1}^n \left[ 
+\left( \dfrac{\alpha t_{\mathrm{m}}^\alpha}{t_i^{\alpha + 1}} \right)^{\delta_i}
+\cdot 
+\left( \dfrac{t_{\mathrm{m}}}{t_i} \right)^{\alpha(1 - \delta_i)}
+\right] \\
+\\
+&= \alpha^{\sum \delta_i} \cdot t_{\mathrm{m}}^{\alpha n} \cdot 
+\prod_{i=1}^n \left( \dfrac{1}{t_i^{\delta_i(\alpha + 1) + (1 - \delta_i)\alpha}} \right)\\
+\\
+\end{align*}
+
+The log-likelihood function is given by
+
+\[
+\ell(\alpha, t_{\mathrm{m}})  = \log L(\alpha, t_{\mathrm{m}}) 
+= \left( \sum_{i=1}^n \delta_i \right) \log \alpha 
++ \alpha n \log t_{\mathrm{m}} 
+- \sum_{i=1}^n \left[ \delta_i (\alpha + 1) + (1 - \delta_i)\alpha \right] \log t_i
+\]
+
+The partial derivative of $\ell(\alpha, t_\mathrm{m})$ w.r.t. $\alpha$ is as follows.
+
+\begin{align*}
+\dfrac{\ell}{\partial \alpha}
+&= \left( \sum_{i=1}^n \delta_i \right) \dfrac{1}{\alpha} 
++ n \log t_{\mathrm{m}} 
+- \sum_{i=1}^n \left[ \delta_i \cdot \log t_i + (1 - \delta_i) \cdot \log t_i \right] \\
+\\
+&= \dfrac{1}{\alpha} \sum \limits_{i=1}^n \delta_i
++ n \log t_{\mathrm{m}} 
+- \sum_{i=1}^n \log t_i
+\end{align*}
+
+
+We set the partial derivative to 0 and solve for $\alpha$.
+
+\begin{align*}
+&\dfrac{1}{\alpha} \sum \limits_{i=1}^n \delta_i
++ n \log t_{\mathrm{m}} 
+- \sum_{i=1}^n \log t_i = 0 \\
+\\
+&\Rightarrow \dfrac{1}{\alpha} \sum \limits_{i=1}^n \delta_i
+= \sum_{i=1}^n \log t_i - n \log t_{\mathrm{m}} \\
+\\
+&\therefore \hat{\alpha}_{MLE}
+   = \dfrac{\sum \limits_{i=1}^n \delta_i}{\sum \limits_{i=1}^n \log t_i - n \log \hat{t}_{\mathrm{m}}} \,\,\,\, \text{and } \hat{t}_{\mathrm{m}} = t_{(1)} \,\,\,\, \text{as } {t}_{\mathrm{m}} \leq t_i \,\, \forall i
+\end{align*}
+
+\end{solution}    
+\end{questions}
+
+\end{document}
