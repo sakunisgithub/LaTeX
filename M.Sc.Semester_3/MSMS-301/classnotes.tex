@@ -251,4 +251,66 @@ On dividing both sides of (\ref{ar1reqrel}) by $\gamma(0)$, we get $$\rho(h) = \
 \end{figure}
 
 \subsection{AR(2) Process}
+
+The second-order autoregressive process $\{X_t\}$ is defined as
+
+\begin{equation}\label{ar2}
+X_t = \alpha_1 X_{t-1} + \alpha_2 X_{t-2} + Z_t \,\,\, t = 0, \pm 1, \pm 2, \ldots
+\end{equation}
+
+where $Z_t$'s are White Noise with mean $0$ and variance $\sigma^2$; $\alpha_1, \alpha_2 \in \mathbb{R}$, constants. \\
+
+The AR(2) process in (\ref{ar2}) can be written in terms of backshift operator $B$ as follows.
+
+\begin{align*}
+X_t &= \alpha_1 BX_t + \alpha_2 B^2 X_t + Z_t \\[0.25em]
+\left( 1- \alpha_1 B - \alpha_2 B^2 \right) X_t &= Z_t \\[0.25em]
+X_t &= \left( 1- \alpha_1 B - \alpha_2 B^2 \right)^{-1} Z_t \\[0.25em]
+&= \left( \alpha (B) \right)^{-1} Z_t \\[0.25em]
+&= \psi(B) Z_t
+\end{align*}
+
+where $\alpha (z) = 1 - \alpha_1 z - \alpha_2 z^2$ and $\psi(z) = 1 + \psi_1 z + \psi_2 z^2 + \ldots = \sum \limits_{j = 0}^{\infty} \psi_j z^j$ with $\psi_0 = 1$.
+
+
+\begin{align}\label{ar2inftysum}
+\therefore X_t &= \sum \limits_{j = 0}^{\infty} \psi_j B^j Z_t \nonumber \\[0.25em]
+&= \sum \limits_{j = 0}^{\infty} \psi_j Z_{t-j} \,\, \text{with } \psi_0 = 1
+\end{align}
+
+Using (\ref{ar2inftysum}), $E(X_t) = 0$, $t = 0, \pm 1, \pm 2, \ldots$ \\
+
+And $\gamma(0) = Var(X_t) = \sigma^2 \sum \limits_{j = 0}^{\infty} \psi_{j}^{2}$, provided the sum exists. \\
+
+\newpage
+
+Then
+
+\begin{align*}
+\forall h > 0, \, \gamma(h) &= cov(X_t, X_{t+h}) \\[0.25em]
+&= cov\left(\sum \limits_{j = 0}^{\infty} \psi_j Z_{t-j}, \sum \limits_{j = 0}^{\infty} \psi_j Z_{t+h-j}\right) \\[0.25em]
+&= cov\left(\sum \limits_{j = 0}^{\infty} \psi_j Z_{t-j}, \sum \limits_{k = -h}^{\infty} \psi_{k+h} Z_{t-k}\right), \,\, \text{taking } k = j - h \\[0.25em]
+&= \sigma^2 \sum \limits_{j = 0}^{\infty} \psi_j \psi_{j+h} \,\, \text{provided the sum exists}
+\end{align*}
+
+Thus
+\begin{align*}
+\gamma(h) =
+\begin{cases}
+\sigma^2 \sum \limits_{j = 0}^{\infty} \psi_j \psi_{j+h}, \,\, h = 1, 2, 3, \ldots \\[1em]
+\sigma^2 \sum \limits_{j = 0}^{\infty} \psi_{j}^{2}, \,\, h = 0 \\[1em]
+\rho(-h), \,\, h = -1, -2, -3, \ldots \,\, \text{provided all the sums exist}
+\end{cases}
+\end{align*}
+
+Consequently
+
+\begin{align*}
+\rho(h) =
+\begin{cases}
+\dfrac{\sum \limits_{j = 0}^{\infty} \psi_j \psi_{j+h}}{\sum \limits_{j = 0}^{\infty} \psi_{j}^{2}}, \,\, h = 0, 1, 2, 3, \ldots \\[1.5em]
+\rho(-h), \,\, h = -1, -2, -3, \ldots \,\, \text{provided all the sums exist}
+\end{cases}
+\end{align*}
+
 \end{document}

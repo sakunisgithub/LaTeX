@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  5 AUG 2025 03:18
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  5 AUG 2025 18:10
  restricted system commands enabled.
 **classnotes.tex
 (./classnotes.tex
@@ -1449,20 +1449,35 @@ File: alpha_negative_0.35.png Graphic file (type png)
 <use alpha_negative_0.35.png>
 Package luatex.def Info: alpha_negative_0.35.png  used on input line 248.
 (luatex.def)             Requested size: 144.5641pt x 144.5661pt.
- [6<./alpha_0.35.png><./alpha_0.85.png><./alpha_negative_0.35.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
+
+ []
+
+[6<./alpha_0.35.png><./alpha_0.85.png><./alpha_negative_0.35.png>] [7]
 (./classnotes.aux)
 Package rerunfilecheck Info: File `classnotes.out' has not changed.
 (rerunfilecheck)             Checksum: 68A543C25812DAF48DD13B4A8DDEA58B;839.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43834 strings out of 478389
+ 43839 strings out of 478389
  100000,1977958 words of node,token memory allocated
- 838 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 24 attribute, 106 glue_spe
-c, 24 attribute_list, 2 write nodes
-   avail lists: 2:586,3:4265,4:100,5:357,6:36,7:3225,8:72,9:783,10:11,11:2
- 62550 multiletter control sequences out of 65536+600000
+ 862 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 30 attribute, 106 glue_spe
+c, 30 attribute_list, 2 write nodes
+   avail lists: 2:574,3:4265,4:100,5:357,6:42,7:3225,8:72,9:783,10:11,11:2
+ 62552 multiletter control sequences out of 65536+600000
  55 fonts using 3882655 bytes
  99i,17n,128p,649b,1497s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <<C:\Users\Ananda\AppData\Local\MiKTeX\fonts/pk/ljfour/public/dingbat/dpi657\ark
@@ -1482,10 +1497,11 @@ ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ananda/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
 Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
 :/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb>
-Output written on classnotes.pdf (6 pages, 665845 bytes).
+/msam10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on classnotes.pdf (7 pages, 680742 bytes).
 
-PDF statistics: 172 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 131072)
+PDF statistics: 185 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 131072)
  64 words of extra memory for PDF output out of 10000 (max. 100000000)
 
