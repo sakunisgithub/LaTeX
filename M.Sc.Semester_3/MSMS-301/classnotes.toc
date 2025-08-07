@@ -1,6 +1,11 @@
-\contentsline {section}{\numberline {1}Moving Average Process}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}MA(1) Process}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}MA(q) Process}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Autoregressive Process}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}AR(1) Process}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}AR(2) Process}{6}{subsection.2.2}%
+\contentsline {section}{\numberline {1}Some Important Functions}{2}{section.1}%
+\contentsline {section}{\numberline {2}Stationarity}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Strong/Strict Stationary}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Weak Stationary}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Random Walk}{3}{section.3}%
+\contentsline {section}{\numberline {4}Moving Average Process}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}MA(1) Process}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}MA(q) Process}{6}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Autoregressive Process}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}AR(1) Process}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}AR(2) Process}{10}{subsection.5.2}%

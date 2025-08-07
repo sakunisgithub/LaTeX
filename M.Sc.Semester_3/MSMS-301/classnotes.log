@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  5 AUG 2025 18:10
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  8 AUG 2025 02:01
  restricted system commands enabled.
 **classnotes.tex
 (./classnotes.tex
@@ -1271,14 +1271,14 @@ LaTeX Font Info:    ... okay on input line 37.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(57.81621pt, 481.87546pt, 57.81621pt)
-* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* v-part:(T,H,B)=(57.81621pt, 729.41443pt, 57.81621pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=481.87546pt
-* \textheight=700.50687pt
+* \textheight=729.41443pt
 * \oddsidemargin=-14.45378pt
 * \evensidemargin=-14.45378pt
-* \topmargin=-37.0pt
+* \topmargin=-51.45378pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -1353,7 +1353,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {C:/Users/Ananda/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
@@ -1362,67 +1362,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-LaTeX Font Info:    Trying to load font information for U+ark on input line 103
-.
-(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/dingbat/uark.fd
-File: uark.fd 2001/04/27 v1.00 Font definitions for the ark10 font
-)
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
-
- []
-
-[2]
-<all-twemojis.pdf, id=66, page=2660, 27.10126pt x 27.10126pt>
-File: all-twemojis.pdf Graphic file (type pdf)
-<use all-twemojis.pdf, page 2660>
-Package luatex.def Info: all-twemojis.pdf , page2660 used on input line 142.
-(luatex.def)             Requested size: 7.4787pt x 7.47885pt.
-File: bc-lampe.mps Graphic file (type mps)
- [MP to PDF]
-(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/bclogo/bc-lampe.mps)
-[3<C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemojis
-.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--188
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+File: bc-attention.mps Graphic file (type mps)
+[MP to PDF]
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/bclogo/bc-attention.mp
+s)
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
@@ -1433,75 +1377,214 @@ File: bc-plume.mps Graphic file (type mps)
 
 [MP to PDF]
 (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/bclogo/bc-plume.mps)
-[5]
-<alpha_0.35.png, id=99, 505.89pt x 505.89pt>
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+File: bc-lampe.mps Graphic file (type mps)
+[MP to PDF]
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/bclogo/bc-lampe.mps)
+Overfull \hbox (4.26424pt too wide) in paragraph at lines 130--131
+[][]  \TU/lmr/m/n/10.95 For a process of the form $\OML/cmm/m/it/10.95 X[] \OT1
+/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 Z[] \OT1/cmr/m/n/10.95 + 2\OML/cmm/m/it/10
+.95 Z[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 Z[];   t \OT1/cmr/m/n/10.95 = 
+0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/1
+0.95 2\OML/cmm/m/it/10.95 ; []$ \TU/lmr/m/n/10.95 where $\OML/cmm/m/it/10.95 Z[
+] \OMS/cmsy/m/n/10.95  []\OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 ; []\OT1/cm
+r/m/n/10.95 )$\TU/lmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+File: bc-plume.mps Graphic file (type mps)
+[MP to PDF]
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/bclogo/bc-plume.mps)
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
+
+ []
+
+<ACF_Plot.png, id=98, 650.43pt x 650.43pt>
+File: ACF_Plot.png Graphic file (type png)
+<use ACF_Plot.png>
+Package luatex.def Info: ACF_Plot.png  used on input line 172.
+(luatex.def)             Requested size: 325.2142pt x 325.2142pt.
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+[5<./ACF_Plot.png>]
+LaTeX Font Info:    Trying to load font information for U+ark on input line 231
+.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/dingbat/uark.fd
+File: uark.fd 2001/04/27 v1.00 Font definitions for the ark10 font
+)
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+[6]
+<all-twemojis.pdf, id=120, page=2660, 27.10126pt x 27.10126pt>
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 2660>
+Package luatex.def Info: all-twemojis.pdf , page2660 used on input line 270.
+(luatex.def)             Requested size: 7.4787pt x 7.47885pt.
+File: bc-lampe.mps Graphic file (type mps)
+ [MP to PDF]
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/bclogo/bc-lampe.mps)
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+[7<C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemojis
+.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 313--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
+
+ []
+
+File: bc-lampe.mps Graphic file (type mps)
+[MP to PDF]
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/bclogo/bc-lampe.mps)
+[8]
+File: bc-plume.mps Graphic file (type mps)
+ [MP to PDF]
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/bclogo/bc-plume.mps)
+[9]
+<alpha_0.35.png, id=152, 505.89pt x 505.89pt>
 File: alpha_0.35.png Graphic file (type png)
 <use alpha_0.35.png>
-Package luatex.def Info: alpha_0.35.png  used on input line 238.
+Package luatex.def Info: alpha_0.35.png  used on input line 366.
 (luatex.def)             Requested size: 144.5641pt x 144.5661pt.
-<alpha_0.85.png, id=100, 505.89pt x 505.89pt>
+<alpha_0.85.png, id=153, 505.89pt x 505.89pt>
 File: alpha_0.85.png Graphic file (type png)
 <use alpha_0.85.png>
-Package luatex.def Info: alpha_0.85.png  used on input line 243.
+Package luatex.def Info: alpha_0.85.png  used on input line 371.
 (luatex.def)             Requested size: 144.5641pt x 144.5661pt.
-<alpha_negative_0.35.png, id=101, 505.89pt x 505.89pt>
+<alpha_negative_0.35.png, id=154, 505.89pt x 505.89pt>
 File: alpha_negative_0.35.png Graphic file (type png)
 <use alpha_negative_0.35.png>
-Package luatex.def Info: alpha_negative_0.35.png  used on input line 248.
+Package luatex.def Info: alpha_negative_0.35.png  used on input line 376.
 (luatex.def)             Requested size: 144.5641pt x 144.5661pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
 
-[6<./alpha_0.35.png><./alpha_0.85.png><./alpha_negative_0.35.png>] [7]
+[10<./alpha_0.35.png><./alpha_0.85.png><./alpha_negative_0.35.png>] [11]
 (./classnotes.aux)
 Package rerunfilecheck Info: File `classnotes.out' has not changed.
-(rerunfilecheck)             Checksum: 68A543C25812DAF48DD13B4A8DDEA58B;839.
+(rerunfilecheck)             Checksum: 42E891AB80ECFD9B6973EA9A4BEBF777;1529.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43839 strings out of 478389
+ 43914 strings out of 478389
  100000,1977958 words of node,token memory allocated
- 862 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 30 attribute, 106 glue_spe
-c, 30 attribute_list, 2 write nodes
-   avail lists: 2:574,3:4265,4:100,5:357,6:42,7:3225,8:72,9:783,10:11,11:2
- 62552 multiletter control sequences out of 65536+600000
- 55 fonts using 3882655 bytes
+ 910 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 42 attribute, 106 glue_spe
+c, 42 attribute_list, 2 write nodes
+   avail lists: 2:708,3:4493,4:142,5:382,6:56,7:4849,8:73,9:1133,10:11,11:2
+ 62570 multiletter control sequences out of 65536+600000
+ 56 fonts using 4014407 bytes
  99i,17n,128p,649b,1497s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <<C:\Users\Ananda\AppData\Local\MiKTeX\fonts/pk/ljfour/public/dingbat/dpi657\ark
 10.pk>><//?/c:/users/ananda/appdata/local/programs/miktex/fonts/opentype/public/
-lm/lmroman10-regular.otf><//?/c:/users/ananda/appdata/local/programs/miktex/font
-s/opentype/public/lm/lmroman10-bold.otf><//?/c:/users/ananda/appdata/local/progr
-ams/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><//?/c:/users/ananda/appd
-ata/local/programs/miktex/fonts/opentype/public/lm/lmroman12-regular.otf><//?/c:
-/users/ananda/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman17-r
-egular.otf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Ananda/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ananda/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ananda/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ananda/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
-Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
-:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols
-/msam10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb>
-Output written on classnotes.pdf (7 pages, 680742 bytes).
+lm/lmroman10-italic.otf><//?/c:/users/ananda/appdata/local/programs/miktex/fonts
+/opentype/public/lm/lmroman10-regular.otf><//?/c:/users/ananda/appdata/local/pro
+grams/miktex/fonts/opentype/public/lm/lmroman10-bold.otf><//?/c:/users/ananda/ap
+pdata/local/programs/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><//?/c:/
+users/ananda/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman12-re
+gular.otf><//?/c:/users/ananda/appdata/local/programs/miktex/fonts/opentype/publ
+ic/lm/lmroman17-regular.otf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ananda/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Ananda/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ananda/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
+/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+6.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr8.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Ananda/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on classnotes.pdf (11 pages, 1066068 bytes).
 
-PDF statistics: 185 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 131072)
- 64 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 253 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 131072)
+ 104 words of extra memory for PDF output out of 10000 (max. 100000000)
 
