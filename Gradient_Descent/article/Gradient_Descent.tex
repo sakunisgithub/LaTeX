@@ -74,7 +74,7 @@ Let us be a bit conservative: we move only by a small amount $\eta > 0$.
 
 $$i.e. \,\, \boldsymbol{\theta}_{new} = \boldsymbol{\theta} + \eta \cdot \Delta\boldsymbol{\theta}$$ \\[0.5em]
 
-Now the question is what is the right $\boldsymbol{\theta}$ to use. The answer comes from Taylor Series.
+Now the question is what is the right $\Delta\boldsymbol{\theta}$ to use. The answer comes from Taylor Series.
 
 \newpage
 
@@ -135,7 +135,7 @@ b_{t+1} &= b_t - \eta \nabla b_t
 \end{align}
 
 $$ \text{where, } \nabla w_t = \left. \dfrac{\partial \mathscr{L}(w, b)}{\partial w} \right|_{w = w_t,\, b = b_t}, \quad
-\nabla b = \left. \dfrac{\partial \mathscr{L}(w, b)}{\partial b} \right|_{w = w_t,\, b = b_t} $$
+\nabla b_t = \left. \dfrac{\partial \mathscr{L}(w, b)}{\partial b} \right|_{w = w_t,\, b = b_t} $$
 
 \section{Batch / Vanilla Gradient Descent}
 
