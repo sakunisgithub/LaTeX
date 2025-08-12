@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  10 AUG 2025 23:48
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  12 AUG 2025 22:40
  restricted system commands enabled.
 **gradient_descent.tex
 (./gradient_descent.tex
@@ -2068,9 +2068,19 @@ df>] [35
 
 ] [62
 
-] [63
+]
+<cat_side_eye.jpg, id=1984, 738.76pt x 897.3525pt>
+File: cat_side_eye.jpg Graphic file (type jpg)
+<use cat_side_eye.jpg>
+Package luatex.def Info: cat_side_eye.jpg  used on input line 679.
+(luatex.def)             Requested size: 184.68954pt x 224.33757pt.
 
-] [64
+Overfull \vbox (8.51418pt too high) detected at line 679
+ []
+
+[63
+
+<./cat_side_eye.jpg>] [64
 
 ] [65
 
@@ -2086,12 +2096,12 @@ df>] [35
 
 ] [71
 
-]
-[72
+] [72
 
 ] [73
 
-] [74
+]
+[74
 
 ] [75
 
@@ -2099,99 +2109,124 @@ df>] [35
 
 ] [77
 
+] [78
+
+] [79
+
+] [80
+
+] [81
+
 ]
-<Contour_1.png, id=2540, 758.23276pt x 554.07pt>
-File: Contour_1.png Graphic file (type png)
-<use Contour_1.png>
-Package luatex.def Info: Contour_1.png  used on input line 746.
-(luatex.def)             Requested size: 288.13144pt x 210.54878pt.
- [78
+<all-twemojis.pdf, id=2697, page=417, 27.10126pt x 27.10126pt>
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 417>
+Package luatex.def Info: all-twemojis.pdf , page417 used on input line 759.
+(luatex.def)             Requested size: 7.22148pt x 7.22168pt.
+ [82
 
-<./Contour_1.png>]
-<Contour_2.png, id=2572, 122.73856pt x 80.58105pt>
-File: Contour_2.png Graphic file (type png)
-<use Contour_2.png>
-Package luatex.def Info: Contour_2.png  used on input line 746.
-(luatex.def)             Requested size: 245.4765pt x 161.16168pt.
- [79
+<C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemojis.p
+df>]
+<are_you_ready.jpg, id=2728, 351.3125pt x 262.9825pt>
+File: are_you_ready.jpg Graphic file (type jpg)
+<use are_you_ready.jpg>
+Package luatex.def Info: are_you_ready.jpg  used on input line 770.
+(luatex.def)             Requested size: 281.05037pt x 210.38626pt.
+ [83
 
-<./Contour_2.png>]
-<Contour_3.png, id=2602, 1110.0672pt x 550.6974pt>
-File: Contour_3.png Graphic file (type png)
-<use Contour_3.png>
-Package luatex.def Info: Contour_3.png  used on input line 746.
-(luatex.def)             Requested size: 444.01901pt x 220.27505pt.
+<./are_you_ready.jpg>]
+File: are_you_ready.jpg Graphic file (type jpg)
+<use are_you_ready.jpg>
+Package luatex.def Info: are_you_ready.jpg  used on input line 770.
+(luatex.def)             Requested size: 281.05037pt x 210.38626pt.
 
-Overfull \hbox (45.68042pt too wide) in paragraph at lines 746--746
- [][] 
- []
-
-
-Overfull \vbox (8.45166pt too high) detected at line 746
- []
-
-[80
-
-<./Contour_3.png>]
-<Contour_4.png, id=2632, 1110.0672pt x 550.6974pt>
-File: Contour_4.png Graphic file (type png)
-<use Contour_4.png>
-Package luatex.def Info: Contour_4.png  used on input line 746.
-(luatex.def)             Requested size: 444.01901pt x 220.27505pt.
-
-Overfull \hbox (45.68042pt too wide) in paragraph at lines 746--746
- [][] 
- []
-
-
-Overfull \vbox (8.45166pt too high) detected at line 746
- []
-
-[81
-
-<./Contour_4.png>]
-<Contour_5.png, id=2662, 1110.0672pt x 550.6974pt>
-File: Contour_5.png Graphic file (type png)
-<use Contour_5.png>
-Package luatex.def Info: Contour_5.png  used on input line 746.
-(luatex.def)             Requested size: 444.01901pt x 220.27505pt.
-
-Overfull \hbox (45.68042pt too wide) in paragraph at lines 746--746
- [][] 
- []
-
-[82
-
-<./Contour_5.png>] [83
-
-] [84
+[84
 
 ] [85
 
-] [86
+]
+<Contour_1.png, id=2817, 758.23276pt x 554.07pt>
+File: Contour_1.png Graphic file (type png)
+<use Contour_1.png>
+Package luatex.def Info: Contour_1.png  used on input line 780.
+(luatex.def)             Requested size: 288.13144pt x 210.54878pt.
+ [86
 
-] [87
+<./Contour_1.png>]
+<Contour_2.png, id=2847, 122.73856pt x 80.58105pt>
+File: Contour_2.png Graphic file (type png)
+<use Contour_2.png>
+Package luatex.def Info: Contour_2.png  used on input line 780.
+(luatex.def)             Requested size: 245.4765pt x 161.16168pt.
+ [87
 
-] [88
+<./Contour_2.png>]
+<Contour_3.png, id=2876, 1110.0672pt x 550.6974pt>
+File: Contour_3.png Graphic file (type png)
+<use Contour_3.png>
+Package luatex.def Info: Contour_3.png  used on input line 780.
+(luatex.def)             Requested size: 444.01901pt x 220.27505pt.
 
-] [89
+Overfull \hbox (45.68042pt too wide) in paragraph at lines 780--780
+ [][] 
+ []
 
-] [90
 
-] [91
+Overfull \vbox (8.45166pt too high) detected at line 780
+ []
+
+[88
+
+<./Contour_3.png>]
+<Contour_4.png, id=2905, 1110.0672pt x 550.6974pt>
+File: Contour_4.png Graphic file (type png)
+<use Contour_4.png>
+Package luatex.def Info: Contour_4.png  used on input line 780.
+(luatex.def)             Requested size: 444.01901pt x 220.27505pt.
+
+Overfull \hbox (45.68042pt too wide) in paragraph at lines 780--780
+ [][] 
+ []
+
+
+Overfull \vbox (8.45166pt too high) detected at line 780
+ []
+
+[89
+
+<./Contour_4.png>]
+<Contour_5.png, id=2937, 1110.0672pt x 550.6974pt>
+File: Contour_5.png Graphic file (type png)
+<use Contour_5.png>
+Package luatex.def Info: Contour_5.png  used on input line 780.
+(luatex.def)             Requested size: 444.01901pt x 220.27505pt.
+
+Overfull \hbox (45.68042pt too wide) in paragraph at lines 780--780
+ [][] 
+ []
+
+[90
+
+<./Contour_5.png>] [91
 
 ] [92
 
-]
-[93
+] [93
 
 ] [94
 
-] [95
+]
+<guddu_mirzapur.jpeg, id=3122, 642.4pt x 481.8pt>
+File: guddu_mirzapur.jpeg Graphic file (type jpg)
+<use guddu_mirzapur.jpeg>
+Package luatex.def Info: guddu_mirzapur.jpeg  used on input line 800.
+(luatex.def)             Requested size: 256.95544pt x 192.71658pt.
+ [95
 
-] [96
+<./guddu_mirzapur.jpeg>] [96
 
-] [97
+]
+[97
 
 ] [98
 
@@ -2203,14 +2238,7 @@ Overfull \hbox (45.68042pt too wide) in paragraph at lines 746--746
 
 ] [102
 
-]
-LaTeX Font Info:    Trying to load font information for U+ark on input line 838
-.
-
-(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/dingbat/uark.fd
-File: uark.fd 2001/04/27 v1.00 Font definitions for the ark10 font
-)
-[103
+] [103
 
 ] [104
 
@@ -2224,13 +2252,41 @@ File: uark.fd 2001/04/27 v1.00 Font definitions for the ark10 font
 
 ] [109
 
-] [110
+]
+[110
 
 ] [111
 
 ] [112
 
-] [113
+]
+LaTeX Font Info:    Trying to load font information for U+ark on input line 880
+.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/dingbat/uark.fd
+File: uark.fd 2001/04/27 v1.00 Font definitions for the ark10 font
+)
+[113
+
+] [114
+
+] [115
+
+] [116
+
+] [117
+
+] [118
+
+] [119
+
+] [120
+
+] [121
+
+] [122
+
+] [123
 
 ]
 \tf@nav=\write6
@@ -2253,15 +2309,15 @@ Package rerunfilecheck Info: File `gradient_descent.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 61348 strings out of 478389
+ 61465 strings out of 478389
  100000,2373549 words of node,token memory allocated
- 27232 words of node memory still in use:
-   858 hlist, 16 vlist, 139 rule, 4 local_par, 14 math, 743 glue, 13 kern, 16 pe
-nalty, 151 glyph, 1886 attribute, 88 glue_spec, 1886 attribute_list, 4 write, 10
-96 pdf_literal, 68 pdf_colorstack nodes
-   avail lists: 2:5545,3:4364,4:233,5:280,6:63,7:3132,8:105,9:948,10:21,11:6
- 79230 multiletter control sequences out of 65536+600000
- 107 fonts using 26597375 bytes
+ 30592 words of node memory still in use:
+   974 hlist, 16 vlist, 159 rule, 4 local_par, 14 math, 835 glue, 13 kern, 16 pe
+nalty, 151 glyph, 2134 attribute, 88 glue_spec, 2134 attribute_list, 4 write, 12
+52 pdf_literal, 76 pdf_colorstack nodes
+   avail lists: 2:5049,3:4208,4:225,5:280,6:63,7:3002,8:105,9:948,10:21,11:6
+ 79287 multiletter control sequences out of 65536+600000
+ 107 fonts using 26596855 bytes
  128i,22n,115p,736b,2557s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <<C:\Users\Ananda\AppData\Local\MiKTeX\fonts/pk/ljfour/public/dingbat/dpi600\ark
 10.pk>><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/opentype/public/xits
@@ -2272,9 +2328,9 @@ f><//?/c:/users/ananda/appdata/local/programs/miktex/fonts/opentype/public/lm/lm
 mono10-regular.otf><C:/Windows/Fonts/schlbki.ttf><C:/Users/Ananda/AppData/Local/
 Programs/MiKTeX/fonts/opentype/public/fontawesome5/FontAwesome5Free-Solid-900.ot
 f><C:/Windows/Fonts/censcbk.ttf>
-Output written on gradient_descent.pdf (113 pages, 2687440 bytes).
+Output written on gradient_descent.pdf (123 pages, 2900240 bytes).
 
-PDF statistics: 3860 PDF objects out of 4296 (max. 8388607)
- 227 named destinations out of 1000 (max. 131072)
- 2646 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 4203 PDF objects out of 4296 (max. 8388607)
+ 247 named destinations out of 1000 (max. 131072)
+ 2906 words of extra memory for PDF output out of 10000 (max. 100000000)
 

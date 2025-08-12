@@ -51,7 +51,7 @@
 \usetikzlibrary{positioning}
 \usetikzlibrary{calc}
 
-\title{Gradient Descent and Siblings}
+\title{A Walk Downhill}
 \author[\href{mailto:ami.ananda@bhu.ac.in}{\faEnvelope \, ami.ananda@bhu.ac.in}]{Ananda Biswas \\[0.5em] \href{mailto:ami.ananda@bhu.ac.in}{\faEnvelope \, ami.ananda@bhu.ac.in}}
 \date{}
 
@@ -66,7 +66,7 @@
 \begin{frame}
 	\begin{block}{Acknowledgements}
 		\begin{itemize}
-		\item CS7015 Lectures\footnote{\href{https://www.youtube.com/playlist?list=PLyqSpQzTE6M9gCgajvQbc68Hk_JKGBAYT}{YouTube}} of Professor Mitesh Khapra \\[0.75em]
+		\item CS7015 Lectures\footnote{\href{https://www.youtube.com/playlist?list=PLyqSpQzTE6M9gCgajvQbc68Hk_JKGBAYT}{YouTube}} of Professor Mitesh Khapra, IIT Madras \\[0.75em]
 		\item Videos\footnote{\href{https://www.youtube.com/playlist?list=PLEAYkSg4uSQ2WG11drrwV6Igj360RaxK9}{YouTube}} of Ryan Harris on Backpropagation
 		\end{itemize}			
 	\end{block}
@@ -175,7 +175,7 @@ f(x) = \dfrac{1}{1 + e^{-(wx + b)}}
 	At the end of the process we wish to get $w^{*}$ and $b^{*}$ so that $f(0.5) \rightarrow 0.2$ and $f(2.5) \rightarrow 0.9$. \\[0.75em]
 	
 	\only<2->{In other words, we hope to find a sigmoid function that satisfies $(0.5, 0.2)$ and $(2.5, 0.9)$.}
-	\end{block}
+\end{block}
 \end{column}
 \end{columns}
 
@@ -239,7 +239,7 @@ Let us try a random guess.. \\
 \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Approach 1 : Guess Work}
 
 \begin{columns}
 \begin{column}{0.5\textwidth}
@@ -625,14 +625,14 @@ $$\mathcal{F}(\mathbf{x}) = \mathcal{F}(\mathbf{a}) + (\mathbf{x} - \mathbf{a})'
 \begin{frame}
 $$\mathcal{F}(\mathbf{x}) = \mathcal{F}(\mathbf{a}) + (\mathbf{x} - \mathbf{a})' \nabla \mathcal{F}(\mathbf{a}) + \dfrac{1}{2!} (\mathbf{x} - \mathbf{a})' \nabla^2 \mathcal{F}(\mathbf{a}) (\mathbf{x} - \mathbf{a}) + \cdots$$
 
-\onslide<1->{For ease of notation, take $\Delta \symbf{\theta} = \symbf{u}$.} \\[0.8em]
+\onslide<1->{For ease of notation, take $\Delta \symbf{\theta} = \symbf{\mu}$.} \\[0.8em]
 
 \onslide<2->{With $\mathcal{F} = \mathscr{L}$ (our Loss Function),} \\
-\onslide<2->{\hspace{0.8cm} $\mathbf{x} = \symbf{\theta} + \eta \symbf{u}$,} \\
+\onslide<2->{\hspace{0.8cm} $\mathbf{x} = \symbf{\theta} + \eta \symbf{\mu}$,} \\
 \onslide<2->{\hspace{0.8cm} $\mathbf{a} = \symbf{\theta}$; from the Taylor Series we have,}
 
 $$
-\onslide<3->{\mathscr{L}}\onslide<4->{(\symbf{\theta} + \eta \symbf{u})  =} \onslide<5->{\mathscr{L}(\symbf{\theta}) +} \onslide<6->{(\eta \symbf{u})'} \onslide<7->{\nabla \mathscr{L}(\symbf{\theta}) +} \onslide<8->{\dfrac{1}{2!} (\eta \symbf{u})' \nabla^2 \mathscr{L}(\symbf{\theta}) (\eta \symbf{u}) + \cdots }
+\onslide<3->{\mathscr{L}}\onslide<4->{(\symbf{\theta} + \eta \symbf{\mu})  =} \onslide<5->{\mathscr{L}(\symbf{\theta}) +} \onslide<6->{(\eta \symbf{\mu})'} \onslide<7->{\nabla \mathscr{L}(\symbf{\theta}) +} \onslide<8->{\dfrac{1}{2!} (\eta \symbf{\mu})' \nabla^2 \mathscr{L}(\symbf{\theta}) (\eta \symbf{\mu}) + \cdots }
 $$
 
 \end{frame}
@@ -640,55 +640,65 @@ $$
 
 \begin{frame}
 \begin{align*}
-\onslide<1->{\mathscr{L}(\symbf{\theta} + \eta \symbf{u}) &= \mathscr{L}(\symbf{\theta}) + (\eta \symbf{u})' \nabla \mathscr{L}(\symbf{\theta}) + \dfrac{1}{2!} (\eta \symbf{u})' \nabla^2 \mathscr{L}(\symbf{\theta}) (\eta \symbf{u}) + \cdots} \\[0.5em]
-\onslide<2->{&= \mathscr{L}(\symbf{\theta}) + \eta \, \symbf{u}' \nabla \mathscr{L}(\symbf{\theta}) + \dfrac{\eta^2}{2!} \, \symbf{u}' \nabla^2 \mathscr{L}(\symbf{\theta}) \symbf{u} + \cdots} \\[0.5em]
-\onslide<3->{&= \mathscr{L}(\symbf{\theta}) + \eta \, \symbf{u}' \nabla \mathscr{L}(\symbf{\theta}) \left[ \eta \text{ typically being small } \eta^2, \eta^3, \ldots \rightarrow 0 \right]}
+\onslide<1->{\mathscr{L}(\symbf{\theta} + \eta \symbf{\mu}) &= \mathscr{L}(\symbf{\theta}) + (\eta \symbf{\mu})' \nabla \mathscr{L}(\symbf{\theta}) + \dfrac{1}{2!} (\eta \symbf{\mu})' \nabla^2 \mathscr{L}(\symbf{\theta}) (\eta \symbf{\mu}) + \cdots} \\[0.5em]
+\onslide<2->{&= \mathscr{L}(\symbf{\theta}) + \eta \, \symbf{\mu}' \nabla \mathscr{L}(\symbf{\theta}) + \dfrac{\eta^2}{2!} \, \symbf{\mu}' \nabla^2 \mathscr{L}(\symbf{\theta}) \symbf{\mu} + \cdots} \\[0.5em]
+\onslide<3->{&= \mathscr{L}(\symbf{\theta}) + \eta \, \symbf{\mu}' \nabla \mathscr{L}(\symbf{\theta}) \left[ \eta \text{ typically being small } \eta^2, \eta^3, \ldots \rightarrow 0 \right]}
 \end{align*} 
 \end{frame}
 
 \begin{frame}
 $$
-\onslide<1->{\mathscr{L}(\symbf{\theta} + \eta \symbf{u}) = \mathscr{L}(\symbf{\theta}) + \eta \, \symbf{u}' \nabla \mathscr{L}(\symbf{\theta}) }
+\onslide<1->{\mathscr{L}(\symbf{\theta} + \eta \symbf{\mu}) = \mathscr{L}(\symbf{\theta}) + \eta \, \symbf{\mu}' \nabla \mathscr{L}(\symbf{\theta}) }
 $$
 
-\onslide<2->{Recall that our move was $\left( \eta \symbf{u} \right)$.} \\[1em]
+\onslide<2->{Recall that our move was $\left( \eta \symbf{\mu} \right)$.} \\[1em]
 
-\onslide<3->{The move $\left( \eta \symbf{u} \right)$ would be favourable only if,}
+\onslide<3->{The move $\left( \eta \symbf{\mu} \right)$ would be favourable only if,}
 
-$$\onslide<4->{\mathscr{L}(\symbf{\theta} + \eta \symbf{u}) - \mathscr{L}(\symbf{\theta}) < 0}$$
+$$\onslide<4->{\mathscr{L}(\symbf{\theta} + \eta \symbf{\mu}) - \mathscr{L}(\symbf{\theta}) < 0}$$
 
 \onslide<5->{\textit{i.e.} if the new loss is less than the previous loss.} \\[1em]
 
-\onslide<6->{This implies $$\symbf{u}' \nabla \mathscr{L}(\symbf{\theta}) < 0$$}
+\onslide<6->{This implies $$\symbf{\mu}' \nabla \mathscr{L}(\symbf{\theta}) < 0$$}
 \end{frame}
 
 
 \begin{frame}
 \begin{itemize}
-\item<1-> More the negative $\symbf{u}' \nabla \mathscr{L}(\symbf{\theta})$ is, \\[0.5em]
-\hspace{5cm} \onslide<2->{the more favourable is the move $\eta \symbf{u}$.}
-\vspace{1cm}
-\item<3-> Now let us find out the range of $\symbf{u}' \nabla \mathscr{L}(\symbf{\theta})$.
+\item<1-> More the negative $\symbf{\mu}' \nabla \mathscr{L}(\symbf{\theta})$ is, \\[0.5em]
+\hspace{5cm} \onslide<2->{the more favourable is the move $\eta \symbf{\mu}$.}
 \end{itemize}
 \end{frame}
 
 
+\begin{frame}{Got that?}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.25]{cat_side_eye}
+\end{figure}
+\end{frame}
+
 
 \begin{frame}
 \begin{itemize}
-\item<1-> Let $\beta$ be the angle between $\symbf{u}$ and $\nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta})$, then we know that,
+\item Now let us find out the range of $\symbf{\mu}' \nabla \mathscr{L}(\symbf{\theta})$.
+\end{itemize}
+\end{frame}
+\begin{frame}
+\begin{itemize}
+\item<1-> Let $\beta$ be the angle between $\symbf{\mu}$ and $\nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta})$, then we know that,
 \[
--1 \leq \cos(\beta) = \dfrac{\symbf{u}^T \nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta})}{\|\symbf{u}\| \cdot \|\nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta})\|} \leq 1
+-1 \leq \cos(\beta) = \dfrac{\symbf{\mu}^T \nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta})}{\|\symbf{\mu}\| \cdot \|\nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta})\|} \leq 1
 \] \\[0.5em]
 
-\item<2-> Multiplying throughout by $k = \|\symbf{u}\| \cdot \|\nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta})\|$:
+\item<2-> Multiplying throughout by $k = \|\symbf{\mu}\| \cdot \|\nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta})\|$:
 \[
--k \leq k \cdot \cos(\beta) = \symbf{u}^T \nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta}) \leq k
+-k \leq k \cdot \cos(\beta) = \symbf{\mu}^T \nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta}) \leq k
 \]
 
 \item<3-> Thus,
 \[
-\mathscr{L}(\symbf{\theta} + \eta \symbf{u}) - \mathscr{L}(\symbf{\theta}) = \symbf{u}^T \nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta}) = k \cdot \cos(\beta)
+\mathscr{L}(\symbf{\theta} + \eta \symbf{\mu}) - \mathscr{L}(\symbf{\theta}) = \symbf{\mu}^T \nabla_{\symbf{\theta}} \mathscr{L}(\symbf{\theta}) = k \cdot \cos(\beta)
 \]
 will be most negative when $\cos(\beta) = -1$, \textit{i.e.}, when $\beta$ is $180^\circ$.
 \end{itemize}
@@ -714,6 +724,14 @@ $$ \text{where, } \nabla w_t = \left. \dfrac{\partial \mathscr{L}(w, b)}{\partia
 }
 \end{frame}
 
+\begin{frame}{Naming the Algorithm}
+\begin{block}
+\onslide<2->{We are descending along the error surface} \\
+\onslide<3->{\hspace{7cm} driven by gradients.}\\[1em]
+\onslide<4->{So we call it \textbf{Gradient Descent}.}
+\end{block}
+\end{frame}
+
 \begin{frame}{A Formal Definition : Gradient Descent}
 \begin{block}{Definition}
 \onslide<2->{Gradient Descent is a } \onslide<3->{$\textbf{first-order}$} \onslide<4->{$\textbf{iterative}$ algorithm for} \onslide<5->{$\textbf{minimizing}$} \onslide<6->{a $\textbf{differentiable}$ multivariate function.} \\[1em]
@@ -721,7 +739,10 @@ $$ \text{where, } \nabla w_t = \left. \dfrac{\partial \mathscr{L}(w, b)}{\partia
 \onslide<7->{The idea is to take repeated steps in the opposite direction of the gradient (or approximate gradient) of the function at the current point, because this is the direction of steepest descent.}
 \end{block}
 \end{frame}
-\begin{frame}{Batch / Vanilla Gradient Descent}
+
+
+
+\begin{frame}{Batch / Vanilla \scalebox{1.7}{\twemoji{soft ice cream}} Gradient Descent}
 Let's formulating the algorithm. \\[1em]
 \begin{algorithm}[H]
 \caption{\texttt{gradient\_descent()}}
@@ -737,25 +758,46 @@ $max\_iterations \leftarrow 1000$\;
 \end{algorithm}
 \end{frame}
 
+
+\begin{frame}{Visualizations}
+
+\onslide<2->{
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.8]{are_you_ready}
+\end{figure}
+}
+\end{frame}
+
+
+
 \begin{frame}{A Digression to Contours}
-\only<1>{\centering \includegraphics[scale=0.38]{Contour_1}}
-\only<2>{\centering \includegraphics[scale=2]{Contour_2}}
-\only<3>{\centering \includegraphics[scale=0.4]{Contour_3}}
-\only<4>{\centering \includegraphics[scale=0.4]{Contour_4}}
-\only<5>{\centering \includegraphics[scale=0.4]{Contour_5}}
+\only<2>{\centering \includegraphics[scale=0.38]{Contour_1}}
+\only<3>{\centering \includegraphics[scale=2]{Contour_2}}
+\only<4>{\centering \includegraphics[scale=0.4]{Contour_3}}
+\only<5>{\centering \includegraphics[scale=0.4]{Contour_4}}
+\only<6>{\centering \includegraphics[scale=0.4]{Contour_5}}
 \end{frame}
 
 
 \begin{frame}
 \begin{block}{Some Observations in Vanilla Gradient Descent}
 \begin{itemize}
-\item<1-> It takes a lot of time to navigate regions having a gentle slope.
-\item<2-> This is because the gradient in these regions is very small.
-\item<3-> We have to do something better.
+\item<2-> It takes a lot of time to navigate regions having a gentle slope.
+\item<3-> This is because the gradient in these regions is very small.
+\item<4-> We have to do something better.
 \end{itemize}
 \end{block}
 \end{frame}
 
+
+\begin{frame}{Questions ?}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{guddu_mirzapur}
+\end{figure}
+\end{frame}
 
 
 \begin{frame}
