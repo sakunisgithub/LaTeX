@@ -1,0 +1,77 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 1 in, right = 1 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+
+\title{MSMS 302 - Outlier Detection}
+\author{Ananda Biswas}
+\date{}
+
+
+\begin{document}
+
+\maketitle
+
+An outlier is a point that is far away from most of the data points. Normal points exist in dense neighbourhood, while outliers are isolated. The study of outlier detection is helpful in fraud detection, trojan detection, cyber-security, fault detection in manufacturing, healthcare, identifying novel pattern in scientific data.\\[0.5em]
+
+$\bullet$ Types of Outliers :
+\begin{enumerate}
+\item Global / Point Outlier : A point far away from the rest of the data is global outlier.
+\item Contextual Outlier (Conditional Outlier) : Outlier in specific context; temperature $30^{\circ}$ is normal in Delhi but outlier in Ladakh.
+\item Collective Outlier : A group of data points that are unusual together. If their studied isolatedly, they may not be outliers. For example, sudden spike in server activity during midnight.
+\end{enumerate}
+
+There are two types of methods for outline detection.
+\begin{enumerate}[(i)]
+\item Density based method : In this context, an outlier is a point in a region of low density compared to its neighbourhood. Unlike the other Distance based method, Density based method considers local variation in density.
+
+A formal definition : Given a data-set $X = \{ \utilde{x_1}, \utilde{x_2}, \ldots, \utilde{x_n} \}, \,\, \utilde{x_i} \in \mathbb{R}^d$, a certain point $\utilde{x_i}$ will be outlier if $P(\utilde{x_i}) < \epsilon$ where $\epsilon$ is a threshold. There are several density based methods. Some are given below.
+\begin{enumerate}[(a)]
+\item Statistical method : Assume data points follow normal distribution. Then for a point $x_i \in \mathbb{R}$, calculate $z_i = \dfrac{x_i - \mu}{\sigma}$. If $|z_i| > 3$, we often consider $x_i$ as outlier.
+\item Local Outline Factor (LOF) : LOF measures how isolated a point is related to its neighbourhoods. In this method,
+\begin{itemize}
+\item Step (1) : For each point $p$, compute $k$-distance$(p)$ $=$ distance of $p$ from its $k$-th nearest neighbour.
+\item Step (2) : For each point $p$, find the set of $k$ points closest to it.
+\item Step (3) : For each pair of points $p$, $o$, calculate reachability distance as
+$$\text{reach-dist}_k(p, o) = max\{ k-\text{distance}(p), d(p, o)\}$$
+\item Step (4) : For each point $p$, calculate Local Reachability Density as
+$$\text{LRD}_k(p) = \dfrac{1}{\dfrac{1}{|N_k(p)|} \sum \limits_{o \in N_k(p)} \text{reach-dist}_k(p, o)}.$$
+\item Step (5) : Compute LOF Score as
+$$\text{LOF}_k(p) = \dfrac{\sum \limits_{o \in N_k(p)} \dfrac{\text{LRD}_k(o)}{\text{LRD}_k(p)}}{|N_k(p)|}.$$
+\end{itemize}
+
+If LOF $\approx 1$, then the point is normal.\\[0.2em]
+If LOF $> 1$, the point more likely to be an outlier.
+
+\item Mahalonobis Distance : In multivariate case, if the data are assumed to be coming from Multivariate Normal distribution, then
+$$D(\utilde{x}) = \sqrt{(\utilde{x} - \utilde{\mu})' \Sigma^{-1}(\utilde{x} - \utilde{\mu})} \sim \chi_{d}^2.$$
+
+If $D(\utilde{x}) > \lambda$, $\lambda$ being a threshold obtained from $\chi_{d}^2$ distribution, $\utilde{x}$ can be considered as an outlier.
+\end{enumerate}
+
+\item Distance based methods : For a given data-set $X = \{ \utilde{x_1}, \utilde{x_2}, \ldots, \utilde{x_n} \}, \,\, \utilde{x_i} \in \mathbb{R}^d$, have a distance function $d(\utilde{x}, \utilde{y})$. A point $\utilde{x}$ is outlier if $$\left|\{\utilde{y} \in X | d(\utilde{x}, \utilde{y}) \leq r\}\right| < \pi_{r}$$
+where $\pi_{r}$ is the minimum fraction of points required at distance $r$.
+\begin{enumerate}
+\item kNN method : For each point $x$ compute distance to its $k$-nearest neighbours denoted as $d_k(x)$. Outlier score $O(x)$ is defined as $O(x) = d_k(x)$. If $O(x)$ is very large, the point is outlier.
+\item ML based methods : One-class SVM, Autoencoders, Isolation Forest, Neural Networks etc.
+\end{enumerate}
+\end{enumerate}
+\end{document}
