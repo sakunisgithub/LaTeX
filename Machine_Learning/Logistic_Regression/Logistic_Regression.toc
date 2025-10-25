@@ -1,0 +1,3 @@
+\contentsline {section}{\numberline {1}Interpretation of Parameters}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Single Explanatory Variable}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Multiple Explanatory Variables}{2}{subsection.1.2}%

@@ -1,0 +1,1425 @@
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  25 OCT 2025 04:14
+ restricted system commands enabled.
+**Logistic_Regression.tex
+(./Logistic_Regression.tex
+LaTeX2e <2022-11-01> patch level 1
+Lua module: luaotfload 2022-10-03 3.23 Lua based OpenType font support
+Lua module: lualibs 2022-10-04 2.75 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2022-10-04 2.75 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "C:/Users/Ananda/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2022-10-03.lua" from kpse-res
+olved path "C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/
+fontloader-2022-10-03.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.120
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/Ananda/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'. L3 programm
+ing layer <2022-12-17>
+Inserting `tracingstacklevels' in `input_level_string'.
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/base/size11.clo
+File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/Ananda/AppData/Local/
+MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count183
+\c@section=\count184
+\c@subsection=\count185
+\c@subsubsection=\count186
+\c@paragraph=\count187
+\c@subparagraph=\count188
+\c@figure=\count189
+\c@table=\count190
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen139
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count191
+\Gm@cntv=\count192
+\c@Gm@tempcnt=\count193
+\Gm@bindingoffset=\dimen140
+\Gm@wd@mp=\dimen141
+\Gm@odd@mp=\dimen142
+\Gm@even@mp=\dimen143
+\Gm@layoutwidth=\dimen144
+\Gm@layoutheight=\dimen145
+\Gm@layouthoffset=\dimen146
+\Gm@layoutvoffset=\dimen147
+\Gm@dimlist=\toks17
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg))
+ (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen148
+))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen149
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count194
+LaTeX Info: Redefining \frac on input line 236.
+\uproot@=\count195
+\leftroot@=\count196
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count197
+\DOTSCASE@=\count198
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen150
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count199
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count266
+\dotsspace@=\muskip16
+\c@parentequation=\count267
+\dspbrk@lvl=\count268
+\tag@help=\toks19
+\row@=\count269
+\column@=\count270
+\maxfields@=\count271
+\andhelp@=\toks20
+\eqnshift@=\dimen151
+\alignsep@=\dimen152
+\tagshift@=\dimen153
+\tagwidth@=\dimen154
+\totwidth@=\dimen155
+\lineht@=\dimen156
+\@envbody=\toks21
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks23
+) (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/multirow/multirow.st
+y
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip53
+\multirow@cntb=\count272
+\multirow@dima=\skip54
+\bigstrutjot=\dimen157
+) (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/tools/hhline.sty
+Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
+Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen158
+\ar@mcellbox=\box53
+\extrarowheight=\dimen159
+\NC@list=\toks24
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box54
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip57
+\LTright=\skip58
+\LTpre=\skip59
+\LTpost=\skip60
+\LTchunksize=\count273
+\LTcapwidth=\dimen160
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@gbox=\box59
+\LT@cols=\count274
+\LT@rows=\count275
+\c@LT@tables=\count276
+\c@LT@chunks=\count277
+\LT@p@ftn=\toks25
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 107.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.de
+f
+File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/tabularray/tabularray.
+sty (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-12-17 L3 programming layer (loader) 
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lu
+atex.def
+File: l3backend-luatex.def 2022-10-26 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count278
+\l__pdf_internal_box=\box60
+))
+Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count279
+\l__tblr_c_int=\count280
+\l__tblr_r_int=\count281
+\l__tblr_d_dim=\dimen163
+\l__tblr_h_dim=\dimen164
+\l__tblr_o_dim=\dimen165
+\l__tblr_p_dim=\dimen166
+\l__tblr_q_dim=\dimen167
+\l__tblr_r_dim=\dimen168
+\l__tblr_s_dim=\dimen169
+\l__tblr_t_dim=\dimen170
+\l__tblr_v_dim=\dimen171
+\l__tblr_w_dim=\dimen172
+\l__tblr_a_box=\box61
+\l__tblr_b_box=\box62
+\l__tblr_c_box=\box63
+\l__tblr_d_box=\box64
+\g__tblr_table_count_int=\count282
+\c@rownum=\count283
+\c@colnum=\count284
+\c@rowcount=\count285
+\c@colcount=\count286
+\abovesep=\dimen173
+\belowsep=\dimen174
+\leftsep=\dimen175
+\rightsep=\dimen176
+\g_tblr_level_int=\count287
+\g__tblr_data_row_key_count_int=\count288
+\g__tblr_data_column_key_count_int=\count289
+\g__tblr_data_cell_key_count_int=\count290
+\g__tblr_array_int=\count291
+\l__tblr_key_count_int=\count292
+\l__tblr_key_quotient_int=\count293
+\l__tblr_key_quotient_two_int=\count294
+\l__tblr_key_remainder_int=\count295
+\g__tblr_data_str_value_count_int=\count296
+\rulewidth=\dimen177
+\l__tblr_strut_dp_dim=\dimen178
+\l__tblr_strut_ht_dim=\dimen179
+\g__tblr_cell_wd_dim=\dimen180
+\g__tblr_cell_ht_dim=\dimen181
+\g__tblr_cell_head_dim=\dimen182
+\g__tblr_cell_foot_dim=\dimen183
+\l__column_target_dim=\dimen184
+\l__tblr_caption_box=\box65
+\l__tblr_caption_left_box=\box66
+\l__tblr_row_head_box=\box67
+\l__tblr_row_foot_box=\box68
+\l__tblr_row_head_foot_dim=\dimen185
+\tablewidth=\dimen186
+\l__tblr_table_firsthead_box=\box69
+\l__tblr_table_middlehead_box=\box70
+\l__tblr_table_lasthead_box=\box71
+\l__tblr_table_firstfoot_box=\box72
+\l__tblr_table_middlefoot_box=\box73
+\l__tblr_table_lastfoot_box=\box74
+\l__tblr_remain_height_dim=\dimen187
+\l__tblr_long_from_int=\count297
+\l__tblr_long_to_int=\count298
+\l__tblr_curr_i_int=\count299
+\l__tblr_prev_i_int=\count300
+\l__tblr_table_page_int=\count301
+\l__tblr_table_head_box=\box75
+\l__tblr_table_foot_box=\box76
+\l__tblr_table_head_foot_dim=\dimen188
+\l__tblr_table_head_body_foot_dim=\dimen189
+\l__tblr_table_box=\box77
+\l__tblr_table_hlines_box=\box78
+\l__tblr_hline_box=\box79
+\l__tblr_row_box=\box80
+\l__tblr_col_o_wd_dim=\dimen190
+\l__tblr_col_b_wd_dim=\dimen191
+\l__tblr_hline_leftskip_dim=\dimen192
+\l__tblr_hline_rightskip_dim=\dimen193
+\l__tblr_row_ht_dim=\dimen194
+\l__tblr_row_dp_dim=\dimen195
+\l__tblr_row_abovesep_dim=\dimen196
+\l__tblr_row_belowsep_dim=\dimen197
+\l__tblr_row_vlines_box=\box81
+\l__tblr_vline_box=\box82
+\l__tblr_cell_box=\box83
+\l__row_upper_dim=\dimen198
+\l__row_lower_dim=\dimen199
+\l__row_vpace_dim=\dimen256
+\l__tblr_vline_aboveskip_dim=\dimen257
+\l__tblr_vline_belowskip_dim=\dimen258
+\l__tblr_cell_wd_dim=\dimen259
+\l__tblr_cell_ht_dim=\dimen260
+\l__tblr_diag_box=\box84
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/undertilde/undertilde.
+sty
+Package: undertilde 2000/08/08 v1.0 Tilde under a math object
+\knuthian@fdfive=\skip61
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/dingbat/dingbat.sty
+Package: dingbat 2001/04/27 v1.00 Hands and other dingbats
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/fontawesome5/fontaweso
+me5.sty
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/l3keys2e/l3
+keys2e.sty
+Package: l3keys2e 2022-12-17 LaTeX2e option processing using LaTeX3 keys
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xpar
+se.sty
+Package: xparse 2022-12-17 L3 Experimental document command parser
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/fontawesome5/fontaweso
+me5-utex-helper.sty
+Package: fontawesome5-utex-helper 2022/05/02 v5.15.4 uTeX helper for fontawesom
+e5
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/luatex/luatexbase/luatexbase
+.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/luatex/ctablestack/ctablesta
+ck.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count302
+)
+\CatcodeTableOther=\catcodetable12
+\CatcodeTableExpl=\catcodetable13
+)
+LaTeX Font Info:    Trying to load font information for TU+fontawesomefree on i
+nput line 69.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/fontawesome5/tufontawe
+somefree.fd)
+LaTeX Font Info:    Trying to load font information for TU+fontawesomebrands on
+ input line 70.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/fontawesome5/tufontawe
+somebrands.fd)))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmd
+s.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.
+sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks26
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.st
+y
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefin
+ekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.
+sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/letltxmacro/letltxmacr
+o.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/getti
+tlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.st
+y
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count303
+)
+\@linkdim=\dimen261
+\Hy@linkcounter=\count304
+\Hy@pagecounter=\count305
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/etexcmds/etexcmds.st
+y
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count306
+ (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count307
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen262
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcal
+c.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count308
+\Field@Width=\dimen263
+\Fld@charsize=\dimen264
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring ON on input line 6045.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count309
+\c@Item=\count310
+\c@Hfootnote=\count311
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+ (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2022-11-13 v7.00u Hyperref driver for luaTeX
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.
+sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count312
+\c@bookmark@seq@number=\count313
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfi
+lecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/unique
+counter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip62
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/tasks/tasks.sty
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xtemplate/x
+template.sty
+Package: xtemplate 2022-12-17 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen265
+\l__xtemplate_tmp_int=\count314
+\l__xtemplate_tmp_muskip=\muskip18
+\l__xtemplate_tmp_skip=\skip63
+)
+Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
+\g__tasks_total_items_int=\count315
+\l__tasks_columns_int=\count316
+\g__tasks_rows_int=\count317
+\g__tasks_current_col_num_int=\count318
+\g__tasks_current_row_num_int=\count319
+\l__tasks_item_columns_int=\count320
+\g__tasks_env_int=\count321
+\l__tasks_start_int=\count322
+\l__tasks_item_indent_dim=\dimen266
+\l__tasks_item_default_indent_dim=\dimen267
+\l__tasks_item_width_dim=\dimen268
+\l__tasks_label_width_dim=\dimen269
+\l__tasks_label_default_width_dim=\dimen270
+\l__tasks_label_offset_dim=\dimen271
+\l__tasks_label_default_offset_dim=\dimen272
+\l__tasks_column_sep_dim=\dimen273
+\l__tasks_correction_dim=\dimen274
+\l__tasks_full_width_dim=\dimen275
+\l__tasks_after_item_skip=\skip64
+\l__tasks_custom_after_item_skip=\skip65
+\l__tasks_before_list_skip=\skip66
+\l__tasks_after_list_skip=\skip67
+\l__tasks_item_coffin=\box85
+\l__tasks_label_coffin=\box86
+\c@task=\count323
+\l__tasks_tmpa_int=\count324
+\l__tasks_tmpb_int=\count325
+\l__tasks_tmpa_coffin=\box87
+\l__tasks_tmpa_box=\box88
+
+Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
+(xtemplate)             line 450.
+
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/tasks/tasks.cfg))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/bbding/bbding.sty
+Package: bbding 1999/04/15 v1.01 Dingbats symbols
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/twemojis.sty
+Package: twemojis 2022/03/30 v1.3.1 LaTeX twemojis (twemoji v14.0.1)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pgf/frontendlayer/tikz
+.sty
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.s
+ty
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen276
+\pgfutil@tempdimb=\dimen277
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-common-lists.tex))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-latex.def
+\pgfutil@abb=\box89
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs
+.code.tex
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.tex
+)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore
+.sty
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys
+.sty
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+s.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+sfiltered.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen278
+\pgf@y=\dimen279
+\pgf@xa=\dimen280
+\pgf@ya=\dimen281
+\pgf@xb=\dimen282
+\pgf@yb=\dimen283
+\pgf@xc=\dimen284
+\pgf@yc=\dimen285
+\pgf@xd=\dimen286
+\pgf@yd=\dimen287
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count326
+\c@pgf@countb=\count327
+\c@pgf@countc=\count328
+\c@pgf@countd=\count329
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count330
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.
+cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-luatex.def
+File: pgfsys-luatex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+yssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count331
+\pgfsyssoftpath@bigbuffer@items=\count332
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 227.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+re.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.cod
+e.tex
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcalc
+.code.tex
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathutil
+.code.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathpars
+er.code.tex
+\pgfmath@dimen=\dimen288
+\pgfmath@count=\count333
+\pgfmath@box=\box90
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.code.tex
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.basic.code.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.trigonometric.code.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.random.code.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.comparison.code.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.base.code.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.round.code.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.misc.code.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.integerarithmetics.code.tex)))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloa
+t.code.tex
+\c@pgfmathroundto@lastzeros=\count334
+))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code
+.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen289
+\pgf@picmaxx=\dimen290
+\pgf@picminy=\dimen291
+\pgf@picmaxy=\dimen292
+\pgf@pathminx=\dimen293
+\pgf@pathmaxx=\dimen294
+\pgf@pathminy=\dimen295
+\pgf@pathmaxy=\dimen296
+\pgf@xx=\dimen297
+\pgf@xy=\dimen298
+\pgf@yx=\dimen299
+\pgf@yy=\dimen300
+\pgf@zx=\dimen301
+\pgf@zy=\dimen302
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen303
+\pgf@path@lasty=\dimen304
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen305
+\pgf@shorten@start@additional=\dimen306
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box91
+\pgf@hbox=\box92
+\pgf@layerbox@main=\box93
+\pgf@picture@serial@count=\count335
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+regraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen307
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen308
+\pgf@pt@y=\dimen309
+\pgf@pt@temp=\dimen310
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+requick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen311
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen312
+\pgf@sys@shading@range@num=\count336
+\pgf@shadingcount=\count337
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box94
+))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+relayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box95
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen313
+\pgf@nodesepend=\dimen314
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgffor.s
+ty
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys.
+sty
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+s.code.tex))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pgf/math/pgfmath.sty
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.cod
+e.tex))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgffor
+.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.cod
+e.tex)
+\pgffor@iter=\dimen315
+\pgffor@skip=\dimen316
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/ti
+kz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflib
+raryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count338
+\pgfplotmarksize=\dimen317
+)
+\tikz@lastx=\dimen318
+\tikz@lasty=\dimen319
+\tikz@lastxsaved=\dimen320
+\tikz@lastysaved=\dimen321
+\tikz@lastmovetox=\dimen322
+\tikz@lastmovetoy=\dimen323
+\tikzleveldistance=\dimen324
+\tikzsiblingdistance=\dimen325
+\tikz@figbox=\box96
+\tikz@figbox@bg=\box97
+\tikz@tempbox=\box98
+\tikz@tempbox@bg=\box99
+\tikztreelevel=\count339
+\tikznumberofchildren=\count340
+\tikznumberofcurrentchild=\count341
+\tikz@fig@count=\count342
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+ematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count343
+\pgfmatrixcurrentcolumn=\count344
+\pgf@matrix@numberofcolumns=\count345
+)
+\tikz@expandcount=\count346
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/ti
+kz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\twemojiDefaultHeight=\skip68
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/customdice/customdice.
+sty
+Package: customdice 2022/07/31 customdice 1.0
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count347
+)) (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/bclogo/bclogo.sty
+Package: bclogo 2024/01/23 v3.15
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkeyval.tex
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks39
+\XKV@tempa@toks=\toks40
+)
+\XKV@depth=\count348
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\bc@invboxh=\skip69
+\bc@invboxd=\skip70
+\bc@titleLength=\skip71
+\logowidth=\skip72
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2024/02/02 v0.75 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pstricks.te
+x
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count349
+\pstFP@xia=\count350
+\pstFP@xib=\count351
+\pstFP@xfa=\count352
+\pstFP@xfb=\count353
+\pstFP@rega=\count354
+\pstFP@regb=\count355
+\pstFP@regs=\count356
+\pstFP@times=\count357
+)
+\psLoopIndex=\count358
+
+`PSTricks' v3.22  <2025/06/11> (tvz,hv)
+\pst@dima=\dimen326
+\pst@dimb=\dimen327
+\pst@dimc=\dimen328
+\pst@dimd=\dimen329
+\pst@dimg=\dimen330
+\pst@dimh=\dimen331
+\pst@dimm=\dimen332
+\pst@dimn=\dimen333
+\pst@dimo=\dimen334
+\pst@dimp=\dimen335
+\pst@hbox=\box100
+\pst@ibox=\box101
+\pst@boxg=\box102
+\pst@cnta=\count359
+\pst@cntb=\count360
+\pst@cntc=\count361
+\pst@cntd=\count362
+\pst@cntg=\count363
+\pst@cnth=\count364
+\pst@cntm=\count365
+\pst@cntn=\count366
+\pst@cnto=\count367
+\pst@cntp=\count368
+\@zero=\count369
+\pst@toks=\toks41
+--- We are running lualatex with luapstricks ---
+Lua module: luapstricks 2023-05-23 v0.10 PSTricks backend for LuaLaTeX
+Lua function luaPST = 26
+Lua function luaPSTcolor = 27
+Lua function luaPSTbox = 28
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pstricks-co
+lor.tex)
+\psunit=\dimen336
+\psxunit=\dimen337
+\psyunit=\dimen338
+\pst@C@@rType=\count370
+\pslinewidth=\dimen339
+\psk@startLW=\dimen340
+\psk@endLW=\dimen341
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pstricks-ar
+rows.tex
+\pshooklength=\dimen342
+\pshookwidth=\dimen343
+)
+\pst@customdefs=\toks42
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pstricks-do
+ts.tex)
+\pslinearc=\dimen344
+\pst@symbolStep=\dimen345
+\pst@symbolWidth=\dimen346
+\pst@symbolLinewidth=\dimen347
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pst-code-gr
+id.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pst-code-bo
+x.tex
+\everypsbox=\toks43
+\psframesep=\dimen348
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pst-code-ar
+c.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pst-code-ci
+rcle_ellipse.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pst-code-re
+f_rot.tex)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pst-code-pu
+t.tex
+\pslabelsep=\dimen349
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pst-code-ps
+picture.tex
+\sh@wgridXunit=\dimen350
+\sh@wgridYunit=\dimen351
+\pst@shift=\dimen352
+\ps@imagectr=\count371
+))
+File: pstricks.tex 2025/06/11 v3.22 `PSTricks' (tvz,hv)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pst-grad/pst-grad.sty
+Package: pst-grad 2004/07/15 package wrapper for pst-grad.tex (hv)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pst-grad/pst-grad.te
+x `pst-grad' v1.06, 2006/11/27 (tvz,dg,hv))
+File: pst-grad.tex 2006/11/27 1.06 `pst-grad' (tvz)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pst-coil/pst-coil.sty
+Package: pst-coil 2010/02/01 package wrapper for pst-coil.tex (hv)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pst-coil/pst-coil.te
+x  v1.06, 2006/11/27
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pst-node/pst-node.te
+x  v1.44, 2024/07/04
+\psrow=\count372
+\pscol=\count373
+\psmatrixcnt=\count374
+\psrowsep=\skip73
+\pscolsep=\skip74
+\pst@args=\count375
+\num@pts=\count376
+\pst@argcnt=\count377
+))
+File: pst-coil.tex 2024/08/13 v1.08 `PST-coil' (tvz,hv)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2025-06-08 v2.36 Module abspage for zref (HO)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty
+Package: zref-base 2025-06-08 v2.36 Module base for zref (HO)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count378
+Package zref Info: New property: abspage on input line 67.
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/needspace/needspace.st
+y
+Package: needspace 2025/03/13 v1.3e reserve vertical space
+)
+\mdf@templength=\skip75
+\c@mdf@globalstyle@cnt=\count379
+\mdf@skipabove@length=\skip76
+\mdf@skipbelow@length=\skip77
+\mdf@leftmargin@length=\skip78
+\mdf@rightmargin@length=\skip79
+\mdf@innerleftmargin@length=\skip80
+\mdf@innerrightmargin@length=\skip81
+\mdf@innertopmargin@length=\skip82
+\mdf@innerbottommargin@length=\skip83
+\mdf@splittopskip@length=\skip84
+\mdf@splitbottomskip@length=\skip85
+\mdf@outermargin@length=\skip86
+\mdf@innermargin@length=\skip87
+\mdf@linewidth@length=\skip88
+\mdf@innerlinewidth@length=\skip89
+\mdf@middlelinewidth@length=\skip90
+\mdf@outerlinewidth@length=\skip91
+\mdf@roundcorner@length=\skip92
+\mdf@footenotedistance@length=\skip93
+\mdf@userdefinedwidth@length=\skip94
+\mdf@needspace@length=\skip95
+\mdf@frametitleaboveskip@length=\skip96
+\mdf@frametitlebelowskip@length=\skip97
+\mdf@frametitlerulewidth@length=\skip98
+\mdf@frametitleleftmargin@length=\skip99
+\mdf@frametitlerightmargin@length=\skip100
+\mdf@shadowsize@length=\skip101
+\mdf@extratopheight@length=\skip102
+\mdf@subtitleabovelinewidth@length=\skip103
+\mdf@subtitlebelowlinewidth@length=\skip104
+\mdf@subtitleaboveskip@length=\skip105
+\mdf@subtitlebelowskip@length=\skip106
+\mdf@subtitleinneraboveskip@length=\skip107
+\mdf@subtitleinnerbelowskip@length=\skip108
+\mdf@subsubtitleabovelinewidth@length=\skip109
+\mdf@subsubtitlebelowlinewidth@length=\skip110
+\mdf@subsubtitleaboveskip@length=\skip111
+\mdf@subsubtitlebelowskip@length=\skip112
+\mdf@subsubtitleinneraboveskip@length=\skip113
+\mdf@subsubtitleinnerbelowskip@length=\skip114
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pst-node/pst-node.sty
+Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pst-node/pst-node.te
+x)
+File: pst-node.tex 2024/08/13 1.08 `pst-node' (tvz,hv)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/mdframed/md-frame-2.md
+f
+File: md-frame-2.mdf 2013/07/01\ 1.9b: md-frame-2
+)
+\mdf@frametitlebox=\box103
+\mdf@footnotebox=\box104
+\mdf@splitbox@one=\box105
+\mdf@splitbox@two=\box106
+\mdf@splitbox@save=\box107
+\mdfsplitboxwidth=\skip115
+\mdfsplitboxtotalwidth=\skip116
+\mdfsplitboxheight=\skip117
+\mdfsplitboxdepth=\skip118
+\mdfsplitboxtotalheight=\skip119
+\mdfframetitleboxwidth=\skip120
+\mdfframetitleboxtotalwidth=\skip121
+\mdfframetitleboxheight=\skip122
+\mdfframetitleboxdepth=\skip123
+\mdfframetitleboxtotalheight=\skip124
+\mdffootnoteboxwidth=\skip125
+\mdffootnoteboxtotalwidth=\skip126
+\mdffootnoteboxheight=\skip127
+\mdffootnoteboxdepth=\skip128
+\mdffootnoteboxtotalheight=\skip129
+\mdftotallinewidth=\skip130
+\mdfboundingboxwidth=\skip131
+\mdfboundingboxtotalwidth=\skip132
+\mdfboundingboxheight=\skip133
+\mdfboundingboxdepth=\skip134
+\mdfboundingboxtotalheight=\skip135
+\mdf@freevspace@length=\skip136
+\mdf@horizontalwidthofbox@length=\skip137
+\mdf@verticalmarginwhole@length=\skip138
+\mdf@horizontalspaceofbox=\skip139
+\mdfsubtitleheight=\skip140
+\mdfsubsubtitleheight=\skip141
+\c@mdfcountframes=\count380
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count381
+\c@mdf@env@i=\count382
+\c@mdf@env@ii=\count383
+\c@mdf@zref@counter=\count384
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/pst-blur/pst-blur.sty
+Package: pst-blur 2005/09/08 package wrapper for pst-blur.tex (hv)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/pst-blur/pst-blur.te
+x  v2.0, 2005/09/08)
+File: pst-blur.tex 2005/09/08 v2.0 `PST-blur' (hv)
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+\c@bclogocompteur=\count385
+\bcval@epBarre=\skip142
+\bcval@framesep=\skip143
+\bcval@tailleOndu=\skip144
+\bcval@borderWidth=\skip145
+\bcval@margeG=\skip146
+\bcval@margeD=\skip147
+\bc@envbox=\box108
+)
+(./Logistic_Regression.aux)
+\openout1 = Logistic_Regression.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+2.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count386
+\scratchdimen=\dimen353
+\scratchbox=\box109
+\nofMPsegments=\count387
+\nofMParguments=\count388
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count389
+\MPscratchDim=\dimen354
+\MPnumerator=\count390
+\makeMPintoPDFobject=\count391
+\everyMPtoPDFconversion=\toks45
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/ninecolors/ninecolors.
+sty
+Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
+
+)
+Package hyperref Info: Link coloring ON on input line 32.
+ (./Logistic_Regression.out) (./Logistic_Regression.out)
+\@outlinefile=\write4
+
+\openout4 = Logistic_Regression.out
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(./Logistic_Regression.toc)
+\tf@toc=\write5
+
+\openout5 = Logistic_Regression.toc
+ [1
+
+{C:/Users/Ananda/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+
+Overfull \hbox (7.29105pt too wide) in paragraph at lines 78--79
+[]\TU/lmr/m/n/10.95 where $\OML/cmm/m/it/10.95  \OT1/cmr/m/n/10.95 = \OML/cmm/
+m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Y \OT1/cmr/m/n/10.95 = 1\OM
+S/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 X[]; X[]; [] ; X[]\OT1/cmr/m/n/10.95 )$ \
+TU/lmr/m/n/10.95 is the probability of the event of interest; $\OML/cmm/m/it/10
+.95 []; []; []; [] ; []$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+<all-twemojis.pdf, id=52, page=2377, 27.10126pt x 27.10126pt>
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 2377>
+Package luatex.def Info: all-twemojis.pdf , page2377 used on input line 107.
+(luatex.def)             Requested size: 7.4787pt x 7.47885pt.
+<all-twemojis.pdf, id=53, page=2454, 27.10126pt x 27.10126pt>
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 2454>
+Package luatex.def Info: all-twemojis.pdf , page2454 used on input line 109.
+(luatex.def)             Requested size: 7.4787pt x 7.47885pt.
+<all-twemojis.pdf, id=54, page=2005, 27.10126pt x 27.10126pt>
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 2005>
+Package luatex.def Info: all-twemojis.pdf , page2005 used on input line 111.
+(luatex.def)             Requested size: 7.4787pt x 7.47885pt.
+<all-twemojis.pdf, id=55, page=2032, 27.10126pt x 27.10126pt>
+File: all-twemojis.pdf Graphic file (type pdf)
+<use all-twemojis.pdf, page 2032>
+Package luatex.def Info: all-twemojis.pdf , page2032 used on input line 111.
+(luatex.def)             Requested size: 7.4787pt x 7.47885pt.
+[3<C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemojis
+.pdf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemo
+jis.pdf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-tw
+emojis.pdf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all
+-twemojis.pdf>] (./Logistic_Regression.aux)
+Package rerunfilecheck Info: File `Logistic_Regression.out' has not changed.
+(rerunfilecheck)             Checksum: F11871B75646B93DD0BB21A54591EBC8;600.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 40998 strings out of 478389
+ 100000,1977958 words of node,token memory allocated
+ 798 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 14 attribute, 106 glue_spe
+c, 14 attribute_list, 2 write nodes
+   avail lists: 2:521,3:245,4:70,5:333,6:37,7:4262,8:66,9:676,10:5,11:10
+ 59800 multiletter control sequences out of 65536+600000
+ 51 fonts using 3653215 bytes
+ 99i,14n,98p,635b,1120s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<//?/c:/users/ananda/appdata/local/programs/miktex/fonts/opentype/public/lm/lmro
+man10-italic.otf><//?/c:/users/ananda/appdata/local/programs/miktex/fonts/openty
+pe/public/lm/lmroman10-regular.otf><//?/c:/users/ananda/appdata/local/programs/m
+iktex/fonts/opentype/public/lm/lmroman10-bold.otf><//?/c:/users/ananda/appdata/l
+ocal/programs/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><//?/c:/users/a
+nanda/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman12-regular.o
+tf><//?/c:/users/ananda/appdata/local/programs/miktex/fonts/opentype/public/lm/l
+mroman17-regular.otf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmex10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Ananda/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ananda/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ananda/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ananda/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/
+Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
+/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/symbols/msam10.pfb>
+Output written on Logistic_Regression.pdf (3 pages, 124728 bytes).
+
+PDF statistics: 130 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 131072)
+ 40 words of extra memory for PDF output out of 10000 (max. 100000000)
+

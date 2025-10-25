@@ -1,0 +1,116 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 1 in, right = 1 in]{geometry}
+
+\usepackage{amsmath}
+\allowdisplaybreaks[1]
+\usepackage{amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{bclogo}
+
+\title{Logistic Regression}
+\author{Ananda Biswas}
+\date{Last Updated : \today}
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Interpretation of Parameters}
+
+\subsection{Single Explanatory Variable}
+
+Consider a logistic regression model with single explanatory variable $X$ and a dichotomous dependent variable $Y$ as follows.
+
+\begin{equation}\label{simplelogisticwithlink}
+\eta(X) = \log \left( \dfrac{\pi}{1 - \pi} \right) = \beta_0 + \beta_1 X
+\end{equation}
+
+where $\pi = P(Y = 1 |X)$ is the probability of the event of interest; $\beta_0$ and $\beta_1$ are parameters.
+
+\begin{itemize}
+\item $\beta_0$ : With $X = 0$, $\beta_0 = \log \left( \dfrac{\pi}{1 - \pi} \right)$. So $\beta_0$ is log-odds of the event when $X = 0$, or $e^{\beta_0}$ is the odds of the event of interest when $X = 0$.
+
+\item $\beta_1$ : Following (\ref{simplelogisticwithlink}), at $X = x$, $\eta(x) = \beta_0 + \beta_1 x$ and at $X = x+1$, $\eta(x+1) = \beta_0 + \beta_1 (x+1)$. \\[0.25em]
+
+$\therefore$ $\beta_1 = \eta(x+1) - \eta(x) \Rightarrow \beta_1$ is the change in log-odds of the event of interest for a one-unit increase in $X$. \\[0.15em]
+
+Again,
+\begin{align*}
+\beta_1 &= \eta(x+1) - \eta(x) \\[0.5em]
+&= \log [\text{odds}(x+1)] - \log [\text{odds}(x)] \\[0.5em]
+&= \log \left[ \dfrac{\text{odds}(x+1)}{\text{odds}(x)} \right] \\[0.5em]
+\Rightarrow e^{\beta_1} &= \dfrac{\text{odds}(x+1)}{\text{odds}(x)}
+\end{align*}
+\end{itemize}
+
+In the set-up as in (\ref{simplelogisticwithlink}), $e^{\beta_1}$ is called \textbf{Crude Odds Ratio} as it shows the relationship between the outcome and the predictor - without taking into account the effect of any other variable.
+
+\subsection{Multiple Explanatory Variables}
+
+Consider a logistic regression model with $p-$many explanatory variables $X_1, X_2, \ldots, X_p$ and a dichotomous dependent variable $Y$ as follows.
+
+\begin{equation}\label{multiplelogisticwithlink}
+\eta(X_1, X_2, \ldots, X_p) = \log \left( \dfrac{\pi}{1 - \pi} \right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_p X_p
+\end{equation}
+
+where $\pi = P(Y = 1 |X_1, X_2, \ldots, X_p)$ is the probability of the event of interest; $\beta_0, \beta_1, \beta_2, \ldots, \beta_p$ are parameters.
+
+\begin{itemize}
+\item $\beta_0$ : With $X_1 = X_2 = \ldots = X_p = 0$, $\beta_0 = \log \left( \dfrac{\pi}{1 - \pi} \right)$. So $\beta_0$ is log-odds of the event when $X_1 = X_2 = \ldots = X_p = 0$, or $e^{\beta_0}$ is the odds of the event of interest when $X_1 = X_2 = \ldots = X_p = 0$.
+
+\item $\beta_1$ : Following (\ref{multiplelogisticwithlink}), at $X_1 = x_1, X_2 = x_2, \ldots X_j = x_j, \ldots, X_p = x_p$, 
+$$\eta(x_1, x_2, \ldots, x_j, \ldots, x_p) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_j x_j + \ldots + \beta_p x_p$$
+
+and at $X_1 = x_1, X_2 = x_2, \ldots X_j = x_j+1, \ldots, X_p = x_p$, 
+$$\eta(x_1, x_2, \ldots, x_j+1, \ldots, x_p) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_j (x_j+1) + \ldots + \beta_p x_p.$$
+
+$\therefore$ $\beta_j = \eta(x_1, x_2, \ldots, x_j+1, \ldots, x_p) - \eta(x_1, x_2, \ldots, x_j, \ldots, x_p)$ \\[0.1em]
+
+$ \Rightarrow \beta_j$ is the change in log-odds of the event of interest for a one-unit increase in $X_j$. \\[0.15em]
+
+Again,
+\begin{align*}
+\beta_j &= \eta(x_1, x_2, \ldots, x_j+1, \ldots, x_p) - \eta(x_1, x_2, \ldots, x_j, \ldots, x_p) \\[0.5em]
+&= \log [\text{odds}(x_1, x_2, \ldots, x_j+1, \ldots, x_p)] - \log [\text{odds}(x_1, x_2, \ldots, x_j, \ldots, x_p)] \\[0.5em]
+&= \log \left[ \dfrac{\text{odds}(x_1, x_2, \ldots, x_j+1, \ldots, x_p)}{\text{odds}(x_1, x_2, \ldots, x_j, \ldots, x_p)} \right] \\[0.5em]
+\Rightarrow e^{\beta_j} &= \dfrac{\text{odds}(x_1, x_2, \ldots, x_j+1, \ldots, x_p)}{\text{odds}(x_1, x_2, \ldots, x_j, \ldots, x_p)}
+\end{align*}
+\end{itemize}
+
+In the set-up as in (\ref{multiplelogisticwithlink}), $e^{\beta_j}$ is called \textbf{Adjusted Odds Ratio} as it represents the effect of $X_j$ on the outcome after controlling(\textit{adjusting}) all other predictors in the model. \\[0.15em]
+
+Thus, \textit{Adjusted Odds Ratio} is very useful to assess \textit{individual risk factors} for an outcome, as we get to see how that factor alone impacts the outcome when all other risk factors are fixed. This was not possible with \textit{Crude Odds Ratio} as it shows the effect of a single risk factor without considering the latent effect of other risk factors. \\[0.15em]
+
+\begin{itemize}
+\item Is it the true impact of this risk factor ? \scalebox{2.0}{\twemoji{thinking face}}
+
+\item Are you sure there is no synergy among the risk factors ? \scalebox{2.0}{\twemoji{face with raised eyebrow}}
+
+\item Are you sure this particular risk factor does not surrogate any other risk factor ? \scalebox{2.0}{\twemoji{face with steam from nose}} $-$ These kind of questions are best answered by \textit{Adjusted Odds Ratio}. \scalebox{2.0}{\twemoji{cat with wry smile}}
+\end{itemize}
+ 
+ 
+ 
+\end{document}
