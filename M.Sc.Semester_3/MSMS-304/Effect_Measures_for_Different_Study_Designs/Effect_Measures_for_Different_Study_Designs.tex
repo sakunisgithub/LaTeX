@@ -1,0 +1,645 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 1 in, right = 1 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{example}{Example}[subsection]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{bclogo}
+\usepackage{simpsons}
+\usepackage{tablefootnote}
+
+\title{MSMS 304 - Biostatistics \\[0.5em] Effect Measures for Different Study Designs}
+\author{Ananda Biswas}
+\date{Last updated : \today}
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Effect Measure for Case-Control Design}
+
+Case-control studies are retrospective studies where we try to determine whether the cases and controls differ in their past exposure to potential risk factors. Here our purpose is to identify associations between exposures and outcomes, especially for rare diseases.\\[0.1em]
+
+A flowchart of case-control study can be depicted as follows :
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.35]{case_control}
+\end{figure}
+
+\subsection{Odds}
+
+(In very simple terms) Probability is the ratio of something happening to everything that could happen.
+
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.3]{probability}
+\end{figure}
+
+Odds are the ratio of something happening to something not happening.
+
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.3]{odds}
+\end{figure}
+
+Thus for an event $A$ the odds of $A$ or odds in favor of $A$ are
+\begin{equation*}
+\text{odds}(A) = \dfrac{\text{Pr}(A)}{1 - \text{Pr}(A)} \textit{ i.e. } \dfrac{\text{probability of occurence of an event}}{\text{probability of non-occurence of the same event}}
+\end{equation*}
+
+and of course $\text{Pr}(A) = \dfrac{\text{odds}(A)}{1 + \text{odds}(A)}$. Also $\text{odds}(A^c) = \dfrac{1}{\text{odds}(A)}$.
+
+For example, probability of getting a head in a single toss of a fair coin is $0.5$ and so is the probability of getting a tail in a single toss of a fair coin. Thus the odds of getting a heads in a single toss of a fair coin is $\dfrac{0.5}{0.5} = 1$.
+
+\subsection{Odds Ratio}
+
+Now suppose we have a risk factor $X$ that people either have $(X)$ or do not have $(\overline{X})$ and there is a disease $D$ that people either have $(D)$ or do not have $(\overline{D})$. In particular there are not any intermediate levels of the risk factor or the disease in this setup. A population of people could have these probabilities :
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|c||cc|}
+\hline
+& $\overline{D}$ & $D$ \\
+\hline
+\hline
+$\overline{X}$ & $\pi_{00}$ & $\pi_{01}$ \\
+$X$ & $\pi_{10}$ & $\pi_{11}$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Now, $P(D \, | X) = \dfrac{\pi_{11}}{\pi_{10} + \pi_{11}}$ and $P(\overline{D} \, | X) = \dfrac{\pi_{10}}{\pi_{10} + \pi_{11}}$. So odds$(D \, | X) = \dfrac{\pi_{11}}{\pi_{10}}$. \\[0.2em]
+
+Similarly, $P(D \, | \overline{X}) = \dfrac{\pi_{01}}{\pi_{00} + \pi_{01}}$ and $P(\overline{D} \, | \overline{X}) = \dfrac{\pi_{00}}{\pi_{00} + \pi_{01}}$. So odds$(D \, | \overline{X}) = \dfrac{\pi_{01}}{\pi_{00}}$. \\[0.2em]
+
+From this we formulate, \textit{\textbf{odds ratio}}
+
+$$\Lambda = \dfrac{\text{odds}(D \, | X)}{\text{odds}(D \, | \overline{X})} = \dfrac{\pi_{11}/\pi_{10}}{\pi_{01}/\pi_{00}} = \dfrac{\pi_{00} \cdot \pi_{11}}{\pi_{01} \cdot \pi_{10}}.$$
+
+Odds ratio deals with quantifying the associations between two categorical variables. Also it gives us a \textit{direction of association}.
+
+\subsection{Statistical Measure of Risk : Odds Ratio}
+
+Suppose we have a case-control study design to answer a research question \textit{Is Laryngeal cancer associated to Alcohol consumption ?} Here is the study flowchart.
+
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.29]{case_control_laryngeal_cancer_alcohol}
+\end{figure}
+
+\newpage
+
+After data collection, we have the following contingency table.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{4.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2cm}|}
+\hline
+\multirow{2}{*}{Exposure Status} & \multicolumn{2}{c|}{Outcome (Laryngeal Cancer)} & \multirow{2}{*}{Total} \\
+\hhline{~--~}
+& Cases (Yes) & Controls (No) & \\
+\hline
+Exposed (Alcohol) & $a$ & $b$ & $a+b$ \\
+\hline
+Not exposed (No alcohol) & $c$ & $d$ & $c+d$ \\
+\hline
+Total & $a+c$ & $b+d$ & $N$ \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Contingency Table}
+\end{table}
+
+\bcattention \hspace{0.1cm} The primary statistical measure of risk in case-control study design is \textbf{\textit{odds ratio}} defined as
+
+$$\dfrac{\text{Odds of Exposure among Cases}}{\text{Odds of Exposure among Controls}}.$$
+
+From the table above, Odds of Exposure among Cases $= \dfrac{\frac{a}{a+c}}{1 - \frac{a}{a+c}} = \dfrac{a}{c}$ and \\[0.2em]
+
+Odds of Exposure among Controls $= \dfrac{\frac{b}{b+d}}{1 - \frac{b}{b+d}} = \dfrac{b}{d}$.\\[0.2em]
+
+Thus, \textit{odds ratio} $= \dfrac{a/c}{b/d} = \dfrac{ad}{bc}$.
+
+\subsection{Examples of Odds Ratio}
+
+
+\begin{example}\label{ORexample1}
+Consider the following contingency table.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\multirow{2}{*}{Exposure Status} & \multicolumn{2}{c|}{Laryngeal Cancer} \\
+\hhline{~--}
+& Yes & No \\
+\hline
+Alcohol & $160$ & $90$ \\
+\hline
+No alcohol & $40$ & $110$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Odds of alcohol consumption among Laryngeal cancer cases $= \dfrac{160}{40} = 4$. \\[0.2em]
+
+Odds of alcohol consumption among Non-Laryngeal cancer cases $= \dfrac{90}{110} = 0.82$. \\[0.2em]
+
+$\therefore$ OR (Odds Ratio) $= \dfrac{4}{0.82} = 4.88$.\\[0.2em]
+
+\Bart \underline{\textbf{Interpretation}} : (\textit{Remember that case-control study is a retrospective study. So we will comment about the exposure in the past.}) The subjects having Laryngeal cancer (case) had $4.88$ times more exposure to Alcohol (exposure) than compared to the subjects who did not have Laryngeal cancer.
+\end{example}
+
+\newpage
+
+\begin{example}\label{ORexample2}
+Consider the following contingency table.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\multirow{2}{*}{Physical Exercise} & \multicolumn{2}{c|}{Myocardial Infarction (MI)\tablefootnote{heart attack in fancy terms}} \\
+\hhline{~--}
+& Yes & No \\
+\hline
+Yes & $27$ & $59$ \\
+\hline
+No & $73$ & $41$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Odds of Physical Exercise among MI cases $= \dfrac{27}{73} = 0.37$. \\[0.2em]
+
+Odds of Physical Exercise among Non-MI cases $= \dfrac{59}{41} = 1.44$. \\[0.2em]
+
+$\therefore$ OR (Odds Ratio) $= \dfrac{0.37}{1.44} = 0.257$.\\[0.2em]
+
+\Bart \underline{\textbf{Interpretation}} : The subjects having MI (case) had $0.257$ times less exposure to Physical Exercise than compared to the subjects who did not have MI.
+\end{example}
+
+\begin{example}\label{ORexample3}
+Consider the following contingency table.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\multirow{2}{*}{Physical Exercise} & \multicolumn{2}{c|}{Myocardial Infarction (MI)} \\
+\hhline{~--}
+& Yes & No \\
+\hline
+No & $73$ & $41$ \\
+\hline
+Yes & $27$ & $59$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Odds of no Physical Exercise among MI cases $= \dfrac{73}{27} = 2.704$. \\[0.2em]
+
+Odds of no Physical Exercise among Non-MI cases $= \dfrac{41}{59} = 0.695$. \\[0.2em]
+
+$\therefore$ OR (Odds Ratio) $= \dfrac{2.704}{0.695} = 3.891 (\approx 1/0.257)$.\\[0.2em]
+
+\Bart \underline{\textbf{Interpretation}} : The subjects having MI (case) had $3.891$ times more exposure to no Physical Exercise than compared to the subjects who did not have MI.
+
+\end{example}
+
+\subsection{Confidence Interval for an Odds Ratio}
+
+The confidence interval for any parameter is given by
+\begin{center}
+(point estimate $\pm$ critical value $\times$ standard error).
+\end{center}
+
+For odds ratio, the confidence interval is calculated on the natural log $(\log_{e})$ scale and then converted back to the original scale. \\[0.25em]
+
+Steps involved in calculating confidence interval for an odds ratio are as follows :
+\begin{enumerate}[Step I :]
+\item Calculate the odds ratio from the data.
+
+\item Find the natural log \textit{i.e.} $\log_{e}$ of odds ratio.
+
+\item The critical value is from the standard normal distribution : $1.96$ for $95\%$ confidence interval, confidence coefficient = $0.95$.
+
+\item Calculate Standard error for $ln (OR)$.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\multirow{2}{*}{Exposure Status} & \multicolumn{2}{c|}{Outcome} \\
+\hhline{~--}
+& Cases & Controls \\
+\hline
+Exposed & $a$ & $b$ \\
+\hline
+Not Exposed & $c$ & $d$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+For a $2 \times 2$ contingency table as above, Standard Error for $ln(OR)$ is given by $$SE(ln (OR)) = \sqrt{\dfrac{1}{a} + \dfrac{1}{b} + \dfrac{1}{c} + \dfrac{1}{d}}.$$
+
+\item $95\%$ CI on log scale is $ln (OR) \pm 1.96 \times SE(ln (OR)) = (L, U), \text{say}$.
+
+\item Get the confidence interval limits on the original scale as $\left( e^{L}, e^{U} \right)$.
+\end{enumerate}
+
+\subsection{Examples of CI for an Odds Ratio}
+
+\begin{example}\label{ORCIexample1}
+In Example (\ref{ORexample1}), $OR = 4.88$. $\therefore ln(OR) = 1.585$. \\[0.8em]
+
+$SE(ln (OR)) = \sqrt{\dfrac{1}{a} + \dfrac{1}{b} + \dfrac{1}{c} + \dfrac{1}{d}} = \sqrt{\dfrac{1}{160} + \dfrac{1}{90} + \dfrac{1}{40} + \dfrac{1}{110}} = 0.2268.$ \\[0.35em]
+
+$\therefore$ $(L, U) = (1.585 \pm 1.96 \times 0.2268) = (1.14, 2.03)$. \\[0.35em]
+
+$\therefore$ $\left( e^{L}, e^{U} \right) = (3.127, 7.614)$.
+\end{example}
+
+\begin{example}\label{ORCIexample2}
+In Example (\ref{ORexample2}), $OR = 0.257$. $\therefore ln(OR) = -1.357$. \\[0.8em]
+
+$SE(ln (OR)) = \sqrt{\dfrac{1}{a} + \dfrac{1}{b} + \dfrac{1}{c} + \dfrac{1}{d}} = \sqrt{\dfrac{1}{27} + \dfrac{1}{59} + \dfrac{1}{73} + \dfrac{1}{41}} = 0.3034.$ \\[0.35em]
+
+$\therefore$ $(L, U) = (-1.357 \pm 1.96 \times 0.3034) = (-1.95, -0.76)$. \\[0.35em]
+
+$\therefore$ $\left( e^{L}, e^{U} \right) = (0.142, 0.468)$.
+\end{example}
+
+\begin{example}\label{ORCIexample3}
+In Example (\ref{ORexample3}), $OR = 3.891$. $\therefore ln(OR) = 1.359$. \\[0.8em]
+
+$SE(ln (OR)) = \sqrt{\dfrac{1}{a} + \dfrac{1}{b} + \dfrac{1}{c} + \dfrac{1}{d}} = \sqrt{\dfrac{1}{73} + \dfrac{1}{41} + \dfrac{1}{27} + \dfrac{1}{59}} = 0.3034.$ \\[0.35em]
+
+$\therefore$ $(L, U) = (1.359 \pm 1.96 \times 0.3034) = (0.764, 1.954)$. \\[0.35em]
+
+$\therefore$ $\left( e^{L}, e^{U} \right) = (2.147, 7.057)$.
+\end{example}
+
+
+\subsection{Test of Significance for Odds Ratio}
+
+An odds of $1$ implies occurrence and non-occurrence of the event of interest are equally likely. Odds $> 1$ implies occurrence of the event is more likely whereas odds $< 1$ implies non-occurrence of the event is more likely. \\[0.15em]
+
+Suppose we have an exposure $E$ and an outcome $O$. An odds ratio of $1$ for $O$ implies odds of $O$ are equal for presence and absence of $E$ \textit{i.e.} $E$ does not have any significant influence on occurrence or non-occurrence of $O$. So odds ratio $= 1$ indicates no association between $E$ and $O$ whereas odds ratio $> 1$ indicates presence of $E$ increases occurrence of $O$ \textit{i.e. exposure to E is a risk factor} and odds ratio $< 1$ indicates absence of $E$ decreases occurrences of $O$ \textit{i.e. non-exposure to E is a protective factor}. \\[0.15em
+]
+
+To check the presence of any substantial association between dichotomous outcome $O$ and dichotomous exposure $E$ we test
+\begin{center}
+$H_0$ : Odds Ratio $= 1$ against $H_1$ : Odds Ratio $\neq 1$.
+\end{center}
+
+A $95\%$ confidence interval contains the true value of the parameter with confidence coefficient $0.95$. If the lower limit of the $95\%$ confidence interval of Odds Ratio is greater than $1$, we have great confidence that the true Odds Ratio is greater than $1$. Then in light of the sample, we reject $H_0$ at level of significance $\alpha = 0.05$ and conclude that presence of $E$ is a significant risk factor. \\[0.15em]
+
+In turn, if the upper limit of the $95\%$ confidence interval of Odds Ratio is less than $1$, we have great confidence that the true Odds Ratio is less than $1$. Then in light of the sample, we reject $H_0$ at level of significance $\alpha = 0.05$ and conclude that absence of $E$ is a significant protective factor. \\[0.15em]
+
+Finally, if the $95\%$ confidence interval contains $1$, we fail to reject $H_0$ in light of the sample in hand and conclude that $E$ is not a statistically significant exposure.
+
+\subsection{Examples of Test of Significance for Odds Ratio}
+
+\begin{example}\label{ORTestexample1}
+In Example (\ref{ORCIexample1}), $95\%$ CI of Odds Ratio was $(3.127, 7.614)$. Lower limit of the CI $= 3.127 > 1$; so we reject $H_0$ at $5\%$ level of significance and conclude that \textit{exposure to Alcohol is a significant risk factor in developing Laryngeal cancer}.
+\end{example}
+
+\begin{example}\label{ORTestexample2}
+In Example (\ref{ORCIexample2}), $95\%$ CI of Odds Ratio was $(0.142, 0.468)$. Upper limit of the CI $= 0.468 < 1$; so we reject $H_0$ at $5\%$ level of significance and conclude that \textit{exposure to Physical Exercise is a significant protective factor against developing Myocardial Infraction}.
+\end{example}
+
+\begin{example}\label{ORTestexample3}
+In Example (\ref{ORCIexample3}), $95\%$ CI of Odds Ratio was $(2.147, 7.057)$. Lower limit of the CI $= 2.147 > 1$; so we reject $H_0$ at $5\%$ level of significance and conclude that \textit{non-exposure to Physical Exercise is a significant risk factor in developing Myocardial Infraction}.
+\end{example}
+
+\subsection{An Exercise}
+
+\bcquestion \hspace{0.1cm} In a case-control study, $200$ Esophageal cancer\footnote{cancer that starts in the Esophagus, the muscular tube that connects throat to stomach} cases and $775$ controls were studied. Among the $200$ cases it was observed that $96$ patients were consuming alcohol and among controls $109$ individuals were consuming alcohol. Assess the appropriate risk measure.
+
+\newpage
+
+\flushleft{\bccrayon} \hspace{0.1cm} From the given, we have the following contingency table.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{4.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2cm}|}
+\hline
+\multirow{2}{*}{Exposure Status} & \multicolumn{2}{c|}{Outcome (Esophageal Cancer)} & \multirow{2}{*}{Total} \\
+\hhline{~--~}
+& Cases (Yes) & Controls (No) & \\
+\hline
+Exposed (Alcohol) & $96$ & $109$ & $205$ \\
+\hline
+Not exposed (No alcohol) & $104$ & $666$ & $770$ \\
+\hline
+Total & $200$ & $775$ & $975$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Odds of alcohol consumption among Esophageal cancer cases $= \dfrac{96}{104} = 0.92$. \\[0.2em]
+
+Odds of alcohol consumption among controls $= \dfrac{109}{666} = 0.16$. \\[0.2em]
+
+$\therefore$ OR (Odds Ratio) $= \dfrac{0.92}{0.16} = 5.75$.\\[0.2em]
+
+\Bart \underline{\textbf{Interpretation}} : The subjects having Esophageal cancer had $5.75$ times more exposure to Alcohol than compared to the subjects who did not have Esophageal cancer. \\[0.5em]
+
+To calculate a $95\%$ confidence interval for odds ratio, we proceed as follows. \\[1em]
+
+$OR = 5.75$. $\therefore ln(OR) = 1.75$. \\[0.8em]
+
+$SE(ln (OR)) = \sqrt{\dfrac{1}{96} + \dfrac{1}{109} + \dfrac{1}{104} + \dfrac{1}{666}} = 0.1752$ \\[1em]
+
+$\therefore$ $(L, U) = (1.75 \pm 1.96 \times 0.1752) = (1.41, 2.09)$. \\[1em]
+
+$\therefore$ $95\%$ confidence interval of Odds Ratio is $\left( e^{L}, e^{U} \right) = (4.1, 8.09)$. So we reject $H_0$ at $5\%$ level of significance and conclude that \textit{exposure to Alcohol is a significant risk factor in developing Esophageal cancer.}
+
+\newpage
+
+\section{Effect Measure for Cohort Design}
+
+A cohort design is an observational design for comparing individuals with a known risk factor or exposure with others without the risk factor or exposure. \\[0.25em]
+
+A flowchart of a prospective cohort design is depicted as follows :
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.35]{cohort_prospective.png}
+\end{figure}
+
+\subsection{Relative Risk}
+
+Relative Risk or Risk Ratio is defined as
+\begin{center}
+$\dfrac{\text{Incidence rate in Exposed } (R_1)}{\text{Incidence rate in Not Exposed } (R_0)}.$
+\end{center}
+
+\begin{itemize}
+\item Relative Risk $ = 1 \Rightarrow$ Exposure is not associated with Outcome.
+\item Relative Risk $ > 1 \Rightarrow$ Exposure is a risk factor for the Outcome.
+\item Relative Risk $ < 1 \Rightarrow$ Exposure is a protective factor against the Outcome.
+\end{itemize}
+
+\subsection{Statistical Measure of Risk : Relative Risk / Risk Ratio}
+
+Consider the following contingency table.
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{3.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{2cm}|}
+\hline
+\multirow{2}{*}{Exposure Status} & \multicolumn{2}{c|}{Outcome} & \multirow{2}{*}{Total} \\
+\hhline{~--~}
+& Cases & Controls & \\
+\hline
+Exposed & $a$ & $b$ & $a+b$ \\
+\hline
+Not Exposed & $c$ & $d$ & $c+d$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\bcattention \hspace{0.1cm} The primary statistical measure of risk in cohort study design is \textit{\textbf{relative risk}}. \\[0.25em]
+
+From the above table, 
+\begin{center}
+incidence rate in Exposed $(R_1)$ $ = \dfrac{a}{a+b}$ 
+\end{center}
+and 
+\begin{center}
+incidence rate in Not Exposed $(R_0)$ $ = \dfrac{c}{c+d}$.
+\end{center}
+Thus,
+\begin{center}
+\textit{relative risk} $= \dfrac{a / (a+b)}{c / (c+d)} = \dfrac{a \cdot (c+d)}{c \cdot (a+b)}$.
+\end{center}
+
+
+\subsection{Examples of Relative Risk}
+
+\begin{example}\label{RRexample1}
+Suppose we conducted a cohort study to answer a research question \textit{Does HIV infection increase risk of developing TB among a population of drug users ?} We have the following contingency table.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{2cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2cm}|}
+\hline
+\multirow{2}{*}{Exposure} & \multicolumn{2}{c|}{Outcome} & \multirow{2}{*}{Total} \\
+\hhline{~--~}
+& Tuberculosis & No Tuberculosis & \\
+\hline
+HIV$^{+}$ & $8$ & $207$ & $215$ \\
+\hline
+HIV$^{-}$ & $1$ & $288$ & $289$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Incidence rate of TB patients among HIV$^+ = \dfrac{8}{215} = 0.0372$ \\[0.5em]
+
+Incidence rate of TB patients among HIV$- = \dfrac{1}{289} = 0.0035$ \\[0.5em]
+
+$\therefore$ Relative Risk $ = \dfrac{0.0372}{0.0035} = 10.62 \approx 11$. \\[0.5em]
+
+\Bart \underline{\textbf{Interpretation}} : (\textit{Remember that in a prospective cohort study, we will comment about the outcome in the future.}) HIV$^+$ patients are having $\approx 11$ times higher risk of developing Tuberculosis than compared to HIV$^-$ patients (reference group).
+\end{example}
+
+\begin{example}\label{RRexample2}
+Consider the following data from an RCT.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{2cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2cm}|}
+\hline
+\multirow{2}{*}{Group} & \multicolumn{2}{c|}{Reduction in Chest Pain} & \multirow{2}{*}{Total} \\
+\hhline{~--~}
+& Yes & No & \\
+\hline
+Propranolol & $162$ & $58$ & $220$ \\
+\hline
+Nifedipine & $33$ & $150$ & $183$ \\
+\hline
+Total & $195$ & $208$ & $403$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Incidence rate of Reduction of Chest Pain among Propranolol $ = \dfrac{162}{220} = 0.736$ \\[0.5em]
+
+Incidence rate of Reduction of Chest Pain among Nifedipine $ = \dfrac{33}{183} = 0.18$ \\[0.5em]
+
+$\therefore$ Relative Risk $ = \dfrac{0.736}{0.18} = 4.089$. \\[0.5em]
+
+\Bart \underline{\textbf{Interpretation}} : Subjects receiving Propranolol have $4.089$ times higher reduction in chest pain as compared to the subjects receiving Nifedipine (reference group).
+\end{example}
+
+\subsection{Confidence Interval for a Relative Risk}
+
+The confidence interval for any parameter is given by
+\begin{center}
+(point estimate $\pm$ critical value $\times$ standard error).
+\end{center}
+
+For relative risk, the confidence interval is calculated on the natural log $(\log_{e})$ scale and then converted back to the original scale. \\[0.25em]
+
+Steps involved in calculating confidence interval for a relative risk are as follows :
+\begin{enumerate}[Step I :]
+\item Calculate the relative risk from the data.
+
+\item Find the natural log \textit{i.e.} $\log_{e}$ of relative risk.
+
+\item The critical value is from the standard normal distribution : $1.96$ for $95\%$ confidence interval, confidence coefficient = $0.95$.
+
+\item Calculate Standard error for $ln (RR)$.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{3.5cm}|>{\centering}m{1.5cm}|>{\centering}m{1.5cm}|>{\centering\arraybackslash}m{2cm}|}
+\hline
+\multirow{2}{*}{Exposure Status} & \multicolumn{2}{c|}{Outcome} & \multirow{2}{*}{Total} \\
+\hhline{~--~}
+& Cases & Controls & \\
+\hline
+Exposed & $a$ & $b$ & $a+b$ \\
+\hline
+Not Exposed & $c$ & $d$ & $c+d$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+For a $2 \times 2$ contingency table as above, Standard Error for $ln(RR)$ is given by $$SE(ln (RR)) = \sqrt{\dfrac{b}{a(a+b)} + \dfrac{d}{c(c+d)}}.$$
+
+\item $95\%$ CI on log scale is $ln (RR) \pm 1.96 \times SE(ln (RR)) = (L, U), \text{say}$.
+
+\item Get the confidence interval limits on the original scale as $\left( e^{L}, e^{U} \right)$.
+\end{enumerate}
+
+\subsection{Examples of CI for a Relative Risk}
+
+\begin{example}\label{RRCIexample1}
+In Example (\ref{RRexample1}), $RR = 10.62$. $\therefore ln(RR) = 2.263$. \\[0.8em]
+
+$SE(ln (RR)) = \sqrt{\dfrac{b}{a(a+b)} + \dfrac{d}{c(c+d)}} = \sqrt{\dfrac{207}{8(8+207)} + \dfrac{288}{1(1+288)}} = 1.057.$ \\[1em]
+
+$\therefore$ $(L, U) = (2.263 \pm 1.96 \times 1.057) = (0.191, 4.335)$. \\[1em]
+
+$\therefore$ $\left( e^{L}, e^{U} \right) = (1.21, 76.32)$.
+\end{example}
+
+
+\begin{example}\label{RRCIexample2}
+In Example (\ref{RRexample2}), $RR = 4.089$. $\therefore ln(RR) = 1.408$. \\[0.8em]
+
+$SE(ln (RR)) = \sqrt{\dfrac{b}{a(a+b)} + \dfrac{d}{c(c+d)}} = \sqrt{\dfrac{58}{162(162+58)} + \dfrac{150}{33(33+150)}} = 0.163.$ \\[1em]
+
+$\therefore$ $(L, U) = (1.408 \pm 1.96 \times 0.163) = (1.09, 1.73)$. \\[1em]
+
+$\therefore$ $\left( e^{L}, e^{U} \right) = (2.97, 5.64)$.
+\end{example}
+
+\subsection{An Exercise}
+
+\bcquestion \hspace{0.1cm} In a cohort of $1000$ individuals using the bed-nets during the sleep, $3$ were infected with Malaria and among the cohort of $800$ individuals who were not using the bed-nets, $30$ were diagnosed with Malaria. Assess the risk of getting Malaria among the individuals who were not using the bed-nets during sleep when compared to the individuals using the bed-nets during the sleep.
+
+\bccrayon \hspace{0.1cm} From the given, we have the following contingency table.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{2cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2cm}|}
+\hline
+\multirow{2}{*}{Bed-nets} & \multicolumn{2}{c|}{Malaria} & \multirow{2}{*}{Total} \\
+\hhline{~--~}
+& Yes & No & \\
+\hline
+No & $30$ & $770$ & $800$ \\
+\hline
+Yes & $3$ & $997$ & $1000$ \\
+\hline
+Total & $195$ & $208$ & $403$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Incidence rate of Malaria among individuals not using bed-nets $ = \dfrac{30}{800} = 0.038$ \\[0.5em]
+
+Incidence rate of Malaria among individuals using bed-nets $ = \dfrac{3}{1000} = 0.003$ \\[0.5em]
+
+$\therefore$ Relative Risk $ = \dfrac{0.038}{0.003} = 12.67$. \\[0.5em]
+
+\Bart \underline{\textbf{Interpretation}} : Individuals not using bed-nets have $12.67$ times higher risk of Malaria as compared to the individuals using bed-nets. \\[1em]
+
+To calculate $95\%$ confidence interval for relative risk, we proceed as follows. \\[1em]
+
+$RR = 12.67$. $\therefore ln(RR) = 2.54$. \\[0.8em]
+
+$SE(ln (RR)) = \sqrt{\dfrac{770}{30(30+770)} + \dfrac{997}{3(3+997)}} = 0.6.$ \\[1em]
+
+$\therefore$ $(L, U) = (2.54 \pm 1.96 \times 0.6) = (1.36, 3.72)$. \\[1em]
+
+$\therefore$ $95\%$ confidence interval for relative risk is $\left( e^{L}, e^{U} \right) = (3.9, 41.3)$.
+
+\newpage
+
+\section{Relation Between Odds Ratio and Relative Risk}
+
+\begin{center}
+Relative Risk $= \dfrac{\text{Odds Ratio}}{1 - p} + p \times \text{ Odds Ratio}$
+\end{center}
+
+where $p$ is the proportion of the outcome in the non-exposed group. \\[1em]
+
+\bclampe \hspace{0.1cm} \textit{The relationship implies that the magnitude of Odds Ratio and that of Relative Risk are similar only when p is low.}
+\end{document}

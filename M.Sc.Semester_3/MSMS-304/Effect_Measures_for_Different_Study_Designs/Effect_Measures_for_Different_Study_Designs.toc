@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Effect Measure for Case-Control Design}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Odds}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Odds Ratio}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Statistical Measure of Risk : Odds Ratio}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Examples of Odds Ratio}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Confidence Interval for an Odds Ratio}{5}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Examples of CI for an Odds Ratio}{6}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Test of Significance for Odds Ratio}{7}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Examples of Test of Significance for Odds Ratio}{7}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}An Exercise}{7}{subsection.1.9}%
+\contentsline {section}{\numberline {2}Effect Measure for Cohort Design}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Relative Risk}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Statistical Measure of Risk : Relative Risk / Risk Ratio}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Examples of Relative Risk}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Confidence Interval for a Relative Risk}{11}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Examples of CI for a Relative Risk}{11}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}An Exercise}{12}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Relation Between Odds Ratio and Relative Risk}{13}{section.3}%
