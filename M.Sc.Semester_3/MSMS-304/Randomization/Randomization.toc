@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Fixed Allocation Randomization}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Simple Randomization}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Block Randomization}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Stratified Randomization}{6}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Sealed Envelope}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}SNOSE}{10}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Blindness}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Single-blind}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Double-blind}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Triple-blind}{12}{subsection.4.3}%
