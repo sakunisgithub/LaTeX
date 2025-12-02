@@ -36,7 +36,7 @@ $\bullet$ Types of Outliers :
 \begin{enumerate}
 \item Global / Point Outlier : A point far away from the rest of the data is global outlier.
 \item Contextual Outlier (Conditional Outlier) : Outlier in specific context; temperature $30^{\circ}$ is normal in Delhi but outlier in Ladakh.
-\item Collective Outlier : A group of data points that are unusual together. If their studied isolatedly, they may not be outliers. For example, sudden spike in server activity during midnight.
+\item Collective Outlier : A group of data points that are unusual together. If they are studied isolated, they may not be outliers. For example, sudden spike in server activity during midnight.
 \end{enumerate}
 
 There are two types of methods for outline detection.
@@ -46,12 +46,12 @@ There are two types of methods for outline detection.
 A formal definition : Given a data-set $X = \{ \utilde{x_1}, \utilde{x_2}, \ldots, \utilde{x_n} \}, \,\, \utilde{x_i} \in \mathbb{R}^d$, a certain point $\utilde{x_i}$ will be outlier if $P(\utilde{x_i}) < \epsilon$ where $\epsilon$ is a threshold. There are several density based methods. Some are given below.
 \begin{enumerate}[(a)]
 \item Statistical method : Assume data points follow normal distribution. Then for a point $x_i \in \mathbb{R}$, calculate $z_i = \dfrac{x_i - \mu}{\sigma}$. If $|z_i| > 3$, we often consider $x_i$ as outlier.
-\item Local Outline Factor (LOF) : LOF measures how isolated a point is related to its neighbourhoods. In this method,
+\item Local Outlier Factor (LOF) : LOF measures how isolated a point is related to its neighbourhoods. In this method,
 \begin{itemize}
 \item Step (1) : For each point $p$, compute $k$-distance$(p)$ $=$ distance of $p$ from its $k$-th nearest neighbour.
 \item Step (2) : For each point $p$, find the set of $k$ points closest to it.
 \item Step (3) : For each pair of points $p$, $o$, calculate reachability distance as
-$$\text{reach-dist}_k(p, o) = max\{ k-\text{distance}(p), d(p, o)\}$$
+$$\text{reach-dist}_k(p, o) = max\{ k\text{-distance}(p), d(p, o)\}$$
 \item Step (4) : For each point $p$, calculate Local Reachability Density as
 $$\text{LRD}_k(p) = \dfrac{1}{\dfrac{1}{|N_k(p)|} \sum \limits_{o \in N_k(p)} \text{reach-dist}_k(p, o)}.$$
 \item Step (5) : Compute LOF Score as
