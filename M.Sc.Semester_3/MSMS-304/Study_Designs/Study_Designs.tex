@@ -1,0 +1,193 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 1 in, right = 1 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{bclogo}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+
+\title{MSMS 304 - Biostatistics \\ Study Designs}
+\author{Ananda Biswas}
+\date{Last updated : \today}
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+$\spadesuit$ \underline{Definition} : A study design is a specific plan for conducting the study, which allows the investigator to translate the \textbf{conceptual} hypothesis into an \textbf{operational} one.
+
+A study design is like a blueprint or a roadmap - it tells us how to collect data, from whom, when, and how to analyse it so we can answer our research question clearly and correctly.\\[0.2em]
+
+\bcinfo \hspace{0.1cm} The type of study design we should choose depends on
+\begin{itemize}
+\item What the research question / objective is,
+\item Time available for study,
+\item Resources available for the study,
+\item Is the disease common or rare ?
+\item Type of outcome of interest.
+\end{itemize}
+
+Choosing an established design gives you a huge head start in analysis and eliminating biases. \\[0.2em]
+
+$\bullet$ Existing designs to identify and investigate factors in disease are displayed in the following figure.
+
+\newpage
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.8]{Different_Study_Designs_Flowchart}
+\end{figure}
+
+
+
+\newpage
+
+\section{Case-Control Design}
+
+A basic question in Analytic Epidemiology is \textit{whether a disease is linked to an exposure}. Case-control studies come handy while answering this question.\\[0.1em]
+
+$\spadesuit$ \underline{Definition} : A case-control study can be formally defined as an observational study design in which individuals with a particular outcome or disease (the cases) are compared to individuals without that outcome (the controls) to identify and evaluate factors (exposures) that may be associated with the outcome.
+
+A flowchart of case-control study can be depicted as follows :
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.35]{case_control}
+\end{figure}
+
+Several steps involved in a case-control study are as follows :
+
+\begin{enumerate}[1.]
+\item Start with diseased (case) versus non-diseased (control).
+\item Matching 
+\item Measurement of exposure
+\item Analysis and interpretation
+\end{enumerate}
+
+\bcattention \hspace{0.1cm} Case-control studies are efficient when outcome is \textit{rare}.
+
+\subsection{Selection of Cases}
+
+We can consider
+\begin{itemize}
+\item Hospital patients
+\item Clinic patients
+\item Patients from disease registries (\textit{e.g.} cancer registries)
+\end{itemize}
+as our cases.
+
+\subsection{Selection of Controls}
+
+Controls come from the same population as the cases, but \textbf{\textit{they do not have the disease of our interest}}. They are similar to cases in all aspects but for they are free of disease. Sources of controls are hospital controls, relatives, neighbourhood controls, general population etc. Number of controls may be one, two, three or four depending on the size of the cases.
+
+\subsubsection{Matching}
+
+Matching is defined as the process of selecting the controls so that they are similar to the cases in certain characteristics, such as age, race, sex, socio-economic status, and occupation. Matching may be of two types:
+\begin{enumerate}[(1)]
+\item Group Matching
+\item Individual Matching
+\end{enumerate}
+
+\dice{1} \underline{Group Matching} : Group Matching ensures that \textbf{cases and controls have the same proportion} of certain characteristics (\textit{e.g.} age, sex, marital status). For example, if $25\%$ of cases are married, then $25\%$ of controls will also be selected as married. \\[0.2em]
+
+Steps involved in Group Matching are :
+\begin{enumerate}[I.]
+\item Select all cases first.
+\item Identify key characteristics.
+\item Calculate proportions of key characteristics.
+\item Select controls to match those proportions.
+\end{enumerate}
+
+\dice{2} \underline{Individual Matching} : Individual Matching involves selecting one control for each case, matched on specific variables (\textit{e.g.} age, sex, race). For example, a $45$-year-old white female case is matched with a $45$-year-old white female control. This creates matched case-control pairs, ensuring close similarity between each case and its control for key variables.
+
+\subsubsection{Selection of Multiple Controls}
+
+Multiple controls of the same type, such as two controls or three controls for each case, are used to \textit{increase the power of the study}. Practically speaking, a noticeable increase in power is gained only up to a ratio of about $1$ case to $4$ controls. 
+
+\subsection{Confounding Variables}
+
+Exposure of interest may be confounded by a factor that is associated with the exposure and the disease \textit{i.e.} there is an independent risk factor for the disease. \textit{Matching} can help us to control confounding variables by ensuring equal distribution of confounders among cases and controls. But we cannot later study the effect of the matched variable(s).
+
+\newpage
+
+\subsection{Effect Measure : Odds Ratio}
+
+After data collection, suppose we have the following contingency table.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+\begin{center}
+\begin{tabular}{|>{\centering}m{4.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2cm}|}
+\hline
+\multirow{2}{*}{Exposure Status} & \multicolumn{2}{c|}{Outcome} & \multirow{2}{*}{Total} \\
+\hhline{~--~}
+& Cases & Controls & \\
+\hline
+Exposed & $a$ & $b$ & $a+b$ \\
+\hline
+Not exposed & $c$ & $d$ & $c+d$ \\
+\hline
+Total & $a+c$ & $b+d$ & $N$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\bcattention \hspace{0.1cm} The primary statistical measure of risk in case-control study design is \textbf{\textit{odds ratio}} defined as
+
+$$\dfrac{\text{Odds of Exposure among Cases}}{\text{Odds of Exposure among Controls}}.$$
+
+From the table above, Odds of Exposure among Cases $= \dfrac{\frac{a}{a+c}}{1 - \frac{a}{a+c}} = \dfrac{a}{c}$ and \\[0.2em]
+
+Odds of Exposure among Controls $= \dfrac{\frac{b}{b+d}}{1 - \frac{b}{b+d}} = \dfrac{b}{d}$.\\[0.2em]
+
+Thus, \textit{odds ratio} $= \dfrac{a/c}{b/d} = \dfrac{ad}{bc}$.
+
+\subsection{Advantages}
+
+\begin{enumerate}[1.]
+\item \textit{Efficient for Rare Diseases} : Case-control studies are especially useful for investigating \textbf{rare conditions} or diseases with low incidence, as they start by identifying cases and then look back to examine exposures.
+\item \textit{Time and Cost Efficient} : Since data are collected retrospectively, these studies are generally \textbf{quicker and less expensive} compared to prospective designs like cohort studies.
+\item \textit{Requires Fewer Participants} : Smaller sample sizes are often sufficient to detect associations, making it a \textbf{practical option when resources are limited}.
+\item \textit{Can Study Multiple Risk Factors} : A single case-control study can assess \textbf{several exposures or risk factors} for a particular disease, offering a broad perspective on possible causes.
+\item \textit{No Long Follow-up Required} : Unlike cohort studies, there is no need to wait for outcomes to occur.
+\item \textit{Often no risk to subjects}.
+\end{enumerate}
+
+\subsection{Disadvantages}
+
+\begin{enumerate}[1.]
+\item \textit{Recall Bias} : Example - In a study of lung cancer (cases) versus healthy individuals (controls), cancer patients might over-report past smoking habits due to awareness of its link with cancer, while controls may under-report or forget minor smoking episodes.
+
+\item \textit{Selection Bias} : Suppose you want to study whether eating red meat is associated with colon cancer. Cases: You select patients who have colon cancer. Controls: You select patients from the hospital who are admitted for heart disease, diabetes etc. Problem: These hospital controls may not represent the general healthy population. People with heart disease or diabetes might have already reduced their red meat intake because of their condition. As a result, their diet doesn't reflect what a normal, healthy person's diet would be, and it could artificially increase the difference between cases and controls.
+
+If cases are selected from a single hospital, risk factors  may be unique to that hospital, limiting generalizability.
+\item \textit{Susceptibility to Confounding} : Other unmeasured variables may distort the true exposure-outcome relationship. Example - A study shows alcohol consumption is associated with esophageal cancer. However, smoking - commonly associated with drinking - may be the actual cause, and if not adjusted for, the results may be misleading.
+\end{enumerate}
+\end{document}

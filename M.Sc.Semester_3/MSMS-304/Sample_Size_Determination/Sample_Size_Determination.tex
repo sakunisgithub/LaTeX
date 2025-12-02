@@ -1,0 +1,443 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 0.9 in, bottom = 0.9 in, left = 1 in, right = 1 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{example}{Example}[subsection]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{bclogo}
+\usepackage{simpsons}
+\usepackage{tablefootnote}
+\usepackage{figchild}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usetikzlibrary{arrows.meta}
+\usepackage{xcolor}
+\definecolor{darkgreen}{RGB}{0,100,0}
+
+\title{MSMS 304 - Biostatistics \\[0.5em] Sample Size Determination}
+\author{Ananda Biswas}
+\date{Last updated : \today}
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+Clinical trials should have sufficient statistical power to detect differences between groups considered to be of clinical importance. Therefore calculation of sample size with provision for adequate levels of significance and power is an essential part of planning.
+
+If the sample size is drastically large, then we may put human lives at risk unnecessarily. On the other hand, if the sample size is too small,  there is a good chance that the trial will fall short in demonstrating any difference between study groups.
+
+To detect a large difference between two study groups as statistically significant, small sample size is enough. But to detect a small difference between the study groups as significant, we require big enough sample size.
+
+\vspace{0.3cm}
+
+Note : $\text{Prevalence of a condition in a region} = \dfrac{\text{total number of cases of the health condition}}{\text{total population in the region}}$.
+
+\section{Sample Size for Single Proportion}
+
+\subsection{Given Absolute Precision}
+
+\leftpointright \hspace{0.1cm} \underline{A Case Scenario} : A researcher is interested in estimating the prevalence of Type II diabetes amongst the population in Jaipur. It was assumed that the anticipated prevalence of Type II diabetes would not be more than $15\%$ in the population. What is the minimum sample size required to estimate this prevalence at $95\%$ confidence level and $5\%$ absolute precision ? (\textit{Absolute precision is the maximum allowable difference between the estimated prevalence and the true prevalence.})
+
+\vspace{0.2cm}
+
+Anticipated prevalence $p = 0.15$, confidence coefficient $1 - \alpha = 0.95$, absolute precision $d = 0.05$, $\tau_{\alpha/2} = 1.96$.
+
+\begin{align}
+n &\geq \dfrac{\tau_{\alpha/2}^2 \cdot p \cdot (1-p)}{d^2} \label{single_proportion_with_given_absolute_precision}\\[0.2em]
+&= \dfrac{(1.96)^2 \cdot 0.15 \cdot 0.85}{(0.05)^2} \nonumber \\[0.2em]
+&= 196. \nonumber
+\end{align}
+
+\smallpencil \hspace{0.1cm} \underline{Write up} : It was anticipated that the prevalence of Type II diabetes amongst the population in Jaipur would not be more than $15\%$. Based on sample size determination for single proportion, considering $95\%$ confidence level and $5\%$ absolute precision, the minimum sample size required to estimate the prevalence was determined to be $196$. \\[0.1em]
+
+From (\ref{single_proportion_with_given_absolute_precision}), sample size $n$ increases as $p$ increases up to $p = 0.5$ \textit{i.e.} $50\%$.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.95}
+
+\begin{center}
+\begin{tabular}{|>{\centering}m{4cm}||>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+
+\hline
+
+\multirow{2}{*}{Absolute Precision $(d)$} & \multicolumn{3}{c|}{Anticipated Prevalence $(p)$} \\
+
+\hhline{~---}
+
+& 0.10 & {\Large 0.15} & {\LARGE 0.20} \\
+
+\hline
+
+{\large 0.05} & {\large 139} & {\Large 196} & {\LARGE 246} \\
+
+\hline
+
+{\Large 0.07} & {\normalsize 71} & {\large 100} & {\Large 126} \\
+
+\hline
+
+{\LARGE 0.10} & {\small 35} & {\normalsize 49} & {\large 62} \\
+
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+As you might notice, for a fixed absolute precision, as anticipated prevalence increases required sample size also increases. This directly follows from the formula (\ref{single_proportion_with_given_absolute_precision}). The sample size $n$ and $p$ are directly proportional.
+
+
+\subsection{Given Relative Precision}
+
+\leftpointright \hspace{0.1cm} \underline{A Case Scenario} : A researcher is interested in estimating the prevalence of Type II diabetes amongst the population in Jaipur. It was assumed that the anticipated prevalence of Type II diabetes would not be more than $15\%$ in the population. What is the minimum sample size required to estimate this prevalence at $95\%$ confidence level and $20\%$ relative precision ? (\textit{Relative precision is the maximum allowable error in the estimated prevalence expressed as a proportion of the true value of prevalence. So here allowable error is} $20\%$ \textit{of} $0.15$ \textit{i.e.} $0.03$.)
+
+\vspace{0.2cm}
+
+Anticipated prevalence $p = 0.15$, confidence coefficient $1 - \alpha = 0.95$, relative precision $d = 0.2$, $\tau_{\alpha/2} = 1.96$.
+
+\begin{align}
+n &\geq \dfrac{\tau_{\alpha/2}^2 \cdot p \cdot (1-p)}{(pd)^2} \label{single_proportion_with_given_relative_precison} \\[0.2em]
+&= \dfrac{(1.96)^2 \cdot 0.15 \cdot 0.85}{(0.15 \times 0.2)^2} \nonumber \\[0.2em]
+&= 545. \nonumber
+\end{align}
+
+\smallpencil \hspace{0.1cm} \underline{Write up} : It was anticipated that the prevalence of Type II diabetes amongst the population in Jaipur would not be more than $15\%$. Based on sample size determination for single proportion, considering $95\%$ confidence level and $20\%$ absolute precision, the minimum sample size required to estimate the prevalence was determined to be $545$.
+
+\begin{table}[!htbp]
+\def\arraystretch{2}
+
+\begin{center}
+\begin{tabular}{|>{\centering}m{4cm}||>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+
+\hline
+
+\multirow{2}{*}{Relative Precision $(d)$} & \multicolumn{3}{c|}{Anticipated Prevalence $(p)$} \\
+
+\hhline{~---}
+
+& 0.10 & {\Large 0.15} & {\LARGE 0.20} \\
+
+\hline
+
+{\large 0.15} & {\LARGE 1537} & {\Large 968} & {\large 683} \\
+
+\hline
+
+{\Large 0.20} & {\Large 865} & {\normalsize 545} & {\small 385} \\
+
+\hline
+
+{\LARGE 0.25} & {\large 534} & {\small 349} & {\footnotesize 246} \\
+
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Here, for a fixed relative precision, as anticipated prevalence increases required sample size decreases. This directly follows from the formula (\ref{single_proportion_with_given_relative_precison}) (Notice an additional $p^2$ in the denominator). So as $p$ increases sample size $n$ decreases. \\[0.2em]
+
+\smallpencil \hspace{0.1cm} A few \textit{advantages} of relative precision over absolute precision are noteworthy. For rare diseases, prevalence is too small, not more than $3\%$ to $5\%$. Then the choice of an absolute precision $10\%$ will result the tolerance boundary of estimated prevalence to go beyond $0$ in the negative region. To prevent such scenarios, relative precision is preferred. Another edge case might be for very frequent conditions the prevalence is high, for example $95\%$ or $97\%$. Then a choice of absolute precision $10\%$ will push the tolerance boundary of estimated prevalence beyond $100\%$, which is fallacious. This adds to demerits of absolute precision.
+
+\newpage
+
+\section{Sample Size for Single Mean}
+
+\subsection{Given Absolute Precision}
+
+\leftpointright \hspace{0.1cm} \underline{A Case Scenario} : A researcher is interested in estimating the mean HDL cholesterol amongst the population of Jaipur. It was assumed that the mean HDL cholesterol would be around $40$ mg/dL with a standard deviation of $10$ mg/dL. What is the minimum sample size required to estimate the mean HDL cholesterol level at $95\%$ confidence level and $5$ mg/dL absolute precision?
+
+\vspace{0.2cm}
+
+Anticipated mean HDL cholesterol $\mu = 40$, standard deviation $\sigma = 10$, confidence coefficient $1-\alpha = 0.95$, absolute precision $d = 5$, $\tau_{\alpha/2} = 1.96$.
+
+\begin{align}
+n &\geq \dfrac{\tau_{\alpha/2}^{2} \cdot \sigma^2}{d^2} \label{single_mean_with_given_absolute_precision}\\[0.2em]
+&= \dfrac{(1.96)^2 \cdot (10)^2}{(5)^2} \nonumber \\[0.2em]
+&= 16 \nonumber
+\end{align}
+
+\smallpencil \hspace{0.1cm} \underline{Write up} : It was anticipated that the mean HDL cholesterol amongst the population in Jaipur would be around $40$ mg/dL with a standard deviation of $10$ mg/dL. Based on sample size determination for single mean, considering $95\%$ confidence level and $5$ mg/dL absolute precision, the minimum sample size required to estimate the mean HDL cholesterol was determined to be $16$.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.95}
+
+\begin{center}
+\begin{tabular}{|>{\centering}m{4cm}||>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+
+\hline
+
+\multirow{2}{*}{Absolute Precision $(d)$} & \multicolumn{3}{c|}{Standard Deviation $(\sigma)$} \\
+
+\hhline{~---}
+
+& 5 & {\Large 10} & {\LARGE 15} \\
+
+\hline
+
+{\large 3} & {\large 11} & {\Large 43} & {\LARGE 97} \\
+
+\hline
+
+{\Large 5} & {\normalsize 4} & {\large 16} & {\Large 95} \\
+
+\hline
+
+{\LARGE 7} & {\small 2} & {\normalsize 8} & {\large 18} \\
+
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+As standard deviation increases, for a fixed absolute precision, required sample size increases. This aligns with the formula (\ref{single_mean_with_given_absolute_precision}).
+
+\subsection{Given Relative Precision}
+
+\leftpointright \hspace{0.1cm} \underline{A Case Scenario} : A researcher is interested in estimating the mean HDL cholesterol amongst the population of Jaipur. It was assumed that the mean HDL cholesterol would be around $40$ mg/dL with a standard deviation of $10$ mg/dL. What is the minimum sample size required to estimate the mean HDL cholesterol level at $95\%$ confidence level and $10\%$ relative precision?
+
+\vspace{0.2cm}
+
+Anticipated mean HDL cholesterol $\mu = 40$, standard deviation $\sigma = 10$, confidence level $1-\alpha = 0.95$, relative precision $d = 0.1$, $\tau_{\alpha/2} = 1.96$.
+
+\begin{align}
+n &\geq \dfrac{\tau_{\alpha/2}^{2} \cdot \sigma^2}{(d \cdot \mu)^2} \label{single_mean_with_given_relative_precision}\\[0.2em]
+&= \dfrac{(1.96)^2 \cdot (10)^2}{(0.1 \cdot 40)^2} \nonumber \\[0.2em]
+&= 25 \nonumber
+\end{align}
+
+\smallpencil \hspace{0.1cm} \underline{Write up} : It was anticipated that the mean HDL cholesterol amongst the population in Jaipur would be around $40$ mg/dL with a standard deviation of $10$ mg/dL. Based on sample size determination for single mean, considering $95\%$ confidence level and $10\%$ relative precision, the minimum sample size required to estimate the mean HDL cholesterol was determined to be $25$.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.95}
+
+\begin{center}
+\begin{tabular}{|>{\centering}m{4cm}||>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+
+\hline
+
+\multirow{2}{*}{Relative Precision $(d)$} & \multicolumn{3}{c|}{Standard Deviation $(\sigma)$} \\
+
+\hhline{~---}
+
+& 5 & {\Large 10} & {\LARGE 15} \\
+
+\hline
+
+{\large 0.05} & {\large 25} & {\Large 97} & {\LARGE 217} \\
+
+\hline
+
+{\Large 0.10} & {\normalsize 7} & {\large 25} & {\Large 55} \\
+
+\hline
+
+{\LARGE 0.15} & {\small 3} & {\normalsize 11} & {\large 25} \\
+
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+As standard deviation increases, for a fixed relative precision and fixed $\mu$, required sample size increases. This aligns with the formula (\ref{single_mean_with_given_relative_precision}).
+
+\section{Sample Size Determination for Comparison}
+
+Let $X$ be a random variable representing a characteristic of interest in a population with mean $\mu$ and variance $\sigma^2$ \textit{i.e.} $X \sim N(\mu, \sigma^2)$. Let us take a sample of size $n$ from the population to estimate the population parameter $\mu$ based on defined statistic (say $\bar{X}$) whose sampling distribution follows approximately normal distribution for large $n$ under central limit theorem with parameters $\mu$ and variance $\dfrac{\sigma^2}{n}$ \textit{i.e.} $\bar{X} \sim N\left(\mu, \dfrac{\sigma^2}{n}\right)$. \\[0.1em]
+
+The standard error of $\bar{X}$ will be $SE = \dfrac{\sigma}{\sqrt{n}}$. \\[0.1em]
+
+Standardizing the sample mean using the population parameters gives:
+$$Z = \dfrac{\sqrt{n}\left(\bar{X} - \mu\right)}{\sigma} = \dfrac{\bar{X} - \mu}{SE}\sim N(0, 1).$$
+
+A researcher hypothesizes that the sample is drawn from one of two possible populations. \\[0.2em]
+
+\textbf{Null Hypothesis} $(H_0)$ : The sample is drawn from a population whose mean is $\mu_0$ and variance $\sigma_0^2$ \textit{i.e.}
+$$\bar{X} \sim N\left(\mu_0, \dfrac{\sigma_0^2}{n} \right) \equiv N\left( \mu_0, SE_0^2 \right).$$
+
+\textbf{Alternative Hypothesis} $(H_1)$ : The sample is drawn from a population whose mean is $\mu_1$ and variance $\sigma_1^2$ \textit{i.e.}
+$$\bar{X} \sim N\left(\mu_1, \dfrac{\sigma_1^2}{n} \right) \equiv N\left( \mu_1, SE_1^2 \right).$$
+
+Let $\Delta = |\mu_0 - \mu_1|$. We \textit{assume} that $\sigma_0^2$ and $\sigma_1^2$ are known. For now we also assume $\mu_1 > \mu_0$ \textit{i.e.} $\mu_1 = \mu_0 + \Delta$. In other words, we have an one-sided alternative hypothesis. \\[0.2em]
+
+Under $H_0$, $Z = \dfrac{\sqrt{n}\left(\bar{X} - \mu_0 \right)}{\sigma_0} = \dfrac{\bar{X} - \mu_0}{SE_0}\sim N(0, 1).$ \\[0.1em]
+
+We reject $H_0$ at level of significance $\alpha$ if observed $Z > \tau_{\alpha}$ where $\tau_{\alpha}$ is upper $\alpha$ point for a standard normal distribution \textit{i.e.} $P(Z > \tau_{\alpha}) = \alpha$ where $Z \sim N(0, 1)$.
+
+So $H_0$ is rejected when 
+\begin{align*}
+\dfrac{\bar{x} - \mu_0}{SE_0} &> \tau_{\alpha} \\[0.25em]
+\Rightarrow \bar{x} &> \mu_0 + \tau_{\alpha} \cdot SE_0.
+\end{align*}
+
+Let $1-\beta$ be the power of the test.
+
+\begin{align*}
+P[\text{Rejecting } H_0 \text{ when } H_1 \text{ is true}] &= P[\bar{x} > \mu_0 + \tau_{\alpha} \cdot SE_0 \text{ when } H_1 \text{ is true}] \\[0.25em]
+&= P\left[\dfrac{\bar{x} - \mu_1}{SE_1} > \dfrac{\tau_{\alpha} \cdot SE_0 + \mu_0 - \mu_1}{SE_1} \text{ when } H_1 \text{ is true}\right] \\[0.25em]
+&= P\left[Z > \dfrac{\tau_{\alpha} \cdot SE_0 + \mu_0 - \mu_1}{SE_1} \right] \,\, \text{as } \bar{X} \overset{H_1}{\sim} N\left( \mu_1, SE_1^2 \right)\\[0.25em]
+&= P\left[ Z > \dfrac{\tau_{\alpha} \cdot SE_0 - \Delta}{SE_1}\right] \\[0.25em]
+\Rightarrow 1 - \beta &= P\left[ Z > \dfrac{\tau_{\alpha} \cdot SE_0 - \Delta}{SE_1}\right] \\[0.25em]
+\Rightarrow \dfrac{\tau_{\alpha} \cdot SE_0 - \Delta}{SE_1} &= \tau_{1-\beta} \\[0.25em]
+\end{align*}
+
+\begin{equation}
+\therefore \,\, \Delta = \tau_{\alpha} \cdot SE_0 - \tau_{1 - \beta} \cdot SE_1
+\end{equation}
+
+\subsection{Comparison of Means between Two Independent Populations}
+
+Let the means of the two populations of the characteristics under study in the populations are $\mu_1$ and $\mu_2$ \& the variances are $\sigma_1^2$ and $\sigma_2^2$ respectively. \\[0.1em]
+
+To test $H_0$ : $\mu_1 = \mu_2$ against $H_1$ : $\mu_1 \neq \mu_2$ or $H_0$ : $\mu_1 - \mu_2 = 0$ against $H_1$ : $|\mu_1 - \mu_2| = \Delta$. \\[0.1em]
+
+We know that for a two-tailed test, the difference of anticipated means $\Delta$ between the two populations at level of significance $\alpha$ and power $1-\beta$ can be presented as:
+\begin{equation}\label{base_equation_means_two_independent_populations}
+\Delta = \tau_{\alpha/2} \cdot SE_0 - \tau_{1 - \beta} \cdot SE_1.
+\end{equation}
+
+Let the samples of sizes $n_1$ and $n_2$ are taken from the two independent populations.  The standard error of the difference of sample means between the two independent populations then can be obtained as:
+$$SE(\bar{x_1} - \bar{x_2}) = \sqrt{\dfrac{\sigma_1^2}{n_1} + \dfrac{\sigma_2^2}{n_2}}.$$
+
+If the variances of the two populations are not known, these variances are replaced by their unbiased estimates. Let the respective sample variances $s_1^2$ and $s_2^2$ be the unbiased estimates of $\sigma_1^2$ and $\sigma_2^2$. \\[0.1em]
+
+Under $H_0$, $SE_0(\bar{x_1} - \bar{x_2}) = \sqrt{\dfrac{\sigma_1^2}{n_1} + \dfrac{\sigma_2^2}{n_2}}$ and under $H_1$, $SE_1(\bar{x_1} - \bar{x_2}) = \sqrt{\dfrac{\sigma_1^2}{n_1} + \dfrac{\sigma_2^2}{n_2}}.$ \\[0.1em]
+
+If we further assume that the two variances are unknown but equal \textit{i.e.} $\sigma_1^2 = \sigma_2^2 = \sigma^2$, then
+$$SE_0(\bar{x_1} - \bar{x_2}) = SE_1(\bar{x_1} - \bar{x_2}) = SE(\bar{x_1} - \bar{x_2}) = \sqrt{\left(\dfrac{1}{n_1} + \dfrac{1}{n_2}\right) \cdot \sigma^2}.$$
+
+$\sigma^2$ is unknown and it is estimated by the \textit{pooled variance} $s^2$ which is given by
+
+$$s^2 = \dfrac{(n_1 - 1) s_1^2 + (n_2 - 1) s_2^2}{(n_1 + n_2 - 2)}.$$
+
+Using the above estimate of $\sigma^2$ in $SE_0$ and $SE_1$, from (\ref{base_equation_means_two_independent_populations}), we continue as follows :
+\begin{align*}
+\Delta &= \tau_{\alpha/2} \cdot \sqrt{\left(\dfrac{1}{n_1} + \dfrac{1}{n_2}\right) \cdot s^2} - \tau_{1 - \beta} \cdot \sqrt{\left(\dfrac{1}{n_1} + \dfrac{1}{n_2}\right) \cdot s^2} \\[0.2em]
+\Rightarrow \Delta &= \left( \tau_{\alpha/2} - \tau_{1 - \beta} \right) \cdot \sqrt{\left(\dfrac{1}{n_1} + \dfrac{1}{n_2}\right) \cdot s^2} \\[0.2em]
+\Rightarrow \left(\dfrac{1}{n_1} + \dfrac{1}{n_2}\right) &= \dfrac{\Delta^2}{\left( \tau_{\alpha/2} - \tau_{1 - \beta} \right)^2 \cdot s^2}
+\end{align*}
+
+If sample size of second population is $k$ times of the first population, \textit{i.e.}, $n_2 = k n_1$, then we obtain
+\begin{equation}
+n_1 = \dfrac{\left( \tau_{\alpha/2} - \tau_{1 - \beta} \right)^2 \cdot \left( 1 + \dfrac{1}{k} \right) \cdot s^2}{\Delta^2}
+\end{equation}
+
+Once the sample size for the first population is obtained, the sample size for the second population can be obtained simply by multiplying a predetermined multiplier $k$, \textit{i.e.}, $kn_1$. \\[0.1em]
+
+For $k = 1$, we have $n_1 = \dfrac{\left( \tau_{\alpha/2} - \tau_{1 - \beta} \right)^2 \cdot 2 s^2}{\Delta^2} = n_2$. \\[0.2em]
+
+The above formula can be rewritten as $n_1 = \dfrac{\left( \tau_{\alpha/2} - \tau_{1 - \beta} \right)^2 \cdot 2}{\left(\dfrac{s}{\Delta}\right)^2}$ where $\dfrac{s}{\Delta}$ is called the \textit{\textbf{Cohen effect size}}. Cohen defined
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+
+\begin{center}
+\begin{tabular}{|>{\centering}m{2cm}||>{\centering\arraybackslash}m{4cm}|}
+\hline
+Value & Effect Size \\
+\hline
+\hline
+0.2 & Small effect size \\
+\hline
+0.5 & Medium effect size \\
+\hline
+0.8 & Large effect size \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\newpage
+
+\leftpointright \hspace{0.1cm} \underline{A Case Scenario} : A cross sectional comparative study will be carried out to compare $25-$hydroxy vitamin D levels (ng/ml) between tuberculosis patients and normal subjects. The minimum significant difference between the two groups was expected to be $2$ ng/ml. The common standard deviation of $25-$hydroxy vitamin D levels was $5$ ng/ml. What is the minimum sample size required per group to detect this difference with $5\%$ level of significance and $80\%$ power ?
+
+\vspace{0.2cm}
+
+$\Delta = 2$, known $\sigma^2 = 5$, $\alpha = 0.05$, $1-\beta = 0.8$, equal sized groups. $\tau_{0.025} = 1.96$, $\tau_{0.8} = -0.84$. \\[0.2em]
+
+\begin{center}
+$n_1 \geq \dfrac{(1.96 - (-0.84))^2 \cdot 2 \cdot 5^2}{2^2} = 98$; $n_2 \geq 98$.
+\end{center}
+
+\smallpencil \hspace{0.1cm} \underline{Write up} : The sample size was estimated by using the formula for comparison of two independent mean. Anticipating a minimum significant difference of $2$ ng/ml for $25-$hydroxy vitamin D levels (ng/ml) between tuberculosis patient and normal subject and a standard deviation of $5$ ng/ml, the minimum sample size required is $98$ subjects in each group at $5\%$ level of significance and $80\%$ power.
+
+\subsection{Comparison of Proportions between Two Independent Populations}
+
+Let the proportions of the two populations of the characteristics under study in the populations are $P_1$ and $P_2$ \& the variances are $P_1Q_1$ and $P_2Q_2$ respectively. \\[0.1em]
+
+To test $H_0$ : $P_1 = P_2$ against $H_1$ : $P_1 \neq P_2$ or $H_0$ : $P_1 - P_2 = 0$ against $H_1$ : $|P_1 - P_2| = \Delta$. \\[0.1em]
+
+We know that for a two-tailed test, the difference of anticipated proportions $\Delta$ between the two populations at level of significance $\alpha$ and power $1-\beta$ can be presented as equation (\ref{base_equation_means_two_independent_populations}):
+\begin{equation}
+\Delta = \tau_{\alpha/2} \cdot SE_0 - \tau_{1 - \beta} \cdot SE_1.
+\end{equation}
+
+Let the samples of sizes $n_1$ and $n_2$ are taken from the two independent populations.  The standard error of the difference of sample proportions between the two independent populations then can be obtained as:
+$$SE(p_1 - p_2) = \sqrt{\dfrac{P_1Q_1}{n_1} + \dfrac{P_2Q_2}{n_2}}.$$
+
+If the variances of the two populations are not known, these variances are replaced by their unbiased estimates. Let $p_1q_1$ and $p_2q_2$ be the unbiased estimates of $P_1Q_1$ and $P_2Q_2$. \\[0.1em]
+
+Under $H_0$ : $P_1 = P_2 = P$, $SE_0(p_1 - p_2) = \sqrt{\dfrac{pq}{n_1} + \dfrac{pq}{n_2}}$ and \\[0.3em]
+
+under $H_1$, $SE_1(p_1 - p_2) = \sqrt{\dfrac{p_1q_1}{n_1} + \dfrac{p_2q_2}{n_2}}.$ \\[0.1em]
+
+Replacing the standard errors under $H_0$ and $H_1$ in (\ref{base_equation_means_two_independent_populations}), we get
+\begin{align*}
+\Delta &= \tau_{\alpha/2} \cdot \sqrt{\dfrac{pq}{n_1} + \dfrac{pq}{n_2}} - \tau_{1 - \beta} \cdot \sqrt{\dfrac{p_1q_1}{n_1} + \dfrac{p_2q_2}{n_2}}
+\end{align*}
+
+If sample size of second population is $k$ times of the first population, \textit{i.e.}, $n_2 = k n_1$, then we get
+\begin{align*}
+\Delta &= \tau_{\alpha/2} \cdot \sqrt{\dfrac{pq}{n_1} + \dfrac{pq}{kn_1}} - \tau_{1 - \beta} \cdot \sqrt{\dfrac{p_1q_1}{n_1} + \dfrac{p_2q_2}{kn_1}} \\[0.3em]
+\Rightarrow \Delta &= \tau_{\alpha/2} \cdot \sqrt{\dfrac{pq}{n_1} \left( 1 + \dfrac{1}{k} \right)} - \tau_{1 - \beta} \cdot \sqrt{\dfrac{1}{n_1} \left( p_1q_1 + \dfrac{p_2q_2}{k} \right)} \\[0.3em]
+\Rightarrow \Delta^2 &= \dfrac{1}{n_1} \left[ \tau_{\alpha/2} \cdot \sqrt{pq \left( 1 + \dfrac{1}{k} \right)} - \tau_{1 - \beta} \cdot \sqrt{\left( p_1q_1 + \dfrac{p_2q_2}{k} \right)} \right]^2 \\[0.3em]
+\Rightarrow n_1 &= \dfrac{\left[ \tau_{\alpha/2} \cdot \sqrt{pq \left( 1 + \dfrac{1}{k} \right)} - \tau_{1 - \beta} \cdot \sqrt{\left( p_1q_1 + \dfrac{p_2q_2}{k} \right)} \right]^2}{\Delta^2}
+\end{align*}
+
+Once the sample size for the first population is obtained, the sample size for the second population can be obtained simply by multiplying a predetermined multiplier $k$, \textit{i.e.}, $kn_1$. \\[0.1em]
+
+For $k = 1$, we have $n_1 = \dfrac{\left[ \tau_{\alpha/2} \cdot \sqrt{2pq} - \tau_{1 - \beta} \cdot \sqrt{\left( p_1q_1 + p_2q_2 \right)} \right]^2}{\Delta^2} = n_2$. \\[0.2em]
+
+\leftpointright \hspace{0.1cm} \underline{A Case Scenario} : A randomized controlled trial will be carried out to compare the effect of two anaesthetic techniques \textit{Spinal Anaesthesia through median approach} \& \textit{Spinal Anaesthesia through para-median approach} on post-dural back pain during the early post-operative period. Anticipated incidence of back pain in Median approach is $0.36$ and anticipated incidence of back pain in para-median approach is $0.16$. We anticipate that the patients receiving Spinal Anaesthesia through `para-median' approach will have reduction in the incidence of back-pain from those receiving through the `median approach'. What should be the minimum sample size required per group to detect this difference with $5\%$ level of significance and $80\%$ power ?
+
+\vspace{0.2cm}
+
+$\Delta = 0.36 - 0.16 = 0.2$, known $P_1 = 0.36$, known $P_2 = 0.16$, $\alpha = 0.05$, $1-\beta = 0.8$, equal sized groups. $\tau_{0.025} = 1.96$, $\tau_{0.8} = -0.84$. \\
+
+Take $P = \dfrac{P_1 + P_2}{2} = \dfrac{0.36 + 0.16}{2} = 0.26.$ \\[0.2em]
+
+\begin{center}
+$n_1 \geq \dfrac{\left[ 1.96 \cdot \sqrt{2 \cdot 0.26 \cdot 0.74} - (- 0.84) \cdot \sqrt{\left( 0.36 \cdot 0.64 + 0.16 \cdot 0.84 \right)} \right]^2}{0.2^2} = 75$; $n_2 \geq 75$.
+\end{center}
+
+\smallpencil \hspace{0.1cm} \underline{Write up} : The sample size is estimated using the sample size formula for comparing two independent proportions. Anticipated incidence of back pain in the median technique as $36\%$ and considering a $20\%$ reduction in the incidence of back pain in the para-median approach as clinically important, at a $5\%$ level of significance and $80\%$ power, the study would require $75$ participants in each anaesthetic technique.
+\end{document}
