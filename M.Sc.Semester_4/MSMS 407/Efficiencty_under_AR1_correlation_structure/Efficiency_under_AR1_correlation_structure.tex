@@ -1,0 +1,297 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 1 in, right = 1 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\title{Efficiency under AR(1) Correlation Structure}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
+\date{}
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+
+\begin{document}
+
+\maketitle
+
+Consider the repeated measurements to have the correlation structure of an AR$(1)$ process \textit{i.e.}
+
+$$R = ((R_{jk})) \,\,\, \text{where} \,\,\, R_{jk} = \rho^{|j-k|}.$$
+
+First, we must calculate $R^{-1}$. For simplicity, we initially consider  $R$ to be a $4 \times 4$ matrix; of course we can generalize the result later.
+
+\begin{align*}
+R &=
+\begin{bmatrix}
+1 & \rho & \rho^2 & \rho^3 \\
+\rho & 1 & \rho & \rho^2 \\
+\rho^2 & \rho & 1 & \rho \\
+\rho^3 & \rho^2 & \rho & 1
+\end{bmatrix}.
+\end{align*}
+
+We employ Gauss-Jordan elimination to obtain $R^{-1}$ as follows :
+
+\begin{align*}
+&
+\left[
+\begin{array}{cccc|cccc}
+1 & \rho & \rho^2 & \rho^3 & 1 & 0 & 0 & 0 \\
+\rho & 1 & \rho & \rho^2 & 0 & 1 & 0 & 0 \\
+\rho^2 & \rho & 1 & \rho & 0 & 0 & 1 & 0 \\
+\rho^3 & \rho^2 & \rho & 1 & 0 & 0 & 0 & 1
+\end{array}
+\right]
+\\[1.5em] %1
+\substack{
+\text{new} R_2 \; = \; R_2 - \rho R_1 \\[0.3em]
+\text{new} R_3 \; = \; R_3 - \rho^2 R_1 \\[0.3em]
+\text{new} R_4 \; = \; R_4 - \rho^3 R_1
+}
+\xrightarrow{\hspace{1.5cm}}
+&
+\left[
+\begin{array}{cccc|cccc}
+1 & \rho & \rho^2 & \rho^3 & 1 & 0 & 0 & 0 \\
+0 & 1-\rho^2 & \rho-\rho^3 & \rho^2-\rho^4 & -\rho & 1 & 0 & 0 \\
+0 & \rho-\rho^3 & 1-\rho^4 & \rho-\rho^5 & -\rho^2 & 0 & 1 & 0 \\
+0 & \rho^2-\rho^4 & \rho-\rho^5 & 1-\rho^6 & -\rho^3 & 0 & 0 & 1
+\end{array}
+\right]
+\\[1.5em] %2
+\substack{
+\text{new} R_2 \; = \; \dfrac{1}{1-\rho^2} R_2
+}
+\xrightarrow{\hspace{1.5cm}}
+&
+{
+\renewcommand{\arraystretch}{2}
+\left[
+\begin{array}{cccc|cccc}
+1 & \rho & \rho^2 & \rho^3 & 1 & 0 & 0 & 0 \\
+0 & 1 & \rho & \rho^2 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 & 0 \\
+0 & \rho-\rho^3 & 1-\rho^4 & \rho-\rho^5 & -\rho^2 & 0 & 1 & 0 \\
+0 & \rho^2-\rho^4 & \rho-\rho^5 & 1-\rho^6 & -\rho^3 & 0 & 0 & 1
+\end{array}
+\right]
+}
+\\[1.5em] %3
+\substack{
+\text{new} R_1 \; = \; R_1 - \rho R_2 \\[0.3em]
+\text{new} R_3 \; = \; R_3 - (\rho - \rho^3) R_2 \\[0.3em]
+\text{new} R_4 \; = \; R_4 - (\rho^2 - \rho^4) R_2
+}
+\xrightarrow{\hspace{1.5cm}}
+&
+{
+\renewcommand{\arraystretch}{2}
+\left[
+\begin{array}{cccc|cccc}
+1 & 0 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 & 0 \\
+0 & 1 & \rho & \rho^2 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 & 0 \\
+0 & 0 & 1-\rho^2 & \rho-\rho^3 & 0 & -\rho & 1 & 0 \\
+0 & 0 & \rho-\rho^3 & 1-\rho^4 & 0 & -\rho^2 & 0 & 1
+\end{array}
+\right]
+}
+\\[1.5em] %4
+\substack{
+\text{new} R_3 \; = \; \dfrac{1}{1-\rho^2} R_3
+}
+\xrightarrow{\hspace{1.5cm}}
+&
+{
+\renewcommand{\arraystretch}{2}
+\left[
+\begin{array}{cccc|cccc}
+1 & 0 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 & 0 \\
+0 & 1 & \rho & \rho^2 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 & 0 \\
+0 & 0 & 1 & \rho & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 \\
+0 & 0 & \rho-\rho^3 & 1-\rho^4 & 0 & -\rho^2 & 0 & 1
+\end{array}
+\right]
+}
+\\[1.5em] %5
+\substack{
+\text{new} R_2 \; = \; R_2 - \rho R_3 \\[0.3em]
+\text{new} R_4 \; = \; R_4 - (\rho - \rho^3) R_3
+}
+\xrightarrow{\hspace{1.5cm}}
+&
+{
+\renewcommand{\arraystretch}{2}
+\left[
+\begin{array}{cccc|cccc}
+1 & 0 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 & 0 \\
+0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1+\rho^2}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 \\
+0 & 0 & 1 & \rho & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 \\
+0 & 0 & 0 & 1-\rho^2 & 0 & 0 & -\rho & 1
+\end{array}
+\right]
+}
+\\[1.5em] %6
+\substack{
+\text{new} R_4 \; = \; \dfrac{1}{1-\rho^2} R_4
+}
+\xrightarrow{\hspace{1.5cm}}
+&
+{
+\renewcommand{\arraystretch}{2}
+\left[
+\begin{array}{cccc|cccc}
+1 & 0 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 & 0 \\
+0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1+\rho^2}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 \\
+0 & 0 & 1 & \rho & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2}
+\end{array}
+\right]
+}
+\\[1.5em] %7
+\substack{
+\text{new} R_3 \; = \; R_3 - \rho R_4
+}
+\xrightarrow{\hspace{1.5cm}}
+&
+{
+\renewcommand{\arraystretch}{2}
+\left[
+\begin{array}{cccc|cccc}
+1 & 0 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 & 0 \\
+0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1+\rho^2}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 \\
+0 & 0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1+\rho^2}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} \\
+0 & 0 & 0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2}
+\end{array}
+\right]
+}
+\end{align*}
+
+\begin{align*}
+\therefore \; R^{-1} =
+{
+\renewcommand{\arraystretch}{1.5}
+\dfrac{1}{1-\rho^2}
+\left[
+\begin{array}{cccc}
+1 & -\rho & 0 & 0 \\
+-\rho & 1+\rho^2 & -\rho & 0 \\
+0 & -\rho & 1+\rho^2 & -\rho \\
+0 & 0 & -\rho & 1
+\end{array}
+\right].
+}
+\end{align*}
+
+Thus, in general,
+
+\begin{align*}
+\therefore \; R^{-1} =
+{
+\renewcommand{\arraystretch}{1.5}
+\dfrac{1}{1-\rho^2}
+\left[
+\begin{array}{cccccc}
+1 & -\rho & 0 & 0 & \ldots & 0 \\
+-\rho & 1+\rho^2 & -\rho & 0 & \ldots & 0 \\
+0 & -\rho & 1+\rho^2 & -\rho & \ldots & 0 \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
+0 & 0 & 0 & 0 & -\rho & 1
+\end{array}
+\right].
+}
+\end{align*}
+
+
+Now we have to calculate $X_i'R^{-1}X_i$. We proceed as follows.
+
+\begin{align*}
+&
+X_i'R^{-1}X_i \\[0.2em]
+=
+&
+\begin{bmatrix}
+1 & 1 & \ldots & 1 \\
+x_{i1} & x_{i2} & \ldots & x_{in}
+\end{bmatrix}
+\cdot
+\dfrac{1}{1-\rho^2}
+\begin{bmatrix}
+1 & -\rho & 0 & 0 & \ldots & 0 \\
+-\rho & 1+\rho^2 & -\rho & 0 & \ldots & 0 \\
+0 & -\rho & 1+\rho^2 & -\rho & \ldots & 0 \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
+0 & 0 & 0 & 0 & -\rho & 1
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+1 & x_{i1} \\
+1 & x_{i2} \\
+\vdots & \vdots \\
+1 & x_{in}
+\end{bmatrix}
+\\[1em]
+=
+&
+\dfrac{1}{1-\rho^2}
+\begin{bmatrix}
+1-\rho & 1-2\rho+\rho^2 & 1-2\rho+\rho^2 & \ldots & 1-\rho \\
+x_{i1}-\rho x_{i2} & (1+\rho^2)x_{i2}-\rho(x_{i1}+x_{i3}) & (1+\rho^2)x_{i3}-\rho(x_{i2}+x_{i4}) & \ldots & x_{in}-\rho x_{i,n-1}
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+1 & x_{i1} \\
+1 & x_{i2} \\
+\vdots & \vdots \\
+1 & x_{in}
+\end{bmatrix}
+\\[1em]
+=
+&
+\dfrac{1}{1-\rho^2}
+\begin{bmatrix}
+2(1-\rho) + (1-2\rho+\rho^2)(n-2) & (1-\rho)(x_{i1} + x_{in}) + (1-2\rho+\rho^2) \sum \limits_{j = 2}^{n-1} x_{ij} \\
+(1-\rho)(x_{i1} + x_{in}) + (1-2\rho+\rho^2) \sum \limits_{j = 2}^{n-1} x_{ij} & x_{i1}^2 + x_{in}^2 + (1+\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij}^2 - 2\rho \sum \limits_{j = 1}^{n-1}x_{ij}x_{i,j+1}
+\end{bmatrix}
+\\[1em]
+=
+&
+\dfrac{1}{(1+\rho)(1-\rho)}
+\begin{bmatrix}
+2(1-\rho) + (1-\rho)^2(n-2) & (1-\rho)(x_{i1} + x_{in}) + (1-\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij} \\
+(1-\rho)(x_{i1} + x_{in}) + (1-\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij} & x_{i1}^2 + x_{in}^2 + (1+\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij}^2 - 2\rho \sum \limits_{j = 1}^{n-1}x_{ij}x_{i,j+1}
+\end{bmatrix}
+\end{align*}
+\end{document}
