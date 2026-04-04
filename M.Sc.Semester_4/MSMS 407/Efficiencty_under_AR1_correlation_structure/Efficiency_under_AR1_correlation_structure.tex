@@ -1,6 +1,6 @@
 \documentclass[11pt, a4paper]{article}
 
-\usepackage[top = 1 in, bottom = 1 in, left = 1 in, right = 1 in]{geometry}
+\usepackage[top = 1 in, bottom = 1 in, left = 0.5 in, right = 0.5 in]{geometry}
 
 \usepackage{amsmath, amssymb, amsfonts}
 \allowdisplaybreaks[4]
@@ -35,7 +35,7 @@
 
 
 
-\title{Efficiency under AR(1) Correlation Structure}
+\title{MSMS 407 : Longitudinal Data Analysis}
 \author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
 \date{}
 
@@ -48,48 +48,78 @@
 
 \maketitle
 
-Consider the repeated measurements to have the correlation structure of an AR$(1)$ process \textit{i.e.}
+\section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Efficiency of a Cross-sectional Study relative to a Longitudinal Study under AR(1) Correlation Structure}}
 
-$$R = ((R_{jk})) \,\,\, \text{where} \,\,\, R_{jk} = \rho^{|j-k|}.$$
+We have to calculate 
 
-First, we must calculate $R^{-1}$. For simplicity, we initially consider  $R$ to be a $4 \times 4$ matrix; of course we can generalize the result later.
+\begin{equation}
+e = \dfrac{\text{Var}(\hat{\beta}_L)}{\text{Var}(\hat{\beta}_C)}
+\end{equation}
 
-\begin{align*}
-R &=
+$$\text{where } \text{Var}(\hat{\beta}_C) = \dfrac{\sigma^2}{\sum \limits_{i = 1}^{m} (x_{i1} - \bar{x}_1)^2} \qquad \& \qquad \text{Var}(\hat{\beta}_L) = \sigma^2 \left[ \left\{\sum \limits_{i = 1}^{m} X_i' R_i^{-1} X_i \right\}^{-1} \right]_{22}.
+$$
+Consider the repeated measurements of all the subjects to have the correlation structure of an AR$(1)$ process \textit{i.e.} $R_i \equiv R \; \forall i = 1(1)m$ where
+
+$$R = ((R_{jk})) \,\,\, \text{with} \,\,\, R_{jk} = \rho^{|j-k|}.$$
+
+\begin{itemize}
+
+\item[\scalebox{2.0}{\twemoji{keycap: 1}}] \hspace{0.2cm} To obtain $R^{-1}$, we perform an induction on $n$. For $n := 1$,
+
+\begin{equation}
+R_1 = [1] \qquad \& \qquad \& R_1^{-1} = [1].
+\end{equation}
+
+For $n := 2$,
+
+\begin{equation}
+R_2 =
 \begin{bmatrix}
-1 & \rho & \rho^2 & \rho^3 \\
-\rho & 1 & \rho & \rho^2 \\
-\rho^2 & \rho & 1 & \rho \\
-\rho^3 & \rho^2 & \rho & 1
+1 & \rho \\ \rho & 1
+\end{bmatrix}
+\qquad \& \qquad
+R_2^{-1} =
+\dfrac{1}{1-\rho^2}
+\begin{bmatrix}
+1 & -\rho \\ -\rho & 1
 \end{bmatrix}.
-\end{align*}
+\end{equation}
 
-We employ Gauss-Jordan elimination to obtain $R^{-1}$ as follows :
+For $n := 3$,
+
+\begin{equation*}
+R_3 =
+\begin{bmatrix}
+1 & \rho & \rho^2 \\
+\rho & 1 & \rho \\
+\rho^2 & \rho & 1
+\end{bmatrix}.
+\end{equation*}
+
+We employ Gauss-Jordan elimination to obtain $R_3^{-1}$ as follows :
 
 \begin{align*}
 &
 \left[
-\begin{array}{cccc|cccc}
-1 & \rho & \rho^2 & \rho^3 & 1 & 0 & 0 & 0 \\
-\rho & 1 & \rho & \rho^2 & 0 & 1 & 0 & 0 \\
-\rho^2 & \rho & 1 & \rho & 0 & 0 & 1 & 0 \\
-\rho^3 & \rho^2 & \rho & 1 & 0 & 0 & 0 & 1
+\begin{array}{ccc|ccc}
+1 & \rho & \rho^2 & 1 & 0 & 0 \\
+\rho & 1 & \rho &  0 & 1 & 0 \\
+\rho^2 & \rho & 1 & 0 & 0 & 1 \\
+\rho^3 & \rho^2 & 1 & 0 & 0 & 0
 \end{array}
 \right]
 \\[1.5em] %1
 \substack{
 \text{new} R_2 \; = \; R_2 - \rho R_1 \\[0.3em]
-\text{new} R_3 \; = \; R_3 - \rho^2 R_1 \\[0.3em]
-\text{new} R_4 \; = \; R_4 - \rho^3 R_1
+\text{new} R_3 \; = \; R_3 - \rho^2 R_1
 }
 \xrightarrow{\hspace{1.5cm}}
 &
 \left[
-\begin{array}{cccc|cccc}
-1 & \rho & \rho^2 & \rho^3 & 1 & 0 & 0 & 0 \\
-0 & 1-\rho^2 & \rho-\rho^3 & \rho^2-\rho^4 & -\rho & 1 & 0 & 0 \\
-0 & \rho-\rho^3 & 1-\rho^4 & \rho-\rho^5 & -\rho^2 & 0 & 1 & 0 \\
-0 & \rho^2-\rho^4 & \rho-\rho^5 & 1-\rho^6 & -\rho^3 & 0 & 0 & 1
+\begin{array}{ccc|ccc}
+1 & \rho & \rho^2 & 1 & 0 & 0 \\
+0 & 1-\rho^2 & \rho-\rho^3 & -\rho & 1 & 0 \\
+0 & \rho-\rho^3 & 1-\rho^4 &-\rho^2 & 0 & 1 \\
 \end{array}
 \right]
 \\[1.5em] %2
@@ -101,124 +131,84 @@ We employ Gauss-Jordan elimination to obtain $R^{-1}$ as follows :
 {
 \renewcommand{\arraystretch}{2}
 \left[
-\begin{array}{cccc|cccc}
-1 & \rho & \rho^2 & \rho^3 & 1 & 0 & 0 & 0 \\
-0 & 1 & \rho & \rho^2 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 & 0 \\
-0 & \rho-\rho^3 & 1-\rho^4 & \rho-\rho^5 & -\rho^2 & 0 & 1 & 0 \\
-0 & \rho^2-\rho^4 & \rho-\rho^5 & 1-\rho^6 & -\rho^3 & 0 & 0 & 1
+\begin{array}{ccc|ccc}
+1 & \rho & \rho^2 & 1 & 0 & 0 \\
+0 & 1 & \rho & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 \\
+0 & \rho-\rho^3 & 1-\rho^4 & -\rho^2 & 0 & 1
 \end{array}
 \right]
 }
 \\[1.5em] %3
 \substack{
-\text{new} R_1 \; = \; R_1 - \rho R_2 \\[0.3em]
-\text{new} R_3 \; = \; R_3 - (\rho - \rho^3) R_2 \\[0.3em]
-\text{new} R_4 \; = \; R_4 - (\rho^2 - \rho^4) R_2
+\text{new } R_1 \; = \; R_1 - \rho R_2 \\[0.3em]
+\text{new } R_3 \; = \; R_3 - (\rho - \rho^3) R_2
 }
 \xrightarrow{\hspace{1.5cm}}
 &
 {
 \renewcommand{\arraystretch}{2}
 \left[
-\begin{array}{cccc|cccc}
-1 & 0 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 & 0 \\
-0 & 1 & \rho & \rho^2 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 & 0 \\
-0 & 0 & 1-\rho^2 & \rho-\rho^3 & 0 & -\rho & 1 & 0 \\
-0 & 0 & \rho-\rho^3 & 1-\rho^4 & 0 & -\rho^2 & 0 & 1
+\begin{array}{ccc|ccc}
+1 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 \\
+0 & 1 & \rho & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 \\
+0 & 0 & 1-\rho^2 & 0 & -\rho & 1
 \end{array}
 \right]
 }
 \\[1.5em] %4
 \substack{
-\text{new} R_3 \; = \; \dfrac{1}{1-\rho^2} R_3
+\text{new } R_3 \; = \; \dfrac{1}{1-\rho^2} R_3
 }
 \xrightarrow{\hspace{1.5cm}}
 &
 {
 \renewcommand{\arraystretch}{2}
 \left[
-\begin{array}{cccc|cccc}
-1 & 0 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 & 0 \\
-0 & 1 & \rho & \rho^2 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 & 0 \\
-0 & 0 & 1 & \rho & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 \\
-0 & 0 & \rho-\rho^3 & 1-\rho^4 & 0 & -\rho^2 & 0 & 1
+\begin{array}{ccc|ccc}
+1 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 \\
+0 & 1 & \rho & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 \\
+0 & 0 & 1 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2}
 \end{array}
 \right]
 }
 \\[1.5em] %5
 \substack{
-\text{new} R_2 \; = \; R_2 - \rho R_3 \\[0.3em]
-\text{new} R_4 \; = \; R_4 - (\rho - \rho^3) R_3
+\text{new } R_2 \; = \; R_2 - \rho R_3
 }
 \xrightarrow{\hspace{1.5cm}}
 &
 {
 \renewcommand{\arraystretch}{2}
 \left[
-\begin{array}{cccc|cccc}
-1 & 0 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 & 0 \\
-0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1+\rho^2}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 \\
-0 & 0 & 1 & \rho & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 \\
-0 & 0 & 0 & 1-\rho^2 & 0 & 0 & -\rho & 1
-\end{array}
-\right]
-}
-\\[1.5em] %6
-\substack{
-\text{new} R_4 \; = \; \dfrac{1}{1-\rho^2} R_4
-}
-\xrightarrow{\hspace{1.5cm}}
-&
-{
-\renewcommand{\arraystretch}{2}
-\left[
-\begin{array}{cccc|cccc}
-1 & 0 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 & 0 \\
-0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1+\rho^2}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 \\
-0 & 0 & 1 & \rho & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2} & 0 \\
-0 & 0 & 0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2}
-\end{array}
-\right]
-}
-\\[1.5em] %7
-\substack{
-\text{new} R_3 \; = \; R_3 - \rho R_4
-}
-\xrightarrow{\hspace{1.5cm}}
-&
-{
-\renewcommand{\arraystretch}{2}
-\left[
-\begin{array}{cccc|cccc}
-1 & 0 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 & 0 \\
-0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1+\rho^2}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 \\
-0 & 0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1+\rho^2}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} \\
-0 & 0 & 0 & 1 & 0 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2}
+\begin{array}{ccc|ccc}
+1 & 0 & 0 & \dfrac{1}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} & 0 \\
+0 & 1 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1+\rho^2}{1-\rho^2} & -\dfrac{\rho}{1-\rho^2} \\
+0 & 0 & 1 & 0 & -\dfrac{\rho}{1-\rho^2} & \dfrac{1}{1-\rho^2}
 \end{array}
 \right]
 }
 \end{align*}
 
-\begin{align*}
-\therefore \; R^{-1} =
+
+\begin{align}
+\therefore \; R_3^{-1} =
 {
 \renewcommand{\arraystretch}{1.5}
 \dfrac{1}{1-\rho^2}
 \left[
-\begin{array}{cccc}
-1 & -\rho & 0 & 0 \\
--\rho & 1+\rho^2 & -\rho & 0 \\
-0 & -\rho & 1+\rho^2 & -\rho \\
-0 & 0 & -\rho & 1
+\begin{array}{ccc}
+1 & -\rho & 0 \\
+-\rho & 1+\rho^2 & -\rho \\
+0 & -\rho & 1
 \end{array}
 \right].
 }
-\end{align*}
+\end{align}
 
-Thus, in general,
+For $n := n$, we assume
 
-\begin{align*}
-\therefore \; R^{-1} =
+\begin{align}\label{induction_n}
+\therefore \; R_n^{-1} =
 {
 \renewcommand{\arraystretch}{1.5}
 \dfrac{1}{1-\rho^2}
@@ -230,12 +220,192 @@ Thus, in general,
 \vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
 0 & 0 & 0 & 0 & -\rho & 1
 \end{array}
+\right]_{n \times n}
+= \dfrac{T_n}{1-\rho^2}, \text{ say}.
+}
+\end{align}
+
+
+\newpage
+
+For $n := n + 1$,
+
+\begin{align}
+R_{n+1} =
+{
+\renewcommand{\arraystretch}{1.5}
+\left[
+\begin{array}{cc}
+R_n & \utilde{r} \\
+\utilde{r'} & 1
+\end{array}
 \right].
+}
+\end{align}
+
+where
+
+\begin{align*}
+\utilde{r} =
+\begin{bmatrix}
+\rho^n \\
+\rho^{n-1} \\
+\vdots \\
+\rho
+\end{bmatrix}.
+\end{align*}
+
+Recall that,
+
+\begin{equation}\label{block_matrix_inverse_formula}
+\begin{bmatrix}
+A & B \\
+B' & d
+\end{bmatrix}^{-1}
+=
+\begin{bmatrix}
+A^{-1} + A^{-1} B S^{-1} B' A^{-1} & -A^{-1} B S^{-1} \\
+- S^{-1} B' A^{-1} & S^{-1}
+\end{bmatrix}
+\end{equation}
+
+where
+
+\begin{align*}
+S = d - B' A^{-1} B.
+\end{align*}
+
+Here, $A = R_n$, $B = \utilde{r}$, $d = 1$.
+
+\begin{align*}
+A^{-1}B = R_n^{-1} \utilde{r} = \dfrac{1}{1 - \rho^2} \cdot T_n \utilde{r} = \dfrac{1}{1 - \rho^2} \cdot \begin{bmatrix}
+0 \\
+0 \\
+\vdots \\
+0 \\
+\rho(1 - \rho^2)
+\end{bmatrix}
+= \begin{bmatrix}
+0 \\
+0 \\
+\vdots \\
+0 \\
+\rho
+\end{bmatrix}.
+\end{align*}
+
+\begin{align*}
+S = 1 - \utilde{r}'R_n^{-1} \utilde{r} = 1 - \begin{bmatrix}
+\rho^n & \rho^{n-1} & \ldots & \rho \end{bmatrix} \cdot \begin{bmatrix}
+0 \\
+0 \\
+\vdots \\
+0 \\
+\rho
+\end{bmatrix} = 1 - \rho^2.
+\end{align*}
+
+
+Using (\ref{block_matrix_inverse_formula}), 
+
+\begin{align*}
+R_{n+1}^{-1} &=
+\begin{bmatrix}
+R_n^{-1} + \dfrac{R_n^{-1} \utilde{r} \utilde{r}' R_n^{-1}}{S} & -\dfrac{R_n^{-1} \utilde{r}}{S} \\[1.5em]
+-\dfrac{\utilde{r}' R_n^{-1}}{S} & \dfrac{1}{S}
+\end{bmatrix} \\[1em]
+&=
+\begin{bmatrix}
+\dfrac{T_n}{S} + \dfrac{R_n^{-1} \utilde{r} \utilde{r}' R_n^{-1}}{S} & -\dfrac{R_n^{-1} \utilde{r}}{S} \\[1.5em]
+-\dfrac{\utilde{r}' R_n^{-1}}{S} & \dfrac{1}{S}
+\end{bmatrix} \\[1em]
+&=
+\dfrac{1}{S}
+\begin{bmatrix}
+T_n + R_n^{-1} \utilde{r} \utilde{r}' R_n^{-1} & -R_n^{-1} \utilde{r} \\[1.5em]
+-\utilde{r}' R_n^{-1} & 1
+\end{bmatrix}.
+\end{align*}
+
+
+Now,
+
+\begin{align*}
+R_n^{-1} \utilde{r} \utilde{r}' R_n^{-1} = \left(R_n^{-1} \utilde{r}\right) \cdot \left(R_n^{-1} \utilde{r}\right)' = \begin{bmatrix}
+0 \\
+0 \\
+\vdots \\
+0 \\
+\rho
+\end{bmatrix} \cdot \begin{bmatrix} 0 &
+0 & \ldots & 0 & \rho \end{bmatrix} 
+=
+\begin{bmatrix}
+0 & \cdots & 0 \\
+\vdots & \ddots & \vdots \\
+0 & \cdots & \rho^2
+\end{bmatrix}_{n \times n}.
+\end{align*}
+
+\begin{align*}
+\therefore T_n + R_n^{-1} \utilde{r} \utilde{r}' R_n^{-1} = 
+{
+\renewcommand{\arraystretch}{1.5}
+\left[
+\begin{array}{cccccc}
+1 & -\rho & 0 & 0 & \ldots & 0 \\
+-\rho & 1+\rho^2 & -\rho & 0 & \ldots & 0 \\
+0 & -\rho & 1+\rho^2 & -\rho & \ldots & 0 \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
+0 & 0 & 0 & 0 & -\rho & 1 + \rho^2
+\end{array}
+\right]
+}
+\end{align*}
+
+\begin{align*}
+\therefore R_{n+1}^{-1} =
+{
+\renewcommand{\arraystretch}{1.5}
+\dfrac{1}{1 - \rho^2}
+\left[
+\begin{array}{ccccccc}
+1 & -\rho & 0 & 0 & \ldots & 0 & {\color{blue} 0} \\
+-\rho & 1+\rho^2 & -\rho & 0 & \ldots & 0 & {\color{blue} 0} \\
+0 & -\rho & 1+\rho^2 & -\rho & \ldots & 0 & {\color{blue} 0} \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots & {\color{blue} \vdots} \\
+0 & 0 & 0 & 0 & \ldots & 1+\rho^2 & {\color{blue} -\rho} \\
+{\color{blue} 0} & {\color{blue} 0} & {\color{blue} 0} & {\color{blue} 0} & {\color{blue} \cdots} & {\color{blue} -\rho} & {\color{red} 1}
+\end{array}
+\right]
+}
+\end{align*}
+
+Hence, by the principle of mathematical induction, we conclude that
+
+\begin{align*}
+\therefore R^{-1} =
+{
+\renewcommand{\arraystretch}{1.5}
+\dfrac{1}{1 - \rho^2}
+\left[
+\begin{array}{ccccccc}
+1 & -\rho & 0 & 0 & \ldots & 0 & 0 \\
+-\rho & 1+\rho^2 & -\rho & 0 & \ldots & 0 & 0 \\
+0 & -\rho & 1+\rho^2 & -\rho & \ldots & 0 & 0 \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & 0 & 0 & \ldots & 1+\rho^2 & -\rho \\
+0 & 0 & 0 & 0 & \cdots & -\rho & 1
+\end{array}
+\right]_{n \times n}.
 }
 \end{align*}
 
 
-Now we have to calculate $X_i'R^{-1}X_i$. We proceed as follows.
+\newpage
+
+
+\item[\scalebox{2.0}{\twemoji{keycap: 2}}] \hspace{0.2cm} Now we have to calculate $X_i'R^{-1}X_i$, hence $\sum \limits_{i = 1}^{m} X_i'R^{-1}X_i$. We proceed as follows.
 
 \begin{align*}
 &
@@ -247,13 +417,34 @@ X_i'R^{-1}X_i \\[0.2em]
 x_{i1} & x_{i2} & \ldots & x_{in}
 \end{bmatrix}
 \cdot
+{
+\renewcommand{\arraystretch}{1.5}
+\dfrac{1}{1 - \rho^2}
+\left[
+\begin{array}{ccccccc}
+1 & -\rho & 0 & 0 & \cdots & 0 & 0 \\
+-\rho & 1+\rho^2 & -\rho & 0 & \cdots & 0 & 0 \\
+0 & -\rho & 1+\rho^2 & -\rho & \cdots & 0 & 0 \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & 0 & 0 & \ldots & 1+\rho^2 & -\rho \\
+0 & 0 & 0 & 0 & \cdots & -\rho & 1
+\end{array}
+\right]
+}
+\cdot
+\begin{bmatrix}
+1 & x_{i1} \\
+1 & x_{i2} \\
+\vdots & \vdots \\
+1 & x_{in}
+\end{bmatrix}
+\\[1em]
+=
+&
 \dfrac{1}{1-\rho^2}
 \begin{bmatrix}
-1 & -\rho & 0 & 0 & \ldots & 0 \\
--\rho & 1+\rho^2 & -\rho & 0 & \ldots & 0 \\
-0 & -\rho & 1+\rho^2 & -\rho & \ldots & 0 \\
-\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & 0 & 0 & -\rho & 1
+1-\rho & 1-2\rho+\rho^2 & 1-2\rho+\rho^2 & \cdots & 1-\rho \\[1em]
+x_{i1}-\rho x_{i2} & (1+\rho^2)x_{i2}-\rho(x_{i1}+x_{i3}) & (1+\rho^2)x_{i3}-\rho(x_{i2}+x_{i4}) & \cdots & x_{in}-\rho x_{i,n-1}
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
@@ -267,31 +458,291 @@ x_{i1} & x_{i2} & \ldots & x_{in}
 &
 \dfrac{1}{1-\rho^2}
 \begin{bmatrix}
-1-\rho & 1-2\rho+\rho^2 & 1-2\rho+\rho^2 & \ldots & 1-\rho \\
-x_{i1}-\rho x_{i2} & (1+\rho^2)x_{i2}-\rho(x_{i1}+x_{i3}) & (1+\rho^2)x_{i3}-\rho(x_{i2}+x_{i4}) & \ldots & x_{in}-\rho x_{i,n-1}
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-1 & x_{i1} \\
-1 & x_{i2} \\
-\vdots & \vdots \\
-1 & x_{in}
-\end{bmatrix}
-\\[1em]
-=
-&
-\dfrac{1}{1-\rho^2}
-\begin{bmatrix}
-2(1-\rho) + (1-2\rho+\rho^2)(n-2) & (1-\rho)(x_{i1} + x_{in}) + (1-2\rho+\rho^2) \sum \limits_{j = 2}^{n-1} x_{ij} \\
+2(1-\rho) + (1-2\rho+\rho^2)(n-2) & (1-\rho)(x_{i1} + x_{in}) + (1-2\rho+\rho^2) \sum \limits_{j = 2}^{n-1} x_{ij} \\[1em]
 (1-\rho)(x_{i1} + x_{in}) + (1-2\rho+\rho^2) \sum \limits_{j = 2}^{n-1} x_{ij} & x_{i1}^2 + x_{in}^2 + (1+\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij}^2 - 2\rho \sum \limits_{j = 1}^{n-1}x_{ij}x_{i,j+1}
 \end{bmatrix}
 \\[1em]
 =
 &
-\dfrac{1}{(1+\rho)(1-\rho)}
+\dfrac{1}{1-\rho^2}
 \begin{bmatrix}
-2(1-\rho) + (1-\rho)^2(n-2) & (1-\rho)(x_{i1} + x_{in}) + (1-\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij} \\
+2(1-\rho) + (1-\rho)^2(n-2) & (1-\rho)(x_{i1} + x_{in}) + (1-\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij} \\[1em]
 (1-\rho)(x_{i1} + x_{in}) + (1-\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij} & x_{i1}^2 + x_{in}^2 + (1+\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij}^2 - 2\rho \sum \limits_{j = 1}^{n-1}x_{ij}x_{i,j+1}
 \end{bmatrix}
+\\[1em]
+=
+&
+\begin{bmatrix}
+A & B_i \\[1em]
+B_i & C_i
+\end{bmatrix}, \text{ say}
 \end{align*}
+
+\begin{align}\label{A}
+\text{where } A &= \dfrac{2(1-\rho) + (1-\rho)^2(n-2)}{1 - \rho^2} = \dfrac{2 + (1 - \rho) (n - 2))}{1 + \rho} = \dfrac{n - \rho (n-2)}{1 + \rho} \; \&
+\end{align}
+
+\begin{align}
+\forall i = 1(1)m, \; B_i &= \dfrac{1}{1 - \rho^2} \cdot \left\{(1-\rho)(x_{i1} + x_{in}) + (1-\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij} \right\}, \nonumber \\[1em]
+C_i &= \dfrac{1}{1 - \rho^2} \cdot \left\{x_{i1}^2 + x_{in}^2 + (1+\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij}^2 - 2\rho \sum \limits_{j = 1}^{n-1} x_{ij} x_{i,j+1}\right\}. \nonumber
+\end{align}
+
+\newpage
+
+We can rewrite
+\begin{equation}\label{rewrite_x_ij}
+x_{ij} = \overline{x}_i + x_{ij} - \overline{x}_i = \overline{x}_i + d_{ij}
+\end{equation}
+
+where $d_{ij} = x_{ij} - \overline{x}_i$. \\[1em]
+
+
+\begin{align}\label{sum_d_ij}
+\text{Of course } \sum \limits_{j = 1}^{n} d_{ij} = 0.
+\end{align}
+
+Using (\ref{rewrite_x_ij}),
+
+\begin{align*}
+B_i &= \dfrac{1}{1 - \rho^2} \cdot \left\{(1-\rho)(x_{i1} + x_{in}) + (1-\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij} \right\} \\[0.7em]
+&= \dfrac{1}{1 - \rho^2} \cdot \left\{(1-\rho)(\overline{x}_i + d_{i1} + \overline{x}_i + d_{in}) + (1-\rho)^2 \sum \limits_{j = 2}^{n-1} (\overline{x}_i + d_{ij}) \right\} \\[0.7em]
+\Rightarrow (1 - \rho^2) B_i &= 2 (1 - \rho) \overline{x}_i + (n-2) (1 - \rho^2) \overline{x}_i + (1 - \rho) \left\{ d_{i1} + d_{in} + (1 - \rho) \sum \limits_{j = 2}^{n-1} d_{ij}  \right\}
+\end{align*}
+
+\begin{align}\label{d_ij_from_2_to_n_minus_1}
+\sum \limits_{j = 1}^{n} d_{ij} = 0 \Rightarrow -(d_{i1} + d_{in}) = \sum \limits_{j = 2}^{n-1} d_{ij}.
+\end{align}
+
+\begin{align}\label{summation_B_i}
+\therefore (1 - \rho^2) B_i &= \overline{x}_i \left\{ 2 (1 - \rho) + (n-2) (1 - \rho^2) \right\} + \rho (d_{i1} + d_{in}), \; \text{ using (\ref{d_ij_from_2_to_n_minus_1})} \nonumber \\[0.7em]
+\Rightarrow B_i &= \dfrac{1}{1 + \rho} \left[ \overline{x}_i \left\{ 2 + (n-2) (1 - \rho) \right\} + \rho (d_{i1} + d_{in}) \right] \nonumber \\[0.7em]
+\Rightarrow \sum \limits_{i = 1}^{m} B_i &= \dfrac{1}{1 + \rho} \left[ \left\{ 2 + (n-2) (1 - \rho) \right\} \sum \limits_{i = 1}^{m} \overline{x}_i + \rho \sum \limits_{i = 1}^{m} (d_{i1} + d_{in}) \right]
+\end{align}
+
+Again using (\ref{rewrite_x_ij}),
+
+\begin{align}\label{C_i}
+C_i &= \dfrac{1}{1 - \rho^2} \cdot \left\{x_{i1}^2 + x_{in}^2 + (1+\rho)^2 \sum \limits_{j = 2}^{n-1} x_{ij}^2 - 2\rho \sum \limits_{j = 1}^{n-1} x_{ij} x_{i,j+1}\right\} \nonumber \\[0.7em]
+&= \dfrac{1}{1 - \rho^2} \cdot \left\{(\overline{x}_i + d_{i1})^2 + (\overline{x}_i + d_{in})^2 + (1+\rho)^2 \sum \limits_{j = 2}^{n-1} (\overline{x}_i + d_{ij})^2 - 2\rho \sum \limits_{j = 1}^{n-1} (\overline{x}_i + d_{ij}) (\overline{x}_i + d_{i,j+1})\right\} \nonumber \\[0.7em]
+&= \dfrac{1}{1 - \rho^2} \cdot 
+\left\{
+\begin{aligned}
+&(\overline{x}_i + d_{i1})^2 + (\overline{x}_i + d_{in})^2 + (1+\rho)^2 \sum \limits_{j = 2}^{n-1} (\overline{x}_i + d_{ij})^2 \\
+&\quad - 2\rho \sum \limits_{j = 1}^{n-1} \left(\overline{x}_i^2 + \overline{x}_i \cdot d_{ij} + \overline{x}_i \cdot d_{i,j+1} + d_{ij} \cdot d_{i,j+1}\right)
+\end{aligned}
+\right\}.
+\end{align}
+
+\newpage
+
+Collecting the $\overline{x}_i^2$ terms, we have
+
+\begin{align}\label{x_i_square_final}
+&\overline{x}_i^2 \left\{ 1 + 1 + (1+\rho^2)(n-2) - 2\rho (n-1) \right\} \nonumber \\[0.7em]
+=\; &\overline{x}_i^2 \left\{ 2 + n - 2 + \rho^2(n-2) - 2\rho n + 2\rho \right\} \nonumber \\[0.7em]
+=\; &\overline{x}_i^2 \left\{ n + n\rho^2 -2\rho^2 - 2\rho n + 2\rho \right\} \nonumber \\[0.7em]
+=\; &\overline{x}_i^2 \left\{ n(1 - \rho) - \rho n (1 - \rho) + 2\rho (1 - \rho) \right\} \nonumber \\[0.7em]
+=\; &\overline{x}_i^2 \left\{ n - \rho(n - 2) \right\} (1 - \rho) \nonumber \\[0.7em]
+=\; &A (1 - \rho^2)\overline{x}_i^2, \; \text{using (\ref{A})}.
+\end{align}
+
+Collecting the $d_{ij}$ terms, we have
+
+\begin{align}\label{d_ij_terms_collected}
+&2 \overline{x}_i d_{i1} + 2 \overline{x}_i d_{in} + 2 (1 + \rho^2) \overline{x}_i \sum \limits_{j = 2}^{n-1} d_{ij} - 2 \overline{x}_i \rho \sum \limits_{j = 1}^{n-1} d_{ij} - 2 \overline{x}_i \rho \sum \limits_{j = 1}^{n-1} d_{i,j+1} \nonumber \\[0.7em]
+=\; &2 \overline{x}_i \left\{ \sum \limits_{j = 1}^{n} d_{ij} + \rho^2 \sum \limits_{j = 2}^{n-1} d_{ij} - \rho \sum \limits_{j = 1}^{n-1} d_{ij} - \rho \sum \limits_{j = 1}^{n-1} d_{i,j+1}\right\} \nonumber \\[0.7em]
+=\; &2 \overline{x}_i \left\{ \underbrace{\sum \limits_{j = 1}^{n} d_{ij}}_{0} + \rho^2 \underbrace{\sum \limits_{j = 2}^{n-1} d_{ij}}_{-(d_{i1} + d_{in})} - \rho \underbrace{\sum \limits_{j = 1}^{n-1} d_{ij}}_{-d_{in}} - \rho \underbrace{\sum \limits_{j = 1}^{n-1} d_{i,j+1}}_{-d_{i1}}\right\}, \; \text{using (\ref{sum_d_ij})} \nonumber \\[0.7em]
+=\; &2 \overline{x}_i \left\{- \rho^2 (d_{i1} + d_{in}) + \rho (d_{i1} + d_{in})\right\}
+\end{align}
+
+Collecting the $d_{ij}$ terms of higher order, we have
+
+\begin{align}\label{d_ij_higher_order_initial}
+d_{i1}^2 + d_{in}^2 + (1+\rho^2)\sum\limits_{j=2}^{n-1} d_{ij}^2 - 2\rho \sum\limits_{j=1}^{n-1} d_{ij} d_{i,j+1}
+\end{align}
+
+\begin{equation}\label{S_definition}
+\sum \limits_{j = 1}^{n} d_{ij}^2 = S, \text{ say}.
+\end{equation}
+
+\begin{equation}\label{d_ij_square_from_2_to_n_minus_1}
+\text{Then, } \sum \limits_{j = 2}^{n-1} d_{ij}^2 = S - d_{i1}^2 - d_{in}^2.
+\end{equation}
+
+Also,
+\begin{align}\label{cross_product_d_ij}
+\sum\limits_{j=1}^{n-1} \left(d_{ij} - d_{i,j+1}\right)^2 &= \sum\limits_{j=1}^{n-1} d_{ij}^2 + \sum\limits_{j=1}^{n-1} d_{i,j+1}^2
+- 2 \sum\limits_{j=1}^{n-1} d_{ij} d_{i,j+1} \nonumber \\[0.7em]
+\Rightarrow - 2 \sum\limits_{j=1}^{n-1} d_{ij} d_{i,j+1} &= \sum\limits_{j=1}^{n-1} \left(d_{ij} - d_{i,j+1}\right)^2 - \sum\limits_{j=1}^{n-1} d_{ij}^2 - \sum\limits_{j=1}^{n-1} d_{i,j+1}^2 \nonumber \\[0.7em]
+&= \sum\limits_{j=1}^{n-1} \left(d_{ij} - d_{i,j+1}\right)^2 - (S - d_{in}^2) - (S - d_{i1}^2), \; \text{ using (\ref{S_definition})} \nonumber \\[0.7em]
+&= \sum\limits_{j=1}^{n-1} \left(d_{ij} - d_{i,j+1}\right)^2 - 2S  + d_{i1}^2 + d_{in}^2.
+\end{align}
+
+Using (\ref{d_ij_square_from_2_to_n_minus_1}), (\ref{cross_product_d_ij}) in (\ref{d_ij_higher_order_initial}), we get
+
+\begin{align}\label{d_ij_higher_order_simplified}
+&d_{i1}^2 + d_{in}^2 + (1+\rho^2) (S - d_{i1}^2 - d_{in}^2) + \rho \sum\limits_{j=1}^{n-1} \left(d_{ij} - d_{i,j+1}\right)^2 - 2\rho S  + \rho d_{i1}^2 + \rho d_{in}^2 \nonumber \\[0.7em]
+=\; &(1+\rho^2) S - 2\rho S + \rho (1 - \rho) (d_{i1}^2 + d_{in}^2) + \rho \sum\limits_{j=1}^{n-1} \left(d_{ij} - d_{i,j+1}\right)^2 \nonumber \\[0.7em]
+=\; &(1-\rho)^2S + \rho (1 - \rho) (d_{i1}^2 + d_{in}^2) + \rho \sum\limits_{j=1}^{n-1} \left(d_{ij} - d_{i,j+1}\right)^2.
+\end{align}
+
+{\fontsize{12}{20} \gloriahallelujahfont Assume}
+
+\begin{equation}\label{assumption}
+x_{ij} = a_i + j, \;\; \forall i = 1(1)m, \; j = 1(1)n
+\end{equation}
+
+where $a_i$ is baseline value of the covariate for $i-$th subject.
+
+\begin{align}\label{x_i_bar_under_assumption}
+\therefore \overline{x}_i = \dfrac{1}{n} \sum\limits_{j=1}^{n} &= \dfrac{1}{n} \sum\limits_{j=1}^{n} (a_i + j) \nonumber \\[0.5em]
+&= \dfrac{1}{n} \left[ n a_i + \dfrac{n(n+1)}{2}\right] \nonumber \\[0.5em]
+&= a_i + \dfrac{n+1}{2}
+\end{align}
+
+\begin{equation}
+\therefore d_{ij} = x_{ij} - \overline{x}_i = j - \dfrac{n+1}{2}.
+\end{equation}
+
+Consequently,
+\begin{enumerate}[(i)]
+\item \begin{align}\label{assumption_consequence_1}
+d_{i1} + d_{in} = \left(1 - \dfrac{n+1}{2}\right) + \left(n - \dfrac{n+1}{2}\right) = 0.
+\end{align}
+
+\item \begin{align}\label{assumption_consequence_2}
+d_{i1}^2 + d_{in}^2 = \left(1 - \dfrac{n+1}{2}\right)^2 + \left(n - \dfrac{n+1}{2}\right)^2 = \left(\dfrac{1-n}{2}\right)^2 + \left(\dfrac{n-1}{2}\right)^2 = \dfrac{(n-1)^2}{2}.
+\end{align}
+
+\item \begin{align}\label{assumption_consequence_3}
+S = \sum\limits_{j=1}^{n} d_{ij}^2 
+&= \sum\limits_{j=1}^{n} \left( j - \dfrac{n+1}{2}\right)^2 \nonumber \\[0.7em] 
+&= \sum\limits_{j=1}^{n} j^2 - 2 \cdot \dfrac{n+1}{2} \sum\limits_{j=1}^{n} j + n \left( \dfrac{n+1}{2} \right)^2 \nonumber \\[0.7em]
+&= \dfrac{n(n+1)(2n+1)}{6} - (n+1) \dfrac{n(n+1)}{2} + n \left( \dfrac{n+1}{2} \right)^2 \nonumber \\[0.7em]
+&= \dfrac{n(n+1)}{2} \left[ \dfrac{2n+1}{3} - (n+1) + \dfrac{n+1}{2} \right] \nonumber \\[0.7em]
+&= \dfrac{n(n+1)}{2} \left[ \dfrac{2n+1}{3} - \dfrac{n+1}{2} \right] \nonumber \\[0.7em]
+&= \dfrac{n(n+1)}{2} \left[ \dfrac{4n+2-3n-3}{6} \right] \nonumber \\[0.7em]
+&= \dfrac{n(n+1)}{2} \left[ \dfrac{n-1}{6} \right] \nonumber \\[0.7em]
+&= \dfrac{n(n^2 - 1)}{12}.
+\end{align}
+
+\item \begin{align}\label{assumption_consequence_4}
+\sum\limits_{j=1}^{n} \left(d_{ij} - d_{i,j+1}\right)^2
+= \sum\limits_{j=1}^{n} \left\{ \left(j - \dfrac{n+1}{2}\right) - \left(j+1 - \dfrac{n+1}{2} \right) \right\}^2 = \sum\limits_{j=1}^{n-1} (-1)^2 = n-1.
+\end{align}
+\end{enumerate}
+
+Using (\ref{assumption_consequence_1}) in (\ref{summation_B_i}), we have
+
+\begin{align}
+\sum \limits_{i = 1}^{m} B_i = \dfrac{1}{1 + \rho} \left[ \left\{ 2 + (n-2) (1 - \rho) \right\} \sum \limits_{i = 1}^{m} \overline{x}_i \right] = A \sum \limits_{i = 1}^{m} \overline{x}_i = mA\overline{x} .
+\end{align}
+
+Using (\ref{assumption_consequence_1}) in (\ref{d_ij_terms_collected}), we have 
+\begin{align}\label{d_ij_terms_final}
+2 \overline{x}_i \left\{- \rho^2 (d_{i1} + d_{in}) + \rho (d_{i1} + d_{in})\right\} = 0.
+\end{align}
+
+Using (\ref{assumption_consequence_2}), (\ref{assumption_consequence_3}), (\ref{assumption_consequence_4}) in (\ref{d_ij_higher_order_simplified}), we have
+\begin{align}\label{d_ij_higher_order_final}
+&(1-\rho)^2S + \rho (1 - \rho) (d_{i1}^2 + d_{in}^2) + \rho \sum\limits_{j=1}^{n-1} \left(d_{ij} - d_{i,j+1}\right)^2 \nonumber \\[0.7em]
+=\; &(1-\rho)^2 \cdot \dfrac{n(n^2-1)}{12} + \rho(1-\rho)\cdot \dfrac{(n-1)^2}{2} + \rho (n-1) \nonumber \\[0.7em]
+=\; &\dfrac{n-1}{12} \left\{ (1-\rho)^2 n(n+1) + 6\rho(1-\rho)(n-1) + 12\rho \right\} \nonumber \\[0.7em]
+=\; &\dfrac{n-1}{12} \left\{ (1 - 2\rho + \rho^2)n(n+1) + (6\rho - 6\rho^2)(n-1)+ 12\rho \right\} \nonumber \\[0.7em]
+=\; &\dfrac{n-1}{12} \left\{ n(n+1) - 2\rho(n^2 + n - 3n + 3 - 6) + \rho^2(n^2 + n - 6n + 6)\right\} \nonumber \\[0.7em]
+=\; &\dfrac{n-1}{12} \left\{ n(n+1) - 2\rho(n^2 - 2n + 3) + \rho^2(n^2 - 5n + 6)\right\} \nonumber \\[0.7em]
+=\; &\dfrac{n-1}{12} \left\{ n(n+1) - 2(n-3)(n+1) \rho + (n-3)(n-2) \rho^2 \right\} \nonumber \\[0.7em]
+=\; &\dfrac{n-1}{12} \cdot \gamma
+\end{align}
+
+where $\gamma = n(n+1) - 2(n-3)(n+1) \rho + (n-3)(n-2) \rho^2 $. Using (\ref{x_i_square_final}), (\ref{d_ij_terms_collected}) $\rightarrow$ (\ref{d_ij_terms_final}), (\ref{d_ij_higher_order_initial}) $\rightarrow$ (\ref{d_ij_higher_order_simplified}) $\rightarrow$ (\ref{d_ij_higher_order_final}) in (\ref{C_i}), we have
+
+\begin{align}
+C_i &= \dfrac{1}{1 - \rho^2} \left[ A (1 - \rho^2)\overline{x}_i^2 + \dfrac{n-1}{12} \cdot \gamma \right] \nonumber \\[0.7em]
+&= A \overline{x}_i^2 + \dfrac{n-1}{12(1 - \rho^2)} \cdot \gamma \nonumber \\[0.7em]
+\Rightarrow \sum \limits_{i = 1}^{m} C_i &= A \sum \limits_{i = 1}^{m} \overline{x}_i^2 + \sum \limits_{i = 1}^{m} \dfrac{n-1}{12(1 - \rho^2)} \gamma \nonumber \\[0.7em]
+&= A \sum \limits_{i = 1}^{m} \overline{x}_i^2 + \dfrac{m(n-1)}{12(1 - \rho^2)} \gamma
+\end{align}
+
+Now $ S_w^2 = \sum\limits_{i = 1}^{m} \sum\limits_{j = 1}^{n} (x_{ij} - \overline{x}_i)^2 = \sum\limits_{i = 1}^{m} \sum\limits_{j = 1}^{n} d_{ij}^2 = \sum\limits_{i = 1}^{m} S = \dfrac{mn(n^2-1)}{12}$, using (\ref{assumption_consequence_3}). \\[1em]
+
+$$\therefore \sum \limits_{i = 1}^{m} C_i = A \sum \limits_{i = 1}^{m} \overline{x}_i^2 + \dfrac{S_w^2 \gamma}{n(n+1)(1-\rho^2)}.$$
+
+\begin{align*}
+\therefore \sum \limits_{i = 1}^{m} X_i'R^{-1}X_i &= \begin{bmatrix}
+mA & \sum \limits_{i = 1}^{m} B_i \\[1em]
+\sum \limits_{i = 1}^{m} B_i & \sum \limits_{i = 1}^{m} C_i
+\end{bmatrix}.
+\end{align*}
+
+$$\text{Var}(\hat{\beta}_L) = \text{ lower right entry of } \sigma^2 \cdot \left\{ \sum \limits_{i = 1}^{m} X_i'R^{-1}X_i \right\}^{-1} = \dfrac{mA}{(mA)\left(\sum \limits_{i = 1}^{m} C_i\right) - \left(\sum \limits_{i = 1}^{m} B_i\right)^2}.$$
+
+\newpage
+
+\item[\scalebox{2.0}{\twemoji{keycap: 3}}] \hspace{0.2cm} $S_w^2 = \sum\limits_{i = 1}^{m} \sum\limits_{j = 1}^{n} (x_{ij} - \overline{x}_i)^2$ and $S_b^2 = \sum \limits_{i = 1}^{m} (\overline{x}_{i} - \overline{x})^2.$
+
+\begin{align}\label{S_w_square_S_B_square_relation}
+\text{Define } \delta = \dfrac{S_w^2 / \{m(n-1)\}}{S_b^2 / (m-1)} \;\;\Rightarrow\;\;
+S_w^2 = \dfrac{m(n-1)}{n-1} \, \delta \, S_b^2.
+\end{align}
+
+
+Now,
+\begin{align*}
+\left| \sum \limits_{i = 1}^{m} X_i'R^{-1}X_i \right| &= (mA)\left(\sum \limits_{i = 1}^{m} C_i\right) - \left(\sum \limits_{i = 1}^{m} B_i\right)^2 \\[1em]
+&= mA \left\{ A \sum \limits_{i = 1}^{m} \overline{x}_i^2 
++ \dfrac{S_w^2 \gamma}{n(n+1)(1-\rho^2)} \right\}
+- m^2 A^2 \overline{x}^2 \\[0.7em]
+&= mA^2 \left\{ \sum \limits_{i = 1}^{m} \overline{x}_i^2 - m \overline{x}^2 \right\}
++ mA \cdot + mA \cdot \dfrac{S_w^2 \gamma}{n(n+1)(1-\rho^2)} \\[0.7em]
+&= mA^2 S_b^2 + mA \cdot \dfrac{S_w^2 \gamma}{n(n+1)(1-\rho^2)}.
+\end{align*}
+
+\begin{align*}
+\therefore \text{Var}(\hat{\beta}_L) &= \sigma^2 \cdot \dfrac{mA}{mA^2 S_b^2 + mA \cdot \dfrac{S_w^2 \gamma}{n(n+1)(1-\rho^2)}} \\[0.7em]
+&= \dfrac{\sigma^2}{A S_b^2 + \dfrac{S_w^2 \gamma}{n(n+1)(1-\rho^2)}} \\[0.7em]
+&= \dfrac{\sigma^2(1-\rho^2)}{A (1-\rho^2) S_b^2 + \dfrac{S_w^2 \gamma}{n(n+1)}} \\[0.7em]
+&= \dfrac{\sigma^2(1-\rho^2)}{A (1-\rho^2) S_b^2 + \dfrac{m(n-1)}{n-1} \, \delta \, S_b^2 \cdot \dfrac{\gamma}{n(n+1)}}, \; \text{ using (\ref{S_w_square_S_B_square_relation})} \\[0.7em]
+&= \dfrac{\sigma^2}{S_b^2} \cdot \left\{ \dfrac{1-\rho^2}{(1-\rho)\left\{n - \rho(n - 2)\right\} + \dfrac{\gamma \delta}{n+1}} \right\}, \; \text{ using (\ref{A}) and assuming }m \approx m - 1 \; \& \; n \approx n - 1.
+\end{align*}
+
+\begin{align}\label{var_beta_L_final}
+\therefore \text{Var}(\hat{\beta}_L) &= \dfrac{\sigma^2}{S_b^2} \cdot \left\{ \dfrac{1-\rho^2}{(1-\rho)\left\{n - \rho(n - 2)\right\} + \dfrac{\gamma \delta}{n+1}} \right\}.
+\end{align}
+
+
+\newpage
+
+\item[\scalebox{2.0}{\twemoji{keycap: 4}}] \hspace{0.2cm} We have $\text{Var}(\hat{\beta}_C) = \dfrac{\sigma^2}{\sum \limits_{i = 1}^{m} (x_{i1} - \bar{x}_1)^2}$ where $\overline{x}_i = \dfrac{1}{m} \sum \limits_{i = 1}^{m} x_{i1}$. \\[0.5em]
+
+Remember that in cross-sectional study, we have observation from the first visit only for each subject. Under the assumption $x_{ij} = a_i + j$,
+
+\begin{align*}
+\overline{x}_1 = \dfrac{1}{m} \sum \limits_{i = 1}^{m} (a_i + 1) = \overline{a} + 1.
+\end{align*}
+
+Thus,
+\begin{align*}
+x_{i1} - \overline{x}_1 = (a_i + 1) - (\overline{a} + 1) = a_i - \overline{a}.
+\end{align*}
+
+\begin{align*}
+\therefore \sum \limits_{i = 1}^{m} (x_{i1} - \bar{x}_1)^2 = \sum \limits_{i = 1}^{m} (a_i - \overline{a})^2.
+\end{align*}
+
+Again, using (\ref{x_i_bar_under_assumption}), $$\overline{x} = \dfrac{1}{m} \sum \limits_{i = 1}^{m} \overline{x}_i = \dfrac{1}{m} \sum \limits_{i = 1}^{m} \left( a_i + \dfrac{n+1}{2} \right)^2 = \overline{a} + \dfrac{n+1}{2}$$
+
+and consequently,
+
+$$S_b^2 = \sum \limits_{i = 1}^{m} (\overline{x}_{i} - \overline{x})^2 = \sum \limits_{i = 1}^{m} (a_i - \overline{a})^2.$$
+
+\begin{align}\label{var_beta_C_final}
+\therefore \text{Var}(\hat{\beta}_C) = \dfrac{\sigma^2}{S_b^2}.
+\end{align}
+
+\item[\scalebox{2.0}{\twemoji{keycap: 5}}] \hspace{0.2cm} Upon doing $(\ref{var_beta_L_final}) \div (\ref{var_beta_C_final})$, we have
+
+$$e = \dfrac{1-\rho^2}{(1-\rho)\left\{n - \rho(n - 2)\right\} + \dfrac{\gamma \delta}{n+1}}.$$
+
+\end{itemize}
 \end{document}
