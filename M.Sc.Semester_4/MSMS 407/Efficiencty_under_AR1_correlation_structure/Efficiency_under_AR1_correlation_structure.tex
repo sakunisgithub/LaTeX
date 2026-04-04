@@ -683,7 +683,7 @@ $$\text{Var}(\hat{\beta}_L) = \text{ lower right entry of } \sigma^2 \cdot \left
 
 \begin{align}\label{S_w_square_S_B_square_relation}
 \text{Define } \delta = \dfrac{S_w^2 / \{m(n-1)\}}{S_b^2 / (m-1)} \;\;\Rightarrow\;\;
-S_w^2 = \dfrac{m(n-1)}{n-1} \, \delta \, S_b^2.
+S_w^2 = \dfrac{m(n-1)}{m-1} \, \delta \, S_b^2.
 \end{align}
 
 
@@ -702,7 +702,7 @@ Now,
 \therefore \text{Var}(\hat{\beta}_L) &= \sigma^2 \cdot \dfrac{mA}{mA^2 S_b^2 + mA \cdot \dfrac{S_w^2 \gamma}{n(n+1)(1-\rho^2)}} \\[0.7em]
 &= \dfrac{\sigma^2}{A S_b^2 + \dfrac{S_w^2 \gamma}{n(n+1)(1-\rho^2)}} \\[0.7em]
 &= \dfrac{\sigma^2(1-\rho^2)}{A (1-\rho^2) S_b^2 + \dfrac{S_w^2 \gamma}{n(n+1)}} \\[0.7em]
-&= \dfrac{\sigma^2(1-\rho^2)}{A (1-\rho^2) S_b^2 + \dfrac{m(n-1)}{n-1} \, \delta \, S_b^2 \cdot \dfrac{\gamma}{n(n+1)}}, \; \text{ using (\ref{S_w_square_S_B_square_relation})} \\[0.7em]
+&= \dfrac{\sigma^2(1-\rho^2)}{A (1-\rho^2) S_b^2 + \dfrac{m(n-1)}{m-1} \, \delta \, S_b^2 \cdot \dfrac{\gamma}{n(n+1)}}, \; \text{ using (\ref{S_w_square_S_B_square_relation})} \\[0.7em]
 &= \dfrac{\sigma^2}{S_b^2} \cdot \left\{ \dfrac{1-\rho^2}{(1-\rho)\left\{n - \rho(n - 2)\right\} + \dfrac{\gamma \delta}{n+1}} \right\}, \; \text{ using (\ref{A}) and assuming }m \approx m - 1 \; \& \; n \approx n - 1.
 \end{align*}
 
