@@ -25,7 +25,7 @@
 \usepackage{fontspec}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
-
+\usepackage{skak}
 
 
 \pagestyle{fancy}
@@ -78,8 +78,312 @@ R = \begin{pmatrix}
 
 where $I_n$ is the identity matrix of order $n$ and $J_n$ is a $n \times n$ matrix with all elements equal to $1$. We assume $R^{-1}$ is also of the same form \textit{i.e.}
 
-\begin{equation}
+\begin{equation}\label{R_inverse_assumption}
 R^{-1} = aI_n + bJ_n.
 \end{equation}
+
+Now
+
+\begin{align*}
+&RR^{-1} = I \\[0.5em]
+\Rightarrow\; &\big[(1-\rho)I + \rho J\big]\big[aI + bJ\big] = I \\[0.2em]
+\Rightarrow\; &(1-\rho)a\,I + \big[(1-\rho)b + \rho a\big]J + \rho b\,J^2 = I \\[0.2em]
+\Rightarrow\; &(1-\rho)a\,I + \big[(1-\rho)b + \rho a\big]J + \rho b \cdot nJ = I \\[0.2em]
+\end{align*}
+
+and comparing coefficients of $I$ and $J$ we have
+
+\begin{align*}
+(1 - \rho)a = 1 \qquad &\& \qquad \big[(1-\rho)b + \rho a\big] + \rho b \cdot n = 0 \\[0.5em]
+\Rightarrow\; a = \dfrac{1}{1 - \rho} \qquad &\&  \qquad \left[ (1 - \rho) + n\rho \right] b = - \rho a \\[0.5em]
+\Rightarrow\; a = \dfrac{1}{1 - \rho} \qquad &\&  \qquad b = - \dfrac{\rho}{(1 - \rho) \left[(1 - \rho) + n\rho\right]}.
+\end{align*}
+
+Substituting in (\ref{R_inverse_assumption})
+\begin{equation}\label{R_inverse}
+R^{-1} = \dfrac{1}{1-\rho}\left[ I - \dfrac{\rho}{1 + (n-1)\rho}\, J \right].
+\end{equation}
+
+\item[\scalebox{2.0}{\twemoji{keycap: 2}}] \hspace{0.2cm} Then
+
+\begin{align*}
+X_i'R^{-1}X_i &= X_i' \cdot \left\{ \dfrac{1}{1-\rho}\left[ I - \dfrac{\rho}{1 + (n-1)\rho}\, J \right] \right\} \cdot X_i \\[1em]
+&= \dfrac{1}{1-\rho}\left[ X_i' X_i - \dfrac{\rho}{1 + (n-1)\rho}\, X_i' J X_i \right].
+\end{align*}
+
+Again,
+
+\begin{align*}
+X_i' X_i =
+\begin{pmatrix}
+n & \sum\limits_{j=1}^{n} x_{ij} \\
+\sum\limits_{j=1}^{n} x_{ij} & \sum\limits_{j=1}^{n} x_{ij}^2
+\end{pmatrix} \qquad \&
+\end{align*}
+
+\begin{align*}
+\underbrace{X_i' J X_i}_{2 \times 2} &= \begin{pmatrix}
+1 & 1 & \cdots & 1 \\
+x_{i1} & x_{i2} & \cdots & x_{i n}
+\end{pmatrix}_{2 \times n}
+\cdot
+\begin{pmatrix}
+1 & 1 & \cdots & 1 \\
+1 & 1 & \cdots & 1 \\
+\vdots & \vdots & \ddots & \vdots \\
+1 & 1 & \cdots & 1
+\end{pmatrix}_{n \times n}
+\cdot
+\begin{pmatrix}
+1 & x_{i1} \\
+1 & x_{i2} \\
+\vdots & \vdots \\
+1 & x_{i n}
+\end{pmatrix}_{n \times 2} \\[1em]
+&=
+\begin{pmatrix}
+1 & 1 & \cdots & 1 \\
+x_{i1} & x_{i2} & \cdots & x_{i n_i}
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+n & \sum\limits_{j=1}^{n} x_{ij} \\
+n & \sum\limits_{j=1}^{n} x_{ij} \\
+\vdots & \vdots \\
+n & \sum\limits_{j=1}^{n} x_{ij}
+\end{pmatrix} \\[1em]
+&=
+\begin{pmatrix}
+n^2 & n \sum\limits_{j=1}^{n} x_{ij} \\
+n \sum\limits_{j=1}^{n} x_{ij} & \left(\sum\limits_{j=1}^{n} x_{ij}\right)^2
+\end{pmatrix}.
+\end{align*}
+
+\newpage
+
+Substituting
+
+\begin{align*}
+X_i'R^{-1}X_i &=
+\dfrac{1}{1-\rho}
+\left[
+\begin{pmatrix}
+n & \sum\limits_{j=1}^{n} x_{ij} \\
+\sum\limits_{j=1}^{n} x_{ij} & \sum\limits_{j=1}^{n} x_{ij}^2
+\end{pmatrix}
+-
+\dfrac{\rho}{1+(n-2)\rho}
+\begin{pmatrix}
+n^2 & n \sum\limits_{j=1}^{n} x_{ij} \\
+n \sum\limits_{j=1}^{n} x_{ij} & \left(\sum\limits_{j=1}^{n} x_{ij}\right)^2
+\end{pmatrix}
+\right].
+\end{align*}
+
+Let $$A_{2 \times 2} = \sum \limits_{i = 1}^{m} X_i'R^{-1}X_i = \begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}.$$
+
+\begin{enumerate}[I.]
+\item \begin{align*}
+a_{11} 
+&= \sum\limits_{i=1}^{m} \dfrac{1}{1-\rho}
+\left(
+n - \dfrac{n^2 \rho}{1+(n-2)\rho}
+\right) \\[6pt]
+&= \sum\limits_{i=1}^{m} \dfrac{1}{1-\rho}
+\cdot
+\dfrac{n + n^2 \rho - n\rho - n^2 \rho}{1+(n-2)\rho} \\[6pt]
+&= \sum\limits_{i=1}^{m} \dfrac{1}{1-\rho}
+\cdot
+\dfrac{n(1-\rho)}{1+(n-2)\rho} \\[6pt]
+&= \dfrac{mn}{1+(n-2)\rho}.
+\end{align*}
+
+\item \begin{align*}
+a_{12} = a_{21}
+&= \sum\limits_{i=1}^{m} \dfrac{1}{1-\rho}
+\left(
+1 - \dfrac{n\rho}{1+(n-1)\rho}
+\right)
+\sum\limits_{j=1}^{n} x_{ij} \\[6pt]
+&= \sum\limits_{i=1}^{m} \dfrac{1}{1-\rho}
+\cdot
+\dfrac{1 + n\rho - \rho - n\rho}{1+(n-1)\rho}
+\cdot n\bar{x}_i \\[6pt]
+&= \sum\limits_{i=1}^{m} \dfrac{1}{1-\rho}
+\cdot
+\dfrac{1-\rho}{1+(n-1)\rho}
+\cdot n\bar{x}_i \\[6pt]
+&= \sum\limits_{i=1}^{m}
+\dfrac{n\bar{x}_i}{1+(n-1)\rho}.
+\end{align*}
+
+\item \begin{align*}
+a_{22}
+&= \sum\limits_{i=1}^{m} \dfrac{1}{1-\rho}
+\left[
+\sum\limits_{j=1}^{n} x_{ij}^2
+- \dfrac{\rho}{1+(n-1)\rho}
+\left(\sum\limits_{j=1}^{n} x_{ij}\right)^2
+\right] \\[6pt]
+&= \sum\limits_{i=1}^{m} \dfrac{1}{1-\rho}
+\left[
+\sum\limits_{j=1}^{n} (x_{ij} - \bar{x}_i)^2
++ n\bar{x}_i^2
+- \dfrac{\rho}{1+(n-1)\rho} \cdot n^2 \bar{x}_i^2
+\right] \\[6pt]
+&= \sum\limits_{i=1}^{m} \dfrac{1}{1-\rho}
+\left[
+\sum\limits_{j=1}^{n} (x_{ij} - \bar{x}_i)^2
++ \dfrac{n(1-\rho)}{1+(n-1)\rho} \bar{x}_i^2
+\right] \\[6pt]
+&= \dfrac{1}{1-\rho}
+\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij} - \bar{x}_i)^2
++ \dfrac{n}{1+(n-1)\rho}
+\sum\limits_{i=1}^{m} \bar{x}_i^2.
+\end{align*}
+\end{enumerate}
+
+\item[\scalebox{2.0}{\twemoji{keycap: 3}}] \hspace{0.2cm} The lower-right entry of $A^{-1} = \left( \sum\limits_{i=1}^{m} X_i' R^{-1} X_i \right)^{-1}$ is $\dfrac{a_{11}}{a_{11}a_{22} - a_{12}^2}$.
+
+\begin{align*}
+\det(A) 
+&= a_{11}a_{22} - a_{12}^2 \\[6pt]
+&= a_{11} \left[
+\dfrac{\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij}-\bar{x}_i)^2}{1-\rho}
++ \dfrac{n \sum\limits_{i=1}^{m} \bar{x}_i^2}{1+(n-1)\rho}
+\right]
+- \left(
+\dfrac{n \sum\limits_{i=1}^{m} \bar{x}_i}{1+(n-1)\rho}
+\right)^2 \\[8pt]
+&= a_{11} \cdot \dfrac{\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij}-\bar{x}_i)^2}{1-\rho}
++ a_{11} \cdot \dfrac{n \sum\limits_{i=1}^{m} \bar{x}_i^2}{1+(n-1)\rho}
+- a_{11} \cdot \dfrac{n}{1+(n-1)\rho}
+\left(\sum\limits_{i=1}^{m} \bar{x}_i \right)^2 \\[8pt]
+&= a_{11} \cdot \dfrac{\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij}-\bar{x}_i)^2}{1-\rho}
++ a_{11} \cdot \dfrac{n \sum\limits_{i=1}^{m} \bar{x}_i^2}{1+(n-1)\rho}
+- a_{11} \cdot \dfrac{nm \bar{\bar{x}}^2}{1+(n-1)\rho}.
+\end{align*}
+
+\begin{align*}
+\therefore \; (A^{-1})_{22} = \dfrac{a_{11}}{\det(A)}
+=
+\left[
+\dfrac{\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij}-\bar{x}_i)^2}{1-\rho}
++
+\dfrac{n \sum\limits_{i=1}^{m} (\bar{x}_i - \bar{\bar{x}})^2}{1+(n-1)\rho}
+\right]^{-1}
+\end{align*}
+
+\begin{align*}
+\therefore \; \text{Var}(\hat{\beta}_L) = \sigma^2 (A^{-1})_{22}.
+\end{align*}
+
+\item[\scalebox{2.0}{\twemoji{keycap: 4}}] \hspace{0.2cm} $\hat{\beta}_C$ and $\hat{\beta}_L$ are estimates of the same parameter $\beta_C = \beta_L = \beta$, say. To compare their variances, we define
+\begin{align*}
+e 
+&= \dfrac{\text{Var}(\hat{\beta}_L)}{\text{Var}(\hat{\beta}_C)} \\[1em]
+&= 
+\dfrac{\sum\limits_{i=1}^{m} (x_{i1} - \bar{x}_1)^2}{\dfrac{\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij} - \bar{x}_i)^2}{1-\rho} + \dfrac{n \sum\limits_{i=1}^{m} (\bar{x}_i - \bar{\bar{x}})^2}{1+(n-1)\rho}}.
+\end{align*}
+
+\begin{align*}
+\text{Define } S_w^2 
+&: \text{ total within-subject sum of squares in } X
+= \sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij} - \bar{x}_i)^2, \\[10pt]
+S_b^2 
+&: \text{ between-subjects sum of squares in } X
+= \sum\limits_{i=1}^{m} (\bar{x}_i - \bar{\bar{x}})^2.
+\end{align*}
+
+\begin{align}\label{e_second}
+\therefore\quad
+e
+&=
+\dfrac{
+\sum\limits_{i=1}^{m} (x_{i1} - \bar{x}_1)^2
+}{
+\dfrac{S_w^2}{1-\rho}
++
+\dfrac{n S_b^2}{1+(n-1)\rho}
+}.
+\end{align}
+
+\begin{align*}
+\text{Define } \delta = \dfrac{S_w^2 / \{m(n-1)\}}{S_b^2 / (m-1)} \;\;\Rightarrow\;\;
+S_w^2 = \delta \, n \cdot S_b^2, \text{ assuming } m \approx m - 1 \; \& \; n \approx n - 1.
+\end{align*}
+
+\begin{align*}
+\text{Define } \alpha 
+&= \dfrac{\sum\limits_{i=1}^{m} (x_{i1} - \bar{x}_1)^2}{S_b^2}.
+\end{align*}
+
+From (\ref{e_second}), on dividing the numerator and the denominator by $S_b^2$, we can write
+
+\begin{align}\label{e_third}
+e 
+&= \dfrac{\alpha}{\dfrac{\delta \cdot n}{1-\rho} + \dfrac{n}{1+(n-1)\rho}} \nonumber \\[8pt]
+&= \dfrac{\alpha (1+(n-1)\rho)(1-\rho)}{n \left[\delta(1+(n-1)\rho) + (1-\rho)\right]} \nonumber \\[8pt]
+&= \dfrac{\alpha (1+(n-1)\rho)(1-\rho)}{n \left[\delta + \delta n \rho - \delta \rho + 1 - \rho \right]} \nonumber \\[8pt]
+&= \dfrac{\alpha (1+(n-1)\rho)(1-\rho)}{n \left[1 + \delta - \rho - \delta \rho + n \rho \delta \right]} \nonumber \\[8pt]
+&= \dfrac{\alpha (1+(n-1)\rho)(1-\rho)}{n(1+\delta)\left(1 - \rho + \dfrac{n\rho\delta}{1+\delta}\right)}.
+\end{align}
+
+{\fontsize{12}{20} \gloriahallelujahfont Assume}
+
+\begin{equation}\label{assumption}
+x_{ij} = a_i + j, \;\; \forall i = 1(1)m, \; j = 1(1)n
+\end{equation}
+
+where $a_i$ is baseline value of the covariate for $i-$th subject.
+
+\begin{align}\label{x_i_bar_under_assumption}
+\therefore \overline{x}_i = \dfrac{1}{n} \sum\limits_{j=1}^{n} x_{ij} &= \dfrac{1}{n} \sum\limits_{j=1}^{n} (a_i + j) \nonumber \\[0.5em]
+&= \dfrac{1}{n} \left[ n a_i + \dfrac{n(n+1)}{2}\right] \nonumber \\[0.5em]
+&= a_i + \dfrac{n+1}{2}
+\end{align}
+
+\newpage
+
+Under the assumption $x_{ij} = a_i + j$,
+
+\begin{align*}
+\overline{x}_1 = \dfrac{1}{m} \sum \limits_{i = 1}^{m} (a_i + 1) = \overline{a} + 1.
+\end{align*}
+
+Thus,
+\begin{align*}
+x_{i1} - \overline{x}_1 = (a_i + 1) - (\overline{a} + 1) = a_i - \overline{a}.
+\end{align*}
+
+\begin{align*}
+\therefore \sum \limits_{i = 1}^{m} (x_{i1} - \bar{x}_1)^2 = \sum \limits_{i = 1}^{m} (a_i - \overline{a})^2.
+\end{align*}
+
+Again, using (\ref{x_i_bar_under_assumption}), $$\overline{x} = \dfrac{1}{m} \sum \limits_{i = 1}^{m} \overline{x}_i = \dfrac{1}{m} \sum \limits_{i = 1}^{m} \left( a_i + \dfrac{n+1}{2} \right)^2 = \overline{a} + \dfrac{n+1}{2},$$
+
+thus,
+
+$$S_b^2 = \sum \limits_{i = 1}^{m} (\overline{x}_{i} - \overline{x})^2 = \sum \limits_{i = 1}^{m} (a_i - \overline{a})^2,$$
+
+consequently,
+
+$$\alpha = 1.$$
+
+Finally, from (\ref{e_third}),
+
+$$e = \dfrac{\left\{1+(n-1)\rho\right\}(1-\rho)}{n(1+\delta)\left\{1 - \rho + \dfrac{n\rho\delta}{1+\delta}\right\}}.$$
 \end{itemize}
+
+
+\vspace{5em}
+
+\begin{center}
+\BlackRookOnBlack \BlackKnightOnWhite \BlackBishopOnBlack \BlackKingOnWhite \BlackQueenOnBlack \BlackBishopOnWhite \BlackKnightOnBlack \BlackRookOnWhite
+\end{center}
+
+
 \end{document}
