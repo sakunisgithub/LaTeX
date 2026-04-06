@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  5 APR 2026 01:31
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.12) (format=lualatex 2025.7.15)  7 APR 2026 04:06
  restricted system commands enabled.
 **Efficiency_under_AR1_correlation_structure.tex
 (./Efficiency_under_AR1_correlation_structure.tex
@@ -970,9 +970,81 @@ ic.sty
 Package: lastpageclassic 2024/04/27 v2.1a Refers to last page's name (HMM; JPG)
 
 ) 
+)) (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/skak/skak.sty
+Package: skak 2018/01/08 v1.5.3 Chess typesetting
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/chessfss/chessfss.sty
+Package: chessfss 2006/06/14 v1.2a chess font selection scheme
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkeyval.tex
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks39
+\XKV@tempa@toks=\toks40
+)
+\XKV@depth=\count359
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-luaotfload | aux : font no 20 (nil) defines no feature for script latn
-luaotfload | aux : font no 20 (nil) defines no feature for script dflt
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/chessfss/lsbenc.def
+File: lsbenc.def 2006/06/09 v1.2 Standard LaTeX file
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/chessfss/lsfenc.def
+File: lsfenc.def 2006/06/09 v1.2 Standard LaTeX file
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/chessfss/lsienc.def
+File: lsienc.def 2006/06/09 v1.2 Standard LaTeX file
+)
+\len@cfss@squarewidth=\skip78
+\len@cfss@squaretotalheight=\skip79
+\len@cfss@squaredepth=\skip80
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/generic/lambda-lists/lambda.
+sty) (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count360
+\calc@Bcount=\count361
+\calc@Adimen=\dimen329
+\calc@Bdimen=\dimen330
+\calc@Askip=\skip81
+\calc@Bskip=\skip82
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count362
+\calc@Cskip=\skip83
+)
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+\c@fileFrom=\count363
+\c@rankFrom=\count364
+\c@fileTo=\count365
+\c@rankTo=\count366
+\c@ps@inverse=\count367
+\c@ps@knightangle=\count368
+\c@halfmove=\count369
+\c@move=\count370
+\c@helpgobble=\count371
+\c@helpnumber=\count372
+\c@helpnumberMove=\count373
+\squarelength=\skip84
+\square@multiplier=\count374
+\ranklift=\skip85
+LaTeX Font Info:    Trying to load font information for LSB+skaknew on input li
+ne 1774.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/chessfss/lsbskaknew.fd
+File: lsbskaknew.fd 2006/03/31 v1.0 Chess font definitions
+)
+
+LaTeX Font Warning: Font shape `TU/lmss/m/up' undefined
+(Font)              using `TU/lmss/m/n' instead on input line 1774.
+
+\store@toks=\toks41
+)
+luaotfload | aux : font no 22 (nil) defines no feature for script latn
+luaotfload | aux : font no 22 (nil) defines no feature for script dflt
 
 Package fontspec Info: Font family 'GLORIAHALLELUJAH-REGULAR.TTF(0)' created
 (fontspec)             for font 'GLORIAHALLELUJAH-REGULAR.TTF' with options
@@ -1028,6 +1100,24 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LSB/skaknew/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LSF/skaknew/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for LSF+skaknew on input li
+ne 47.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/chessfss/lsfskaknew.fd
+File: lsfskaknew.fd 2006/03/31 v1.0 Chess font definitions
+)
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LSI/skaknew/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for LSI+skaknew on input li
+ne 47.
+
+(C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/chessfss/lsiskaknew.fd
+File: lsiskaknew.fd 2006/03/31 v1.0 Chess font definitions
+)
+LaTeX Font Info:    ... okay on input line 47.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1067,17 +1157,17 @@ LaTeX Font Info:    ... okay on input line 47.
 (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count359
-\scratchdimen=\dimen329
+\scratchcounter=\count375
+\scratchdimen=\dimen331
 \scratchbox=\box100
-\nofMPsegments=\count360
-\nofMParguments=\count361
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count362
-\MPscratchDim=\dimen330
-\MPnumerator=\count363
-\makeMPintoPDFobject=\count364
-\everyMPtoPDFconversion=\toks40
+\nofMPsegments=\count376
+\nofMParguments=\count377
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count378
+\MPscratchDim=\dimen332
+\MPnumerator=\count379
+\makeMPintoPDFobject=\count380
+\everyMPtoPDFconversion=\toks43
 )
 (C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-
 base.sty
@@ -1233,20 +1323,23 @@ AED: lastpage setting LastPage
 [12<C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twemoji
 s.pdf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/tex/latex/twemojis/all-twem
 ojis.pdf>] (./Efficiency_under_AR1_correlation_structure.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `Efficiency_under_AR1_correlation_structure.o
 ut' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39585 strings out of 478389
+ 41853 strings out of 478389
  100000,1977958 words of node,token memory allocated
- 680 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 35 attribute, 65 glue_spec
+ 720 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 35 attribute, 73 glue_spec
 , 35 attribute_list, 3 write nodes
-   avail lists: 2:1358,3:183,4:62,5:570,6:49,7:5841,8:83,9:1768,10:6,11:6
- 58522 multiletter control sequences out of 65536+600000
- 57 fonts using 3899735 bytes
+   avail lists: 2:1370,3:183,4:62,5:570,6:49,7:5841,8:83,9:1768,10:6,11:6
+ 60682 multiletter control sequences out of 65536+600000
+ 59 fonts using 4080703 bytes
  99i,22n,98p,469b,1120s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/Ananda/AppData/Local/Microsoft/Windows/Fonts/GLORIAHALLELUJAH-REGULAR.
 TTF><//?/c:/users/ananda/appdata/local/programs/miktex/fonts/opentype/public/lm/
@@ -1258,21 +1351,22 @@ data/local/programs/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><C:/Users
 some5Free-Regular-400.otf><//?/c:/users/ananda/appdata/local/microsoft/windows/f
 onts/benyoritha-g334d.otf><//?/c:/users/ananda/appdata/local/programs/miktex/fon
 ts/opentype/public/lm/lmroman17-regular.otf><C:/Users/Ananda/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ananda/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Ananda/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/
-Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C
-:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ananda/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Efficiency_under_AR1_correlation_structure.pdf (12 pages, 206
-331 bytes).
+ams/MiKTeX/fonts/type1/public/skaknew/SkakNew-Diagram.pfb><C:/Users/Ananda/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ana
+nda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ananda/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ananda/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Efficiency_under_AR1_correlation_structure.pdf (12 pages, 219
+851 bytes).
 
-PDF statistics: 297 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 301 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
