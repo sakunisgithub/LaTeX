@@ -1,0 +1,85 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 0.5 in, right = 0.5 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\title{MSMS 407 : Longitudinal Data Analysis}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
+\date{}
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Efficiency of a Cross-sectional Study relative to a Longitudinal Study under Uniform Correlation Structure}}
+
+We have to calculate 
+
+\begin{equation}
+e = \dfrac{\text{Var}(\hat{\beta}_L)}{\text{Var}(\hat{\beta}_C)}
+\end{equation}
+
+$$\text{where } \text{Var}(\hat{\beta}_C) = \dfrac{\sigma^2}{\sum \limits_{i = 1}^{m} (x_{i1} - \bar{x}_1)^2} \qquad \& \qquad \text{Var}(\hat{\beta}_L) = \sigma^2 \left[ \left\{\sum \limits_{i = 1}^{m} X_i' R_i^{-1} X_i \right\}^{-1} \right]_{22}.
+$$
+Consider the repeated measurements of all the subjects to have uniform correlation \textit{i.e.} $R_i \equiv R \; \forall i = 1(1)m$ where
+
+$$R = ((R_{jk})) \,\,\, \text{with} \,\,\, R_{jk} = \rho.$$
+
+\begin{itemize}
+
+\item[\scalebox{2.0}{\twemoji{keycap: 1}}] \hspace{0.2cm} We can rewrite
+
+\begin{align*}
+R = \begin{pmatrix}
+1 & \rho & \rho & \cdots & \rho \\
+\rho & 1 & \rho & \cdots & \rho \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+\rho & \rho & \rho & \cdots & 1
+\end{pmatrix}_{n \times n}
+= (1 - \rho) I_n + \rho J_n
+\end{align*}
+
+where $I_n$ is the identity matrix of order $n$ and $J_n$ is a $n \times n$ matrix with all elements equal to $1$. We assume $R^{-1}$ is also of the same form \textit{i.e.}
+
+\begin{equation}
+R^{-1} = aI_n + bJ_n.
+\end{equation}
+\end{itemize}
+\end{document}
