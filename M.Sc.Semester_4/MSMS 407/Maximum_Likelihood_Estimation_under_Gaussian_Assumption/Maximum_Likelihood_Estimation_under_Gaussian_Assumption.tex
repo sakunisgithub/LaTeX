@@ -53,14 +53,14 @@
 \begin{itemize}
 \item $\boldsymbol{y_i} = (y_{i1}, y_{i2}, \ldots, y_{in})$ is the observed sequence of measurements on the $i$th subject.
 
-\item $\boldsymbol{y} = (\boldsymbol{y}_1, \boldsymbol{y}_2, \ldots, \boldsymbol{y}_n)$ is the complete set of $N = nm$ measurements from $m$ subjects.
+\item $\boldsymbol{y} = (\boldsymbol{y}_1, \boldsymbol{y}_2, \ldots, \boldsymbol{y}_m)$ is the complete set of $N = mn$ measurements from $m$ subjects.
 
 \item $X$ is an $N \times p$ matrix of explanatory variables, with $\left\{n(i-1) + j\right\}$th row $(x_{ij1}, \ldots, x_{ijp})$.
 
 \item $\sigma^2V$ is a $N \times N$ block-diagonal matrix with non-zero $n \times n$ blocks $\sigma^2 V_0$, $V_0$ represents the identical correlation structure of the measurements on a single subject.
 \end{itemize}
 
-The General Linear Model for longitudinal data treats $\boldsymbol{y}$ as a realization of a multivariate Gaussian random vector, $\boldsymbol{Y}$, with
+The General Linear Model for longitudinal data treats $\boldsymbol{y}$ as a realization of a multivariate Gaussian random vector $\boldsymbol{Y}$, with
 
 \begin{equation}
 \boldsymbol{Y} \sim MVN(X\boldsymbol{\beta}, \sigma^2 V).
@@ -80,7 +80,7 @@ Note that, $\left| \sigma^2 V \right| = \sigma^{2N} \left| V_0 \right|^m$ as $V$
 Ignoring a constant term and using the fact that $N = mn$, the log-likelihood is
 
 \begin{align}\label{log_likelihood}
-\ell(\boldsymbol{\beta}, \sigma^2, V_0) &= -\dfrac{1}{2} \; N \ln(\sigma^2) - \dfrac{1}{2} \; m \ln(\left| V_0 \right|) - \dfrac{1}{2\sigma^2} \; (\boldsymbol{y} - X\boldsymbol{\beta})' V^{-1} (\boldsymbol{y} - X\boldsymbol{\beta}).
+\ell(\boldsymbol{\beta}, \sigma^2, V_0) &= -\dfrac{1}{2} \; mn \ln(\sigma^2) - \dfrac{1}{2} \; m \ln(\left| V_0 \right|) - \dfrac{1}{2\sigma^2} \; (\boldsymbol{y} - X\boldsymbol{\beta})' V^{-1} (\boldsymbol{y} - X\boldsymbol{\beta}).
 \end{align}
 
 Now,
