@@ -70,6 +70,7 @@ $$R = ((R_{jk})) \,\,\, \text{with} \,\,\, R_{jk} = \rho.$$
 R = \begin{pmatrix}
 1 & \rho & \rho & \cdots & \rho \\
 \rho & 1 & \rho & \cdots & \rho \\
+\rho & \rho & 1 & \cdots & \rho \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 \rho & \rho & \rho & \cdots & 1
 \end{pmatrix}_{n \times n}
@@ -260,11 +261,11 @@ a_{22}
 \right)^2 \\[8pt]
 &= a_{11} \cdot \dfrac{\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij}-\bar{x}_i)^2}{1-\rho}
 + a_{11} \cdot \dfrac{n \sum\limits_{i=1}^{m} \bar{x}_i^2}{1+(n-1)\rho}
-- a_{11} \cdot \dfrac{n}{1+(n-1)\rho}
+- a_{11} \cdot \dfrac{\dfrac{n}{m}}{1+(n-1)\rho}
 \left(\sum\limits_{i=1}^{m} \bar{x}_i \right)^2 \\[8pt]
 &= a_{11} \cdot \dfrac{\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij}-\bar{x}_i)^2}{1-\rho}
 + a_{11} \cdot \dfrac{n \sum\limits_{i=1}^{m} \bar{x}_i^2}{1+(n-1)\rho}
-- a_{11} \cdot \dfrac{nm \bar{\bar{x}}^2}{1+(n-1)\rho}.
+- a_{11} \cdot \dfrac{nm \bar{x}^2}{1+(n-1)\rho}.
 \end{align*}
 
 \begin{align*}
@@ -273,7 +274,7 @@ a_{22}
 \left[
 \dfrac{\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij}-\bar{x}_i)^2}{1-\rho}
 +
-\dfrac{n \sum\limits_{i=1}^{m} (\bar{x}_i - \bar{\bar{x}})^2}{1+(n-1)\rho}
+\dfrac{n \sum\limits_{i=1}^{m} (\bar{x}_i - \bar{x})^2}{1+(n-1)\rho}
 \right]^{-1}
 \end{align*}
 
@@ -286,7 +287,7 @@ a_{22}
 e 
 &= \dfrac{\text{Var}(\hat{\beta}_L)}{\text{Var}(\hat{\beta}_C)} \\[1em]
 &= 
-\dfrac{\sum\limits_{i=1}^{m} (x_{i1} - \bar{x}_1)^2}{\dfrac{\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij} - \bar{x}_i)^2}{1-\rho} + \dfrac{n \sum\limits_{i=1}^{m} (\bar{x}_i - \bar{\bar{x}})^2}{1+(n-1)\rho}}.
+\dfrac{\sum\limits_{i=1}^{m} (x_{i1} - \bar{x}_1)^2}{\dfrac{\sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij} - \bar{x}_i)^2}{1-\rho} + \dfrac{n \sum\limits_{i=1}^{m} (\bar{x}_i - \bar{x})^2}{1+(n-1)\rho}}.
 \end{align*}
 
 \begin{align*}
@@ -295,7 +296,7 @@ e
 = \sum\limits_{i=1}^{m} \sum\limits_{j=1}^{n} (x_{ij} - \bar{x}_i)^2, \\[10pt]
 S_b^2 
 &: \text{ between-subjects sum of squares in } X
-= \sum\limits_{i=1}^{m} (\bar{x}_i - \bar{\bar{x}})^2.
+= \sum\limits_{i=1}^{m} (\bar{x}_i - \bar{x})^2.
 \end{align*}
 
 \begin{align}\label{e_second}
