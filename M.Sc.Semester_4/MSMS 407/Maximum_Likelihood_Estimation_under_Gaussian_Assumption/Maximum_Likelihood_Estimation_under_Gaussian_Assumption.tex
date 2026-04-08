@@ -1,0 +1,146 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 0.5 in, right = 0.5 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{skak}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\title{MSMS 407 : Longitudinal Data Analysis}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
+\date{}
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Maximum Likelihood Estimation under Gaussian Assumption}}
+
+\begin{itemize}
+\item $\boldsymbol{y_i} = (y_{i1}, y_{i2}, \ldots, y_{in})$ is the observed sequence of measurements on the $i$th subject.
+
+\item $\boldsymbol{y} = (\boldsymbol{y}_1, \boldsymbol{y}_2, \ldots, \boldsymbol{y}_n)$ is the complete set of $N = nm$ measurements from $m$ subjects.
+
+\item $X$ is an $N \times p$ matrix of explanatory variables, with $\left\{n(i-1) + j\right\}$th row $(x_{ij1}, \ldots, x_{ijp})$.
+
+\item $\sigma^2V$ is a $N \times N$ block-diagonal matrix with non-zero $n \times n$ blocks $\sigma^2 V_0$, $V_0$ represents the identical correlation structure of the measurements on a single subject.
+\end{itemize}
+
+The General Linear Model for longitudinal data treats $\boldsymbol{y}$ as a realization of a multivariate Gaussian random vector, $\boldsymbol{Y}$, with
+
+\begin{equation}
+\boldsymbol{Y} \sim MVN(X\boldsymbol{\beta}, \sigma^2 V).
+\end{equation}
+
+The likelihood for observed data $\boldsymbol{y}_{N \times 1}$ is
+
+\begin{align}
+L(\boldsymbol{\beta}, \sigma^2, V_0) &= \dfrac{1}{(2\pi)^{N/2} \left| \sigma^2 V \right|^{{1}/{2}}} \exp\left\{ - \dfrac{1}{2} (\boldsymbol{y} - X\boldsymbol{\beta})' (\sigma^2 V)^{-1} (\boldsymbol{y} - X\boldsymbol{\beta}) \right\} \nonumber \\[1em]
+&= \dfrac{1}{(2\pi)^{N/2} \left( \sigma^{2N} \left| V_0 \right|^m\right)^{{1}/{2}}} \exp\left\{ - \dfrac{1}{2\sigma^2} (\boldsymbol{y} - X\boldsymbol{\beta})' V^{-1} (\boldsymbol{y} - X\boldsymbol{\beta}) \right\}
+\end{align}
+
+\vspace{0.5cm}
+
+Note that, $\left| \sigma^2 V \right| = \sigma^{2N} \left| V_0 \right|^m$ as $V$ is a block-diagonal matrix of order $N$ with blocks $V_0$ in diagonal. \\[1em]
+
+Ignoring a constant term and using the fact that $N = mn$, the log-likelihood is
+
+\begin{align}\label{log_likelihood}
+\ell(\boldsymbol{\beta}, \sigma^2, V_0) &= -\dfrac{1}{2} \; N \ln(\sigma^2) - \dfrac{1}{2} \; m \ln(\left| V_0 \right|) - \dfrac{1}{2\sigma^2} \; (\boldsymbol{y} - X\boldsymbol{\beta})' V^{-1} (\boldsymbol{y} - X\boldsymbol{\beta}).
+\end{align}
+
+Now,
+
+\begin{align}\label{derivative_wrt_beta}
+&\dfrac{\partial}{\partial \boldsymbol{\beta}} \; \ell(\boldsymbol{\beta}, \sigma^2, V_0) = 0 \nonumber \\[0.5em]
+\Rightarrow \; &\dfrac{\partial}{\partial \boldsymbol{\beta}} \; (\boldsymbol{y} - X\boldsymbol{\beta})' V^{-1} (\boldsymbol{y} - X\boldsymbol{\beta}) = 0 \nonumber \\[0.5em]
+\Rightarrow \; &\dfrac{\partial}{\partial \boldsymbol{\beta}} \left\{\boldsymbol{y}' V^{-1} \boldsymbol{y} - \boldsymbol{y}' V^{-1} X \boldsymbol{\beta} - \boldsymbol{\beta}' X' V^{-1} \boldsymbol{y} + \boldsymbol{\beta}' X' V^{-1} X \boldsymbol{\beta} \right\} = 0 \nonumber \\[0.5em]
+\Rightarrow \; &\dfrac{\partial}{\partial \boldsymbol{\beta}} \left\{ \boldsymbol{y}' V^{-1} \boldsymbol{y} - 2 \boldsymbol{y}' V^{-1} X \boldsymbol{\beta} + \boldsymbol{\beta}' X' V^{-1} X \boldsymbol{\beta} \right\} = 0 \nonumber \\[0.5em]
+\Rightarrow \; &-2X'V^{-1}\boldsymbol{y} + 2 X' V^{-1} X \boldsymbol{\beta} = 0 \nonumber \\[0.5em]
+\Rightarrow \; &X' V^{-1} X \boldsymbol{\beta} = X'V^{-1}\boldsymbol{y}
+\end{align}
+
+For given $V_0$, $V$ will be completely known. Then, from (\ref{derivative_wrt_beta}),
+
+\begin{equation}\label{beta_hat}
+\widehat{\boldsymbol{\beta}}(V_0) = (X'V^{-1}X)^{-1}X'V^{-1}\boldsymbol{y}.
+\end{equation}
+
+Substituting (\ref{beta_hat}) into (\ref{log_likelihood}),
+
+\begin{equation}\label{log_likelihood_with_beta_hat}
+\ell(\widehat{\boldsymbol{\beta}}(V_0), \sigma^2, V_0) = -\dfrac{1}{2} \; mn \ln(\sigma^2) - \dfrac{1}{2} \; m \ln(\left| V_0 \right|) - \dfrac{1}{2\sigma^2} \; \text{RSS}(V_0)
+\end{equation}
+
+where
+
+\begin{align*}
+\text{RSS}(V_0) &= \left\{\boldsymbol{y} - X\widehat{\boldsymbol{\beta}}(V_0)\right\}' V^{-1} \left\{\boldsymbol{y} - X\widehat{\boldsymbol{\beta}}(V_0)\right\}.
+\end{align*}
+
+Now,
+\begin{align}\label{derivate_wrt_sigma_square}
+&\dfrac{\partial}{\partial {\sigma^2}} \; \ell(\widehat{\boldsymbol{\beta}}(V_0), \sigma^2, V_0) = 0 \nonumber \\[0.5em]
+\Rightarrow \; &- \dfrac{mn}{2 \sigma^2} + \dfrac{1}{2\sigma^4} \; \text{RSS}(V_0) = 0 \nonumber \\[0.5em]
+\Rightarrow \; &\dfrac{1}{2\sigma^4} \; \text{RSS}(V_0) = \dfrac{mn}{2 \sigma^2} \nonumber \\[0.5em]
+\Rightarrow \; & \sigma^2 = \dfrac{\text{RSS}(V_0)}{mn}.
+\end{align}
+
+For given $V_0$,
+
+\begin{equation}\label{sigma_square_hat}
+\widehat{\sigma^2}(V_0) = \dfrac{\text{RSS}(V_0)}{mn}.
+\end{equation}
+
+\vspace{0.5cm}
+
+Substituting (\ref{beta_hat}) and (\ref{sigma_square_hat}) into (\ref{log_likelihood}) gives the \textit{reduced log-likelihood}\footnote{A reduced log-likelihood is the log-likelihood after we have eliminated some parameters - usually by plugging in their estimates so that the function depends only on a smaller set of parameters.} for $V_0$
+
+\begin{align*}
+\ell_r(V_0) = \ell(\widehat{\boldsymbol{\beta}}(V_0), \widehat{\sigma^2}(V_0), V_0) &= -\dfrac{1}{2} mn \ln \left( \text{RSS}(V_0) \right) - \dfrac{1}{2} \; m \ln(\left| V_0 \right|) - \dfrac{mn}{2}
+\end{align*}
+
+Ignoring the constant term,
+
+\begin{align}\label{reduced_log_likelihood_V_0}
+\ell_r(V_0) = -\dfrac{1}{2} mn \ln \left( \text{RSS}(V_0) \right) - \dfrac{1}{2} \; m \ln(\left| V_0 \right|).
+\end{align}
+
+Finally, maximization of (\ref{reduced_log_likelihood_V_0}) with respect to the distinct elements of $V_0$ yields $\widehat{V_0}$ and substitution into (\ref{beta_hat}) and (\ref{sigma_square_hat}) gives the maximum likelihood estimators
+
+$$\widehat{\boldsymbol{\beta}} = \widehat{\boldsymbol{\beta}}(\widehat{V_0}) \qquad \& \qquad \widehat{{\sigma^2}} = \widehat{{\sigma^2}}(\widehat{V_0}).$$
+\end{document}
