@@ -1,0 +1,150 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 0.5 in, right = 0.5 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{skak}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\title{MSMS 407 : Longitudinal Data Analysis}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
+\date{}
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Estimate of $\boldsymbol{\beta}$ for a Cross-Sectional Study}}
+
+Following the model
+
+\begin{equation}
+Y_{ij} = \beta_0 + \beta x_{ij} + \epsilon_{ij}, \qquad j = 1(1)n; \; i = 1(1)m
+\end{equation}
+
+we have
+
+\begin{equation}
+Q(\beta_0, \beta) = \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} e_{ij}^2 = \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} \left(y_{ij} - \beta_0 - \beta x_{ij} \right)^2.
+\end{equation}
+
+To get OLS estimates of $\beta_0$ and $\beta$ we solve the normal equations
+
+\settasks{label = (\roman*),
+          label-width = 4ex,
+          item-indent = 8em}
+
+\begin{tasks}(2)
+\task $\dfrac{\partial}{\partial \beta_0} Q(\beta_0, \beta) = 0$,
+\task $\dfrac{\partial}{\partial	\beta} Q(\beta_0, \beta) = 0$
+\end{tasks}
+
+for $\beta_0$ and $\beta$. Now,
+
+\begin{align}
+\dfrac{\partial}{\partial \beta_0} Q(\beta_0, \beta) \Bigg|_{\widehat{\beta_0}, \widehat{\beta}} = 0 
+&\Rightarrow 
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n}
+\left(y_{ij} - \widehat{\beta}_0 - \widehat{\beta} x_{ij} \right) = 0 \nonumber \\[0.5em]
+&\Rightarrow
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} y_{ij}
+- mn \cdot \widehat{\beta}_0 - \widehat{\beta} \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij} = 0 \nonumber \\[0.5em]
+&\Rightarrow
+mn \cdot \widehat{\beta}_0 = \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} y_{ij} - \widehat{\beta} \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij} \nonumber \\[0.5em]
+&\Rightarrow \widehat{\beta}_0 = \bar{y} - \widehat{\beta}\,\bar{x}.
+\end{align}
+
+And
+\begin{align}
+\dfrac{\partial}{\partial \beta} Q(\widehat{\beta}_0, \beta) \Bigg|_{\widehat{\beta}} = 0 
+&\Rightarrow 
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n}
+\left(y_{ij} - \widehat{\beta}_0 - \widehat{\beta} x_{ij} \right) x_{ij} = 0 \nonumber \\[0.5em]
+&\Rightarrow
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij} y_{ij}
+- \widehat{\beta}_0 \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij}
+- \widehat{\beta} \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij}^2
+= 0 \nonumber \\[0.5em]
+&\Rightarrow
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij} y_{ij}
+- (\bar{y} - \widehat{\beta}\,\bar{x}) \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij}
+- \widehat{\beta} \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij}^2
+= 0 \nonumber \\[0.5em]
+&\Rightarrow
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij} y_{ij} - 
+\bar{y} \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij} 
++ \widehat{\beta}\,\bar{x} \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij}
+- \widehat{\beta} \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij}^2
+= 0 \nonumber \\[0.5em]
+&\Rightarrow
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij} y_{ij} - 
+mn \cdot \bar{x} \bar{y} = \widehat{\beta} \left(
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij}^2
+- mn\,\bar{x}^2
+\right) \nonumber \\[0.5em]
+&\Rightarrow
+\widehat{\beta}
+=
+\dfrac{
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij} y_{ij}
+- mn\,\bar{x}\bar{y}
+}{
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{ij}^2
+- mn\,\bar{x}^2
+}.
+\end{align}
+
+\begin{align*}
+\therefore \; \widehat{\beta}
+=
+\dfrac{
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n}
+(x_{ij} - \bar{x})(y_{ij} - \bar{y})
+}{
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n}
+(x_{ij} - \bar{x})^2
+}.
+\end{align*}
+
+
+\vspace{5em}
+
+\begin{center}
+\BlackRookOnBlack \BlackKnightOnWhite \BlackBishopOnBlack \BlackKingOnWhite \BlackQueenOnBlack \BlackBishopOnWhite \BlackKnightOnBlack \BlackRookOnWhite
+\end{center}
+
+\end{document}
