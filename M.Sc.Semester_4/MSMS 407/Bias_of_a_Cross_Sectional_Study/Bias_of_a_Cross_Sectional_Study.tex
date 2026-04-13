@@ -1,0 +1,128 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 0.5 in, right = 0.5 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{skak}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\title{MSMS 407 : Longitudinal Data Analysis}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
+\date{}
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Bias of a Cross-Sectional Study}}
+
+A cross-sectional study models $X$ and $Y$ as
+
+\begin{equation}\label{CS_model}
+Y_{ij} = \beta_0 + \beta x_{ij} + \epsilon_{ij}, \qquad j = 1(1)n; \; i = 1(1)m.
+\end{equation}
+
+Following (\ref{CS_model}), we have
+
+\begin{align*}
+\widehat{\beta}
+=
+\dfrac{
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n}
+(x_{ij} - \bar{x})(Y_{ij} - \bar{Y})
+}{
+\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n}
+(x_{ij} - \bar{x})^2
+}.
+\end{align*}
+
+If the true relation between $X$ and $Y$ is
+
+\begin{equation}\label{LnDA_model}
+Y_{ij} = \beta_0 + \beta_C x_{i1} + \beta_L(x_{ij} - x_{i1}) + \epsilon_{ij}
+\end{equation}
+
+then we are interested to check how much biased an estimate $\widehat{\beta}$ is of $\beta_L$. \\[0.5em]
+
+Denote $\bar{\epsilon} = \dfrac{1}{mn} \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} \epsilon_{ij}$, $\bar{x}_1 = \dfrac{1}{m} \sum \limits_{i=1}^{m} x_{i1} = \dfrac{1}{mn} \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} x_{i1}$. Then, from (\ref{LnDA_model}),
+
+\begin{align*}
+\bar{Y} &= \dfrac{1}{mn} \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} Y_{ij} \\[0.2em]
+&= \beta_0 + \beta_C \,\bar{x}_1 + \beta_L \left(\bar{x} - \bar{x}_1\right) + \bar{\epsilon}.
+\end{align*}
+
+\begin{align*}
+\therefore \; (Y_{ij} - \bar{Y}) = \beta_C \left(x_{i1} - \bar{x}_1 \right) + \beta_L \left(x_{ij} - x_{i1} - \bar{x} + \bar{x}_1 \right) +\left(\epsilon_{ij} - \bar{\epsilon} \right).
+\end{align*}
+
+Note that, $\mathbb{E}[\epsilon_{ij} - \bar{\epsilon}] = 0$. Then,
+
+\begin{align*}
+\mathbb{E}(Y_{ij} - \bar{Y}) &= \beta_C (x_{i1} - \bar{x}_1) + \beta_L (x_{ij} - \bar{x}) - \beta_L (x_{i1} - \bar{x}_1) \\[0.5em]
+&= \beta_L (x_{ij} - \bar{x}) + (x_{i1} - \bar{x}_1)(\beta_C - \beta_L).
+\end{align*}
+
+\newpage
+
+Assuming (\ref{LnDA_model}) is the true model,
+
+\begin{align*}
+\mathbb{E}(\widehat{\beta}) &= \dfrac{1}{\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x})^2} \left[\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x}) \cdot \mathbb{E}(Y_{ij} - \bar{Y}) \right] \\[1em]
+&= \dfrac{1}{\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x})^2} \left[\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x}) \beta_L (x_{ij} - \bar{x}) + \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x}) (x_{i1} - \bar{x}_1)(\beta_C - \beta_L) \right] \\[1em]
+&= \dfrac{1}{\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x})^2} \left[\beta_L \cdot \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x})^2 + \sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x}) (x_{i1} - \bar{x}_1)(\beta_C - \beta_L) \right] \\[1em]
+&= \beta_L + \dfrac{\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x}) (x_{i1} - \bar{x}_1)}{\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x})^2} \cdot (\beta_C - \beta_L).
+\end{align*}
+
+Note that, $\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x})(x_{i1} - \bar{x}_1) = \sum \limits_{i=1}^{m} \left[ (x_{i1} - \bar{x}_1) \sum \limits_{j=1}^{n} (x_{ij} - \bar{x}) \right] = \sum \limits_{i=1}^{m} n (x_{i1} - \bar{x}_1)(\bar{x}_i - \bar{x})$ \\[0.5em] where $\bar{x}_i = \dfrac{1}{n} \sum \limits_{j = 1}^{n} x_{ij}$.
+
+\begin{align*}
+\therefore \; \mathbb{E}(\widehat{\beta}) = \beta_L + \dfrac{\sum \limits_{i=1}^{m} n (x_{i1} - \bar{x}_1)(\bar{x}_i - \bar{x})}{\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x})^2} \cdot (\beta_C - \beta_L).
+\end{align*}
+
+\begin{align*}
+\therefore \; \text{Bias}(\widehat{\beta}) = \dfrac{\sum \limits_{i=1}^{m} n (x_{i1} - \bar{x}_1)(\bar{x}_i - \bar{x})}{\sum \limits_{i=1}^{m} \sum \limits_{j=1}^{n} (x_{ij} - \bar{x})^2} \cdot (\beta_C - \beta_L).
+\end{align*}
+
+
+
+\vspace{5em}
+
+\begin{center}
+\BlackRookOnBlack \BlackKnightOnWhite \BlackBishopOnBlack \BlackKingOnWhite \BlackQueenOnBlack \BlackBishopOnWhite \BlackKnightOnBlack \BlackRookOnWhite
+\end{center}
+
+\end{document}
