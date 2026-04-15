@@ -1,0 +1,82 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 0.6 in, bottom = 0.6 in, left = 0.8 in, right = 0.8 in]{geometry}
+\usepackage{amsmath, amssymb, amsfonts}
+
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{undertilde}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{MSMS 402 : Assignment 01}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas} \\[1em] Exam Roll No. : 24419STC053}
+\date{\today}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+\newfontface\myfont{Myfont1-Regular.ttf}[LetterSpace=0.05em]
+
+\newfontface\cbfont{CaveatBrush-Regular.ttf}
+% how to use --- \myfont --write text here--
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Theorem.} The acceptance--rejection algorithm generates a random variable $X$ such that
+\begin{align*}
+P\{X = j\} = p_j, \quad j = 0, \ldots
+\end{align*}
+In addition, the number of iterations of the algorithm needed to obtain $X$ is a geometric random variable with mean $c$. \\[1em]
+
+\textbf{Proof.} As a proposal distribution, we use random variable $Y$ such that
+\begin{align*}
+P\{Y = j\} = q_j, \quad j = 0, \ldots.
+\end{align*}
+
+To begin, let us determine the probability that a single iteration produces the accepted value $j$. First note that
+\begin{align*}
+P\{Y = j, \text{ it is accepted}\}
+&= P\{Y = j\} P\{\text{accept} \mid Y = j\} \\[0.5em]
+&= q_j \dfrac{p_j}{c q_j} \\[0.5em]
+&= \dfrac{p_j}{c}.
+\end{align*}
+
+Summing over $j$ yields the probability that a generated random variable is accepted:
+\begin{align*}
+P\{\text{accepted}\}
+&= \sum_j \dfrac{p_j}{c} \\[0.5em]
+&= \dfrac{1}{c}.
+\end{align*}
+
+As each iteration independently results in an accepted value with probability $\dfrac{1}{c}$, we see that the number of iterations needed is geometric with mean $c$. Also,
+\begin{align*}
+P\{X = j\}
+&= \sum_n P\{\text{$j$ accepted on iteration $n$}\} \\[0.5em]
+&= \sum_n \left(1 - \dfrac{1}{c}\right)^{n-1} \dfrac{p_j}{c} \\[0.5em]
+&= p_j.
+\end{align*}
+
+\flushright{\Box}
+
+
+
+\end{document}
