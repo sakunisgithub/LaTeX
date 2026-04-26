@@ -1,0 +1,161 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 0.5 in, right = 0.5 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{skak}
+\usepackage{mathrsfs}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\title{Expectation-Maximization Algorithms}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
+\date{}
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Computing Estimates in the Maximization Step of EM Algorithms}}
+
+In the E-Step of EM algorithms, at $(t+1)$th iteration, we calculate
+
+\begin{equation}
+Q_i(z^{(i)}) := p(z^{(i)} \mid x^{(i)}; \theta^{(t)}).
+\end{equation}
+
+\noindent In the M-Step of EM algorithms, at $(t+1)$th iteration, we execute
+
+\begin{equation}
+\theta^{(t+1)} := \arg \max_{\theta} \sum \limits_{i = 1}^{n} \sum \limits_{z^{(i)} = 1}^{K} Q_i(z^{(i)}) \log \dfrac{ p\left(x^{(i)}, z^{(i)}; \theta\right) }{ Q_i(z^{(i)}) }.
+\end{equation}
+
+Recall that, $$z^{(i)} \sim \text{ Multinomial}(\pi) \; i.e. \; p\left(z^{(i)} = j\right) = \pi_j \geq 0, \sum \limits_{j = 1}^{K} \pi_j = 1,$$
+$$x^{(i)} \mid z^{(i)} = j \sim \mathcal{N}(\mu_j, \Sigma_j),$$
+$$\theta = \left\{ \pi_1, \ldots, \pi_K,\; \mu_1, \ldots, \mu_K,\; \Sigma_1, \ldots, \Sigma_K \right\}.$$
+
+Let $$\mathbb{Q}(\theta) = \sum \limits_{i = 1}^{n} \sum \limits_{z^{(i)} = 1}^{K} Q_i(z^{(i)}) \log \dfrac{ p\left(x^{(i)}, z^{(i)}; \theta\right) }{ Q_i(z^{(i)}) }.$$
+
+To get $\arg \max_{\theta} \mathbb{Q}(\theta)$, we differentiate $\mathbb{Q}(\theta)$ w.r.t. different components of $\theta$, set the derivatives to $0$ and solve the equations.
+
+First we simplify $\mathbb{Q}(\theta)$ as follows.
+
+\begin{align*}
+\mathbb{Q}(\theta) &= \sum \limits_{i = 1}^{n} \sum \limits_{z^{(i)} = 1}^{K} Q_i(z^{(i)}) \log \dfrac{ p\left(x^{(i)}, z^{(i)}; \theta\right) }{ Q_i(z^{(i)}) } \\[0.5em]
+&= \sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} Q_i(z^{(i)} = j) \log \dfrac{ p\left(z^{(i)} = j\right) \cdot p\left(x^{(i)} \mid z^{(i)} = j\right) }{ Q_i(z^{(i)} = j) } \\[0.5em]
+&= \sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \log \dfrac{ \pi_j \cdot \mathcal{N}(x^{(i)}; \mu_j, \Sigma_j) }{ w_j^{(i)} }; \; w_j^{(i)} \overset{\cdot}{=} Q_i(z^{(i)} = j), \text{ say} \\[0.5em]
+&= \sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \log \pi_j \cdot \mathcal{N}(x^{(i)}; \mu_j, \Sigma_j), \text{ keeping relevant terms only} \\[0.5em]
+&= \sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \log \pi_j + \sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \log \mathcal{N}(x^{(i)}; \mu_j, \Sigma_j)
+\end{align*}
+
+$w_j^{(i)}$'s are set fixed in the E-Step; To maximize $\mathbb{Q}(\theta)$, we have to maximize $\log \pi_j$ and $\log \mathcal{N}(x^{(i)}; \mu_j, \Sigma_j)$ for each $i, j$. \\[0.5em]
+
+Optimum $\pi_j$'s are the ones that maximize $\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \log \pi_j$ subject to the constraint $\sum \limits_{j = 1}^{K} \pi_j = 1$. So we use Lagrange Multipliers. \\[0.5em]
+
+Define $$\mathcal{L} = \sum_{i=1}^{n}\sum_{j=1}^{K} w_j^{(i)} \log \pi_j + \lambda \left( \sum_{j=1}^{K}\pi_j - 1 \right).$$
+
+Then 
+\begin{align*}
+\dfrac{\partial \mathcal{L}}{\partial \pi_j} = 0 &\Rightarrow \sum_{i=1}^{n} w_j^{(i)} \cdot \dfrac{1}{\pi_j} + \lambda = 0 \\[0.5em]
+&\Rightarrow \pi_j = - \dfrac{1}{\lambda} \sum \limits_{i=1}^{n}w_j^{(i)}
+\end{align*}
+
+Now
+\begin{align*}
+\sum \limits_{j = 1}^{K} \pi_j = 1 &\Rightarrow \sum \limits_{j = 1}^{K} - \dfrac{1}{\lambda} \sum \limits_{i=1}^{n}w_j^{(i)} = 1 \\[0.5em]
+&\Rightarrow -\dfrac{1}{\lambda} \sum \limits_{j = 1}^{K} \sum \limits_{i=1}^{n}w_j^{(i)} = 1 \\[0.5em]
+&\Rightarrow -\dfrac{1}{\lambda} \sum \limits_{i=1}^{n} \underbrace{\sum \limits_{j = 1}^{K} w_j^{(i)}}_{1} = 1 \\[0.5em]
+&\Rightarrow -\dfrac{n}{\lambda} = 1 \\[0.5em]
+&\Rightarrow \lambda = -n
+\end{align*}
+
+$$\boxed{\therefore\; \pi_j = \dfrac{1}{n} \sum \limits_{i=1}^{n}w_j^{(i)}.}$$
+
+Optimum $\mu_j$'s are the ones that maximize 
+\begin{align*}
+&\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \log \mathcal{N}(x^{(i)}; \mu_j, \Sigma_j) \\[0.5em]
+= \; &\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \log \left( \dfrac{1}{(2\pi)^{\frac{p}{2}} |\Sigma_j|^{\frac{1}{2}} }
+\exp\Bigg\{-\dfrac{1}{2} \left(x^{(i)}-\mu_j\right)'\Sigma_j^{-1}\left(x^{(i)}-\mu_j\right)\Bigg\} \right) \\[0.5em]
+= \; &-\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \left(x^{(i)}-\mu_j\right)'\Sigma_j^{-1}\left(x^{(i)}-\mu_j\right), \text{ keeping relevant terms only}
+\end{align*}
+
+OR minimize $\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \left(x^{(i)}-\mu_j\right)'\Sigma_j^{-1}\left(x^{(i)}-\mu_j\right)$.
+
+
+\begin{align*}
+&\dfrac{\partial}{\partial \mu_j} \sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \left(x^{(i)}-\mu_j\right)'\Sigma_j^{-1}\left(x^{(i)}-\mu_j\right) = \boldsymbol{0} \\[0.5em]
+\Rightarrow & \sum \limits_{i = 1}^{n} \dfrac{\partial}{\partial \mu_j} w_j^{(i)} \left(x^{(i)}-\mu_j\right)'\Sigma_j^{-1}\left(x^{(i)}-\mu_j\right) = \boldsymbol{0} \\[0.5em]
+\Rightarrow & \sum \limits_{i = 1}^{n} \dfrac{\partial}{\partial \mu_j} w_j^{(i)} \left( x^{(i)}-\mu_j\right )' \left(\Sigma_j^{-1}x^{(i)}-\Sigma_j^{-1}\mu_j\right) = \boldsymbol{0} \\[0.5em]
+\Rightarrow & \sum \limits_{i = 1}^{n} \dfrac{\partial}{\partial \mu_j}
+w_j^{(i)} \left( x^{(i)'} \Sigma_j^{-1} x^{(i)} - x^{(i)'}\Sigma_j^{-1}\mu_j - \mu_j'\Sigma_j^{-1}x^{(i)} + \mu_j' \Sigma_j^{-1}\mu_j \right) = \boldsymbol{0} \\[0.5em]
+\Rightarrow & \sum \limits_{i = 1}^{n} \dfrac{\partial}{\partial \mu_j}
+w_j^{(i)} \left( -\Sigma_j^{-1}x^{(i)} - \Sigma_j^{-1}x^{(i)} + 2\Sigma_j^{-1}\mu_j \right) = \boldsymbol{0} \\[0.5em]
+\Rightarrow & \sum \limits_{i = 1}^{n} w_j^{(i)} \left( -2\Sigma_j^{-1}
+\left( x^{(i)}-\mu_j \right) \right) = \boldsymbol{0} \\[0.5em]
+\Rightarrow & \sum \limits_{i = 1}^{n} w_j^{(i)} \left( x^{(i)}-\mu_j \right) = \boldsymbol{0} \\[0.5em]
+\Rightarrow & \sum \limits_{i = 1}^{n} w_j^{(i)} x^{(i)} - \mu_j \sum \limits_{i = 1}^{n} w_j^{(i)} = \boldsymbol{0}
+\end{align*}
+
+$$\boxed{\therefore \; \mu_j = \dfrac{\sum \limits_{i = 1}^{n} w_j^{(i)} x^{(i)}}{\sum \limits_{i = 1}^{n} w_j^{(i)}}.}$$
+
+
+Optimum $\Sigma_j$'s are the ones that maximize 
+\begin{align}
+&\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \log \mathcal{N}(x^{(i)}; \mu_j, \Sigma_j) \nonumber \\[0.5em]
+= \; &\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \log \left( \dfrac{1}{(2\pi)^{\frac{p}{2}} |\Sigma_j|^{\frac{1}{2}} }
+\exp\Bigg\{-\dfrac{1}{2} \left(x^{(i)}-\mu_j\right)'\Sigma_j^{-1}\left(x^{(i)}-\mu_j\right)\Bigg\} \right) \nonumber \\[0.5em]
+= \; &\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \left(-\dfrac{p}{2}\log(2\pi) - \dfrac{1}{2}\log|\Sigma_j| - \dfrac{1}{2} \left(x^{(i)}-\mu_j\right)' \Sigma_j^{-1} \left(x^{(i)}-\mu_j\right)\right) \nonumber \\[0.5em]
+= \; &\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \left(- \log|\Sigma_j| - \left(x^{(i)}-\mu_j\right)' \Sigma_j^{-1} \left(x^{(i)}-\mu_j\right)\right), \text{ keeping relevant terms only} \nonumber \\[0.5em]
+= \; &\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \left(\log|\Sigma_j^{-1}| - \left(x^{(i)}-\mu_j\right)' \Sigma_j^{-1} \left(x^{(i)}-\mu_j\right)\right) \nonumber\\[0.5em]
+= \; &\sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \ln\left( \sum \limits_{\beta = 1}^{p} \sigma_j^{\alpha \beta}\Sigma_j^{\alpha \beta} \right)- \sum \limits_{i = 1}^{n} \sum \limits_{j = 1}^{K} w_j^{(i)} \left( \sum \limits_{\alpha = 1}^{p} \sum \limits_{\beta = 1}^{p} \sigma_j^{\alpha \beta} \left(x_{\alpha}^{(i)}-\mu_{j\alpha}\right)\left(x_{\beta}^{(i)}-\mu_{j\beta}\right) \right) \label{l_sigma_alpha.beta}
+\end{align}
+
+where 
+\begin{align*}
+\Sigma_j &= ((\sigma_{j, \alpha \beta}))_{p \times p}, \\[0.3em]
+\Sigma_j^{-1} &= ((\sigma_j^{\alpha \beta}))_{p \times p}, \\[0.3em]
+|\Sigma_j^{-1}| &= \sum \limits_{\beta = 1}^{p} \sigma_j^{\alpha \beta}\Sigma_j^{\alpha \beta}, \;\; \Sigma_j^{\alpha \beta} \text{ being the } (\alpha, t)\text{th cofactor of } \Sigma_j^{-1}.
+\end{align*}
+
+Differentiating (\ref{l_sigma_alpha.beta}) w.r.t. $\sigma_j^{\alpha \beta}$ and setting that to $0$, we have,
+
+\begin{align*}
+&\sum_{i=1}^{n} w_j^{(i)} \dfrac{\Sigma_j^{\alpha\beta}}{\sum \limits_{\beta = 1}^{p} \sigma_j^{\alpha \beta}\Sigma_j^{\alpha \beta}} - \sum_{i=1}^{n} w_j^{(i)} \left(x_\alpha^{(i)}-\mu_{j\alpha}\right) \left(x_\beta^{(i)}-\mu_{j\beta}\right) = 0 \\[0.5em]
+\Rightarrow &\sum_{i=1}^{n} w_j^{(i)} \underbrace{\dfrac{\Sigma_j^{\alpha\beta}}{|\Sigma_j^{-1}|}}_{\Sigma_{j, \beta \alpha}} = \sum_{i=1}^{n} w_j^{(i)} \left(x_\alpha^{(i)}-\mu_{j\alpha}\right) \left(x_\beta^{(i)}-\mu_{j\beta}\right) \\[0.5em]
+\Rightarrow &\Sigma_{j, \beta \alpha} = \dfrac{\sum \limits_{i=1}^{n} w_j^{(i)} \left(x_\alpha^{(i)}-\mu_{j\alpha}\right) \left(x_\beta^{(i)}-\mu_{j\beta}\right)}{\sum \limits_{i=1}^{n} w_j^{(i)}}
+\end{align*}
+
+$$\boxed{\therefore \; \Sigma_j = \dfrac{\sum \limits_{i=1}^{n} w_j^{(i)} \left(x^{(i)}-\mu_{j}\right) \left(x^{(i)}-\mu_{j}\right)'}{\sum \limits_{i=1}^{n} w_j^{(i)}}.}$$
+\end{document}
