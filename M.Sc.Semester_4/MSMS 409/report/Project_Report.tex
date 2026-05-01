@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[nottoc]{tocbibind} % controls table of contents, nottoc means not-table of contents i.e. exclude "Contents" itself from contents
+
+%\usepackage{epsfig}
+%\usepackage{siunitx}
+\usepackage{amsmath, amsfonts, amssymb, makeidx, lmodern, float, csquotes, caption, subcaption, titling, array, tabularx}
+
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+\usepackage[usenames, dvipsnames]{xcolor}
+\definecolor{myred}{RGB}{120, 0, 0}
+\definecolor{mygreen1}{RGB}{234,236,209}
+\definecolor{myteal}{RGB}{0,128,128}
+
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+
+\usepackage[backend=biber, sorting=none, %
+            defernumbers=true, style=nature, doi=true]{biblatex}
+
+\addbibresource{bibliography.bib}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=myteal, urlcolor=red}
+
+\newcounter{Section*}
+\newcommand\addtotoc[1]{
+	\refstepcounter{Section*}
+	\addcontentsline{toc}{section}{#1}}
+
+\setlength{\parindent}{4em}
+\setlength{\parskip}{0.1em}
+\renewcommand{\baselinestretch}{1.5}
+
+%\def\session{\ifcase\month\or
+%	January\or February\or March\or April\or May\or June\or
+%	July\or August\or September\or October\or November\or December\fi
+%	,\space \number\year}
+
+\title{\centering\LARGE \bf [Insert Your Project Title Here] }
+\author{
+\includegraphics[height=4cm, scale=1]{figures/bhu1.png}\\[10pt]
+    \Large A project submitted\\
+    \Large for partial fulfillment of the requirements for the award of the degree of\\
+    \Large Master of Science\\[4ex]
+    \Large \textit{by}\\[0.5ex]
+	\LARGE \bf [Student Name (As per Marksheet)]\\[12pt]
+	\large M.Sc. in Statistics \& Computing\\
+	\large Exam Roll No.:[ XXXXXSTCXXX] \\[4ex]
+	\Large \textit{Under the supervision of}\\
+	\LARGE [Supervisor Name]\\
+    \Large [Depart. Name], BHU\\[10ex]
+	\LARGE \bf Centre for Interdisciplinary Mathematical Sciences\\
+	\LARGE \bf I.Sc., Banaras Hindu University\\
+	\LARGE  Varanasi, India-221005\\[4ex]
+	}
+\date{}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\maketitle
+\vspace*{\fill}
+\noindent\begin{minipage}{0.5\textwidth}
+\large \textbf{Enrollment No: [XXXXXX]}
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+\raggedleft \large Session
+\end{minipage}
+\newpage
+
+
+
+\pagenumbering{roman}
+\input{Sections/00_declaration_acknowledge}
+\input{Sections/01_certificate}
+\input{Sections/03_Acknowledgement}
+%%-----Dedication-----%%
+%\topskip0pt
+\vspace*{\fill}
+\begin{center}
+	\textit{{\huge Dedicated to,\\ \vspace{1em} Dedicate your project to whomever you want}}
+\end{center}
+
+
+\vspace*{\fill}
+\newpage
+\input{Sections/02_abstract}
+% List of figure and Tables
+\vspace*{1em}
+\noindent
+\begin{minipage}[t]{\textwidth}
+  \listoffigures
+\end{minipage}
+
+\vspace*{0.5\textheight} % Push down to half the page
+%\hrule
+%\vspace{1em}
+
+\noindent
+\begin{minipage}[t]{\textwidth}
+  \listoftables
+\end{minipage}
+
+\newpage
+
+\tableofcontents
+\clearpage
+
+\pagenumbering{arabic}
+\input{Sections/10_introduction}
+\input{Sections/20_literature_survey}
+\input{Sections/30_data_description}
+\input{Sections/Methods}
+\input{Sections/Results}
+\input{Sections/90_conclusion}
+\input{Sections/100_Programme}
+
+\printbibliography[heading=bibintoc]
+% Comment the following line if you don't want to print
+% all the citations in the bibliography file
+\nocite{*}
+
+\end{document}
