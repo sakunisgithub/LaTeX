@@ -1,0 +1,103 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[a4paper, top = 1 in, bottom = 1 in, left = 1 in, right = 1 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{xcolor}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\title{MSMS 401 : Bayesian Statistics and Computation}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
+\date{}
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Problem}}
+
+Consider a random sample of size $n$ from $\text{Exp}(\lambda)$, $\lambda$ is the rate parameter. Take a conjugate prior for $\lambda$. Obtain the posterior distribution of $\lambda$, hence obtain Bayes estimator of $\lambda$ assuming squared-error loss function.
+
+\section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Solution}}
+
+Let $x_1, x_2, \ldots, x_n \overset{iid}{\sim} f(x \mid \lambda)$ where
+
+\begin{align*}
+f(x \mid \lambda) = \lambda e^{-\lambda x}.
+\end{align*}
+
+Consider \textit{a priori} $\lambda \sim \text{Gamma}\left( \text{shape} = \alpha, \text{rate} = \beta \right)$ \textit{i.e.}
+
+\begin{align*}
+\pi(\lambda; \alpha, \beta) = \dfrac{\beta^\alpha}{\Gamma(\alpha)} \lambda^{\alpha-1}e^{-\beta\lambda}, \; \lambda > 0.
+\end{align*}
+
+The likelihood for $\lambda$ is
+
+\begin{align*}
+f(\mathbf{x} \mid \lambda) &= \prod \limits_{i = 1}^{n} \lambda e^{-\lambda x_i} \\[1em]
+&= \lambda^n \cdot \exp \left\{ - \lambda \sum \limits_{i = 1}^{n} x_i \right\}
+\end{align*}
+
+We compute the posterior distribution of $\lambda$ as
+\begin{align*}
+p(\lambda \mid \mathbf{x}) &= \dfrac{f(\mathbf{x} \mid \lambda) \, \cdot \, \pi(\lambda)}{\displaystyle \int\limits_{0}^{\infty} f(\mathbf{x} \mid \lambda) \, \cdot \, \pi(\lambda) \, d\lambda} \\[1em]
+&= \dfrac{\lambda^n \cdot \exp \left\{ - \lambda \sum \limits_{i = 1}^{n} x_i \right\} \cdot \dfrac{\beta^\alpha}{\Gamma(\alpha)} \lambda^{\alpha-1}e^{-\beta\lambda}}{\displaystyle{\int \limits_{0}^{\infty} \lambda^n \cdot \exp \left\{ - \lambda \sum \limits_{i = 1}^{n} x_i \right\}} \cdot \dfrac{\beta^\alpha}{\Gamma(\alpha)} \lambda^{\alpha-1}e^{-\beta\lambda} \, d\lambda} \\[1em]
+&= \dfrac{\lambda^{n + \alpha - 1} \cdot \exp \left\{ - \lambda \left(\sum \limits_{i = 1}^{n} x_i + \beta \right) \right\}}{\displaystyle{\int \limits_{0}^{\infty} \lambda^{n + \alpha - 1} \cdot \exp \left\{ - \lambda \left(\sum \limits_{i = 1}^{n} x_i + \beta \right) \right\} \, d\lambda}} \\[1em]
+&= \dfrac{\left( \sum \limits_{i = 1}^{n} x_i + \beta \right)^{n + \alpha}}{\Gamma(n + \alpha)} \cdot \lambda^{n-1} \cdot \exp \left\{ - \lambda \sum \limits_{i = 1}^{n} x_i \right\}.
+\end{align*}
+
+which we identify as the PDF of Gamma$\left(\text{shape} = \alpha + n, \text{rate} = \beta + \sum \limits_{i = 1}^{n} x_i \right)$.
+
+\vspace{0.5cm}
+
+$\therefore$ \textit{a posteriori} $\lambda \mid \mathbf{x} \sim \text{Gamma}\left(\alpha + n, \beta + \sum \limits_{i = 1}^{n} x_i \right)$.
+
+\vspace{0.5cm}
+
+{\fontsize{12}{20} \gloriahallelujahfont Under squared error loss function, Bayes estimate is the posterior mean.}
+
+\vspace{0.5cm}
+
+Thus,
+
+\begin{align*}
+\hat{\lambda}_{Bayes} = \dfrac{\alpha + n}{\beta + \sum \limits_{i = 1}^{n}  x_i}.
+\end{align*}
+
+\end{document}
