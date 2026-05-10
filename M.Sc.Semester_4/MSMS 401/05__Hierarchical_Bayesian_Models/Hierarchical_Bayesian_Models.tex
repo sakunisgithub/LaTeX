@@ -1,0 +1,169 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[a4paper, top = 1 in, bottom = 1 in, left = 1 in, right = 1 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{xcolor}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\title{MSMS 401 : Bayesian Statistics and Computation}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
+\date{}
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+
+\begin{document}
+
+\maketitle
+
+\section{\textcolor{blue}{Hierarchical Bayesian Models}}
+
+A hierarchical Bayesian model (also called a \textbf{multilevel Bayesian model}) is a Bayesian model where parameters themselves are treated as random variables with their own prior distributions, and those priors may themselves depend on higher-level parameters.
+
+\vspace{0.5cm}
+
+A Hierarchical Bayesian model can be expressed in the form
+
+$$p\left( \utilde{x} \mid \boldsymbol{\theta} \right) = p\left( x_1, x_2, \ldots, x_n \mid \boldsymbol{\theta} \right) = \prod \limits_{i = 1}^{n} p\left(x_i \mid \theta_i \right)$$
+
+$$p\left( \boldsymbol{\theta} \mid \phi \right) = p\left( \theta_1, \theta_2, \ldots, \theta_n \mid \phi \right) = \prod \limits_{i = 1}^{n} p\left( \theta_i \mid \phi \right)$$
+
+$$\phi \sim p\left( \phi \right)$$
+
+Observations $x_1, x_2, \ldots, x_n$ are available from $n$ different but related sources. \\[0.2em]
+
+\begin{itemize}
+\item The first stage of hierarchy speficies the parametric model component of the $n$ observations.
+
+\item Since $n$ observations are related, $\theta_1, \theta_2, \ldots, \theta_n$ are assumed to be exchangeable. Hence, second and third stage of hierarchy provide prior on $\boldsymbol{\theta}$ and $\phi$.
+\end{itemize}
+
+In many applications, it may be the interest to make inferences about unit characteristics --- $\theta_i$'s and population characteristics --- $\phi$. In either case, straight forward probability manipulations involving Bayes theorem provide the required posterior inferences.
+
+$$p\left( \theta_i \mid \boldsymbol{x} \right) = \displaystyle{\int p\left( \theta_i \mid \phi, \boldsymbol{x} \right) \cdot p\left( \phi \mid \boldsymbol{x} \right) \; d\phi}$$
+
+$$p\left( \theta_i \mid \phi, \boldsymbol{x} \right) \propto p\left( \boldsymbol{x} \mid \theta_i \right) \cdot p\left( \theta_i \mid \phi \right)$$
+
+$$p\left( \phi \mid \boldsymbol{x} \right) \propto p\left( \boldsymbol{x} \mid \phi \right) \cdot p\left( \phi \right)$$
+
+$$p\left( \boldsymbol{x} \mid \phi \right) \propto \displaystyle{\int p\left( \boldsymbol{x} \mid \boldsymbol{\theta} \right) \cdot p\left( \boldsymbol{\theta} \mid \phi \right) \; d\boldsymbol{\theta}}$$
+
+\newpage
+
+Bayesian hierarchical modelling makes use of two important concepts while deriving posterior distribution ---
+
+\begin{enumerate}[(i)]
+\item Hyperparameters \textit{i.e.} parameters of the prior distribution,
+\item Hyper-prior \textit{i.e.} distribution of hyperparameters.
+\end{enumerate}
+
+\begin{example}
+Suppose $X \mid \mu \sim N\left( \mu, 1 \right)$, $\mu \mid \theta \sim N\left( \theta, 1\right)$, $\theta \sim N\left( 0, 1 \right)$. Then the joint posterior of $\mu$ and $\theta$ can be given by
+
+\begin{align*}
+p\left( \mu, \theta \mid x \right) &\propto p\left( x \mid \mu \right) \cdot p\left( \mu \mid \theta \right) \cdot p\left( \theta \right) \\[0.5em]
+&= \exp\left\{ -\dfrac{\left( x - \mu \right)^2}{2} - \dfrac{\left( \mu - \theta \right)^2}{2} - \dfrac{\theta^2}{2} \right\}.
+\end{align*}
+
+Now we can easily find the posterior inferences about $\mu$ and $\theta$ using the above results.
+
+\end{example}
+
+
+\begin{example}
+Suppose $X \mid \lambda \sim \mathcal{P}(\lambda)$, $\lambda \mid \beta \sim \mathcal{G}\left( 2, \beta \right)$, $\pi\left( \beta \right) \propto \dfrac{1}{\beta}$. Then,
+
+\begin{align*}
+p\left( x \mid \beta \right) &= \displaystyle{\int \limits_{\mathbf{R}^+} p\left( x \mid \lambda \right) \cdot p\left( \lambda \mid \beta \right) \; d\lambda} \\[0.5em]
+&= \displaystyle{\int \limits_{\mathbf{R}^+} \dfrac{e^{- \lambda} \lambda^x}{x !} \cdot \dfrac{\beta^{2}}{\Gamma\left( 2 \right)} e^{-\beta \lambda} \lambda^{2-1} \; d\lambda} \\[0.5em]
+&= \dfrac{\beta^{2}}{x!} \cdot \displaystyle{\int \limits_{0}^{\infty} e^{-\left( \beta + 1 \right)\lambda} \lambda^{x + 2 - 1} \; d\lambda} \\[0.5em]
+&= \dfrac{\beta^{2}}{x!} \cdot \dfrac{\Gamma\left( x + 2 \right)}{\left( \beta + 1 \right)^{x + 2}} \\[0.5em]
+&= \dfrac{\beta^{2}}{x!} \cdot \dfrac{\left( x + 1 \right)!}{\left( \beta + 1 \right)^{x + 2}} \\[0.5em]
+&= \dfrac{\beta^{2} \cdot \left( x + 1 \right)}{\left( \beta + 1 \right)^{x + 2}}
+\end{align*}
+
+So, the conditional posterior of $\lambda$ is
+
+\begin{align*}
+p\left( \lambda \mid \beta, x \right) &= \dfrac{p\left( x \mid \lambda \right) \cdot p\left( \lambda \mid \beta \right)}{p\left( x \mid \beta \right)} \\[0.5em]
+&= \dfrac{\dfrac{e^{- \lambda} \lambda^x}{x !} \cdot \dfrac{\beta^{2}}{\Gamma\left( 2 \right)} e^{-\beta \lambda} \lambda^{2-1}}{\dfrac{\beta^{2} \cdot \left( x + 1 \right)}{\left( \beta + 1 \right)^{x + 2}}} \\[0.5em]
+&= \dfrac{e^{-\left( \beta + 1 \right)\lambda} \cdot \lambda^{x + 1} \cdot \left(\beta + 1\right)^{x + 2}}{\left( x + 1 \right)!} \\[0.5em]
+&= \dfrac{\left(\beta + 1\right)^{x + 2}}{\Gamma\left( x + 2 \right)} \cdot e^{-\left( \beta + 1 \right)\lambda} \cdot \lambda^{x + 1} \; \textit{i.e.} \; \mathcal{G}\left( 2 + x, \beta + 1 \right).
+\end{align*}
+
+Recall that, Gamma prior is conjugate for Poisson parameter $\lambda$. So rightfully here $$\lambda \mid \beta, x \sim \mathcal{G}\left( 2 + x, \beta + 1 \right).$$ \\[0.5em]
+
+Again, posterior of $\beta$ upto proportionality is
+
+\begin{align*}
+p\left(\beta \mid x \right) &\propto p\left( x \mid \beta \right) \cdot p\left( \beta \right) \\[0.5em]
+&= \dfrac{\beta^{2} \cdot \left( x + 1 \right)}{\left( \beta + 1 \right)^{x + 2}} \cdot \dfrac{1}{\beta} \\[0.5em]
+&= \dfrac{\beta \cdot \left( x + 1 \right)}{\left( \beta + 1 \right)^{x + 2}}
+\end{align*}
+
+Introducing the normalizing constant, the posterior of $\beta$ is 
+
+\begin{align*}
+p\left( \beta \mid x \right) &= \dfrac{\beta \cdot \left( x + 1 \right)}{\left( \beta + 1 \right)^{x + 2}} \Bigg/ \displaystyle{\int \limits_{0}^{\infty} \dfrac{\beta \cdot \left( x + 1 \right)}{\left( \beta + 1 \right)^{x + 2}} \; d\beta} \\[0.5em]
+&= \dfrac{\beta \cdot \left( x + 1 \right)}{\left( \beta + 1 \right)^{x + 2}} \Bigg/ \left( x + 1 \right) \cdot \mathcal{B}\left( 2, x \right); \; \text{Beta integration of second kind} \\[0.5em]
+&= \dfrac{\beta \cdot \left( x + 1 \right)}{\left( \beta + 1 \right)^{x + 2}} \Bigg/ \left( x + 1 \right) \cdot \dfrac{\Gamma\left( 2 \right) \cdot \Gamma\left( x \right)}{\Gamma\left( 2 + x \right)} \\[0.5em]
+&= \dfrac{\beta \cdot \left( x + 1 \right)}{\left( \beta + 1 \right)^{x + 2}} \Bigg/ \left( x + 1 \right) \cdot \dfrac{\left( x - 1 \right)!}{\left( x + 1 \right)!} \\[0.5em]
+&= \dfrac{\beta \cdot \left( x + 1 \right)}{\left( \beta + 1 \right)^{x + 2}} \Bigg/ \dfrac{1}{x} \\[0.5em]
+&= \dfrac{\beta \cdot \left( x + 1 \right) \cdot x}{\left( \beta + 1 \right)^{x + 2}} \\[0.5em]
+&= \dfrac{1}{\mathcal{B}\left( 2 , x \right)} \cdot \dfrac{\beta}{\left( \beta + 1 \right)^{x + 2}} \; \textit{i.e.} \; \mathcal{B}(2, x).
+\end{align*}
+
+$$\boxed{\therefore \; \textit{a posteriori } \beta \mid x \sim \mathcal{B}\left( 2, x \right).}$$
+
+\newpage
+
+Finally, the marginal posterior of $\lambda$ is
+
+\begin{align*}
+p\left( \lambda \mid x \right) &= \displaystyle{\int \limits_{0}^{\infty} p\left( \lambda, \beta \mid x \right) \; d\beta} \\[0.5em]
+&= \displaystyle{\int \limits_{0}^{\infty} p\left( \lambda \mid \beta, x \right) \cdot p\left( \beta \mid x \right) \; d\beta} \\[0.5em]
+&= \displaystyle{\int \limits_{0}^{\infty} \dfrac{e^{-\left( \beta + 1 \right)\lambda} \cdot \lambda^{x + 1} \cdot \left(\beta + 1\right)^{x + 2}}{\left( x + 1 \right)!} \cdot \dfrac{\beta \cdot \left( x + 1 \right) \cdot x}{\left( \beta + 1 \right)^{x + 2}}} \; d\beta \\[0.5em]
+&= \dfrac{e^{-\lambda} \lambda^{x+1}}{\left( x - 1 \right)!} \; \displaystyle{\int \limits_{0}^{\infty} e^{-\lambda \beta} \beta} \; d\beta \\[0.5em]
+&= \dfrac{e^{-\lambda} \lambda^{x+1}}{\left( x - 1 \right)!} \cdot \dfrac{\Gamma\left( 2 \right)}{\lambda^2} \\[0.5em]
+&= \dfrac{e^{-\lambda} \lambda^{x-1}}{\Gamma\left( x \right)}
+\end{align*}
+
+$$\boxed{\therefore \; \textit{a posteriori } \lambda \mid x \sim \mathcal{G}\left( x, 1\right).}$$
+\end{example}
+
+\end{document}
