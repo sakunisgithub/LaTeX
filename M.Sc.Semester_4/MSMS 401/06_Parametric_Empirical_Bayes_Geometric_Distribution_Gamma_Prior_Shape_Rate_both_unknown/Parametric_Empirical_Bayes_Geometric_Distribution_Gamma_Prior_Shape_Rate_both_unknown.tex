@@ -51,7 +51,7 @@
 
 \section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Problem}}
 
-Let $X_i \overset{\text{iid}}{\sim} \text{Geometric}(\theta)$ on support  $\{0,1,2,\ldots\} \forall i = 1(1)n $ and \textit{a priori} $\theta \sim \mathscr{B}_1(\alpha,\beta)$, both $\alpha$ and $\beta$ are unknown. Obtain empirical Bayes estimate of $\alpha$ and $\beta$.
+Let $X_i \overset{\text{iid}}{\sim} \text{Geometric}(\theta)$ on support  $\{0,1,2,\ldots\} \forall i = 1(1)n $ and \textit{a priori} $\theta \sim \mathscr{B}_1(\alpha,\beta)$, both $\alpha$ and $\beta$ are unknown. Obtain empirical Bayes estimate of $\alpha$ and $\beta$ by MLII method.
 
 \section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Solution}}
 
@@ -61,24 +61,16 @@ $$\pi(\theta; \alpha, \beta) = \dfrac{1}{\mathcal{B}(\alpha,\beta)} \cdot \theta
 
 \vspace{0.5cm}
 
-Then the marginal distribution of $X$ will be
+Then the joint marginal likelihood will be
 
 \begin{align*}
-m(x_i; \alpha, \beta) &= \displaystyle{\int \limits_0^1 f(x_i \mid \theta) \cdot \pi(\theta; \alpha, \beta)} \, d\theta \\[0.5em]
-&= \displaystyle{\int \limits_0^1 \theta(1-\theta)^{x_i} \cdot \dfrac{1}{\mathcal{B}(\alpha,\beta)} \cdot \theta^{\alpha-1}(1-\theta)^{\beta-1}} \, d\theta \\[0.5em]
-&= \dfrac{1}{\mathcal{B}(\alpha,\beta)} \cdot \displaystyle{\int \limits_0^1 \theta^{\alpha + 1 - 1} (1 - \theta)^{\beta + x_i - 1}} \, d\theta \\[0.5em]
-&= \dfrac{1}{\mathcal{B}(\alpha,\beta)} \cdot \mathcal{B}(\alpha + 1,\beta + x_i) \\[0.7em]
-&= \dfrac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} \cdot \dfrac{\Gamma(\alpha + 1)\Gamma(\beta + x_i)}{\Gamma(\alpha + \beta + x_i + 1)} \\[0.7em]
-&= \dfrac{\Gamma(\alpha+\beta) \cdot \Gamma(\alpha+1) \cdot \Gamma(x_i+\beta)}{\Gamma(\alpha) \cdot \Gamma(\beta) \cdot \Gamma(\alpha+\beta+x_i+1)}
-\end{align*}
-
-\newpage
-
-For a sample of size \(n\), the marginal likelihood will be
-
-\begin{align*}
-L(\alpha, \beta) &= \prod \limits_{i=1}^n m(x_i; \alpha, \beta) \\[0.7em]
-&= \prod \limits_{i=1}^n \dfrac{\Gamma(\alpha+\beta)\Gamma(\alpha+1)\Gamma(x_i+\beta)}{\Gamma(\alpha)\Gamma(\beta)\Gamma(\alpha+\beta+x_i+1)}.
+L(\alpha, \beta) &= \displaystyle{\int \limits_0^1 \prod \limits_{i=1}^n f(x_i \mid \theta) \cdot \pi(\theta; \alpha, \beta)} \, d\theta \\[0.5em]
+&= \displaystyle{\int \limits_0^1 \prod \limits_{i=1}^n \theta(1-\theta)^{x_i} \cdot \dfrac{1}{\mathcal{B}(\alpha,\beta)} \cdot \theta^{\alpha-1}(1-\theta)^{\beta-1}} \, d\theta \\[0.5em]
+&= \displaystyle{\int \limits_0^1 \theta^n (1-\theta)^{\sum \limits_{i=1}^n x_i} \cdot \dfrac{1}{\mathcal{B}(\alpha,\beta)} \cdot \theta^{\alpha-1}(1-\theta)^{\beta-1}} \, d\theta \\[0.5em]
+&= \dfrac{1}{\mathcal{B}(\alpha,\beta)} \cdot \displaystyle{\int \limits_0^1 \theta^{\alpha + n - 1} (1 - \theta)^{\beta + \sum \limits_{i=1}^n x_i - 1}} \, d\theta \\[0.5em]
+&= \dfrac{1}{\mathcal{B}(\alpha,\beta)} \cdot \mathcal{B}\left(\alpha + n,\beta + \sum \limits_{i=1}^n x_i \right) \\[0.7em]
+&= \dfrac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} \cdot \dfrac{\Gamma(\alpha + n)\Gamma\left(\beta + \sum \limits_{i=1}^n x_i\right)}{\Gamma\left(\alpha + \beta + \sum \limits_{i=1}^n x_i + n\right)} \\[0.7em]
+&= \dfrac{\Gamma(\alpha+\beta) \cdot \Gamma(\alpha+n) \cdot \Gamma\left(\beta + \sum \limits_{i=1}^n x_i\right)}{\Gamma(\alpha) \cdot \Gamma(\beta) \cdot \Gamma\left(\alpha + \beta + \sum \limits_{i=1}^n x_i + n\right)}
 \end{align*}
 
 \vspace{0.5cm}
@@ -86,8 +78,8 @@ L(\alpha, \beta) &= \prod \limits_{i=1}^n m(x_i; \alpha, \beta) \\[0.7em]
 The log-likelihood will be
 
 \begin{align*}
-\ell(\alpha, \beta) &= n\ln \Gamma(\alpha+\beta) + n \ln \Gamma(\alpha + 1) + \sum \limits_{i=1}^n \ln \Gamma(x_i+\beta) \\
-&\hspace{4cm} - n \ln \Gamma(\alpha) - n\ln \Gamma(\beta) - \sum \limits_{i=1}^n \ln \Gamma(\alpha+\beta+x_i+1).
+\ell(\alpha, \beta) &= \ln \Gamma(\alpha+\beta) + \ln \Gamma(\alpha + n) + \ln \Gamma\left(\beta + \sum \limits_{i=1}^n x_i\right) \\
+&\hspace{4cm} - \ln \Gamma(\alpha) - \ln \Gamma(\beta) - \ln \Gamma\left(\alpha + \beta + \sum \limits_{i=1}^n x_i + n\right).
 \end{align*}
 
 Here both $\alpha$ and $\beta$ are unknown. Partial differentiation of $\ell(\alpha, \beta)$ w.r.t. $\alpha$ and $\beta$ introduces \textbf{digamma} function. Hence, analytical solution of the equations

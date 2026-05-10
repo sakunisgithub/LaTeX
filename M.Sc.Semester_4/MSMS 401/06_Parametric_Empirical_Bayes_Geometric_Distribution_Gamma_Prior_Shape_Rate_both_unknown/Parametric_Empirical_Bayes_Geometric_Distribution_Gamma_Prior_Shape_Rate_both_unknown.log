@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.7) (format=lualatex 2026.5.1)  10 MAY 2026 23:00
+This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.7) (format=lualatex 2026.5.1)  11 MAY 2026 04:12
  restricted system commands enabled.
 **Parametric_Empirical_Bayes_Geometric_Distribution_Gamma_Prior_Shape_Rate_both
 _unknown.tex
@@ -1231,7 +1231,7 @@ Here is how much of LuaTeX's memory you used:
  582 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 10 attribute, 66 glue_spec
 , 10 attribute_list, 2 write nodes
-   avail lists: 1:2,2:366,3:110,4:33,5:422,6:27,7:2752,8:50,9:696,10:7,11:66
+   avail lists: 1:1,2:423,3:106,4:33,5:559,6:25,7:3054,8:60,9:892,10:7,11:63
  60845 multiletter control sequences out of 65536+600000
  76 fonts using 4877279 bytes
  99i,12n,104p,512b,1108s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1246,18 +1246,20 @@ cal/Programs/MiKTeX/fonts/opentype/public/fontawesome5/FontAwesome5Free-Regular-
 otf><c:/users/ananda/appdata/local/programs/miktex/fonts/opentype/public/lm/lmro
 man17-regular.otf><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmex10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ananda/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ananda/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ananda/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ana
-nda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
-Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb>
+type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/Ananda/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ananda/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Ananda/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Anand
+a/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
+rs/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+<C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r8.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Users/Ananda/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb>
 Output written on Parametric_Empirical_Bayes_Geometric_Distribution_Gamma_Prior_
-Shape_Rate_both_unknown.pdf (2 pages, 104370 bytes).
+Shape_Rate_both_unknown.pdf (2 pages, 121002 bytes).
 
-PDF statistics: 110 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 118 PDF objects out of 1000 (max. 8388607)
  5 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
