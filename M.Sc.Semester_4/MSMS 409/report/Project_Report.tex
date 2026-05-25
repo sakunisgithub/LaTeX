@@ -4,11 +4,23 @@
 
 %\usepackage{epsfig}
 %\usepackage{siunitx}
-\usepackage{amsmath, amsfonts, amssymb, makeidx, lmodern, float, csquotes, caption, subcaption, titling, array, tabularx}
+\usepackage{amsmath, amsfonts, amssymb, makeidx, lmodern, float, csquotes, caption, subcaption, array, tabularx, enumerate, multirow}
+
+\usepackage{soul}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+
+\setdefaultlanguage{english}
+\setotherlanguage{sanskrit}
+
+\newfontfamily\devanagarifont[
+Script=Devanagari
+]{Noto Serif Devanagari}
 
 \usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 
-\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage[usenames, dvipsnames, table]{xcolor}
 \definecolor{myred}{RGB}{120, 0, 0}
 \definecolor{mygreen1}{RGB}{234,236,209}
 \definecolor{myteal}{RGB}{0,128,128}
@@ -19,10 +31,14 @@
 \usepackage[backend=biber, sorting=none, %
             defernumbers=true, style=nature, doi=true]{biblatex}
 
-\addbibresource{bibliography.bib}
+\addbibresource{references.bib}
 
 \usepackage{hyperref}
-\hypersetup{colorlinks=true, linkcolor=blue, citecolor=myteal, urlcolor=red}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+\usepackage{titling}
+\setlength{\droptitle}{-2cm}
+
 
 \newcounter{Section*}
 \newcommand\addtotoc[1]{
@@ -33,24 +49,32 @@
 \setlength{\parskip}{0.1em}
 \renewcommand{\baselinestretch}{1.5}
 
-%\def\session{\ifcase\month\or
-%	January\or February\or March\or April\or May\or June\or
-%	July\or August\or September\or October\or November\or December\fi
-%	,\space \number\year}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
 
-\title{\centering\LARGE \bf [Insert Your Project Title Here] }
+\setlength{\fboxsep}{2pt}
+
+\newcommand{\ghl}[1]{%
+\colorbox{green}{#1}
+}
+
+\def\session{\ifcase\month\or
+	January\or February\or March\or April\or May\or June\or
+	July\or August\or September\or October\or November\or December\fi
+	,\space \number\year}
+
+\title{\centering\LARGE \bf Neural Network Stochastic Differential Equation Models for Financial Data Forecasting }
 \author{
 \includegraphics[height=4cm, scale=1]{figures/bhu1.png}\\[10pt]
     \Large A project submitted\\
     \Large for partial fulfillment of the requirements for the award of the degree of\\
     \Large Master of Science\\[4ex]
     \Large \textit{by}\\[0.5ex]
-	\LARGE \bf [Student Name (As per Marksheet)]\\[12pt]
+	\LARGE \bf Ananda Biswas\\[12pt]
 	\large M.Sc. in Statistics \& Computing\\
-	\large Exam Roll No.:[ XXXXXSTCXXX] \\[4ex]
+	\large Exam Roll No.: 24419STC053 \\[4ex]
 	\Large \textit{Under the supervision of}\\
-	\LARGE [Supervisor Name]\\
-    \Large [Depart. Name], BHU\\[10ex]
+	\LARGE Dr. Ganga Ram\\
+    \Large DST-CIMS, BHU\\[10ex]
 	\LARGE \bf Centre for Interdisciplinary Mathematical Sciences\\
 	\LARGE \bf I.Sc., Banaras Hindu University\\
 	\LARGE  Varanasi, India-221005\\[4ex]
@@ -63,63 +87,69 @@
 \maketitle
 \vspace*{\fill}
 \noindent\begin{minipage}{0.5\textwidth}
-\large \textbf{Enrollment No: [XXXXXX]}
+\large \textbf{Enrollment No: 482721}
 \end{minipage}%
 \begin{minipage}{0.5\textwidth}
-\raggedleft \large Session
+\raggedleft \large \session
 \end{minipage}
 \newpage
 
 
 
 \pagenumbering{roman}
-\input{Sections/00_declaration_acknowledge}
+\input{Sections/00_declaration}
 \input{Sections/01_certificate}
-\input{Sections/03_Acknowledgement}
+\input{Sections/02_Acknowledgement}
 %%-----Dedication-----%%
 %\topskip0pt
 \vspace*{\fill}
+
 \begin{center}
-	\textit{{\huge Dedicated to,\\ \vspace{1em} Dedicate your project to whomever you want}}
+	\textit{
+		{\huge
+			To my parents,\\[1em]
+			for every sacrifice they made
+		}
+	}
 \end{center}
 
+\vspace*{\fill}
+
+\newpage
 
 \vspace*{\fill}
-\newpage
-\input{Sections/02_abstract}
-% List of figure and Tables
-\vspace*{1em}
-\noindent
-\begin{minipage}[t]{\textwidth}
-  \listoffigures
-\end{minipage}
 
-\vspace*{0.5\textheight} % Push down to half the page
-%\hrule
-%\vspace{1em}
+\input{Sections/Maa_Saraswati_Pranam}
 
-\noindent
-\begin{minipage}[t]{\textwidth}
-  \listoftables
-\end{minipage}
+\vspace*{\fill}
 
 \newpage
+
+\input{Sections/03_Abstract}
 
 \tableofcontents
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+
+
+
 \clearpage
 
 \pagenumbering{arabic}
-\input{Sections/10_introduction}
-\input{Sections/20_literature_survey}
-\input{Sections/30_data_description}
-\input{Sections/Methods}
-\input{Sections/Results}
-\input{Sections/90_conclusion}
-\input{Sections/100_Programme}
+\input{Sections/10_Introduction}
+\input{Sections/20_Methods}
+\input{Sections/30_Experiments}
+\input{Sections/40_Conclusion}
+
 
 \printbibliography[heading=bibintoc]
 % Comment the following line if you don't want to print
 % all the citations in the bibliography file
 \nocite{*}
+
 
 \end{document}

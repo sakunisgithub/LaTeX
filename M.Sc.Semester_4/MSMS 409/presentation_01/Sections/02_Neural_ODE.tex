@@ -1,0 +1,39 @@
+\section{Neural ODE}
+
+
+\begin{frame}{Formalization}
+
+A Neural Ordinary Differential Equation is given by
+
+$$\dfrac{d \boldsymbol{x}(t)}{dt} = f(\boldsymbol{x}(t); \boldsymbol{\theta})$$
+
+\begin{align*}
+\text{where } \qquad \boldsymbol{x}(t) &: \text{ hidden representation at time }t, \\[0.2em]
+f(\cdot; \boldsymbol{\theta}) &: \text{ a neural network}, \\[0.2em]
+\boldsymbol{\theta} &: \text{ parameters of the neural network } f.
+\end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Forward Pass}
+
+Given \textit{initial state} $\boldsymbol{x}(0)$ and the differential equation, we compute
+
+$$\boldsymbol{x}(T) = \boldsymbol{x}(0) + \int \limits_0^T f(\boldsymbol{x}(t); \boldsymbol{\theta}) \; dt.$$
+
+$f(\boldsymbol{x}(t); \boldsymbol{\theta})$ represents \textit{how the state evolves at each instant}.
+\end{frame}
+
+
+
+\begin{frame}{Backward Pass and Learning $\boldsymbol{\theta}$}
+
+\begin{itemize}
+\item<1-> Starting with an initial guess of $\boldsymbol{\theta}$, we calculate $x(T)$ using an ODE solver $$\boldsymbol{x}(t+\Delta t) = \boldsymbol{x}(t)+\Delta t\, f(\boldsymbol{x}(t); \boldsymbol{\theta}).$$ This is a \textit{Forward Pass} in practice.
+
+\item<2-> Then compute the loss, calculate the derivatives w.r.t. the parameters. This is \textit{Backward Pass}.
+
+\item<3-> Update $\boldsymbol{\theta}$ using the derivatives and repeat the process until convergence.
+\end{itemize}
+\end{frame}

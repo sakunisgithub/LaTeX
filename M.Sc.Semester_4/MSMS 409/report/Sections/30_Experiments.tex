@@ -1,0 +1,252 @@
+\section{Experiments}
+
+First we preprocess the real data through Phase Space Reconstruction with delay time $\tau = 1$ and embedding dimension $= 30$ and show the prediction accuracy for two different stock trending patterns. In addition, we also numerically analyze the effect of different $\alpha$ values in Lévy motion and forecasting days on prediction accuracy. The
+code of all experiments has been open sourced on GitHub : \href{https://github.com/sakunisgithub/python_programming/tree/master/M.Sc.Project}{github.com/sakunisgithub}.
+
+\subsection{Dataset}
+
+Due to the grave importance of financial market, and its relation to economic development, stock data are the best choice. Two datasets are selected corresponding to NIFTY50 Index of India and SSE50 Index of China \textemdash \, NIFTY50 Index with a total sample size of $4932$ and SSE50 Index with a total sample size of $4917$, both from Jan $2006$ - Mar $2026$.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{NIFTY50 Index}
+\caption{Data set of NIFTY50 Index}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{SSE50 Index}
+\caption{Data set of SSE50 Index}
+\end{figure}
+
+\newpage
+
+For both, data points from $2006$ to $2020$ were taken in training set and $2021$ to $2026$ data points were considered as test set.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{NIFTY50 Train-Test Split}
+\caption{Train-Test Split of NIFTY50}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{SSE50 Train-Test Split}
+\caption{Train-Test Split of SSE50}
+\end{figure}
+
+For NIFTY50 Index, training set and test set fluctuations are small. For SSE50 Index, it shows large fluctuations on the training set and relatively small on the test set.
+
+\newpage
+
+\subsection{Experiment 1 : Forecasting with Different Stock Patterns}
+
+When comparing different stock trend types, we only consider the forecast effect of the first day under the same $\alpha = 1.5$. The results of loss can determine which type of stock data a model is more suitable for.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{NIFTY50_LDENet_1.5_PH1_Result}
+\caption{NIFTY50-First Day Forecast Result}
+\label{NIFTY50-First Day Forecast Result}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{SSE50-LDENet_1.5_PH1_Result}
+\caption{SSE50-First Day Forecast Result}
+\end{figure}
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+
+\begin{center}
+\begin{tabular}{>{\centering}m{3cm}>{\centering}m{2cm}>{\centering}m{2cm}>{\centering}m{2cm}>{\centering\arraybackslash}m{2cm}}
+
+\hline
+
+Data & MSE$(t+1)$ & MSE$(t+3)$ & MSE$(t+7)$ & MSE$(t+14)$ \\
+
+\hline
+\hline
+
+NIFTY50 Index & $0.07797$ & $0.01815$ & $0.10413$ & $0.16779$ \\
+
+SSE50 Index & $0.00718$ & $0.00896$ & $0.01834$ & $0.02733$ \\
+
+\hline
+
+\end{tabular}
+\end{center}
+\caption{Forecast Results for Different Stocks $(\alpha = 1.5)$}
+\end{table}
+
+It can be seen from Figure (\ref{NIFTY50-First Day Forecast Result}), the prediction of NIFTY50 is poor, but that of SSE50 is praiseworthy. It helps us to comment that the LDE-Net model is suitable for predicting the future value of stocks with large fluctuations in historical data. When the training set fluctuates more frequently with larger amplitude, Lévy noise can better capture the uncertainty in the prediction process,
+so as to achieve more accurate prediction. The historical data and test data of NIFTY50 did not have large fluctuations, hence Lévy noise could not give a good fit. In the follow-ups, we shall stick to SDE-Net for NIFTY50 and LDE-Net for SSE50 respectively.
+
+\subsection{Experiment 2 : Forecasting with Different Models}
+
+We now compare SDE-Net and LDE-Net for different scenarios. As prediction accuracy on first day is highest for either, it is reasonable to compare the effect of forecasting one day.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{NIFTY50_SDENet_PH1_Result}
+\caption{NIFTY50-First Day Forecast Result for SDENet}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{NIFTY50_LDENet_1.99_PH1_Result}
+\caption{NIFTY50-First Day Forecast Result for LDENet}
+\end{figure}
+
+LDE-Net forecasts seem off as compared to SDE-Net forecasts of NIFTY50 Index values. Now let us have a look at the forecasts for SSE50 Index Values.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{SSE50-SDENet_PH1_Result}
+\caption{SSE50-First Day Forecast Result for SDENet}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{SSE50-LDENet_1.99_PH1_Result}
+\caption{SSE50-First Day Forecast Result for LDENet}
+\end{figure}
+
+In case of SSE50, LDE-Net gives better forecasts as historical data have large fluctuations. These are supported by the following table as well.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+
+\begin{center}
+\begin{tabular}{>{\centering}m{5cm}>{\centering}m{3cm}>{\centering\arraybackslash}m{2cm}}
+
+\hline
+
+Data & Model & MSE$(t+1)$ \\
+
+\hline
+\hline
+
+\multirow{2}{*}{NIFTY50 Index} & \ghl{SDE-Net} & $0.00598$ \\
+
+& LDE-Net & $0.01238$ \\
+
+\hline
+
+\multirow{2}{*}{SSE50 Index} & SDE-Net & $0.00333$ \\
+
+& \ghl{LDE-Net} & $0.00271$ \\
+
+\hline
+\end{tabular}
+\end{center}
+\caption{Forecast Results of Different Models}
+\end{table}
+
+\newpage
+
+\subsection{Experiment 3 : Forecasting with Different $\alpha$}
+
+Consider that different $\alpha$ will produce different jumps, let us observe the effect on model prediction for $\alpha = 1.2, 1.5, 1.8, 1.99$.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{SSE50-LDENet_1.2_PH1_Result}
+\caption{SSE50-First Day Forecast Result for LDENet 1.2}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{SSE50-LDENet_1.5_PH1_Result}
+\caption{SSE50-First Day Forecast Result for LDENet 1.5}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{SSE50-LDENet_1.8_PH1_Result}
+\caption{SSE50-First Day Forecast Result for LDENet 1.8}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.4]{SSE50-LDENet_1.99_PH1_Result}
+\caption{SSE50-First Day Forecast Result for LDENet 1.99}
+\end{figure}
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+
+\begin{center}
+\begin{tabular}{>{\centering}m{3cm}>{\centering}m{2cm}>{\centering}m{2cm}>{\centering}m{2cm}>{\centering}m{2cm}>{\centering\arraybackslash}m{2cm}}
+
+\hline
+
+Data & Value of $\alpha$ & MSE$(t+1)$ & MSE$(t+3)$ & MSE$(t+7)$ & MSE$(t+14)$ \\
+
+\hline
+\hline
+
+\multirow{4}{*}{SSE50 Index} & $1.2$ & $0.56702$ & $0.61797$ & $1.80748$ & $1.90498$ \\
+
+& $1.5$ & $0.00718$ & $0.00896$ & $0.01834$ & $0.02733$ \\
+
+& $1.8$ & $0.00362$ & $0.00381$ & $0.01481$ & $0.02721$ \\
+
+& \ghl{$1.99$} & $\mathbf{0.00271}$ & $\mathbf{0.00302}$ & $\mathbf{0.01443}$ & $\mathbf{0.02509}$ \\
+
+\hline
+\end{tabular}
+\end{center}
+\caption{Forecast Results for Different $\alpha$}
+\label{Results for Different alpha}
+\end{table}
+
+From Table (\ref{Results for Different alpha}), it can be seen that the value of $\alpha$ has a certain effect on the prediction of the model. The greater the data fluctuation, the better a smaller $\alpha$ value; this directly corresponds to the fact that Lévy motion with smaller $\alpha$ produce greater jumps. For SSE50 Index value, LDE-Net with $\alpha = 1.99$ gives best predictive accuracy.
+
+\newpage
+
+\subsection{Experiment 4 : Effect of Forecasting Days on Prediction Accuracy}
+
+The accuracy over prediction days is also investigated and it is found that prediction error is an increasing function of prediction horizon, as the length of forecasting days increase, so does the prediction error. This behaviour is consistent throughout all choices of $\alpha$ as established in Table (\ref{Results for Different alpha}).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.6]{Different_Prediction_Horizons_Different_Alpha}
+\caption{Forecast Results for Different Prediction Horizons}
+\end{figure}
+
+For NIFTY50, SDE-Net with Brownian Motion gives best predictive performance, while for SSE50, LDE-Net with $\alpha = 1.99$ performs the best in future predictions.
+
+\begin{table}[!htbp]
+\def\arraystretch{1.5}
+
+\begin{center}
+\begin{tabular}{>{\centering}m{3cm}>{\centering}m{4cm}>{\centering}m{2cm}>{\centering}m{2cm}>{\centering}m{2cm}>{\centering\arraybackslash}m{2cm}}
+
+\hline
+
+Data & Model & MSE$(t+1)$ & MSE$(t+3)$ & MSE$(t+7)$ & MSE$(t+14)$ \\
+
+\hline
+\hline
+
+\multirow{2}{*}{NIFTY50 Index} & \ghl{SDE-Net} & $0.00598$ & $0.01635$ & $0.03515$ & $0.30617$ \\
+
+& LDE-Net $(\alpha = 1.99)$ & $0.01238$ & $0.01512$ & $0.03962$ & $0.30149$ \\
+
+\hline
+\hline
+
+\multirow{2}{*}{SSE50 Index} & SDE-Net & $0.00333$ & $0.00646$ & $0.01597$ & $0.03272$ \\
+
+& \ghl{LDE-Net $(\alpha = 1.99)$} & $0.00271$ & $0.00302$ & $0.01443$ & $0.02509$ \\
+
+\hline
+\end{tabular}
+\end{center}
+\caption{Prediction Error over Forecasting Days}
+\end{table}
+\clearpage

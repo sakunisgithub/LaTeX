@@ -1,0 +1,386 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Sahoo18092020}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=be3985b00043b9dfb1cc6fb1b7f23ce5}{%
+           family={Sahoo},
+           familyi={S\bibinitperiod},
+           given={Mrunmayee\bibnamedelima Manjari},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=23eba8d63a480a1afd770fb401c96668}{%
+           family={Patra},
+           familyi={P\bibinitperiod},
+           given={Kanhu\bibnamedelima Charan},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{54c7940c5eb820df7aaac5f99957cb2e}
+      \strng{fullhash}{54c7940c5eb820df7aaac5f99957cb2e}
+      \strng{fullhashraw}{54c7940c5eb820df7aaac5f99957cb2e}
+      \strng{bibnamehash}{54c7940c5eb820df7aaac5f99957cb2e}
+      \strng{authorbibnamehash}{54c7940c5eb820df7aaac5f99957cb2e}
+      \strng{authornamehash}{54c7940c5eb820df7aaac5f99957cb2e}
+      \strng{authorfullhash}{54c7940c5eb820df7aaac5f99957cb2e}
+      \strng{authorfullhashraw}{54c7940c5eb820df7aaac5f99957cb2e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{African Journal of Science, Technology, Innovation and Development}
+      \field{number}{6}
+      \field{title}{River water quality modelling and simulation based on Markov Chain Monte Carlo computation and Bayesian inference model}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{pages}{771\bibrangedash 785}
+      \range{pages}{15}
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/20421338.2019.1692460
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/20421338.2019.1692460
+      \endverb
+    \endentry
+    \entry{chen2019neuralordinarydifferentialequations}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=9db211fe28b9db15bc04d29bedf2e03f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Ricky\bibnamedelimb T.\bibnamedelimi Q.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=d7891653274cb8d85e3a83b41a0c2067}{%
+           family={Rubanova},
+           familyi={R\bibinitperiod},
+           given={Yulia},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e650d1ee2429750c5268681b050d69f8}{%
+           family={Bettencourt},
+           familyi={B\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+        {{hash=834f50f5d5a332c21effd10f07daf79e}{%
+           family={Duvenaud},
+           familyi={D\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{20ad419b4fe3ed70cfc4fb491e988f54}
+      \strng{fullhash}{bb5e65ad0a1ad185a1b51a7c31fe22b3}
+      \strng{fullhashraw}{bb5e65ad0a1ad185a1b51a7c31fe22b3}
+      \strng{bibnamehash}{bb5e65ad0a1ad185a1b51a7c31fe22b3}
+      \strng{authorbibnamehash}{bb5e65ad0a1ad185a1b51a7c31fe22b3}
+      \strng{authornamehash}{20ad419b4fe3ed70cfc4fb491e988f54}
+      \strng{authorfullhash}{bb5e65ad0a1ad185a1b51a7c31fe22b3}
+      \strng{authorfullhashraw}{bb5e65ad0a1ad185a1b51a7c31fe22b3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Neural Ordinary Differential Equations}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1806.07366
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1806.07366
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1806.07366
+      \endverb
+    \endentry
+    \entry{liu2019neuralsdestabilizingneural}{misc}{}{}
+      \name{author}{6}{}{%
+        {{hash=40d065205716f92199ccec87c23fba98}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xuanqing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=baa4e41074ab727b1f38c8fbb876145d}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Tesi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1d9bec203d7a6cdf2651ad8a4cf990c6}{%
+           family={Si},
+           familyi={S\bibinitperiod},
+           given={Si},
+           giveni={S\bibinitperiod}}}%
+        {{hash=604320c642864fad2de5804b9e6ff06c}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Qin},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=3b0b77d59993d2550f1dac0336347c8a}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Sanjiv},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8ce122ee46af7bc8820d9d1c340793dc}{%
+           family={Hsieh},
+           familyi={H\bibinitperiod},
+           given={Cho-Jui},
+           giveni={C\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fece13d1e5ee8c17b2ed3b67f134806d}
+      \strng{fullhash}{d8cd1973f83305d26533d0b66bfb34f4}
+      \strng{fullhashraw}{d8cd1973f83305d26533d0b66bfb34f4}
+      \strng{bibnamehash}{fece13d1e5ee8c17b2ed3b67f134806d}
+      \strng{authorbibnamehash}{fece13d1e5ee8c17b2ed3b67f134806d}
+      \strng{authornamehash}{fece13d1e5ee8c17b2ed3b67f134806d}
+      \strng{authorfullhash}{d8cd1973f83305d26533d0b66bfb34f4}
+      \strng{authorfullhashraw}{d8cd1973f83305d26533d0b66bfb34f4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Neural SDE: Stabilizing Neural ODE Networks with Stochastic Noise}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1906.02355
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1906.02355
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1906.02355
+      \endverb
+    \endentry
+    \entry{ZHU2014126}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e8c3e9a151c34c11395d4b24c68e15dc}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Quanxin},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8c3e9a151c34c11395d4b24c68e15dc}
+      \strng{fullhash}{e8c3e9a151c34c11395d4b24c68e15dc}
+      \strng{fullhashraw}{e8c3e9a151c34c11395d4b24c68e15dc}
+      \strng{bibnamehash}{e8c3e9a151c34c11395d4b24c68e15dc}
+      \strng{authorbibnamehash}{e8c3e9a151c34c11395d4b24c68e15dc}
+      \strng{authornamehash}{e8c3e9a151c34c11395d4b24c68e15dc}
+      \strng{authorfullhash}{e8c3e9a151c34c11395d4b24c68e15dc}
+      \strng{authorfullhashraw}{e8c3e9a151c34c11395d4b24c68e15dc}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-247X}
+      \field{journaltitle}{Journal of Mathematical Analysis and Applications}
+      \field{number}{1}
+      \field{title}{Asymptotic stability in the pth moment for stochastic differential equations with Lévy noise}
+      \field{volume}{416}
+      \field{year}{2014}
+      \field{pages}{126\bibrangedash 142}
+      \range{pages}{17}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022247X14001450
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022247X14001450
+      \endverb
+    \endentry
+    \entry{deeplearningreview}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f8d8ac2c1f9db972bcb6a564405ae81}
+      \strng{fullhash}{0f8d8ac2c1f9db972bcb6a564405ae81}
+      \strng{fullhashraw}{0f8d8ac2c1f9db972bcb6a564405ae81}
+      \strng{bibnamehash}{0f8d8ac2c1f9db972bcb6a564405ae81}
+      \strng{authorbibnamehash}{0f8d8ac2c1f9db972bcb6a564405ae81}
+      \strng{authornamehash}{0f8d8ac2c1f9db972bcb6a564405ae81}
+      \strng{authorfullhash}{0f8d8ac2c1f9db972bcb6a564405ae81}
+      \strng{authorfullhashraw}{0f8d8ac2c1f9db972bcb6a564405ae81}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{05}
+      \field{title}{Deep Learning}
+      \field{volume}{521}
+      \field{year}{2015}
+      \field{pages}{436\bibrangedash 44}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1038/nature14539
+      \endverb
+    \endentry
+    \entry{Goodfellow-et-al-2016}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{fullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{fullhashraw}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{bibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorfullhashraw}{3ae53fe582e8a815b118d26947eaa326}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{http://www.deeplearningbook.org}}
+      \field{title}{Deep Learning}
+      \field{year}{2016}
+    \endentry
+    \entry{he2015deepresiduallearningimage}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5e72bc22dbcf0984c6d113d280e36990}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiangyu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Shaoqing},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{fullhashraw}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{bibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authorbibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authorfullhashraw}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Deep Residual Learning for Image Recognition}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1512.03385
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1512.03385
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1512.03385
+      \endverb
+    \endentry
+    \entry{yang2022neuralnetworkstochasticdifferential}{misc}{}{}
+      \name{author}{5}{}{%
+        {{hash=53f17226ae3bf4114660d8051c47be21}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Luxuan},
+           giveni={L\bibinitperiod}}}%
+        {{hash=573e2acabb88e8133669c9ef5ece2e84}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Ting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bd30889241ac4dc8f780e04ee67ab918}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Yubin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9c2e7b5d87e7e994a3dbf2f762d1c32c}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Jinqiao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b9ea953e38962ea62150af4914b3a85b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d5881fe83475efc9d808a3521f4d131}
+      \strng{fullhash}{cb73215c19568afdf561bdd36766ef21}
+      \strng{fullhashraw}{cb73215c19568afdf561bdd36766ef21}
+      \strng{bibnamehash}{cb73215c19568afdf561bdd36766ef21}
+      \strng{authorbibnamehash}{cb73215c19568afdf561bdd36766ef21}
+      \strng{authornamehash}{1d5881fe83475efc9d808a3521f4d131}
+      \strng{authorfullhash}{cb73215c19568afdf561bdd36766ef21}
+      \strng{authorfullhashraw}{cb73215c19568afdf561bdd36766ef21}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Neural network stochastic differential equation models with applications to financial data forecasting}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2111.13164
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2111.13164
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2111.13164
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

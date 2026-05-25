@@ -1,0 +1,61 @@
+\section{Discrete Deep Networks to Continuous Dynamics}
+
+
+\begin{frame}{Deep Neural Networks}
+\centering
+\begin{tikzpicture}[
+    node distance=4cm,
+    box/.style={draw, minimum width=2cm, minimum height=1cm, font=\ttfamily}
+]
+    % Nodes
+	{\node[circle, draw] (head) {$\boldsymbol{x}$};}
+    {\node[box, right of=head] (n1) {$f(\boldsymbol{x}; \boldsymbol{\theta})$};}
+    {\node[circle, draw, right of=n1] (n2) {$y$};}
+
+    % Arrows
+    {\draw[-{Latex}] (head) -- (n1);}
+    {\draw[-{Latex}] (n1) -- (n2);}
+\end{tikzpicture}
+
+\vspace{1em}
+
+\begin{itemize}
+\item<1-> $f(\cdot; \boldsymbol{\theta})$ is a deep neural network
+\item<2-> Learn $\boldsymbol{\theta}$ from data
+\item<3-> Learning the residuals is often \textit{easier} than learning the direct mapping
+\item<4-> Introduce Residual Networks
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Residual Network}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=0.5]{ResNet_Structure}
+\end{figure}
+
+\begin{itemize}
+\item<1-> The mapping of $f(\boldsymbol{x}_t; \boldsymbol{\theta})$ can be realised by feed-forward neural networks
+\item<2-> $\boldsymbol{x}_t$ is added to the output of the stacked layers
+\item<3-> The hidden state $\boldsymbol{x}_t$ of the $t-$th layer of the network can be described by the equation $$\boldsymbol{x}_{t+1} = \boldsymbol{x}_t + f(\boldsymbol{x}_t; \boldsymbol{\theta}); \qquad t = \{0, 1, 2, \ldots, T\}.$$
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{ResNet to Ordinary Differential Equations}
+
+\uncover<1->{Rewrite $$\boldsymbol{x}(t+\Delta t) = \boldsymbol{x}(t)+\Delta t\, f(\boldsymbol{x}(t); \boldsymbol{\theta}).$$}
+
+\uncover<2->{If we \textit{add more layers} and \textit{take small steps} \textit{i.e.} $\Delta t \rightarrow 0$, then
+
+\begin{align*}
+\dfrac{\boldsymbol{x}(t + \Delta t) - \boldsymbol{x}(t)}{\Delta t} &= f(\boldsymbol{x}(t); \boldsymbol{\theta}) \\[0.5em]
+\Rightarrow \dfrac{d \boldsymbol{x}(t)}{dt} &= f(\boldsymbol{x}(t); \boldsymbol{\theta}).
+\end{align*}
+}
+
+\uncover<3->{Thus we see that ResNet can indeed match the \textit{Euler discretization} of ordinary differential equations.}
+\end{frame}

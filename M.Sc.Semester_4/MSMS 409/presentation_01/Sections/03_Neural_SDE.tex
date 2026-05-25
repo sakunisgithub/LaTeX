@@ -1,0 +1,140 @@
+\section{Neural SDE}
+
+
+\begin{frame}{Formalization}
+
+A Neural Stochastic Differential Equation is given by
+
+$$d\boldsymbol{x}(t) = f(\boldsymbol{x}(t); \boldsymbol{\theta}) \; dt + g(\boldsymbol{x}(t); \boldsymbol{\phi}) \; dW_t$$
+
+\begin{align*}
+\text{where } \qquad \boldsymbol{x}(t) &: \text{ hidden representation at time }t, \\[0.2em]
+f(\boldsymbol{x}(t); \boldsymbol{\theta}) &: \text{ \textit{drift} coefficient approximated by a neural network} \\[0.2em]
+dt &: \text{ time increment} \\[0.2em]
+g(\boldsymbol{x}(t); \boldsymbol{\phi}) &: \text{ \textit{diffusion} coefficient approximated by a neural network} \\[0.2em]
+dW_t &: \text{ random noise increment}
+\end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Forward Pass}
+
+Based on the \textit{Euler-Maruyama scheme}, a forward simulation of a SDE with Gaussian noise is approximated by
+
+$$\boldsymbol{x}(t+\Delta t) = \boldsymbol{x}(t)+ f(\boldsymbol{x}(t); \boldsymbol{\theta}) \; \Delta t + g(\boldsymbol{x}(t); \boldsymbol{\phi}) \; \sqrt{\Delta t} \; \epsilon_t.$$
+
+\begin{itemize}
+\item<1-> Two runs with same initialization produce different paths.
+
+\item<2-> We simulate many trajectories and take the average.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Backward Pass}
+
+\begin{itemize}
+\item<1-> Starting at an initial state $\boldsymbol{x}(0)$, with initial approximations of $\boldsymbol{\theta}$ and $\boldsymbol{\phi}$, obtain $\boldsymbol{x}(T)$ by many small steps $\Delta t$.
+
+\item<2-> Compute the loss and calculate the derivatives w.r.t. the parameters.
+
+\item<3-> Update $\boldsymbol{\theta}$ and $\boldsymbol{\phi}$ using the derivatives and repeat until convergence.
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Gaussian Noise}
+
+\begin{itemize}
+\item<1-> Depending on the nature of the random noise, there can be different classes of SDEs. 
+
+\item<2-> The most common random noise is \textit{Gaussian Noise} under which $$dW_t \sim \mathcal{N}(0, dt).$$
+
+\item<3-> In the forward simulation, we set $$\epsilon_t \overset{iid}{\sim} \mathcal{N}(0, 1), \text{ consequently } \sqrt{\Delta t} \; \epsilon_t \overset{iid}{\sim} \mathcal{N}(0, \Delta t).$$
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Non-Gaussian Noise}
+
+\begin{itemize}
+\item<1-> Gaussian noise is not always enough to capture big jumps. 
+
+\item<2-> Hence we introduce Non-Gaussian noise.
+
+\item<3-> One such noise is $\alpha$-Stable Lévy motion.
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}{$\boldsymbol{\alpha}$-Stable Random Variables}
+
+\begin{itemize}
+
+\item<1-> A random variable $X$ is said to be $\alpha$-Stable if its $n$ \textit{i.i.d.} copies have the property $$\sum \limits_{i = 1}^{n} X_i \overset{d}{=} n^{1/\alpha} \; X + b_n$$ and denoted as $$X \sim S_{\alpha} (\sigma, \beta, \gamma)$$ where $\sigma :$ scale parameter, $\beta :$ skewness, $\gamma :$ location parameter.
+
+\item<2-> $\sigma \, Z + \gamma \overset{d}{=} X$ where $Z \sim S_{\alpha}(1, \beta, 0)$.
+
+\item<3-> $X \sim S_{\alpha}(1, 0, 0)$ is called a Standard $\alpha$-Stable random variable.
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{$\boldsymbol{\alpha}$-Stable Random Variables}
+
+\begin{itemize}
+\item<1-> $\alpha \in (0, 2]$ controls how heavy tails are.
+
+\item<2-> $\alpha = 2 \rightarrow$ Gaussian
+
+\item<3-> $\alpha = 1 \rightarrow$ Cauchy
+
+\item<4-> Smaller $\alpha \rightarrow$ heavier tails (more extreme values)
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{$\boldsymbol{\alpha}$-Stable Lévy Motions}
+
+A symmetric $\alpha$-Stable Lévy motion $\{L_t^{\alpha}\}_{t \geq 0}$ is a stochastic process with properties
+
+\vspace{0.2cm}
+
+\begin{enumerate}[(i)]
+\item $L_0^{\alpha} = 0$,
+\vspace{0.2cm}
+\item $L_t^{\alpha}$ has independent increments,
+\vspace{0.2cm}
+\item $L_t^{\alpha} - L_s^{\alpha} \sim S_{\alpha}\left( (t-s)^{1 / \alpha}, 0, 0 \right)$.
+\end{enumerate}
+
+\end{frame}
+
+
+
+\begin{frame}{$\boldsymbol{\alpha}$-Stable Lévy Motions}
+
+\begin{itemize}
+\item<1-> For a very small step $dt$, $dL_{t + dt}^{\alpha} - dL_{t}^{\alpha} = dL_t^{\alpha} \sim S_{\alpha}\left( (dt)^{1 / \alpha}, 0, 0 \right)$.
+
+\item<2-> We can write $(dt)^{1 / \alpha} \, L_t \overset{d}{=} dL_t^{\alpha}$ where $L_t \sim S_{\alpha} (1, 0, 0)$.
+
+\item<3-> In SDE, we set $$L_t \overset{iid}{\sim} S_{\alpha}(1, 0, 0), \text{ consequently } (\Delta t)^{1 / \alpha} \; L_t \overset{iid}{\sim} S_{\alpha}\left((\Delta t)^{1 / \alpha}, 0, 0\right).$$
+
+\item<4-> Euler-Maruyama approximation becomes $$\boldsymbol{x}(t+\Delta t) = \boldsymbol{x}(t)+ f(\boldsymbol{x}(t); \boldsymbol{\theta}) \; \Delta t + g(\boldsymbol{x}(t); \boldsymbol{\phi}) \; (\Delta t)^{1 / \alpha} \; L_t.$$
+\end{itemize}
+
+\end{frame}

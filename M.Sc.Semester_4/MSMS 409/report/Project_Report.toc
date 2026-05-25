@@ -1,10 +1,22 @@
-\contentsline {section}{Abstract}{v}{Section*.1}%
-\contentsline {section}{List of Figures}{vi}{section*.5}%
-\contentsline {section}{List of Tables}{vi}{section*.6}%
+\xpg@aux {}{english}
+\contentsline {section}{Abstract}{vi}{Section*.1}%
+\contentsline {section}{List of Figures}{viii}{section*.6}%
+\contentsline {section}{List of Tables}{ix}{section*.7}%
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {section}{\numberline {2}Literature Review}{2}{section.2}%
-\contentsline {section}{\numberline {3}Data Description}{3}{section.3}%
-\contentsline {section}{\numberline {4}Methodology}{4}{section.4}%
-\contentsline {section}{\numberline {5}Results}{5}{section.5}%
-\contentsline {section}{\numberline {6}Conclusion}{6}{section.6}%
-\contentsline {section}{\numberline {7}Project Programme Code}{7}{section.7}%
+\contentsline {section}{\numberline {2}Methods}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Deep Neural Networks}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Residual Neural Networks}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}ResNet to Ordinary Differential Equations}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Neural Ordinary Differential Equations}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Neural Stochastic Differential Equations}{5}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Gaussian Noise}{6}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Non-Gaussian Noise}{6}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.6}LDENet}{8}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Experiments}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Dataset}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Experiment 1 : Forecasting with Different Stock Patterns}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Experiment 2 : Forecasting with Different Models}{12}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Experiment 3 : Forecasting with Different $\alpha $}{14}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Experiment 4 : Effect of Forecasting Days on Prediction Accuracy}{16}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Conclusion}{17}{section.4}%
+\contentsline {section}{References}{18}{section*.31}%

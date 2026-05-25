@@ -1,0 +1,3 @@
+\beamer@sectionintoc {1}{Discrete Deep Networks to Continuous Dynamics}{2}{0}{1}
+\beamer@sectionintoc {2}{Neural ODE}{13}{0}{2}
+\beamer@sectionintoc {3}{Neural SDE}{19}{0}{3}
