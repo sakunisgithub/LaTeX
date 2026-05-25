@@ -1,0 +1,11 @@
+\section{Problem Statement}
+
+Financial markets are highly volatile and uncertain systems influenced by numerous economic, political and social factors. Due to the presence of irregular fluctuations, abrupt jumps and nonlinear dependencies, accurately forecasting stock market indices remains a difficult challenge in time series analysis. Traditional statistical approaches such as autoregressive and moving average models generally rely on assumptions of linearity and Gaussian noise, which limit their effectiveness when dealing with real world financial data exhibiting heavy tailed distributions and sudden transitions.
+
+Recent advances in deep learning have improved the capability of predictive models by enabling the extraction of complex nonlinear patterns from sequential data. However, many conventional deep learning architectures are deterministic in nature and may fail to adequately represent the stochastic behaviour inherent in financial systems. Stochastic differential equation based neural networks provide a promising alternative by modeling the hidden dynamics of neural networks through continuous stochastic processes. In particular, SDE-Net incorporates Brownian motion to represent uncertainty in the evolution of hidden states.
+
+Although Brownian motion based models are effective in capturing continuous random fluctuations, they may not sufficiently describe discontinuous jumps frequently observed in stock market behaviour. Financial time series often contain extreme events such as sudden crashes or rapid price surges, indicating the presence of non-Gaussian characteristics. Lévy processes, which generalize Brownian motion by allowing jump discontinuities, may therefore provide a more realistic stochastic framework for modeling such phenomena.
+
+The primary objective of this project is to investigate whether Lévy driven neural differential equation models can improve forecasting performance over traditional Brownian motion driven SDE-Net models. Using real financial datasets from the NIFTY50 and SSE50 indices, the project aims to compare the predictive capabilities of these stochastic neural architectures under multiple forecasting horizons. The study further seeks to analyze the effectiveness of different stochastic perturbations in capturing the complex and uncertain dynamics of financial markets.
+
+\clearpage

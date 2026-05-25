@@ -1,19 +1,19 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces \xpg@aux {}{english}\ignorespaces A Deep Neural Network}}{2}{figure.caption.8}%
-\contentsline {figure}{\numberline {2}{\ignorespaces \xpg@aux {}{english}\ignorespaces ResNet Structure}}{3}{figure.caption.9}%
-\contentsline {figure}{\numberline {3}{\ignorespaces \xpg@aux {}{english}\ignorespaces PDFs of Standard Gaussian and $\alpha -$Stable Random Variables with different $\alpha , \beta $}}{7}{figure.caption.10}%
-\contentsline {figure}{\numberline {4}{\ignorespaces \xpg@aux {}{english}\ignorespaces Brownian Motion and Lévy Motion with different $\alpha $ and $\beta $}}{8}{figure.caption.11}%
-\contentsline {figure}{\numberline {5}{\ignorespaces \xpg@aux {}{english}\ignorespaces Data set of NIFTY50 Index}}{9}{figure.caption.12}%
-\contentsline {figure}{\numberline {6}{\ignorespaces \xpg@aux {}{english}\ignorespaces Data set of SSE50 Index}}{9}{figure.caption.13}%
-\contentsline {figure}{\numberline {7}{\ignorespaces \xpg@aux {}{english}\ignorespaces Train-Test Split of NIFTY50}}{10}{figure.caption.14}%
-\contentsline {figure}{\numberline {8}{\ignorespaces \xpg@aux {}{english}\ignorespaces Train-Test Split of SSE50}}{10}{figure.caption.15}%
-\contentsline {figure}{\numberline {9}{\ignorespaces \xpg@aux {}{english}\ignorespaces NIFTY50-First Day Forecast Result}}{11}{figure.caption.16}%
-\contentsline {figure}{\numberline {10}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result}}{11}{figure.caption.17}%
-\contentsline {figure}{\numberline {11}{\ignorespaces \xpg@aux {}{english}\ignorespaces NIFTY50-First Day Forecast Result for SDENet}}{12}{figure.caption.19}%
-\contentsline {figure}{\numberline {12}{\ignorespaces \xpg@aux {}{english}\ignorespaces NIFTY50-First Day Forecast Result for LDENet}}{12}{figure.caption.20}%
-\contentsline {figure}{\numberline {13}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for SDENet}}{13}{figure.caption.21}%
-\contentsline {figure}{\numberline {14}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for LDENet}}{13}{figure.caption.22}%
-\contentsline {figure}{\numberline {15}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for LDENet 1.2}}{14}{figure.caption.24}%
-\contentsline {figure}{\numberline {16}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for LDENet 1.5}}{14}{figure.caption.25}%
-\contentsline {figure}{\numberline {17}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for LDENet 1.8}}{14}{figure.caption.26}%
-\contentsline {figure}{\numberline {18}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for LDENet 1.99}}{15}{figure.caption.27}%
-\contentsline {figure}{\numberline {19}{\ignorespaces \xpg@aux {}{english}\ignorespaces Forecast Results for Different Prediction Horizons}}{16}{figure.caption.29}%
+\contentsline {figure}{\numberline {1}{\ignorespaces \xpg@aux {}{english}\ignorespaces A Deep Neural Network}}{6}{figure.caption.8}%
+\contentsline {figure}{\numberline {2}{\ignorespaces \xpg@aux {}{english}\ignorespaces ResNet Structure}}{7}{figure.caption.9}%
+\contentsline {figure}{\numberline {3}{\ignorespaces \xpg@aux {}{english}\ignorespaces PDFs of Standard Gaussian and $\alpha -$Stable Random Variables with different $\alpha , \beta $}}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {4}{\ignorespaces \xpg@aux {}{english}\ignorespaces Brownian Motion and Lévy Motion with different $\alpha $ and $\beta $}}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {5}{\ignorespaces \xpg@aux {}{english}\ignorespaces Data set of NIFTY50 Index}}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {6}{\ignorespaces \xpg@aux {}{english}\ignorespaces Data set of SSE50 Index}}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {7}{\ignorespaces \xpg@aux {}{english}\ignorespaces Train-Test Split of NIFTY50}}{14}{figure.caption.14}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \xpg@aux {}{english}\ignorespaces Train-Test Split of SSE50}}{14}{figure.caption.15}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \xpg@aux {}{english}\ignorespaces NIFTY50-First Day Forecast Result}}{15}{figure.caption.16}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result}}{15}{figure.caption.17}%
+\contentsline {figure}{\numberline {11}{\ignorespaces \xpg@aux {}{english}\ignorespaces NIFTY50-First Day Forecast Result for SDENet}}{16}{figure.caption.19}%
+\contentsline {figure}{\numberline {12}{\ignorespaces \xpg@aux {}{english}\ignorespaces NIFTY50-First Day Forecast Result for LDENet}}{16}{figure.caption.20}%
+\contentsline {figure}{\numberline {13}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for SDENet}}{17}{figure.caption.21}%
+\contentsline {figure}{\numberline {14}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for LDENet}}{17}{figure.caption.22}%
+\contentsline {figure}{\numberline {15}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for LDENet 1.2}}{18}{figure.caption.24}%
+\contentsline {figure}{\numberline {16}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for LDENet 1.5}}{18}{figure.caption.25}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for LDENet 1.8}}{18}{figure.caption.26}%
+\contentsline {figure}{\numberline {18}{\ignorespaces \xpg@aux {}{english}\ignorespaces SSE50-First Day Forecast Result for LDENet 1.99}}{19}{figure.caption.27}%
+\contentsline {figure}{\numberline {19}{\ignorespaces \xpg@aux {}{english}\ignorespaces Forecast Results for Different Prediction Horizons}}{20}{figure.caption.29}%
