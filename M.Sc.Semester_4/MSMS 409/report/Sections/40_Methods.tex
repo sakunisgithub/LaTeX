@@ -1,6 +1,8 @@
-\section{Methodology}\label{methods}
+\chapter{Methodology}\label{methods}
 
-\subsection{Deep Neural Networks}
+This chapter presents the methodology adopted in this project for forecasting financial time series using stochastic neural differential equation based models. The study primarily focuses on understanding how stochasticity can be incorporated into deep learning frameworks to better capture the uncertain and nonlinear behaviour of financial markets. Beginning with the fundamental concepts of deep neural networks and residual networks, the chapter gradually introduces the connection between deep learning architectures and differential equation based formulations. The transition from residual neural networks to neural ordinary differential equations is subsequently discussed, followed by the formulation of stochastic differential equation based neural networks. Particular emphasis is placed on SDE-Net models driven by Brownian motion and Lévy driven differential equation models, which form the core architectures investigated in this work. The methodology further describes the construction of forecasting models, the incorporation of stochastic perturbations, and the experimental framework employed for comparing model performance across multiple prediction horizons using the NIFTY50 and SSE50 financial datasets.
+
+\section{Deep Neural Networks}
 
 A Deep Neural Network (DNN) is a foundational machine learning architecture modelled on the human brain. Featuring multiple ``hidden" layers of interconnected nodes, it processes complex, unstructured data like text, images, and audio to autonomously discover patterns, extract features, and make accurate predictions or decisions. \cite{deeplearningreview} \cite{Goodfellow-et-al-2016}
 
@@ -38,7 +40,7 @@ Some common DNN architectures are Convolutional Neural Networks, Recurrent Neura
 
 
 
-\subsection{Residual Neural Networks}
+\section{Residual Neural Networks}
 
 As neural networks become deeper, they suffer from problems such as :
 
@@ -68,7 +70,7 @@ If often turns out that learning the residual is easier than learning the direct
 \end{itemize}
 
 
-\subsection{ResNet to Ordinary Differential Equations}
+\section{ResNet to Ordinary Differential Equations}
 
 A growing amount of research arises in finding the relationship between neural network structure and discretized solution of numerical differential equations. For example, as neural network maps the input $x$ to the output $y$ through a series of hidden layers, the hidden representation can be regarded as the state of a dynamic system. In particular, ResNet can be regarded as a form of discretizee Euler
 solution of ODEs.
@@ -88,7 +90,7 @@ continuous dynamics of hidden units can be shown as follows \cite{chen2019neural
 Thus we see that ResNet can indeed match the \textit{Euler discretization} of ordinary differential equations.
 
 
-\subsection{Neural Ordinary Differential Equations}
+\section{Neural Ordinary Differential Equations}
 
 A Neural Ordinary Differential Equation is given by
 
@@ -113,7 +115,7 @@ $$
 
 $f(\bs{x}(t); \bs{\theta})$ represents \textit{how the state evolves at each instant}.
 
-\newpage
+
 
 \item \textbf{Backward Pass and Learning $\bs{\theta}$}
 
@@ -138,7 +140,7 @@ This is a \textit{Forward Pass} in practice.
 \end{itemize}
 
 
-\subsection{Neural Stochastic Differential Equations}
+\section{Neural Stochastic Differential Equations}
 
 \begin{itemize}
 
@@ -181,7 +183,7 @@ g(\bs{x}(t); \bs{\phi}) \; \sqrt{\Delta t} \; \epsilon_t.
 
 \end{itemize}
 
-\newpage
+
 
 \item \textbf{Backward Pass}
 
@@ -197,7 +199,7 @@ g(\bs{x}(t); \bs{\phi}) \; \sqrt{\Delta t} \; \epsilon_t.
 
 \end{itemize}
 
-\subsubsection{Gaussian Noise}
+\subsection{Gaussian Noise}
 
 \begin{itemize}
 \item Depending on the nature of the random noise, there can be different classes of SDEs. 
@@ -207,7 +209,7 @@ g(\bs{x}(t); \bs{\phi}) \; \sqrt{\Delta t} \; \epsilon_t.
 \item In the forward simulation, we set $$\epsilon_t \overset{iid}{\sim} \mathcal{N}(0, 1), \text{ consequently } \sqrt{\Delta t} \; \epsilon_t \overset{iid}{\sim} \mathcal{N}(0, \Delta t).$$
 \end{itemize}
 
-\subsubsection{Non-Gaussian Noise}
+\subsection{Non-Gaussian Noise}
 
 Gaussian noise is not always enough to capture big jumps. Hence we introduce Non-Gaussian noise. One such noise is $\alpha$-Stable Lévy motion.\\[1em]
 
@@ -236,6 +238,8 @@ $\bullet$ \textbf{$\bs{\alpha}$-Stable Random Variables} :
 \includegraphics[scale=0.5]{Different Levy Distribution PDFs}
 \caption{PDFs of Standard Gaussian and $\alpha-$Stable Random Variables with different $\alpha, \beta$}
 \end{figure}
+
+\newpage
 
 $\bullet$ \textbf{$\bs{\alpha}$-Stable Lévy Motions}
 
@@ -268,7 +272,7 @@ A symmetric $\alpha$-Stable Lévy motion $\{L_t^{\alpha}\}_{t \geq 0}$ is a stoc
 \caption{Brownian Motion and Lévy Motion with different $\alpha$ and $\beta$}
 \end{figure}
 
-\subsection{LDENet}
+\section{LDENet}
 
 We add Lévy motion to the right side of equation (\ref{ResNet_hidden_state_representation}) to make it the Euler discretization form of the stochastic differential equation. The continuous-time dynamics of the system (\ref{NeuralODE}) are then expressed as:
 \begin{equation}\label{LDENet}

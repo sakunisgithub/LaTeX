@@ -1,4 +1,4 @@
-\section{Results}
+\chapter{Results}
 
 First we preprocess the real data through Phase Space Reconstruction with delay time $\tau = 1$ and embedding dimension $= 30$ and show the prediction accuracy for two different stock trending patterns. In addition, we also numerically analyze the effect of different $\alpha$ values in Lévy motion and forecasting days on prediction accuracy. The
 code of all experiments has been open sourced on GitHub : \href{https://github.com/sakunisgithub/python_programming/tree/master/M.Sc.Project}{github.com/sakunisgithub}.
@@ -37,7 +37,7 @@ For NIFTY50 Index, training set and test set fluctuations are small. For SSE50 I
 
 \newpage
 
-\subsection{Forecasting with Different Stock Patterns}
+\section{Forecasting with Different Stock Patterns}
 
 When comparing different stock trend types, we only consider the forecast effect of the first day under the same $\alpha = 1.5$. The results of loss can determine which type of stock data a model is more suitable for.
 
@@ -81,7 +81,7 @@ SSE50 Index & $0.00718$ & $0.00896$ & $0.01834$ & $0.02733$ \\
 It can be seen from Figure (\ref{NIFTY50-First Day Forecast Result}), the prediction of NIFTY50 is poor, but that of SSE50 is praiseworthy. It helps us to comment that the LDE-Net model is suitable for predicting the future value of stocks with large fluctuations in historical data. When the training set fluctuates more frequently with larger amplitude, Lévy noise can better capture the uncertainty in the prediction process,
 so as to achieve more accurate prediction. The historical data and test data of NIFTY50 did not have large fluctuations, hence Lévy noise could not give a good fit. In the follow-ups, we shall stick to SDE-Net for NIFTY50 and LDE-Net for SSE50 respectively.
 
-\subsection{Forecasting with Different Models}
+\section{Forecasting with Different Models}
 
 We now compare SDE-Net and LDE-Net for different scenarios. As prediction accuracy on first day is highest for either, it is reasonable to compare the effect of forecasting one day.
 
@@ -98,6 +98,8 @@ We now compare SDE-Net and LDE-Net for different scenarios. As prediction accura
 \end{figure}
 
 LDE-Net forecasts seem off as compared to SDE-Net forecasts of NIFTY50 Index values. Now let us have a look at the forecasts for SSE50 Index Values.
+
+\newpage
 
 \begin{figure}[!htbp]
 \centering
@@ -144,7 +146,7 @@ Data & Model & MSE$(t+1)$ \\
 
 \newpage
 
-\subsection{Forecasting with Different $\alpha$}
+\section{Forecasting with Different $\alpha$}
 
 Consider that different $\alpha$ will produce different jumps, let us observe the effect on model prediction for $\alpha = 1.2, 1.5, 1.8, 1.99$.
 
@@ -206,7 +208,7 @@ From Table (\ref{Results for Different alpha}), it can be seen that the value of
 
 \newpage
 
-\subsection{Effect of Forecasting Days on Prediction Accuracy}
+\section{Effect of Forecasting Days on Prediction Accuracy}
 
 The accuracy over prediction days is also investigated and it is found that prediction error is an increasing function of prediction horizon, as the length of forecasting days increase, so does the prediction error. This behaviour is consistent throughout all choices of $\alpha$ as established in Table (\ref{Results for Different alpha}).
 

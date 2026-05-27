@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper]{report}
 
 \usepackage[nottoc]{tocbibind} % controls table of contents, nottoc means not-table of contents i.e. exclude "Contents" itself from contents
 
@@ -37,8 +37,20 @@ Script=Devanagari
 \hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
 
 \usepackage{titling}
-\setlength{\droptitle}{-2cm}
+\setlength{\droptitle}{-3.5cm}
 
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}
+{Chapter \thechapter}
+{0pt}
+{\Huge}
+
+\titlespacing*{\chapter}
+{0pt}
+{-20pt}
+{30pt}
 
 \newcounter{Section*}
 \newcommand\addtotoc[1]{
@@ -62,7 +74,11 @@ Script=Devanagari
 	July\or August\or September\or October\or November\or December\fi
 	,\space \number\year}
 
-\title{\centering\LARGE \bf Neural Network Stochastic Differential Equation Models for Financial Data Forecasting }
+%\title{\centering\LARGE \bf Neural Network Stochastic Differential Equation Models for Financial Data Forecasting }
+\title{
+	\LARGE\bfseries
+	Neural Network Stochastic Differential Equation Models for Financial Data Forecasting
+}
 \author{
 \includegraphics[height=4cm, scale=1]{figures/bhu1.png}\\[10pt]
     \Large A project submitted\\
@@ -77,23 +93,23 @@ Script=Devanagari
     \Large DST-CIMS, BHU\\[10ex]
 	\LARGE \bf Centre for Interdisciplinary Mathematical Sciences\\
 	\LARGE \bf I.Sc., Banaras Hindu University\\
-	\LARGE  Varanasi, India-221005\\[4ex]
-	}
+	\LARGE  Varanasi, India-221005\\[4em]
+	\noindent\begin{minipage}{0.5\textwidth}
+		\large \textbf{Enrollment No: 482721}
+	\end{minipage}%
+	\begin{minipage}{0.5\textwidth}
+		\raggedleft \large \session
+	\end{minipage}
+}
 \date{}
 
 \begin{document}
 
+\begingroup
+\let\clearpage\relax
 \pagenumbering{gobble}
 \maketitle
-\vspace*{\fill}
-\noindent\begin{minipage}{0.5\textwidth}
-\large \textbf{Enrollment No: 482721}
-\end{minipage}%
-\begin{minipage}{0.5\textwidth}
-\raggedleft \large \session
-\end{minipage}
-\newpage
-
+\endgroup
 
 
 \pagenumbering{roman}

@@ -1,15 +1,15 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [1] Config.pm:331> INFO - Logfile is 'Project_Report.blg'
-[230] biber-MSWIN64:342> INFO - === 
-[306] Biber.pm:421> INFO - Reading 'Project_Report.bcf'
-[598] Biber.pm:999> INFO - Using all citekeys in bib section 0
-[641] Biber.pm:4487> INFO - Processing section 0
-[664] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
-[746] bibtex.pm:1713> INFO - LaTeX decoding ...
-[769] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[961] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[961] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[961] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[961] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[986] bbl.pm:676> INFO - Writing 'Project_Report.bbl' with encoding 'UTF-8'
-[997] bbl.pm:779> INFO - Output to Project_Report.bbl
+[430] biber-MSWIN64:342> INFO - === 
+[577] Biber.pm:421> INFO - Reading 'Project_Report.bcf'
+[891] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[936] Biber.pm:4487> INFO - Processing section 0
+[969] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[1077] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1118] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[1359] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1359] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1359] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1359] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1441] bbl.pm:676> INFO - Writing 'Project_Report.bbl' with encoding 'UTF-8'
+[1455] bbl.pm:779> INFO - Output to Project_Report.bbl
