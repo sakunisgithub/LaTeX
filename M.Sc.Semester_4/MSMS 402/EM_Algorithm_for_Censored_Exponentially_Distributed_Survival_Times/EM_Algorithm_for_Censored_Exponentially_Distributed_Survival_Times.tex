@@ -1,0 +1,276 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 0.5 in, right = 0.5 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{skak}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\title{Expectation-Maximization Algorithm}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
+\date{}
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Censored Exponentially Distributed Survival Times}}
+
+We suppose $W$ is a non-negative random variable having an exponential
+distribution with \colorbox{yellow}{mean $\mu$}. Thus its probability density function
+(P.D.F.) is given by
+
+\begin{equation} \label{Exp_PDF}
+f(w;\mu) = \dfrac{1}{\mu} \exp\!\left\{-\dfrac{w}{\mu}\right\} I_{(0,\infty)}(w), \qquad (\mu>0),
+\end{equation}
+
+where the indicator function
+
+\[
+I_{(0,\infty)}(w)
+=
+\begin{cases}
+1, & \text{for } w>0,\\
+0, & \text{elsewhere.}
+\end{cases}
+\]
+
+The distribution function is given by
+
+\[
+F(w;\mu)
+=
+\left\{
+1-\exp\!\left(-\dfrac{w}{\mu}\right)
+\right\}
+I_{(0,\infty)}(w).
+\]
+
+In survival or reliability analyses, a study to observe a random sample
+$W_1,\ldots,W_n$ from (\ref{Exp_PDF}) will generally be terminated in practice before all of these random variables are able to be observed. We let
+
+\[
+\boldsymbol{y}
+=
+\left(
+\boldsymbol{y}_1^{{T}},
+\ldots,
+\boldsymbol{y}_n^{{T}}
+\right)^{{T}}
+\]
+
+denote the observed data, where
+
+\[
+\boldsymbol{y}_j
+=
+(c_j,\delta_j)^{{T}}
+\]
+
+and $\delta_j = 0$ or $1$ according as the observation $W_j$ is censored
+or uncensored at $c_j$ $(j=1,\ldots,n)$. That is, if the observation
+$W_j$ is uncensored, its realized value $w_j$ is equal to
+$c_j$, whereas if it is censored at $c_j$, then $w_j$ is some value
+greater than $c_j$ $(j=1,\ldots,n)$.
+
+We suppose now that the observations have been relabelled so that
+$W_1,\ldots,W_r$ denote the $r$ uncensored observations and
+$W_{r+1},\ldots,W_n$ the $n-r$ censored observations. The likelihood function for $\mu$ formed on the basis of $\boldsymbol{y}$ is given by
+
+\begin{align}
+L(\mu)
+&=
+\prod \limits_{j = 1}^{r} f(w_j; \mu) \cdot \prod \limits_{j = r+1}^{n} \left( 1 - F(c_j; \mu) \right) \nonumber \\[0.5em]
+&=
+\prod \limits_{j = 1}^{r} \dfrac{1}{\mu} \exp\!\left\{-\dfrac{w_j}{\mu}\right\} \cdot \prod \limits_{j = r+1}^{n} \exp\!\left\{-\dfrac{c_j}{\mu}\right\} \nonumber \\[0.5em]
+&=
+\left( \dfrac{1}{\mu} \right)^r \cdot \exp\!\left\{- \sum \limits_{j = 1}^{n} \dfrac{c_j}{\mu} \right\}
+\end{align}
+
+\newpage
+
+The \colorbox{yellow}{log likelihood} function for $\mu$ formed on the basis of
+$\boldsymbol{y}$ is given by
+
+\begin{equation} \label{loglikelihood}
+\ell(\mu)
+=
+\log L(\mu)
+=
+-r \log \mu
+-
+\sum \limits_{j=1}^{n} \dfrac{c_j}{\mu}.
+\end{equation}
+
+In this case, the MLE of $\mu$ can be derived explicitly from
+equating the derivative of (\ref{loglikelihood}) to zero to give
+
+\[
+\hat{\mu}
+=
+\sum \limits_{j=1}^{n} \dfrac{c_j}{r}.
+\]
+
+Thus there is no need for the iterative computation of $\hat{\mu}$.
+But in this simple case, it is instructive to demonstrate how the
+EM algorithm would work.
+
+The complete-data vector $\boldsymbol{x}$ can be declared to be
+
+\begin{align*}
+\boldsymbol{x}
+&=
+(w_1,\ldots,w_n)^T \\[0.5em]
+&=
+(w_1,\ldots,w_r,\boldsymbol{z}^T)^T,
+\end{align*}
+
+where
+
+\[
+\boldsymbol{z}
+=
+(w_{r+1},\ldots,w_n)^T
+\]
+
+contains the unobservable realizations of the $n-r$ censored random
+variables. In this example, the so-called unobservable or missing
+vector $\boldsymbol{z}$ is potentially observable in a data sense,
+as if the experiment were continued until each item failed, then there
+would be no censored observations.
+
+The \colorbox{yellow}{complete-data log likelihood} is given by
+
+\begin{align*}
+\ell_c(\mu)
+=
+\log L_c(\mu)
+&=
+\sum \limits_{j=1}^{n}
+\log f(w_j;\mu) \\[0.5em]
+&=
+-n \log \mu
+-
+\dfrac{1}{\mu}
+\sum \limits_{j=1}^{n} w_j .
+\end{align*}
+
+As $\ell_c(\mu)$ can be seen to be linear in the unobservable data
+$w_{r+1},\ldots,w_n$, the calculation of
+$Q(\mu;\mu^{(k)})$ on the E-step (on the $(k+1)$th iteration)
+simply requires each such $w_j$ to be replaced by its conditional
+expectation given the observed data $\boldsymbol{y}$, using the
+current fit $\mu^{(k)}$ for $\mu$ (Why ?).
+
+By the lack of memory of the exponential distribution,
+the conditional distribution of $W_j-c_j$ given that $W_j>c_j$
+is still exponential with mean $\mu$. Then, we have that
+
+\begin{align}
+\colorbox{yellow}{$E_{\mu^{(k)}}(W_j \mid \boldsymbol{y})$}
+&=
+E_{\mu^{(k)}}(W_j \mid W_j>c_j) \nonumber \\[0.5em]
+&=
+c_j + E_{\mu^{(k)}}(W_j) \nonumber \\[0.5em]
+&=
+c_j + \mu^{(k)} \label{conditional_expectation}
+\end{align}
+
+for $j=r+1,\ldots,n$.
+
+On using (\ref{conditional_expectation}) to take the current conditional expectation of the complete-data log likelihood $\ell_c(\mu)$, we have that
+
+\begin{align}
+\colorbox{yellow}{$Q(\mu;\mu^{(k)})$}
+&=
+-n \log \mu
+-
+\dfrac{1}{\mu}
+\left\{
+\sum \limits_{j=1}^{r} c_j
++
+\sum \limits_{j=r+1}^{n}
+\left(c_j+\mu^{(k)}\right)
+\right\}  \nonumber \\[0.5em]
+&=
+-n \log \mu
+-
+\dfrac{1}{\mu}
+\left\{
+\sum \limits_{j=1}^{n} c_j
++
+(n-r)\mu^{(k)}
+\right\}. \label{Lower_Bound}
+\end{align}
+
+Concerning the M-step on the $(k+1)$th iteration, it follows from
+(\ref{Lower_Bound}) that the value of $\mu$ that maximizes
+$Q(\mu;\mu^{(k)})$ is given by the MLE of $\mu$ that would be formed
+from the complete data, but with each unobservable $w_j$ replaced by its
+current conditional expectation given by (\ref{conditional_expectation}). Accordingly,
+
+\begin{align*}
+\colorbox{yellow}{$\mu^{(k+1)}$}
+&=
+\left\{
+\sum \limits_{j=1}^{r} c_j
++
+\sum \limits_{j=r+1}^{n}
+E_{\mu^{(k)}}(W_j \mid \boldsymbol{y})
+\right\}
+\Bigg/n
+\\[1.2ex]
+&=
+\left\{
+\sum \limits_{j=1}^{r} c_j
++
+\sum \limits_{j=r+1}^{n}
+\left(c_j+\mu^{(k)}\right)
+\right\}
+\Bigg/n
+\\[1.2ex]
+&=
+\left\{
+\sum \limits_{j=1}^{n} c_j
++
+(n-r)\mu^{(k)}
+\right\}
+\Bigg/n.
+\end{align*}
+
+\end{document}
