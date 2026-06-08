@@ -1,0 +1,19 @@
+\section{$\bs{Y}^*$ has a singular distribution with mean $\bs{0}$}
+\label{app:Y_star_singular}
+
+$\bs{Y}^* = A\bs{Y}$, $\bs{Y}$ has a multivariate normal distribution, consequently $\bs{Y}^*$ also has a multivariate normal distribution.
+
+$$E(\boldsymbol{Y}^*) = A \cdot E(\boldsymbol{Y}) = (I - X(X'X)^{-1}X') \cdot X\boldsymbol{\beta} = X\boldsymbol{\beta} - X(X'X)^{-1}X'X\boldsymbol{\beta} = X\boldsymbol{\beta} - X\boldsymbol{\beta} = \boldsymbol{0}$$
+
+and
+
+$$\text{disp}(\boldsymbol{Y}^*) = \sigma^2 \cdot AVA'.$$
+
+Then $\left\lvert \text{disp}(\bs{Y}^*) \right\rvert = \sigma^2 \cdot \left\lvert V \right\rvert \left\lvert A \right\rvert^2$. \\[0.5em]
+
+Also, $AX = \left[ I - X(X'X)^{-1}X' \right]X = \left[ X - X(X'X)^{-1}X'X \right] = \left[ X - X \right] = \bs{O}.$ 
+
+$$\therefore \; A\utilde{x} = \utilde{0} \Rightarrow \utilde{x} \in \mathcal{N}(A) \Rightarrow \text{Nullity}(A) \neq 0 \Rightarrow \text{rank}(A) < mn \Rightarrow \left\lvert A \right\rvert = 0.$$
+
+$$\therefore \; \left\lvert \text{disp}(\bs{Y}^*) \right\rvert = 0 \Rightarrow \text{disp}(\bs{Y}^*) \text{ has a singular distribution.}$$
+

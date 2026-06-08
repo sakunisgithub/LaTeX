@@ -1,0 +1,15 @@
+\section{$\boldsymbol{Y}$ to OLS residuals}
+\label{app:Y_to_residuals}
+
+In OLS, 
+$$\hat{\bs{\beta}} = (X'X)^{-1}X'\bs{Y},$$
+\vspace{0.2cm}
+$$\widehat{\bs{Y}} = X(X'X)^{-1}X'\bs{Y}.$$
+
+Then,
+
+\begin{align*}
+\bs{e} &= \bs{Y} - \widehat{\bs{Y}} \\[0.5em]
+&= \bs{Y} - X(X'X)^{-1}X'\bs{Y} \\[0.5em]
+&= \left[ I - X(X'X)^{-1}X' \right] \bs{Y}.
+\end{align*}

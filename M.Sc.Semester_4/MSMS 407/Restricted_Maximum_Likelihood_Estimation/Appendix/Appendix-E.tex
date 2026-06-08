@@ -1,0 +1,30 @@
+\section{$\mid T \mid$}
+\label{app:determinant_of_T}
+
+\begin{align*}
+	\mid T \mid &= \mid TT' \mid^{1/2} \\[0.2em]
+	&= \left[\begin{pmatrix}
+		B' \\
+		G
+	\end{pmatrix}
+	\begin{pmatrix}
+		B \; G'
+	\end{pmatrix}\right]^{1/2} \\[0.2em]
+	&= \begin{vmatrix}
+		B'B & B'G' \\
+		GB & GG'
+	\end{vmatrix}^{1/2} \\[0.2em]
+	&= \begin{vmatrix}
+		I & B'G' \\
+		GB & GG'
+	\end{vmatrix}^{1/2} \; \text{as } B'B = I \\[0.2em]
+	&= \mid I \mid^{1/2} \cdot \mid GG' - GBI^{-1}B'G' \mid^{1/2} \\[0.2em]
+	&= \mid GG' - GBB'G' \mid^{1/2} \\[0.2em]
+	&= \mid GG' - GAG' \mid^{1/2} \; \text{as } BB' = A \\[0.2em]
+	&= \mid GG' - G\left[I - X(X'X)^{-1}X'\right]G' \mid^{1/2} \\[0.2em]
+	&= \mid GG' - \left[GG' - GX(X'X)^{-1}X'G'\right] \mid^{1/2} \\[0.2em]
+	&= \mid GG' - GG' + GX(X'X)^{-1}X'G' \mid^{1/2} \\[0.2em]
+	&= \mid GX(X'X)^{-1}X'G' \mid^{1/2} \\[0.2em]
+	&= \mid (X'X)^{-1} \mid^{1/2} \; \text{as } GX = I \\[0.2em]
+	&= \mid X'X \mid^{-1/2}.
+\end{align*}

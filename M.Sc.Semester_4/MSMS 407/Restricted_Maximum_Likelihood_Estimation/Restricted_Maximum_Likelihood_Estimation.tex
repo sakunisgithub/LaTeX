@@ -1,0 +1,535 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[top = 1 in, bottom = 1 in, left = 0.5 in, right = 0.5 in]{geometry}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\allowdisplaybreaks[4]
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{undertilde}
+\usepackage{dingbat}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red]{hyperref}
+\usepackage{tasks}
+\usepackage{bbding}
+\usepackage{twemojis}
+% how to use bull's eye ----- \scalebox{2.0}{\twemoji{bullseye}}
+\usepackage{customdice}
+% how to put dice face ------ \dice{2}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{skak}
+\usepackage{figchild}
+
+\usepackage{soul}
+\usepackage{xcolor}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\title{MSMS 407 : Longitudinal Data Analysis}
+\author{{\fontsize{25}{20} \benyorithafont Ananda Biswas}}
+\date{}
+
+\newfontface\gloriahallelujahfont{GLORIAHALLELUJAH-REGULAR.TTF}
+
+\newfontface\benyorithafont{Benyoritha-G334D.otf}
+
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+
+\newcommand{\yhl}[1]{%
+    {\sethlcolor{yellow}\hl{#1}}%
+}
+
+\newcommand{\rhl}[1]{%
+    {\sethlcolor{red}\hl{#1}}%
+}
+
+\begin{document}
+
+\maketitle
+
+\section*{\faArrowAltCircleRight[regular] \textcolor{blue}{Restricted Maximum Likelihood Estimation}}
+
+The method of REML estimation, was introduced by \textbf{Patterson} and
+\textbf{Thompson} $(1971)$ as a way of \yhl{estimating variance components} in a GLM. The \rhl{objection} to the standard maximum likelihood procedure is that it produces \yhl{biased estimators of the covariance parameters}. This is well known in the case of the GLM with independent errors,
+
+\begin{equation}\label{Y_independent_errors}
+\boldsymbol{Y} \sim MVN(X\boldsymbol{\beta}, \sigma^2 I).
+\end{equation}
+
+In this case, the maximum likelihood estimator of $\sigma^2$ is
+
+\begin{align*}
+\widehat{\sigma^2} = \dfrac{\text{RSS}}{mn},
+\end{align*}
+
+where RSS denotes the residual sum of squares, whereas the usual unbiased estimator is
+
+\begin{align*}
+\widetilde{\sigma^2} = \dfrac{\text{RSS}}{mn - p},
+\end{align*}
+
+where $p$ is the number of elements of $\boldsymbol{\beta}$. In fact, $\widetilde{\sigma^2}$ is the REML estimator for $\sigma^2$ in the model (\ref{Y_independent_errors}). \\[0.5em]
+
+In the case of the GLM with dependent errors,
+
+\begin{equation}\label{Y_dependent_errors}
+\boldsymbol{Y} \sim MVN(X\boldsymbol{\beta}, \sigma^2 V),
+\end{equation}
+
+\yhl{the REML estimator is defined as a maximum likelihood estimator based on a linearly transformed set of data $\boldsymbol{Y}^* = A\boldsymbol{Y}$ such that the distribution of $\boldsymbol{Y}^*$ does not depend on $\boldsymbol{\beta}$}. One way to achieve this is by taking $A$ to be the matrix which converts $\boldsymbol{Y}$ to OLS residuals (see Appendix \ref{app:Y_to_residuals}),
+
+\begin{equation}\label{A}
+A = I - X(X'X)^{-1}X'.
+\end{equation}
+
+Then, $\bs{Y}^{*}$ has a \yhl{singular} multivariate Gaussian distribution with \yhl{mean zero}, whatever the value of $\bs{\beta}$ (see Appendix \ref{app:Y_star_singular}). \\[0.5em]
+
+To obtain a \yhl{non-singular distribution}, we could use only $nm - p$ rows of the matrix, $A$, defined at (\ref{A}) (see Appendix \ref{app:error_contrast}). It turns out that the resulting estimators for $\sigma^2$ and $V$ do not depend on which rows we use, nor indeed on the particular choice of $A$: any full-rank matrix with the property that $\mathbb{E}(\bs{Y}^{*}) = 0$ for all $\bs{\beta}$ will give the same answer. \\[0.5em]
+
+Furthermore, from an operational viewpoint we do not need to make the transformation from $\bs{Y}$ to $\bs{Y}^{*}$ explicit, for the final estimators do not depend on $A$. The algebraic details are as follows. \\[0.5em]
+
+For the theoretical development it is convenient to re-absorb $\sigma^2$ into $V$, and write our model for the response vector $\bs{Y}$ as
+
+\begin{align}\label{distribution_of_Y_general}
+\bs{Y} \sim MVN(X\beta, H),
+\end{align}
+
+where $H \equiv H(\bs{\alpha})$, the variance matrix of $\bs{Y}$, is characterized by a vector of parameters $\bs{\alpha}$, for example, in Uniform correlation model, $\bs{\alpha} = (\sigma^2, \rho)$. \\[0.5em]
+
+Our \yhl{plan} is to transform $\bs{Y}$ to $\bs{Z}$ whose distribution does not depend of $\bs{\beta}$ and use the likelihood of $\bs{Z}$ to estimate the covariance parameters $\bs{\alpha}$. \\[0.5em]
+
+Let $A$ be the matrix defined in (\ref{A}), and $B$ the $nm \times (nm - p)$ matrix defined by the requirements that $BB' = A$ and $B'B = I$, where $I$ denotes the $(nm - p) \times (nm - p)$ identity matrix. Finally, let
+\[
+\bs{Z}_{(nm - p) \times 1} = B'\bs{Y}.
+\]
+
+Note that,
+
+\begin{align*}
+\mathbb{E}(\bs{Z}) &= B'\mathbb{E}(\bs{Y}) \\[0.5em]
+&= B'X\bs{\beta} \\[0.5em]
+&= \underbrace{B'B}_{I}B'X\bs{\beta}, \; \text{since } B'B = I \\[0.5em]
+&= B'\underbrace{BB'}_{A}X\bs{\beta} \\[0.5em]
+&= B'AX\bs{\beta} \\[0.5em]
+&= B' \left[ I - X(X'X)^{-1}X' \right]X\bs{\beta} \\[0.5em]
+&= B' \left[ X - X(X'X)^{-1}X'X \right] \bs{\beta} \\[0.5em]
+&= B' \left[ X - X \right] \bs{\beta} \\[0.5em]
+&= B' \bs{O} B \\[0.5em]
+&= \bs{0}.
+\end{align*}
+
+$\bs{Y} \sim MVN(X\beta, H)$, then $\bs{Z} = B'\bs{Y} \sim MVN(\bs{0}, B'HB)$ and the REML likelihood is
+
+\begin{align}\label{Likelihood_based_on_Z}
+L^{*}(\bs{\alpha})
+=
+\dfrac{1}{(2\pi)^{(nm-p)/2}\lvert B'HB \rvert^{1/2}}
+\exp\!\left\{
+-\dfrac{1}{2}
+\bs{z}^{T}(B'HB)^{-1}\bs{z}
+\right\}.
+\end{align}
+
+It can be clearly seen that the resulting estimator $\widehat{\bs{\alpha}}$ will depend on the arbitrary matrix $B$, hence different choices of $B$ will give different estimators. Also, this representation hides the connection with GLS residuals. So proceeding with the likelihood (\ref{Likelihood_based_on_Z}) is not the greatest of ideas. We take a different route. \\[0.5em]
+
+First note that, for fixed $\bs{\alpha}$ the maximum likelihood estimator for $\bs{\beta}$ is the generalized least-squares estimator,
+\[
+\widehat{\bs{\beta}}
+=
+(X'H^{-1}X)^{-1}X'H^{-1}\bs{Y}
+=
+G\bs{Y}, \; \text{say},
+\]
+
+and
+
+\begin{align}\label{distribution_of_beta_hat}
+\widehat{\bs{\beta}} \sim MVN(\bs{\beta}, (X'HX)^{-1}).
+\end{align}
+
+Secondly recall, $$\bs{Z} = B'\bs{Y}.$$
+
+Consider the transformation
+
+\begin{align*}
+\bs{Y}
+\mapsto
+\begin{pmatrix}
+\bs{Z} \\
+\widehat{\bs{\beta}}
+\end{pmatrix}
+=
+\begin{pmatrix}
+B' \\
+G
+\end{pmatrix}
+\bs{Y}
+= T\bs{Y}, \; \text{say }.
+\end{align*}
+
+We write,
+
+\begin{align*}
+f_{\bs{Z},\widehat{\bs{\beta}}}(\bs{z},\widehat{\bs{\beta}})
+=
+f_{\bs{Y}}(\bs{y}) \cdot J
+\end{align*}
+
+where $J$ is the Jacobian of the transformation given by
+
+\begin{align*}
+J
+=
+\dfrac{1}{
+\left\lvert
+\dfrac{\partial}{\partial \bs{Y}}\, T\bs{Y}
+\right\rvert
+}
+= \dfrac{1}{\left\lvert T \right\rvert}
+= \left\lvert T \right\rvert^{-1}.
+\end{align*}
+
+$\bs{Z}$ and $\widehat{\bs{\beta}}$ are \yhl{independently distributed} (see Appendix \ref{app:Z_and_beta_independent}) and we can write
+
+\begin{align*}
+f_{\bs{Z}}(\bs{z}) \cdot f_{\widehat{\bs{\beta}}}(\widehat{\bs{\beta}}) 
+&= f_{\bs{Y}}(\bs{y}) \cdot J \\[1em]
+\Rightarrow f_{\bs{Z}}(\bs{z})
+&=
+\dfrac{
+f_{\bs{Y}}(\bs{y})
+}{
+f_{\widehat{\bs{\beta}}}(\widehat{\bs{\beta}})}
+\cdot 
+\left\lvert T \right\rvert^{-1}
+.
+\end{align*}
+
+The Jacobian is free from the parameters $\bs{\beta}$ and $\bs{\alpha}$ (see Appendix \ref{app:determinant_of_T}) and thus can be ignored while making inferences. \\[0.5em]
+
+Finally, we can write
+
+\begin{align}\label{PDF_Z_form}
+f_{\bs{Z}}(\bs{z})
+\propto
+\dfrac{
+f_{\bs{Y}}(\bs{y})
+}{
+f_{\widehat{\bs{\beta}}}(\widehat{\bs{\beta}})
+}.
+\end{align}
+
+From (\ref{distribution_of_Y_general}),
+
+\begin{align}\label{PDF_Y_general}
+f_{\bs{y}}(\bs{y})
+=
+\dfrac{
+1
+}{
+(2\pi)^{nm/2}
+\lvert H \rvert^{1/2}
+}
+\exp\!\left\{
+-\dfrac{1}{2}
+\left(
+\bs{y} - X\bs{\beta}
+\right)'
+H^{-1}
+\left(
+\bs{y} - X\bs{\beta}
+\right)
+\right\}.
+\end{align}
+
+From (\ref{distribution_of_beta_hat}),
+
+\begin{align}\label{PDF_beta_hat}
+f_{\widehat{\bs{\beta}}}(\widehat{\bs{\beta}})
+=
+\dfrac{
+1
+}{
+(2\pi)^{p/2}
+\left\lvert
+X'H^{-1}X
+\right\rvert^{-1/2}
+}
+\exp\!\left\{
+-\dfrac{1}{2}
+\left(
+\widehat{\bs{\beta}} - \bs{\beta}
+\right)'
+\left(
+X'H^{-1}X
+\right)
+\left(
+\widehat{\bs{\beta}} - \bs{\beta}
+\right)
+\right\}.
+\end{align}
+
+
+\newpage
+
+We state a result,
+
+\begin{align} \label{result}
+\left(
+\bs{y} - X\bs{\beta}
+\right)'
+H^{-1}
+\left(
+\bs{y} - X\bs{\beta}
+\right)
+=
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right)'
+H^{-1}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right)
++
+\left(
+\widehat{\bs{\beta}} - \bs{\beta}
+\right)'
+\left(
+X'H^{-1}X
+\right)
+\left(
+\widehat{\bs{\beta}} - \bs{\beta}
+\right).
+\end{align}
+
+Using (\ref{PDF_Z_form}), (\ref{PDF_Y_general}), (\ref{PDF_beta_hat}) along with (\ref{result}), we get the PDF of $\bs{Z} = B'\bs{Y}$ is proportional to 
+
+\begin{align}\label{REML_likelihood}
+\dfrac{f_{\bs{y}}(\bs{y})}{f_{\widehat{\bs{\beta}}}(\widehat{\bs{\beta}})} =
+(2\pi)^{-\frac{1}{2}(nm-p)}
+\lvert H \rvert^{-1/2}
+\left\lvert
+X'H^{-1}X
+\right\rvert^{-1/2}
+\times
+\exp\!\left\{
+-\dfrac{1}{2}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right)'
+H^{-1}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right)
+\right\}
+\end{align}
+
+Note that the right-hand side of (\ref{REML_likelihood}) is independent of $A$, and the same result would therefore hold for any $\bs{Z}$ such that $\mathbb{E}(\bs{Z}) = \bs{0}$ and $\operatorname{Cov}(\bs{Z}, \widehat{\bs{\beta}}) = \bs{0}$. \\[0.5em]
+
+The practical implication of (\ref{REML_likelihood}) is that the REML estimator, $\widetilde{\bs{\alpha}}$, maximizes the log-likelihood
+
+\begin{align}\label{REML_log_likelihood}
+\ell^{*}(\bs{\alpha})
+=
+-\dfrac{1}{2}
+\log \lvert H \rvert
+-
+\dfrac{1}{2}
+\log
+\left\lvert
+X'H^{-1}X
+\right\rvert
+-
+\dfrac{1}{2}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right)'
+H^{-1}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right),
+\end{align}
+
+whereas the maximum likelihood estimator $\widehat{\bs{\alpha}}$ maximizes
+
+\[
+\ell(\bs{\alpha})
+=
+-\dfrac{1}{2}
+\log \lvert H \rvert
+-
+\dfrac{1}{2}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right)'
+H^{-1}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right).
+\]
+
+It follows from this last result that the algorithm to implement REML
+estimation for the model (\ref{Y_dependent_errors}) incorporates only a simple modification to the maximum likelihood algorithm derived earlier. \\[0.5em]
+
+\fcAntA[scale = 0.4, draw = red, line width = 1] Following (\ref{Y_dependent_errors}), recall that we consider $m$ units with $n$ measurements per unit and that $\sigma^2V$ is a block-diagonal matrix with non-zero $n \times n$ blocks $\sigma^2V_0$ representing the common covariance matrix of the measurements on any one unit. \\[0.5em]
+
+The original complete log-likelihood is
+
+\begin{align}\label{original_log_likelihood}
+\ell(\boldsymbol{\beta}, \sigma^2, V_0) &= -\dfrac{1}{2} \; mn \ln(\sigma^2) - \dfrac{1}{2} \; m \ln(\left| V_0 \right|) - \dfrac{1}{2\sigma^2} \; (\boldsymbol{y} - X\boldsymbol{\beta})' V^{-1} (\boldsymbol{y} - X\boldsymbol{\beta}).
+\end{align}
+
+In (\ref{original_log_likelihood}), for given $V_0$, $V$ will be completely known and we write
+
+\begin{align}\label{beta_hat}
+\widehat{\boldsymbol{\beta}}(V_0) = (X'V^{-1}X)^{-1}X'V^{-1}\boldsymbol{y}.
+\end{align}
+
+and
+
+\begin{align}\label{RSS}
+\text{RSS}(V_0) &= \left\{\boldsymbol{y} - X\widehat{\boldsymbol{\beta}}(V_0)\right\}' V^{-1} \left\{\boldsymbol{y} - X\widehat{\boldsymbol{\beta}}(V_0)\right\}.
+\end{align}
+
+Put $H(\bs{\alpha}) = \sigma^2 V$ in (\ref{distribution_of_Y_general}) with $\bs{\alpha} = (\sigma^2, V_0)$. On using (\ref{beta_hat}) and $H(\bs{\alpha}) = \sigma^2 V$, general (\ref{REML_log_likelihood}) becomes special case
+
+\begin{align}\label{REML_likelihood_special_case}
+\ell^{*}(\sigma^2, V_0)
+&=
+-\dfrac{1}{2}
+\log \lvert \sigma^2 V \rvert
+-
+\dfrac{1}{2}
+\log
+\left\lvert
+X'(\sigma^2 V)^{-1}X
+\right\rvert
+-
+\dfrac{1}{2}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right)'
+(\sigma^2 V)^{-1}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right) \nonumber \\[1.5em]
+&=
+-\dfrac{1}{2}
+\log \left\{ (\sigma^2)^{mn} \lvert V \rvert \right\}
+-
+\dfrac{1}{2}
+\log \left\{
+\left( \dfrac{1}{\sigma^2} \right)^p
+\left\lvert
+X'V^{-1}X
+\right\rvert
+\right\}
+-
+\dfrac{1}{2\sigma^2}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right)'
+V^{-1}
+\left(
+\bs{y} - X\widehat{\bs{\beta}}
+\right) \nonumber \\[0.5em]
+&=
+-\dfrac{1}{2}(mn-p)\log \sigma^2
+-
+\dfrac{1}{2} m \cdot \log \lvert V_0 \rvert
+-
+\dfrac{1}{2}
+\log
+\left\lvert
+X^{T}V^{-1}X
+\right\rvert
+-
+\dfrac{1}{2\sigma^2}
+\left(
+\bs{y}-X\widehat{\bs{\beta}}
+\right)^{T}
+V^{-1}
+\left(
+\bs{y}-X\widehat{\bs{\beta}}
+\right)
+\end{align}
+
+
+
+Then maximizing (\ref{REML_likelihood_special_case}) w.r.t. $\sigma^2$ gives the REML estimator for $\sigma^2$ as
+
+\begin{align}\label{sigma_sq_hat_REML}
+\widetilde{\sigma}^{2}(V_0)
+=
+\dfrac{
+\text{RSS}(V_0)
+}{
+nm-p
+},
+\end{align}
+
+where $p$ is the number of elements of $\bs{\beta}$. The REML estimator for $V_0$ maximizes the reduced REML log-likelihood
+
+\begin{align}\label{Reduced_REML_log_likelihood}
+\ell^{*}(V_0)
+=
+-\dfrac{1}{2}
+m
+\left\{
+n\log \text{RSS}(V_0)
++
+\log\!\left(
+\lvert V_0 \rvert
+\right)
+\right\}
+-
+\dfrac{1}{2}
+\log\!\left(
+\left\lvert
+X'V^{-1}X
+\right\rvert
+\right).
+\end{align}
+
+
+Finally, maximization of (\ref{Reduced_REML_log_likelihood}) w.r.t. distinct elements of $V_0$ yields $\widetilde{V}_0$. Substitution of the resulting estimator $\widetilde{V}_0$ into (\ref{beta_hat}) and (\ref{sigma_sq_hat_REML}) gives the REML estimators
+
+\[
+\widetilde{\bs{\beta}}
+=
+\widehat{\bs{\beta}}(\widetilde{V}_0)
+\quad \& \quad
+\widetilde{\sigma}^{2}
+=
+\widetilde{\sigma}^{2}(\widetilde{V}_0).
+\]
+
+\section*{Appendix}
+
+\appendix
+
+\input{Appendix/Appendix-A}
+
+\input{Appendix/Appendix-B}
+
+\input{Appendix/Appendix-C}
+
+\input{Appendix/Appendix-D}
+
+\input{Appendix/Appendix-E}
+
+\end{document}

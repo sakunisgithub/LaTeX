@@ -1,0 +1,6 @@
+\section{Error Contrast}
+\label{app:error_contrast}
+
+A linear combination $\bs{a}'\bs{Y}$ of the response variable $\bs{Y}$ is called an \textbf{error contrast} if $\mathbb{E}(\bs{a}'\bs{Y}) = 0$. For a linear model $\bs{Y} = X\bs{\beta} + \bs{\epsilon}$, the condition reduces to $\bs{a}'X = \bs{0}$. \\[0.5em]
+
+It readily follows that each row of $A$ as in (\ref{A}) is an error contrast as $AX = \bs{O}$. Recall the fact that, given $n$ error contrasts, at max $n-p$ can be linearly independent, $p$ being the rank of the related design matrix $X$. $\bs{Y^*} = A\bs{Y}$ is then a vector of error contrasts as each row of $A$ produces an error contrast. Thus to have a nonsingular distribution of $\bs{Y^*}$ we must take $mn-p$ rows of $A$, of course the $mn-p$ rows must be linearly independent.

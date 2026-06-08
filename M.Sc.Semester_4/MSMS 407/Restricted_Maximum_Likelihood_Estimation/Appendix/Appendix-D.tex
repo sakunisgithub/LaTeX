@@ -1,0 +1,50 @@
+\section{$\bs{Z}$ and $\bs{\widehat{\beta}}$ are independent}
+\label{app:Z_and_beta_independent}
+
+\begin{align*}
+	\operatorname{Cov}(\bs{Z},\widehat{\bs{\beta}})
+	&= \mathbb{E}\left\{\bs{Z}\left(\widehat{\bs{\beta}}-\bs{\beta}\right)'\right\} \\
+	&= \mathbb{E}\left\{B'\bs{Y}\left(\bs{Y}'G'-\bs{\beta}'\right)\right\} \\
+	&= B'\mathbb{E}\left(\bs{Y}\bs{Y}'\right)G'
+	- B'\mathbb{E}\left(\bs{Y}\right)\bs{\beta}' \\
+	&= B'\left\{\operatorname{Var}(\bs{Y})
+	+ \mathbb{E}(\bs{Y})\mathbb{E}(\bs{Y})'\right\}G'
+	- B'\mathbb{E}(\bs{Y})\bs{\beta}' .
+\end{align*}
+
+Now, substituting $\mathbb{E}(\bs{Y}) = X\bs{\beta}$ into this last expression gives
+
+\begin{align*}
+	\operatorname{Cov}(\bs{Z},\widehat{\bs{\beta}})
+	&= B'\left(H + X\bs{\beta}\bs{\beta}'X'\right)G'
+	- B'X\bs{\beta}\bs{\beta}' .
+\end{align*}
+
+Also,
+
+\begin{align*}
+	X'G'
+	&= X'H^{-1}X\left(X'H^{-1}X\right)^{-1} \\
+	&= I,
+\end{align*}
+
+and
+
+\begin{align*}
+	B'HG'
+	&= B'HH^{-1}X\left(X'H^{-1}X\right)^{-1} \\
+	&= B'X\left(X'H^{-1}X\right)^{-1} \\
+	&= 0,
+\end{align*}
+
+because $B'X = B'AX = \bs{O}$ as in the proof that
+$\mathbb{E}(\bs{Z}) = \bs{0}$. It follows that
+
+\begin{align*}
+	\operatorname{Cov}(\bs{Z},\widehat{\bs{\beta}})
+	&= B'X\bs{\beta}\bs{\beta}'
+	- B'X\bs{\beta}\bs{\beta}' \\
+	&= \bs{O}.
+\end{align*}
+
+Finally, in the multivariate Gaussian setting, zero covariance is equivalent to independence.
