@@ -1,0 +1,13 @@
+Only rooks
+
+\usepackage{skak}
+
+\begin{center}
+\BlackRookOnWhite \WhiteRookOnWhite \BlackRookOnWhite \WhiteRookOnWhite \BlackRookOnWhite \WhiteRookOnWhite \BlackRookOnWhite
+\end{center}
+
+Black full formation
+
+\begin{center}
+\BlackRookOnBlack \BlackKnightOnWhite \BlackBishopOnBlack \BlackKingOnWhite \BlackQueenOnBlack \BlackBishopOnWhite \BlackKnightOnBlack \BlackRookOnWhite
+\end{center}
